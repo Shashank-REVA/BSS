@@ -9,7 +9,7 @@ class EmptyWidget extends StatefulWidget {
   const EmptyWidget({super.key});
 
   @override
-  _EmptyWidgetState createState() => _EmptyWidgetState();
+  State<EmptyWidget> createState() => _EmptyWidgetState();
 }
 
 class _EmptyWidgetState extends State<EmptyWidget> {

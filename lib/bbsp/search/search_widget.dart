@@ -31,7 +31,7 @@ class SearchWidget extends StatefulWidget {
   final Color colortxt;
 
   @override
-  _SearchWidgetState createState() => _SearchWidgetState();
+  State<SearchWidget> createState() => _SearchWidgetState();
 }
 
 class _SearchWidgetState extends State<SearchWidget> {
@@ -211,25 +211,8 @@ class _SearchWidgetState extends State<SearchWidget> {
                                       Padding(
                                         padding: const EdgeInsets.all(10.0),
                                         child: FFButtonWidget(
-                                          onPressed: () async {
-                                            logFirebaseEvent(
-                                                'SEARCH_PAGE_CITIES_BTN_ON_TAP');
-                                            logFirebaseEvent(
-                                                'Button_navigate_to');
-
-                                            context.goNamed(
-                                              'search',
-                                              extra: <String, dynamic>{
-                                                kTransitionInfoKey:
-                                                    const TransitionInfo(
-                                                  hasTransition: true,
-                                                  transitionType:
-                                                      PageTransitionType.fade,
-                                                  duration: Duration(
-                                                      milliseconds: 600),
-                                                ),
-                                              },
-                                            );
+                                          onPressed: () {
+                                            print('Button pressed ...');
                                           },
                                           text: FFLocalizations.of(context)
                                               .getText(
@@ -1034,6 +1017,18 @@ class _SearchWidgetState extends State<SearchWidget> {
                                                   ),
                                                 },
                                               );
+
+                                              logFirebaseEvent(
+                                                  'Container_clear_text_fields_pin_codes');
+                                              setState(() {
+                                                _model.textController?.clear();
+                                              });
+                                              logFirebaseEvent(
+                                                  'Container_update_app_state');
+                                              setState(() {
+                                                FFAppState().searchactive =
+                                                    false;
+                                              });
                                             },
                                             child: Container(
                                               width: double.infinity,

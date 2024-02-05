@@ -40,12 +40,18 @@ class FacilitiesRecord extends FirestoreRecord {
   String get facilityCity => _facilityCity ?? '';
   bool hasFacilityCity() => _facilityCity != null;
 
+  // "guest_email" field.
+  String? _guestEmail;
+  String get guestEmail => _guestEmail ?? '';
+  bool hasGuestEmail() => _guestEmail != null;
+
   void _initializeFields() {
     _guestName = snapshotData['guest_name'] as String?;
     _guestFacility = snapshotData['guest_facility'] as String?;
     _guestNumber = snapshotData['guest_number'] as String?;
     _facilityDate = snapshotData['facility_date'] as String?;
     _facilityCity = snapshotData['facility_city'] as String?;
+    _guestEmail = snapshotData['guest_email'] as String?;
   }
 
   static CollectionReference get collection =>
@@ -88,6 +94,7 @@ Map<String, dynamic> createFacilitiesRecordData({
   String? guestNumber,
   String? facilityDate,
   String? facilityCity,
+  String? guestEmail,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -96,6 +103,7 @@ Map<String, dynamic> createFacilitiesRecordData({
       'guest_number': guestNumber,
       'facility_date': facilityDate,
       'facility_city': facilityCity,
+      'guest_email': guestEmail,
     }.withoutNulls,
   );
 
@@ -111,7 +119,8 @@ class FacilitiesRecordDocumentEquality implements Equality<FacilitiesRecord> {
         e1?.guestFacility == e2?.guestFacility &&
         e1?.guestNumber == e2?.guestNumber &&
         e1?.facilityDate == e2?.facilityDate &&
-        e1?.facilityCity == e2?.facilityCity;
+        e1?.facilityCity == e2?.facilityCity &&
+        e1?.guestEmail == e2?.guestEmail;
   }
 
   @override
@@ -120,7 +129,8 @@ class FacilitiesRecordDocumentEquality implements Equality<FacilitiesRecord> {
         e?.guestFacility,
         e?.guestNumber,
         e?.facilityDate,
-        e?.facilityCity
+        e?.facilityCity,
+        e?.guestEmail
       ]);
 
   @override

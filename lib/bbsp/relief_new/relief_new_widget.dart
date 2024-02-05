@@ -24,7 +24,7 @@ class ReliefNewWidget extends StatefulWidget {
   final Color colortxt;
 
   @override
-  _ReliefNewWidgetState createState() => _ReliefNewWidgetState();
+  State<ReliefNewWidget> createState() => _ReliefNewWidgetState();
 }
 
 class _ReliefNewWidgetState extends State<ReliefNewWidget>
@@ -318,8 +318,7 @@ class _ReliefNewWidgetState extends State<ReliefNewWidget>
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        10.0, 10.0, 20.0, 10.0),
+                                    padding: const EdgeInsets.all(10.0),
                                     child: FFButtonWidget(
                                       onPressed: () async {
                                         logFirebaseEvent(
@@ -340,7 +339,7 @@ class _ReliefNewWidgetState extends State<ReliefNewWidget>
                                         );
                                       },
                                       text: FFLocalizations.of(context).getText(
-                                        'yc2kfkt3' /* Home */,
+                                        '9eib3t2r' /* Home */,
                                       ),
                                       options: FFButtonOptions(
                                         height: 40.0,
@@ -369,8 +368,7 @@ class _ReliefNewWidgetState extends State<ReliefNewWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        10.0, 10.0, 20.0, 10.0),
+                                    padding: const EdgeInsets.all(10.0),
                                     child: FFButtonWidget(
                                       onPressed: () async {
                                         logFirebaseEvent(
@@ -391,7 +389,7 @@ class _ReliefNewWidgetState extends State<ReliefNewWidget>
                                         );
                                       },
                                       text: FFLocalizations.of(context).getText(
-                                        'uw87pjg4' /* Cities */,
+                                        'wlftm40b' /* Cities */,
                                       ),
                                       options: FFButtonOptions(
                                         height: 40.0,
@@ -421,8 +419,7 @@ class _ReliefNewWidgetState extends State<ReliefNewWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        10.0, 10.0, 20.0, 10.0),
+                                    padding: const EdgeInsets.all(10.0),
                                     child: FFButtonWidget(
                                       onPressed: () async {
                                         logFirebaseEvent(
@@ -464,7 +461,7 @@ class _ReliefNewWidgetState extends State<ReliefNewWidget>
                                         }
                                       },
                                       text: FFLocalizations.of(context).getText(
-                                        '5s9lzv14' /* Account */,
+                                        '1ey9dvjz' /* Account */,
                                       ),
                                       options: FFButtonOptions(
                                         height: 40.0,
@@ -494,8 +491,7 @@ class _ReliefNewWidgetState extends State<ReliefNewWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        10.0, 10.0, 20.0, 10.0),
+                                    padding: const EdgeInsets.all(10.0),
                                     child: FFButtonWidget(
                                       onPressed: () async {
                                         logFirebaseEvent(
@@ -516,7 +512,7 @@ class _ReliefNewWidgetState extends State<ReliefNewWidget>
                                         );
                                       },
                                       text: FFLocalizations.of(context).getText(
-                                        'meqzxzc7' /* Events */,
+                                        'dd0s6sis' /* Events */,
                                       ),
                                       options: FFButtonOptions(
                                         height: 40.0,
@@ -546,8 +542,7 @@ class _ReliefNewWidgetState extends State<ReliefNewWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        10.0, 10.0, 20.0, 10.0),
+                                    padding: const EdgeInsets.all(10.0),
                                     child: FFButtonWidget(
                                       onPressed: () async {
                                         logFirebaseEvent(
@@ -569,7 +564,7 @@ class _ReliefNewWidgetState extends State<ReliefNewWidget>
                                         );
                                       },
                                       text: FFLocalizations.of(context).getText(
-                                        'yehm50la' /* Facilities */,
+                                        'w63umfck' /* Facilities */,
                                       ),
                                       options: FFButtonOptions(
                                         height: 40.0,
@@ -599,8 +594,7 @@ class _ReliefNewWidgetState extends State<ReliefNewWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        10.0, 10.0, 20.0, 10.0),
+                                    padding: const EdgeInsets.all(10.0),
                                     child: FFButtonWidget(
                                       onPressed: () async {
                                         logFirebaseEvent(
@@ -621,7 +615,7 @@ class _ReliefNewWidgetState extends State<ReliefNewWidget>
                                         );
                                       },
                                       text: FFLocalizations.of(context).getText(
-                                        'q2lahz8t' /* Donation */,
+                                        'fivxvklo' /* Donation */,
                                       ),
                                       options: FFButtonOptions(
                                         height: 40.0,

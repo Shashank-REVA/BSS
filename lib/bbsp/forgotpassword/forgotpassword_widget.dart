@@ -23,7 +23,7 @@ class ForgotpasswordWidget extends StatefulWidget {
   final Color colortxt;
 
   @override
-  _ForgotpasswordWidgetState createState() => _ForgotpasswordWidgetState();
+  State<ForgotpasswordWidget> createState() => _ForgotpasswordWidgetState();
 }
 
 class _ForgotpasswordWidgetState extends State<ForgotpasswordWidget>

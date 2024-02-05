@@ -31,6 +31,7 @@ dependencies:
   cloud_firestore: 4.13.1
   cloud_firestore_platform_interface: 6.0.5
   cloud_firestore_web: 3.8.5
+  collection: 1.17.2
   dropdown_button2: 2.3.9
   easy_debounce: 2.0.1
   emoji_flag_converter: 1.1.0
@@ -74,7 +75,6 @@ dependencies:
   json_path: 0.6.2
   mime_type: 1.0.0
   octo_image: 1.0.2
-  onesignal_flutter: ^5.0.1
   page_transition: 2.1.0
   path_provider: 2.0.14
   path_provider_android: 2.0.25
@@ -98,7 +98,6 @@ dependencies:
   stop_watch_timer: 3.0.2
   stream_transform: 2.1.0
   substring_highlight: 1.0.33
-  table_calendar: 3.0.9
   text_search: 1.0.1
   timeago: 3.2.2
   universal_io: 2.2.2
@@ -188,6 +187,7 @@ flutter:
       fonts:
         - asset: assets/fonts/Sun.ttf
 
+  
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
@@ -213,3 +213,4 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+

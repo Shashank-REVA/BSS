@@ -24,7 +24,7 @@ class TribalWidget extends StatefulWidget {
   final Color colortxt;
 
   @override
-  _TribalWidgetState createState() => _TribalWidgetState();
+  State<TribalWidget> createState() => _TribalWidgetState();
 }
 
 class _TribalWidgetState extends State<TribalWidget>
@@ -625,8 +625,7 @@ class _TribalWidgetState extends State<TribalWidget>
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          10.0, 10.0, 20.0, 10.0),
+                                      padding: const EdgeInsets.all(10.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
                                           logFirebaseEvent(
@@ -650,7 +649,7 @@ class _TribalWidgetState extends State<TribalWidget>
                                         },
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          '6s13ojhx' /* Home */,
+                                          'veyh94gf' /* Home */,
                                         ),
                                         options: FFButtonOptions(
                                           height: 40.0,
@@ -681,8 +680,7 @@ class _TribalWidgetState extends State<TribalWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          10.0, 10.0, 20.0, 10.0),
+                                      padding: const EdgeInsets.all(10.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
                                           logFirebaseEvent(
@@ -706,7 +704,7 @@ class _TribalWidgetState extends State<TribalWidget>
                                         },
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          '7z1wgows' /* Cities */,
+                                          'ath9vl7v' /* Cities */,
                                         ),
                                         options: FFButtonOptions(
                                           height: 40.0,
@@ -738,8 +736,7 @@ class _TribalWidgetState extends State<TribalWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          10.0, 10.0, 20.0, 10.0),
+                                      padding: const EdgeInsets.all(10.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
                                           logFirebaseEvent(
@@ -782,7 +779,7 @@ class _TribalWidgetState extends State<TribalWidget>
                                         },
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'y0298938' /* Account */,
+                                          'nqz141n1' /* Account */,
                                         ),
                                         options: FFButtonOptions(
                                           height: 40.0,
@@ -814,8 +811,7 @@ class _TribalWidgetState extends State<TribalWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          10.0, 10.0, 20.0, 10.0),
+                                      padding: const EdgeInsets.all(10.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
                                           logFirebaseEvent(
@@ -839,7 +835,7 @@ class _TribalWidgetState extends State<TribalWidget>
                                         },
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'p9jefb8y' /* Events */,
+                                          'rci3ggt6' /* Events */,
                                         ),
                                         options: FFButtonOptions(
                                           height: 40.0,
@@ -871,8 +867,7 @@ class _TribalWidgetState extends State<TribalWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          10.0, 10.0, 20.0, 10.0),
+                                      padding: const EdgeInsets.all(10.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
                                           logFirebaseEvent(
@@ -896,7 +891,7 @@ class _TribalWidgetState extends State<TribalWidget>
                                         },
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'dx8k0ln8' /* Facilities */,
+                                          'a7yyjfbl' /* Facilities */,
                                         ),
                                         options: FFButtonOptions(
                                           height: 40.0,
@@ -928,8 +923,7 @@ class _TribalWidgetState extends State<TribalWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          10.0, 10.0, 20.0, 10.0),
+                                      padding: const EdgeInsets.all(10.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
                                           logFirebaseEvent(
@@ -953,7 +947,7 @@ class _TribalWidgetState extends State<TribalWidget>
                                         },
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'pghtdmgq' /* Donation */,
+                                          'pdup8jhi' /* Donation */,
                                         ),
                                         options: FFButtonOptions(
                                           height: 40.0,

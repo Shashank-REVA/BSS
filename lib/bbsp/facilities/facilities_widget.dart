@@ -28,7 +28,7 @@ class FacilitiesWidget extends StatefulWidget {
   final Color colortxt;
 
   @override
-  _FacilitiesWidgetState createState() => _FacilitiesWidgetState();
+  State<FacilitiesWidget> createState() => _FacilitiesWidgetState();
 }
 
 class _FacilitiesWidgetState extends State<FacilitiesWidget> {
@@ -50,7 +50,7 @@ class _FacilitiesWidgetState extends State<FacilitiesWidget> {
         () async {
           await _model.rowController?.animateTo(
             _model.rowController!.position.maxScrollExtent,
-            duration: const Duration(milliseconds: 1000),
+            duration: const Duration(milliseconds: 300),
             curve: Curves.ease,
           );
         }(),
@@ -327,21 +327,8 @@ class _FacilitiesWidgetState extends State<FacilitiesWidget> {
                           Padding(
                             padding: const EdgeInsets.all(10.0),
                             child: FFButtonWidget(
-                              onPressed: () async {
-                                logFirebaseEvent(
-                                    'FACILITIES_PAGE_facilities_ON_TAP');
-                                logFirebaseEvent('facilities_navigate_to');
-
-                                context.pushNamed(
-                                  'facilities',
-                                  extra: <String, dynamic>{
-                                    kTransitionInfoKey: const TransitionInfo(
-                                      hasTransition: true,
-                                      transitionType: PageTransitionType.fade,
-                                      duration: Duration(milliseconds: 600),
-                                    ),
-                                  },
-                                );
+                              onPressed: () {
+                                print('facilities pressed ...');
                               },
                               text: FFLocalizations.of(context).getText(
                                 'xtzhffti' /* Facilities */,
@@ -551,7 +538,7 @@ class _FacilitiesWidgetState extends State<FacilitiesWidget> {
                                                         EasyDebounce.debounce(
                                                       '_model.searchedController',
                                                       const Duration(
-                                                          milliseconds: 2000),
+                                                          milliseconds: 500),
                                                       () async {
                                                         logFirebaseEvent(
                                                             'FACILITIES_searched_ON_TEXTFIELD_CHANGE');
@@ -1004,6 +991,21 @@ class _FacilitiesWidgetState extends State<FacilitiesWidget> {
                                                                       ),
                                                                     },
                                                                   );
+
+                                                                  logFirebaseEvent(
+                                                                      'Container_clear_text_fields_pin_codes');
+                                                                  setState(() {
+                                                                    _model
+                                                                        .searchedController
+                                                                        ?.clear();
+                                                                  });
+                                                                  logFirebaseEvent(
+                                                                      'Container_update_app_state');
+                                                                  setState(() {
+                                                                    FFAppState()
+                                                                            .searchactive =
+                                                                        false;
+                                                                  });
                                                                 },
                                                                 child:
                                                                     Container(

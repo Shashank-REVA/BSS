@@ -21,7 +21,7 @@ class SpiritualWidget extends StatefulWidget {
   final Color colortxt;
 
   @override
-  _SpiritualWidgetState createState() => _SpiritualWidgetState();
+  State<SpiritualWidget> createState() => _SpiritualWidgetState();
 }
 
 class _SpiritualWidgetState extends State<SpiritualWidget> {
@@ -118,8 +118,7 @@ class _SpiritualWidgetState extends State<SpiritualWidget> {
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          10.0, 10.0, 20.0, 10.0),
+                                      padding: const EdgeInsets.all(10.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
                                           logFirebaseEvent(
@@ -143,7 +142,7 @@ class _SpiritualWidgetState extends State<SpiritualWidget> {
                                         },
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          '3kraszhz' /* Home */,
+                                          'lqcyyq6c' /* Home */,
                                         ),
                                         options: FFButtonOptions(
                                           height: 40.0,
@@ -174,8 +173,7 @@ class _SpiritualWidgetState extends State<SpiritualWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          10.0, 10.0, 20.0, 10.0),
+                                      padding: const EdgeInsets.all(10.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
                                           logFirebaseEvent(
@@ -199,7 +197,7 @@ class _SpiritualWidgetState extends State<SpiritualWidget> {
                                         },
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'v5rr3ukd' /* Cities */,
+                                          'rnhj2cy7' /* Cities */,
                                         ),
                                         options: FFButtonOptions(
                                           height: 40.0,
@@ -231,8 +229,7 @@ class _SpiritualWidgetState extends State<SpiritualWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          10.0, 10.0, 20.0, 10.0),
+                                      padding: const EdgeInsets.all(10.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
                                           logFirebaseEvent(
@@ -275,7 +272,7 @@ class _SpiritualWidgetState extends State<SpiritualWidget> {
                                         },
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          '3wlxplz1' /* Account */,
+                                          'vntkupdb' /* Account */,
                                         ),
                                         options: FFButtonOptions(
                                           height: 40.0,
@@ -307,8 +304,7 @@ class _SpiritualWidgetState extends State<SpiritualWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          10.0, 10.0, 20.0, 10.0),
+                                      padding: const EdgeInsets.all(10.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
                                           logFirebaseEvent(
@@ -332,7 +328,7 @@ class _SpiritualWidgetState extends State<SpiritualWidget> {
                                         },
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'lo7376g7' /* Events */,
+                                          'q4yzic3i' /* Events */,
                                         ),
                                         options: FFButtonOptions(
                                           height: 40.0,
@@ -364,8 +360,7 @@ class _SpiritualWidgetState extends State<SpiritualWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          10.0, 10.0, 20.0, 10.0),
+                                      padding: const EdgeInsets.all(10.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
                                           logFirebaseEvent(
@@ -389,7 +384,7 @@ class _SpiritualWidgetState extends State<SpiritualWidget> {
                                         },
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'c8ggh3pw' /* Facilities */,
+                                          '6vgbcy8f' /* Facilities */,
                                         ),
                                         options: FFButtonOptions(
                                           height: 40.0,
@@ -421,8 +416,7 @@ class _SpiritualWidgetState extends State<SpiritualWidget> {
                                       ),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          10.0, 10.0, 20.0, 10.0),
+                                      padding: const EdgeInsets.all(10.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
                                           logFirebaseEvent(
@@ -446,7 +440,7 @@ class _SpiritualWidgetState extends State<SpiritualWidget> {
                                         },
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          '3opmnir1' /* Donation */,
+                                          'p8xi7cgm' /* Donation */,
                                         ),
                                         options: FFButtonOptions(
                                           height: 40.0,

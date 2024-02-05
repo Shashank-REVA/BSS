@@ -262,7 +262,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // history
   {
-    'j6k1t2xu': {
+    'qgvb2ikt': {
       'en': 'Home',
       'bn': 'বাড়ি',
       'gu': 'ઘર',
@@ -273,7 +273,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'வீடு',
       'te': 'హోమ్',
     },
-    'nt61doz8': {
+    '5j141l6l': {
       'en': 'Cities',
       'bn': 'শহরগুলো',
       'gu': 'શહેરો',
@@ -284,7 +284,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'நகரங்கள்',
       'te': 'నగరాలు',
     },
-    'u5o5cocj': {
+    'uq7mqik0': {
       'en': 'Account',
       'bn': 'হিসাব',
       'gu': 'એકાઉન્ટ',
@@ -295,7 +295,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கணக்கு',
       'te': 'ఖాతా',
     },
-    'pyxx4oyq': {
+    '561blwl4': {
       'en': 'Events',
       'bn': 'হিসাব',
       'gu': 'એકાઉન્ટ',
@@ -306,7 +306,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கணக்கு',
       'te': 'ఖాతా',
     },
-    'wj53wdth': {
+    'x4k25ifv': {
       'en': 'Facilities',
       'bn': 'হিসাব',
       'gu': 'એકાઉન્ટ',
@@ -317,7 +317,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கணக்கு',
       'te': 'ఖాతా',
     },
-    'cq0fbhj0': {
+    'dvtiz02n': {
       'en': 'Donation',
       'bn': 'দান',
       'gu': 'દાન',
@@ -904,7 +904,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // relief_new
   {
-    'yc2kfkt3': {
+    '9eib3t2r': {
       'en': 'Home',
       'bn': 'বাড়ি',
       'gu': 'ઘર',
@@ -915,7 +915,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'வீடு',
       'te': 'హోమ్',
     },
-    'uw87pjg4': {
+    'wlftm40b': {
       'en': 'Cities',
       'bn': 'শহরগুলো',
       'gu': 'શહેરો',
@@ -926,7 +926,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'நகரங்கள்',
       'te': 'నగరాలు',
     },
-    '5s9lzv14': {
+    '1ey9dvjz': {
       'en': 'Account',
       'bn': 'হিসাব',
       'gu': 'એકાઉન્ટ',
@@ -937,7 +937,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கணக்கு',
       'te': 'ఖాతా',
     },
-    'meqzxzc7': {
+    'dd0s6sis': {
       'en': 'Events',
       'bn': 'হিসাব',
       'gu': 'એકાઉન્ટ',
@@ -948,7 +948,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கணக்கு',
       'te': 'ఖాతా',
     },
-    'yehm50la': {
+    'w63umfck': {
       'en': 'Facilities',
       'bn': 'হিসাব',
       'gu': 'એકાઉન્ટ',
@@ -959,7 +959,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கணக்கு',
       'te': 'ఖాతా',
     },
-    'q2lahz8t': {
+    'fivxvklo': {
       'en': 'Donation',
       'bn': 'দান',
       'gu': 'દાન',
@@ -1677,7 +1677,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // tribal
   {
-    '6s13ojhx': {
+    'veyh94gf': {
       'en': 'Home',
       'bn': 'বাড়ি',
       'gu': 'ઘર',
@@ -1688,7 +1688,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'வீடு',
       'te': 'హోమ్',
     },
-    '7z1wgows': {
+    'ath9vl7v': {
       'en': 'Cities',
       'bn': 'শহরগুলো',
       'gu': 'શહેરો',
@@ -1699,7 +1699,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'நகரங்கள்',
       'te': 'నగరాలు',
     },
-    'y0298938': {
+    'nqz141n1': {
       'en': 'Account',
       'bn': 'হিসাব',
       'gu': 'એકાઉન્ટ',
@@ -1710,7 +1710,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கணக்கு',
       'te': 'ఖాతా',
     },
-    'p9jefb8y': {
+    'rci3ggt6': {
       'en': 'Events',
       'bn': 'হিসাব',
       'gu': 'એકાઉન્ટ',
@@ -1721,7 +1721,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கணக்கு',
       'te': 'ఖాతా',
     },
-    'dx8k0ln8': {
+    'a7yyjfbl': {
       'en': 'Facilities',
       'bn': 'হিসাব',
       'gu': 'એકાઉન્ટ',
@@ -1732,7 +1732,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கணக்கு',
       'te': 'ఖాతా',
     },
-    'pghtdmgq': {
+    'pdup8jhi': {
       'en': 'Donation',
       'bn': 'দান',
       'gu': 'દાન',
@@ -1892,7 +1892,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // spiritual
   {
-    '3kraszhz': {
+    'lqcyyq6c': {
       'en': 'Home',
       'bn': 'বাড়ি',
       'gu': 'ઘર',
@@ -1903,7 +1903,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'வீடு',
       'te': 'హోమ్',
     },
-    'v5rr3ukd': {
+    'rnhj2cy7': {
       'en': 'Cities',
       'bn': 'শহরগুলো',
       'gu': 'શહેરો',
@@ -1914,7 +1914,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'நகரங்கள்',
       'te': 'నగరాలు',
     },
-    '3wlxplz1': {
+    'vntkupdb': {
       'en': 'Account',
       'bn': 'হিসাব',
       'gu': 'એકાઉન્ટ',
@@ -1925,7 +1925,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கணக்கு',
       'te': 'ఖాతా',
     },
-    'lo7376g7': {
+    'q4yzic3i': {
       'en': 'Events',
       'bn': 'হিসাব',
       'gu': 'એકાઉન્ટ',
@@ -1936,7 +1936,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கணக்கு',
       'te': 'ఖాతా',
     },
-    'c8ggh3pw': {
+    '6vgbcy8f': {
       'en': 'Facilities',
       'bn': 'হিসাব',
       'gu': 'એકાઉન્ટ',
@@ -1947,7 +1947,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கணக்கு',
       'te': 'ఖాతా',
     },
-    '3opmnir1': {
+    'p8xi7cgm': {
       'en': 'Donation',
       'bn': 'দান',
       'gu': 'દાન',
@@ -3790,7 +3790,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // phone_auth
   {
-    'fv2uvwg6': {
+    'oagv6gza': {
       'en': 'Home',
       'bn': 'বাড়ি',
       'gu': 'ઘર',
@@ -3801,7 +3801,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'வீடு',
       'te': 'హోమ్',
     },
-    'wsmgg9as': {
+    'xj966esd': {
       'en': 'Cities',
       'bn': 'শহরগুলো',
       'gu': 'શહેરો',
@@ -3812,7 +3812,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'நகரங்கள்',
       'te': 'నగరాలు',
     },
-    '5sxazqzq': {
+    'w7zca6cc': {
       'en': 'Account',
       'bn': 'হিসাব',
       'gu': 'એકાઉન્ટ',
@@ -3823,7 +3823,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கணக்கு',
       'te': 'ఖాతా',
     },
-    '981gq7zw': {
+    '9gz5blfj': {
       'en': 'Events',
       'bn': 'হিসাব',
       'gu': 'એકાઉન્ટ',
@@ -3834,7 +3834,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கணக்கு',
       'te': 'ఖాతా',
     },
-    'furac1c2': {
+    'nuvjjfzi': {
       'en': 'Facilities',
       'bn': 'হিসাব',
       'gu': 'એકાઉન્ટ',
@@ -3845,7 +3845,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கணக்கு',
       'te': 'ఖాతా',
     },
-    'y8lhp9qs': {
+    'kny9i1st': {
       'en': 'Donation',
       'bn': 'দান',
       'gu': 'દાન',
@@ -4107,7 +4107,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // facilities_outline
   {
-    'dgp2vzfi': {
+    'y4m6sda5': {
       'en': 'Home',
       'bn': 'বাড়ি',
       'gu': 'ઘર',
@@ -4118,7 +4118,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'வீடு',
       'te': 'హోమ్',
     },
-    'skf7bz25': {
+    '7lei9vk1': {
       'en': 'Cities',
       'bn': 'শহরগুলো',
       'gu': 'શહેરો',
@@ -4129,7 +4129,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'நகரங்கள்',
       'te': 'నగరాలు',
     },
-    '3urqm9cz': {
+    'ms5qnrdu': {
       'en': 'Account',
       'bn': 'হিসাব',
       'gu': 'એકાઉન્ટ',
@@ -4140,7 +4140,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கணக்கு',
       'te': 'ఖాతా',
     },
-    'oo87b8o7': {
+    'l0as6vks': {
       'en': 'Events',
       'bn': 'হিসাব',
       'gu': 'એકાઉન્ટ',
@@ -4151,7 +4151,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கணக்கு',
       'te': 'ఖాతా',
     },
-    'ksukxtt2': {
+    'ncgm0l99': {
       'en': 'Facilities',
       'bn': 'হিসাব',
       'gu': 'એકાઉન્ટ',
@@ -4162,7 +4162,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கணக்கு',
       'te': 'ఖాతా',
     },
-    'csd4w60m': {
+    '5ce7chi7': {
       'en': 'Donation',
       'bn': 'দান',
       'gu': 'દાન',
@@ -4600,72 +4600,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // facilities_booking
   {
-    '80e1entd': {
-      'en': 'Home',
-      'bn': 'বাড়ি',
-      'gu': 'ઘર',
-      'hi': 'घर',
-      'kn': 'ಮನೆ',
-      'ml': 'വീട്',
-      'mr': 'मुख्यपृष्ठ',
-      'ta': 'வீடு',
-      'te': 'హోమ్',
-    },
-    'ntl1gmfz': {
-      'en': 'Cities',
-      'bn': 'শহরগুলো',
-      'gu': 'શહેરો',
-      'hi': 'शहरों',
-      'kn': 'ನಗರಗಳು',
-      'ml': 'നഗരങ്ങൾ',
-      'mr': 'शहरे',
-      'ta': 'நகரங்கள்',
-      'te': 'నగరాలు',
-    },
-    'sh0uqdc5': {
-      'en': 'Account',
-      'bn': 'হিসাব',
-      'gu': 'એકાઉન્ટ',
-      'hi': 'खाता',
-      'kn': 'ಖಾತೆ',
-      'ml': 'അക്കൗണ്ട്',
-      'mr': 'खाते',
-      'ta': 'கணக்கு',
-      'te': 'ఖాతా',
-    },
-    'vqsozgyb': {
-      'en': 'Events',
-      'bn': 'হিসাব',
-      'gu': 'એકાઉન્ટ',
-      'hi': 'खाता',
-      'kn': 'ಖಾತೆ',
-      'ml': 'അക്കൗണ്ട്',
-      'mr': 'खाते',
-      'ta': 'கணக்கு',
-      'te': 'ఖాతా',
-    },
-    '5su2qmar': {
-      'en': 'Facilities',
-      'bn': 'হিসাব',
-      'gu': 'એકાઉન્ટ',
-      'hi': 'खाता',
-      'kn': 'ಖಾತೆ',
-      'ml': 'അക്കൗണ്ട്',
-      'mr': 'खाते',
-      'ta': 'கணக்கு',
-      'te': 'ఖాతా',
-    },
-    '0o8faxt5': {
-      'en': 'Donation',
-      'bn': 'দান',
-      'gu': 'દાન',
-      'hi': 'दान',
-      'kn': 'ದಾನ',
-      'ml': 'ദാനം',
-      'mr': 'दान',
-      'ta': 'தானம்',
-      'te': 'దానం',
-    },
     'tnq0853o': {
       'en': 'Facilities',
       'bn': 'স্বাস্থ্য সেবা পরিষদ',
@@ -4722,6 +4656,17 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'te': '',
     },
     'gvxjrcj7': {
+      'en': 'Set Date',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'oans1cf7': {
       'en': 'Confirm Booking',
       'bn': '',
       'gu': '',
@@ -4743,6 +4688,17 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
+    'qbj1d5it': {
+      'en': 'Guest Email',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
     '0jcp3eti': {
       'en': 'Guest Phone Number',
       'bn': '',
@@ -4755,6 +4711,17 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'te': '',
     },
     '7cxel3s4': {
+      'en': 'Set Date',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'mpka1wvc': {
       'en': 'Confirm Booking',
       'bn': '',
       'gu': '',
@@ -4826,7 +4793,18 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'சங்கம்',
       'te': 'సంఘము',
     },
-    '6kc0laz8': {
+    'uqauscsn': {
+      'en': 'Booked',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '6oqi6m6o': {
       'en': 'Cancel Booking',
       'bn': '',
       'gu': '',
@@ -4837,8 +4815,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'aqnnxhko': {
-      'en': 'Cancel Booking',
+    'zfbphpkp': {
+      'en': 'Confirmed',
       'bn': '',
       'gu': '',
       'hi': '',
@@ -4975,7 +4953,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // loginCopy
   {
-    'p5slkyaw': {
+    'm4qj2y02': {
       'en': 'Home',
       'bn': 'বাড়ি',
       'gu': 'ઘર',
@@ -4986,7 +4964,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'வீடு',
       'te': 'హోమ్',
     },
-    'zmt0zt1x': {
+    'dmmh9rop': {
       'en': 'Cities',
       'bn': 'শহরগুলো',
       'gu': 'શહેરો',
@@ -4997,7 +4975,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'நகரங்கள்',
       'te': 'నగరాలు',
     },
-    '614thklv': {
+    'w573t83v': {
       'en': 'Account',
       'bn': 'হিসাব',
       'gu': 'એકાઉન્ટ',
@@ -5008,7 +4986,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கணக்கு',
       'te': 'ఖాతా',
     },
-    'fb1m65r0': {
+    's5x9hg13': {
       'en': 'Events',
       'bn': 'হিসাব',
       'gu': 'એકાઉન્ટ',
@@ -5019,7 +4997,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கணக்கு',
       'te': 'ఖాతా',
     },
-    'radf7jio': {
+    '1kx7fcc8': {
       'en': 'Facilities',
       'bn': 'হিসাব',
       'gu': 'એકાઉન્ટ',
@@ -5030,7 +5008,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கணக்கு',
       'te': 'ఖాతా',
     },
-    '8mlbmn2c': {
+    'cn8suxny': {
       'en': 'Donation',
       'bn': 'দান',
       'gu': 'દાન',
@@ -5201,7 +5179,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // phone_authCopy
   {
-    'b3nzl2oj': {
+    'wxe3rbiy': {
       'en': 'Home',
       'bn': 'বাড়ি',
       'gu': 'ઘર',
@@ -5212,7 +5190,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'வீடு',
       'te': 'హోమ్',
     },
-    '0ado92fo': {
+    'kwff38ov': {
       'en': 'Cities',
       'bn': 'শহরগুলো',
       'gu': 'શહેરો',
@@ -5223,7 +5201,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'நகரங்கள்',
       'te': 'నగరాలు',
     },
-    '9rqdbgy8': {
+    'qeoh0ws8': {
       'en': 'Account',
       'bn': 'হিসাব',
       'gu': 'એકાઉન્ટ',
@@ -5234,7 +5212,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கணக்கு',
       'te': 'ఖాతా',
     },
-    'gqz0jfmh': {
+    'br005xvw': {
       'en': 'Events',
       'bn': 'হিসাব',
       'gu': 'એકાઉન્ટ',
@@ -5245,7 +5223,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கணக்கு',
       'te': 'ఖాతా',
     },
-    'f52vwvta': {
+    'uniwfpmh': {
       'en': 'Facilities',
       'bn': 'হিসাব',
       'gu': 'એકાઉન્ટ',
@@ -5256,7 +5234,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கணக்கு',
       'te': 'ఖాతా',
     },
-    '13kg4223': {
+    'lh06k62p': {
       'en': 'Donation',
       'bn': 'দান',
       'gu': 'દાન',
@@ -5649,8 +5627,46 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // facilityevent
   {
-    'q89mebi9': {
-      'en': 'Sorry, there no bookings',
+    '5mfapqsi': {
+      'en':
+          'Sorry, there no confirmed bookings. If you have booked a facility, check your email. If you haven\'t recieved any email please wait for some time or contact to this email address \n\n',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'u5s19sft': {
+      'en': 'bharatsevashramsangha@gmail.com',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+  },
+  // ori_facility_empty
+  {
+    'ji19zxhb': {
+      'en':
+          'It looks like you haven\'t booked any facilities. Go to facilities tab to book anyone of the available facilites. Click below to go to Facilites tab\n\n',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'szdwi671': {
+      'en': 'Facilites',
       'bn': '',
       'gu': '',
       'hi': '',

@@ -28,7 +28,7 @@ class LoginCopyWidget extends StatefulWidget {
   final String? city;
 
   @override
-  _LoginCopyWidgetState createState() => _LoginCopyWidgetState();
+  State<LoginCopyWidget> createState() => _LoginCopyWidgetState();
 }
 
 class _LoginCopyWidgetState extends State<LoginCopyWidget>
@@ -203,7 +203,8 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: const EdgeInsets.all(10.0),
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      10.0, 10.0, 20.0, 10.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
                                       logFirebaseEvent(
@@ -224,7 +225,7 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                       );
                                     },
                                     text: FFLocalizations.of(context).getText(
-                                      'p5slkyaw' /* Home */,
+                                      'm4qj2y02' /* Home */,
                                     ),
                                     options: FFButtonOptions(
                                       height: 40.0,
@@ -252,7 +253,8 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                   ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.all(10.0),
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      10.0, 10.0, 20.0, 10.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
                                       logFirebaseEvent(
@@ -273,7 +275,7 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                       );
                                     },
                                     text: FFLocalizations.of(context).getText(
-                                      'zmt0zt1x' /* Cities */,
+                                      'dmmh9rop' /* Cities */,
                                     ),
                                     options: FFButtonOptions(
                                       height: 40.0,
@@ -301,7 +303,8 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                   ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.all(10.0),
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      10.0, 10.0, 20.0, 10.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
                                       logFirebaseEvent(
@@ -339,7 +342,7 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                       }
                                     },
                                     text: FFLocalizations.of(context).getText(
-                                      '614thklv' /* Account */,
+                                      'w573t83v' /* Account */,
                                     ),
                                     options: FFButtonOptions(
                                       height: 40.0,
@@ -367,7 +370,8 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                   ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.all(10.0),
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      10.0, 10.0, 20.0, 10.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
                                       logFirebaseEvent(
@@ -388,7 +392,7 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                       );
                                     },
                                     text: FFLocalizations.of(context).getText(
-                                      'fb1m65r0' /* Events */,
+                                      's5x9hg13' /* Events */,
                                     ),
                                     options: FFButtonOptions(
                                       height: 40.0,
@@ -416,7 +420,8 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                   ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.all(10.0),
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      10.0, 10.0, 20.0, 10.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
                                       logFirebaseEvent(
@@ -438,7 +443,7 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                       );
                                     },
                                     text: FFLocalizations.of(context).getText(
-                                      'radf7jio' /* Facilities */,
+                                      '1kx7fcc8' /* Facilities */,
                                     ),
                                     options: FFButtonOptions(
                                       height: 40.0,
@@ -466,7 +471,8 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                   ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.all(10.0),
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      10.0, 10.0, 20.0, 10.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
                                       logFirebaseEvent(
@@ -487,7 +493,7 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                       );
                                     },
                                     text: FFLocalizations.of(context).getText(
-                                      '8mlbmn2c' /* Donation */,
+                                      'cn8suxny' /* Donation */,
                                     ),
                                     options: FFButtonOptions(
                                       height: 40.0,

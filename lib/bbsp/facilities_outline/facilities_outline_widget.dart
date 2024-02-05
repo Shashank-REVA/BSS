@@ -33,7 +33,7 @@ class FacilitiesOutlineWidget extends StatefulWidget {
   final String? city;
 
   @override
-  _FacilitiesOutlineWidgetState createState() =>
+  State<FacilitiesOutlineWidget> createState() =>
       _FacilitiesOutlineWidgetState();
 }
 
@@ -173,7 +173,7 @@ class _FacilitiesOutlineWidgetState extends State<FacilitiesOutlineWidget>
       logFirebaseEvent('facilities_outline_scroll_to');
       await _model.rowController?.animateTo(
         _model.rowController!.position.maxScrollExtent,
-        duration: const Duration(milliseconds: 1000),
+        duration: const Duration(milliseconds: 300),
         curve: Curves.ease,
       );
     });
@@ -257,6 +257,8 @@ class _FacilitiesOutlineWidgetState extends State<FacilitiesOutlineWidget>
                                   controller: _model.rowController,
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
                                     children: [
                                       Padding(
                                         padding: const EdgeInsets.all(10.0),
@@ -283,7 +285,7 @@ class _FacilitiesOutlineWidgetState extends State<FacilitiesOutlineWidget>
                                           },
                                           text: FFLocalizations.of(context)
                                               .getText(
-                                            'dgp2vzfi' /* Home */,
+                                            'y4m6sda5' /* Home */,
                                           ),
                                           options: FFButtonOptions(
                                             height: 40.0,
@@ -340,7 +342,7 @@ class _FacilitiesOutlineWidgetState extends State<FacilitiesOutlineWidget>
                                           },
                                           text: FFLocalizations.of(context)
                                               .getText(
-                                            'skf7bz25' /* Cities */,
+                                            '7lei9vk1' /* Cities */,
                                           ),
                                           options: FFButtonOptions(
                                             height: 40.0,
@@ -416,7 +418,7 @@ class _FacilitiesOutlineWidgetState extends State<FacilitiesOutlineWidget>
                                           },
                                           text: FFLocalizations.of(context)
                                               .getText(
-                                            '3urqm9cz' /* Account */,
+                                            'ms5qnrdu' /* Account */,
                                           ),
                                           options: FFButtonOptions(
                                             height: 40.0,
@@ -473,7 +475,7 @@ class _FacilitiesOutlineWidgetState extends State<FacilitiesOutlineWidget>
                                           },
                                           text: FFLocalizations.of(context)
                                               .getText(
-                                            'oo87b8o7' /* Events */,
+                                            'l0as6vks' /* Events */,
                                           ),
                                           options: FFButtonOptions(
                                             height: 40.0,
@@ -530,7 +532,7 @@ class _FacilitiesOutlineWidgetState extends State<FacilitiesOutlineWidget>
                                           },
                                           text: FFLocalizations.of(context)
                                               .getText(
-                                            'ksukxtt2' /* Facilities */,
+                                            'ncgm0l99' /* Facilities */,
                                           ),
                                           options: FFButtonOptions(
                                             height: 40.0,
@@ -586,7 +588,7 @@ class _FacilitiesOutlineWidgetState extends State<FacilitiesOutlineWidget>
                                           },
                                           text: FFLocalizations.of(context)
                                               .getText(
-                                            'csd4w60m' /* Donation */,
+                                            '5ce7chi7' /* Donation */,
                                           ),
                                           options: FFButtonOptions(
                                             height: 40.0,
@@ -788,7 +790,7 @@ class _FacilitiesOutlineWidgetState extends State<FacilitiesOutlineWidget>
                                             elevation: 3.0,
                                             borderColor: const Color(0x49000000),
                                             borderWidth: 1.0,
-                                            borderRadius: 8.0,
+                                            borderRadius: 25.0,
                                             margin:
                                                 const EdgeInsetsDirectional.fromSTEB(
                                                     16.0, 4.0, 16.0, 4.0),

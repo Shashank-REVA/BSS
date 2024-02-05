@@ -23,7 +23,7 @@ class DonationWidget extends StatefulWidget {
   final Color colortxt;
 
   @override
-  _DonationWidgetState createState() => _DonationWidgetState();
+  State<DonationWidget> createState() => _DonationWidgetState();
 }
 
 class _DonationWidgetState extends State<DonationWidget> {
@@ -43,7 +43,7 @@ class _DonationWidgetState extends State<DonationWidget> {
       logFirebaseEvent('donation_scroll_to');
       await _model.rowController1?.animateTo(
         _model.rowController1!.position.maxScrollExtent,
-        duration: const Duration(milliseconds: 1000),
+        duration: const Duration(milliseconds: 300),
         curve: Curves.ease,
       );
     });
@@ -444,25 +444,8 @@ class _DonationWidgetState extends State<DonationWidget> {
                                       Padding(
                                         padding: const EdgeInsets.all(10.0),
                                         child: FFButtonWidget(
-                                          onPressed: () async {
-                                            logFirebaseEvent(
-                                                'DONATION_PAGE_DONATION_BTN_ON_TAP');
-                                            logFirebaseEvent(
-                                                'Button_navigate_to');
-
-                                            context.goNamed(
-                                              'donation',
-                                              extra: <String, dynamic>{
-                                                kTransitionInfoKey:
-                                                    const TransitionInfo(
-                                                  hasTransition: true,
-                                                  transitionType:
-                                                      PageTransitionType.fade,
-                                                  duration: Duration(
-                                                      milliseconds: 600),
-                                                ),
-                                              },
-                                            );
+                                          onPressed: () {
+                                            print('Button pressed ...');
                                           },
                                           text: FFLocalizations.of(context)
                                               .getText(

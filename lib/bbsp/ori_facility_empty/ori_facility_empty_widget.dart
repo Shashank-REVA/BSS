@@ -2,19 +2,18 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'facilityevent_model.dart';
-export 'facilityevent_model.dart';
+import 'ori_facility_empty_model.dart';
+export 'ori_facility_empty_model.dart';
 
-class FacilityeventWidget extends StatefulWidget {
-  const FacilityeventWidget({super.key});
+class OriFacilityEmptyWidget extends StatefulWidget {
+  const OriFacilityEmptyWidget({super.key});
 
   @override
-  State<FacilityeventWidget> createState() => _FacilityeventWidgetState();
+  State<OriFacilityEmptyWidget> createState() => _OriFacilityEmptyWidgetState();
 }
 
-class _FacilityeventWidgetState extends State<FacilityeventWidget> {
-  late FacilityeventModel _model;
+class _OriFacilityEmptyWidgetState extends State<OriFacilityEmptyWidget> {
+  late OriFacilityEmptyModel _model;
 
   @override
   void setState(VoidCallback callback) {
@@ -25,7 +24,7 @@ class _FacilityeventWidgetState extends State<FacilityeventWidget> {
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => FacilityeventModel());
+    _model = createModel(context, () => OriFacilityEmptyModel());
   }
 
   @override
@@ -58,19 +57,19 @@ class _FacilityeventWidgetState extends State<FacilityeventWidget> {
                 hoverColor: Colors.transparent,
                 highlightColor: Colors.transparent,
                 onTap: () async {
-                  logFirebaseEvent('FACILITYEVENT_RichText_n77ti958_ON_TAP');
-                  logFirebaseEvent('RichText_send_email');
-                  await launchUrl(Uri(
-                      scheme: 'mailto',
-                      path: 'bharatsevashramsangha@gmail.com',
-                      query: {
-                        'subject':
-                            'Regarding the confirmation of a booked facility',
-                      }
-                          .entries
-                          .map((MapEntry<String, String> e) =>
-                              '${Uri.encodeComponent(e.key)}=${Uri.encodeComponent(e.value)}')
-                          .join('&')));
+                  logFirebaseEvent('ORI_FACILITY_EMPTY_RichText_vuxnd57h_ON_');
+                  logFirebaseEvent('RichText_navigate_to');
+
+                  context.pushNamed(
+                    'facilities',
+                    extra: <String, dynamic>{
+                      kTransitionInfoKey: const TransitionInfo(
+                        hasTransition: true,
+                        transitionType: PageTransitionType.fade,
+                        duration: Duration(milliseconds: 0),
+                      ),
+                    },
+                  );
                 },
                 child: RichText(
                   textScaleFactor: MediaQuery.of(context).textScaleFactor,
@@ -78,7 +77,7 @@ class _FacilityeventWidgetState extends State<FacilityeventWidget> {
                     children: [
                       TextSpan(
                         text: FFLocalizations.of(context).getText(
-                          '5mfapqsi' /* Sorry, there no confirmed book... */,
+                          'ji19zxhb' /* It looks like you haven't book... */,
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Raleway',
@@ -89,7 +88,7 @@ class _FacilityeventWidgetState extends State<FacilityeventWidget> {
                       ),
                       TextSpan(
                         text: FFLocalizations.of(context).getText(
-                          'u5s19sft' /* bharatsevashramsangha@gmail.co... */,
+                          'szdwi671' /* Facilites */,
                         ),
                         style: FlutterFlowTheme.of(context).titleLarge.override(
                               fontFamily: 'Raleway',

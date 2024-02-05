@@ -13,7 +13,7 @@ class ProfileEditCopyWidget extends StatefulWidget {
   const ProfileEditCopyWidget({super.key});
 
   @override
-  _ProfileEditCopyWidgetState createState() => _ProfileEditCopyWidgetState();
+  State<ProfileEditCopyWidget> createState() => _ProfileEditCopyWidgetState();
 }
 
 class _ProfileEditCopyWidgetState extends State<ProfileEditCopyWidget> {

@@ -24,7 +24,7 @@ class HealthcareWidget extends StatefulWidget {
   final Color colortxt;
 
   @override
-  _HealthcareWidgetState createState() => _HealthcareWidgetState();
+  State<HealthcareWidget> createState() => _HealthcareWidgetState();
 }
 
 class _HealthcareWidgetState extends State<HealthcareWidget>

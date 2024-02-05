@@ -26,7 +26,7 @@ class PhoneAuthWidget extends StatefulWidget {
   final Color colortxt;
 
   @override
-  _PhoneAuthWidgetState createState() => _PhoneAuthWidgetState();
+  State<PhoneAuthWidget> createState() => _PhoneAuthWidgetState();
 }
 
 class _PhoneAuthWidgetState extends State<PhoneAuthWidget>
@@ -208,7 +208,8 @@ class _PhoneAuthWidgetState extends State<PhoneAuthWidget>
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: const EdgeInsets.all(10.0),
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      10.0, 10.0, 20.0, 10.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
                                       logFirebaseEvent(
@@ -229,7 +230,7 @@ class _PhoneAuthWidgetState extends State<PhoneAuthWidget>
                                       );
                                     },
                                     text: FFLocalizations.of(context).getText(
-                                      'fv2uvwg6' /* Home */,
+                                      'oagv6gza' /* Home */,
                                     ),
                                     options: FFButtonOptions(
                                       height: 40.0,
@@ -257,7 +258,8 @@ class _PhoneAuthWidgetState extends State<PhoneAuthWidget>
                                   ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.all(10.0),
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      10.0, 10.0, 20.0, 10.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
                                       logFirebaseEvent(
@@ -278,7 +280,7 @@ class _PhoneAuthWidgetState extends State<PhoneAuthWidget>
                                       );
                                     },
                                     text: FFLocalizations.of(context).getText(
-                                      'wsmgg9as' /* Cities */,
+                                      'xj966esd' /* Cities */,
                                     ),
                                     options: FFButtonOptions(
                                       height: 40.0,
@@ -306,7 +308,8 @@ class _PhoneAuthWidgetState extends State<PhoneAuthWidget>
                                   ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.all(10.0),
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      10.0, 10.0, 20.0, 10.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
                                       logFirebaseEvent(
@@ -344,7 +347,7 @@ class _PhoneAuthWidgetState extends State<PhoneAuthWidget>
                                       }
                                     },
                                     text: FFLocalizations.of(context).getText(
-                                      '5sxazqzq' /* Account */,
+                                      'w7zca6cc' /* Account */,
                                     ),
                                     options: FFButtonOptions(
                                       height: 40.0,
@@ -372,7 +375,8 @@ class _PhoneAuthWidgetState extends State<PhoneAuthWidget>
                                   ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.all(10.0),
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      10.0, 10.0, 20.0, 10.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
                                       logFirebaseEvent(
@@ -393,7 +397,7 @@ class _PhoneAuthWidgetState extends State<PhoneAuthWidget>
                                       );
                                     },
                                     text: FFLocalizations.of(context).getText(
-                                      '981gq7zw' /* Events */,
+                                      '9gz5blfj' /* Events */,
                                     ),
                                     options: FFButtonOptions(
                                       height: 40.0,
@@ -421,7 +425,8 @@ class _PhoneAuthWidgetState extends State<PhoneAuthWidget>
                                   ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.all(10.0),
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      10.0, 10.0, 20.0, 10.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
                                       logFirebaseEvent(
@@ -443,7 +448,7 @@ class _PhoneAuthWidgetState extends State<PhoneAuthWidget>
                                       );
                                     },
                                     text: FFLocalizations.of(context).getText(
-                                      'furac1c2' /* Facilities */,
+                                      'nuvjjfzi' /* Facilities */,
                                     ),
                                     options: FFButtonOptions(
                                       height: 40.0,
@@ -471,7 +476,8 @@ class _PhoneAuthWidgetState extends State<PhoneAuthWidget>
                                   ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.all(10.0),
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      10.0, 10.0, 20.0, 10.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
                                       logFirebaseEvent(
@@ -492,7 +498,7 @@ class _PhoneAuthWidgetState extends State<PhoneAuthWidget>
                                       );
                                     },
                                     text: FFLocalizations.of(context).getText(
-                                      'y8lhp9qs' /* Donation */,
+                                      'kny9i1st' /* Donation */,
                                     ),
                                     options: FFButtonOptions(
                                       height: 40.0,

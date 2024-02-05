@@ -23,7 +23,7 @@ class CityOutlineWidget extends StatefulWidget {
   final CitiesRecord? citynames;
 
   @override
-  _CityOutlineWidgetState createState() => _CityOutlineWidgetState();
+  State<CityOutlineWidget> createState() => _CityOutlineWidgetState();
 }
 
 class _CityOutlineWidgetState extends State<CityOutlineWidget>

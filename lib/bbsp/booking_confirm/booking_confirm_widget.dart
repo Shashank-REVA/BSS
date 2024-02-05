@@ -20,7 +20,7 @@ class BookingConfirmWidget extends StatefulWidget {
   final String? facility;
 
   @override
-  _BookingConfirmWidgetState createState() => _BookingConfirmWidgetState();
+  State<BookingConfirmWidget> createState() => _BookingConfirmWidgetState();
 }
 
 class _BookingConfirmWidgetState extends State<BookingConfirmWidget> {
@@ -183,7 +183,7 @@ class _BookingConfirmWidgetState extends State<BookingConfirmWidget> {
                             kTransitionInfoKey: const TransitionInfo(
                               hasTransition: true,
                               transitionType: PageTransitionType.fade,
-                              duration: Duration(milliseconds: 900),
+                              duration: Duration(milliseconds: 0),
                             ),
                           },
                         );

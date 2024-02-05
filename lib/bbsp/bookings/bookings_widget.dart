@@ -1,9 +1,12 @@
 import '/backend/backend.dart';
+import '/bbsp/facilityevent/facilityevent_widget.dart';
+import '/bbsp/ori_facility_empty/ori_facility_empty_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:sticky_headers/sticky_headers.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -17,17 +20,18 @@ class BookingsWidget extends StatefulWidget {
     Color? colortxt,
     required this.facility,
     required this.city,
-  })  : colortxt = colortxt ?? Colors.white;
+  }) : colortxt = colortxt ?? Colors.white;
 
   final Color colortxt;
   final String? facility;
   final String? city;
 
   @override
-  _BookingsWidgetState createState() => _BookingsWidgetState();
+  State<BookingsWidget> createState() => _BookingsWidgetState();
 }
 
-class _BookingsWidgetState extends State<BookingsWidget> {
+class _BookingsWidgetState extends State<BookingsWidget>
+    with TickerProviderStateMixin {
   late BookingsModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
@@ -38,6 +42,11 @@ class _BookingsWidgetState extends State<BookingsWidget> {
     _model = createModel(context, () => BookingsModel());
 
     logFirebaseEvent('screen_view', parameters: {'screen_name': 'bookings'});
+    _model.tabBarController = TabController(
+      vsync: this,
+      length: 2,
+      initialIndex: 0,
+    )..addListener(() => setState(() {}));
   }
 
   @override
@@ -69,24 +78,26 @@ class _BookingsWidgetState extends State<BookingsWidget> {
         backgroundColor: Colors.white,
         body: SafeArea(
           top: true,
-          child: Column(
-            mainAxisSize: MainAxisSize.max,
-            children: [
-              SingleChildScrollView(
-                primary: false,
-                child: Column(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    StickyHeader(
-                      overlapHeaders: false,
-                      header: Container(
-                        width: double.infinity,
-                        decoration: BoxDecoration(
+          child: SingleChildScrollView(
+            primary: false,
+            child: Column(
+              mainAxisSize: MainAxisSize.max,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                StickyHeader(
+                  overlapHeaders: false,
+                  header: Align(
+                    alignment: const AlignmentDirectional(0.0, 0.0),
+                    child: Container(
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        color: FlutterFlowTheme.of(context).info,
+                        border: Border.all(
                           color: FlutterFlowTheme.of(context).info,
-                          border: Border.all(
-                            color: FlutterFlowTheme.of(context).info,
-                          ),
                         ),
+                      ),
+                      child: Align(
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Stack(
                           children: [
                             SingleChildScrollView(
@@ -185,463 +196,628 @@ class _BookingsWidgetState extends State<BookingsWidget> {
                           ],
                         ),
                       ),
-                      content: SingleChildScrollView(
-                        primary: false,
+                    ),
+                  ),
+                  content: Container(),
+                ),
+                SingleChildScrollView(
+                  primary: false,
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Container(
+                        width: double.infinity,
+                        height: 700.0,
+                        decoration: const BoxDecoration(),
                         child: Column(
-                          mainAxisSize: MainAxisSize.min,
                           children: [
-                            Container(
-                              decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context).info,
-                              ),
-                              child: StreamBuilder<List<FacilitiesRecord>>(
-                                stream: queryFacilitiesRecord(),
-                                builder: (context, snapshot) {
-                                  // Customize what your widget looks like when it's loading.
-                                  if (!snapshot.hasData) {
-                                    return const Center(
-                                      child: SizedBox(
-                                        width: 50.0,
-                                        height: 50.0,
-                                        child: SpinKitThreeBounce(
-                                          color: Color(0xFFEC7834),
-                                          size: 50.0,
-                                        ),
-                                      ),
-                                    );
-                                  }
-                                  List<FacilitiesRecord>
-                                      listViewFacilitiesRecordList =
-                                      snapshot.data!;
-                                  return ListView.builder(
-                                    padding: EdgeInsets.zero,
-                                    shrinkWrap: true,
-                                    scrollDirection: Axis.vertical,
-                                    itemCount:
-                                        listViewFacilitiesRecordList.length,
-                                    itemBuilder: (context, listViewIndex) {
-                                      final listViewFacilitiesRecord =
-                                          listViewFacilitiesRecordList[
-                                              listViewIndex];
-                                      return Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 0.0, 20.0),
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceAround,
-                                          children: [
-                                            Column(
-                                              mainAxisSize: MainAxisSize.min,
-                                              children: [
-                                                Padding(
-                                                  padding: const EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 0.0, 0.0, 5.0),
-                                                  child: Text(
-                                                    listViewFacilitiesRecord
-                                                        .guestFacility,
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Raleway',
-                                                          color: Colors.black,
-                                                          fontSize: 20.0,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                        ),
-                                                  ),
-                                                ),
-                                                Align(
-                                                  alignment:
-                                                      const AlignmentDirectional(
-                                                          -1.0, 0.0),
-                                                  child: Text(
-                                                    listViewFacilitiesRecord
-                                                        .guestName,
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Raleway',
-                                                          color:
-                                                              const Color(0xFF2F2F2F),
-                                                          fontSize: 18.0,
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                        ),
-                                                  ),
-                                                ),
-                                                Align(
-                                                  alignment:
-                                                      const AlignmentDirectional(
-                                                          -1.0, 0.0),
-                                                  child: Text(
-                                                    listViewFacilitiesRecord
-                                                        .guestNumber,
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Raleway',
-                                                          color:
-                                                              const Color(0xFF2F2F2F),
-                                                          fontSize: 18.0,
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                        ),
-                                                  ),
-                                                ),
-                                                Align(
-                                                  alignment:
-                                                      const AlignmentDirectional(
-                                                          -1.0, 0.0),
-                                                  child: Text(
-                                                    listViewFacilitiesRecord
-                                                        .facilityDate,
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Raleway',
-                                                          color:
-                                                              const Color(0xFF2F2F2F),
-                                                          fontSize: 18.0,
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                        ),
-                                                  ),
-                                                ),
-                                                Align(
-                                                  alignment:
-                                                      const AlignmentDirectional(
-                                                          -1.0, 0.0),
-                                                  child: Text(
-                                                    listViewFacilitiesRecord
-                                                        .facilityCity,
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Raleway',
-                                                          color:
-                                                              const Color(0xFF2F2F2F),
-                                                          fontSize: 18.0,
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                        ),
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                            FFButtonWidget(
-                                              onPressed: () async {
-                                                logFirebaseEvent(
-                                                    'BOOKINGS_PAGE_CANCEL_BOOKING_BTN_ON_TAP');
-                                                logFirebaseEvent(
-                                                    'Button_backend_call');
-                                                await listViewFacilitiesRecord
-                                                    .reference
-                                                    .delete();
-                                                logFirebaseEvent(
-                                                    'Button_navigate_to');
-
-                                                context.pushNamed(
-                                                  'cancellation',
-                                                  queryParameters: {
-                                                    'facility': serializeParam(
-                                                      widget.facility,
-                                                      ParamType.String,
-                                                    ),
-                                                    'city': serializeParam(
-                                                      widget.city,
-                                                      ParamType.String,
-                                                    ),
-                                                  }.withoutNulls,
-                                                  extra: <String, dynamic>{
-                                                    kTransitionInfoKey:
-                                                        const TransitionInfo(
-                                                      hasTransition: true,
-                                                      transitionType:
-                                                          PageTransitionType
-                                                              .fade,
-                                                      duration: Duration(
-                                                          milliseconds: 600),
-                                                    ),
-                                                  },
-                                                );
-                                              },
-                                              text: FFLocalizations.of(context)
-                                                  .getText(
-                                                '6kc0laz8' /* Cancel Booking */,
-                                              ),
-                                              options: FFButtonOptions(
-                                                height: 40.0,
-                                                padding: const EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        24.0, 0.0, 24.0, 0.0),
-                                                iconPadding:
-                                                    const EdgeInsetsDirectional
-                                                        .fromSTEB(
-                                                            0.0, 0.0, 0.0, 0.0),
-                                                color: const Color(0xFFFF0005),
-                                                textStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .titleSmall
-                                                        .override(
-                                                          fontFamily: 'Raleway',
-                                                          color: Colors.white,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                        ),
-                                                elevation: 3.0,
-                                                borderSide: const BorderSide(
-                                                  color: Colors.transparent,
-                                                  width: 1.0,
-                                                ),
-                                                borderRadius:
-                                                    BorderRadius.circular(8.0),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      );
-                                    },
-                                  );
+                            Align(
+                              alignment: const Alignment(0.0, 0),
+                              child: TabBar(
+                                labelColor: const Color(0xFF2F2F2F),
+                                unselectedLabelColor:
+                                    FlutterFlowTheme.of(context).secondaryText,
+                                labelStyle: FlutterFlowTheme.of(context)
+                                    .titleMedium
+                                    .override(
+                                      fontFamily: 'Raleway',
+                                      fontWeight: FontWeight.w800,
+                                    ),
+                                unselectedLabelStyle: const TextStyle(),
+                                indicatorColor: const Color(0xFFEC7834),
+                                padding: const EdgeInsets.all(4.0),
+                                tabs: [
+                                  Tab(
+                                    text: FFLocalizations.of(context).getText(
+                                      'uqauscsn' /* Booked */,
+                                    ),
+                                  ),
+                                  Tab(
+                                    text: FFLocalizations.of(context).getText(
+                                      'zfbphpkp' /* Confirmed */,
+                                    ),
+                                  ),
+                                ],
+                                controller: _model.tabBarController,
+                                onTap: (i) async {
+                                  [() async {}, () async {}][i]();
                                 },
                               ),
                             ),
-                            Container(
-                              decoration: BoxDecoration(
-                                color: FlutterFlowTheme.of(context).info,
-                              ),
-                              child: StreamBuilder<List<ConFacilityRecord>>(
-                                stream: queryConFacilityRecord(),
-                                builder: (context, snapshot) {
-                                  // Customize what your widget looks like when it's loading.
-                                  if (!snapshot.hasData) {
-                                    return const Center(
-                                      child: SizedBox(
-                                        width: 50.0,
-                                        height: 50.0,
-                                        child: SpinKitThreeBounce(
-                                          color: Color(0xFFEC7834),
-                                          size: 50.0,
-                                        ),
-                                      ),
-                                    );
-                                  }
-                                  List<ConFacilityRecord>
-                                      listViewConFacilityRecordList =
-                                      snapshot.data!;
-                                  return ListView.builder(
-                                    padding: EdgeInsets.zero,
-                                    shrinkWrap: true,
-                                    scrollDirection: Axis.vertical,
-                                    itemCount:
-                                        listViewConFacilityRecordList.length,
-                                    itemBuilder: (context, listViewIndex) {
-                                      final listViewConFacilityRecord =
-                                          listViewConFacilityRecordList[
-                                              listViewIndex];
-                                      return Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 0.0, 20.0),
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceAround,
-                                          children: [
-                                            Column(
-                                              mainAxisSize: MainAxisSize.max,
-                                              children: [
-                                                Padding(
+                            Expanded(
+                              child: TabBarView(
+                                controller: _model.tabBarController,
+                                children: [
+                                  KeepAliveWidgetWrapper(
+                                    builder: (context) => Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        StreamBuilder<List<FacilitiesRecord>>(
+                                          stream: queryFacilitiesRecord(),
+                                          builder: (context, snapshot) {
+                                            // Customize what your widget looks like when it's loading.
+                                            if (!snapshot.hasData) {
+                                              return const Center(
+                                                child: SizedBox(
+                                                  width: 50.0,
+                                                  height: 50.0,
+                                                  child: SpinKitThreeBounce(
+                                                    color: Color(0xFFEC7834),
+                                                    size: 50.0,
+                                                  ),
+                                                ),
+                                              );
+                                            }
+                                            List<FacilitiesRecord>
+                                                oriListFacilitiesRecordList =
+                                                snapshot.data!;
+                                            if (oriListFacilitiesRecordList
+                                                .isEmpty) {
+                                              return const OriFacilityEmptyWidget();
+                                            }
+                                            return ListView.builder(
+                                              padding: EdgeInsets.zero,
+                                              shrinkWrap: true,
+                                              scrollDirection: Axis.vertical,
+                                              itemCount:
+                                                  oriListFacilitiesRecordList
+                                                      .length,
+                                              itemBuilder:
+                                                  (context, oriListIndex) {
+                                                final oriListFacilitiesRecord =
+                                                    oriListFacilitiesRecordList[
+                                                        oriListIndex];
+                                                return Padding(
                                                   padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
-                                                          0.0, 0.0, 0.0, 5.0),
-                                                  child: Text(
-                                                    listViewConFacilityRecord
-                                                        .conGuestFacility,
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Raleway',
-                                                          color: Colors.black,
-                                                          fontSize: 20.0,
-                                                          fontWeight:
-                                                              FontWeight.bold,
+                                                          0.0, 0.0, 0.0, 20.0),
+                                                  child: Row(
+                                                    mainAxisSize:
+                                                        MainAxisSize.max,
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment
+                                                            .spaceAround,
+                                                    children: [
+                                                      Column(
+                                                        mainAxisSize:
+                                                            MainAxisSize.max,
+                                                        children: [
+                                                          Padding(
+                                                            padding:
+                                                                const EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        0.0,
+                                                                        0.0,
+                                                                        0.0,
+                                                                        5.0),
+                                                            child: Text(
+                                                              oriListFacilitiesRecord
+                                                                  .guestFacility,
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodyMedium
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Raleway',
+                                                                    color: const Color(
+                                                                        0xFF2F2F2F),
+                                                                    fontSize:
+                                                                        20.0,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .bold,
+                                                                  ),
+                                                            ),
+                                                          ),
+                                                          Align(
+                                                            alignment:
+                                                                const AlignmentDirectional(
+                                                                    -1.0, 0.0),
+                                                            child: Text(
+                                                              oriListFacilitiesRecord
+                                                                  .guestName,
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodyMedium
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Raleway',
+                                                                    color: const Color(
+                                                                        0xFF2F2F2F),
+                                                                    fontSize:
+                                                                        18.0,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w500,
+                                                                  ),
+                                                            ),
+                                                          ),
+                                                          Align(
+                                                            alignment:
+                                                                const AlignmentDirectional(
+                                                                    -1.0, 0.0),
+                                                            child: AutoSizeText(
+                                                              oriListFacilitiesRecord
+                                                                  .guestEmail
+                                                                  .maybeHandleOverflow(
+                                                                maxChars: 20,
+                                                                replacement:
+                                                                    '…',
+                                                              ),
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodyMedium
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Raleway',
+                                                                    color: const Color(
+                                                                        0xFF2F2F2F),
+                                                                    fontSize:
+                                                                        18.0,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w500,
+                                                                  ),
+                                                              minFontSize: 18.0,
+                                                            ),
+                                                          ),
+                                                          Align(
+                                                            alignment:
+                                                                const AlignmentDirectional(
+                                                                    -1.0, 0.0),
+                                                            child: Text(
+                                                              oriListFacilitiesRecord
+                                                                  .guestNumber,
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodyMedium
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Raleway',
+                                                                    color: const Color(
+                                                                        0xFF2F2F2F),
+                                                                    fontSize:
+                                                                        18.0,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w500,
+                                                                  ),
+                                                            ),
+                                                          ),
+                                                          Align(
+                                                            alignment:
+                                                                const AlignmentDirectional(
+                                                                    -1.0, 0.0),
+                                                            child: Text(
+                                                              oriListFacilitiesRecord
+                                                                  .facilityDate,
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodyMedium
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Raleway',
+                                                                    color: const Color(
+                                                                        0xFF2F2F2F),
+                                                                    fontSize:
+                                                                        18.0,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w500,
+                                                                  ),
+                                                            ),
+                                                          ),
+                                                          Align(
+                                                            alignment:
+                                                                const AlignmentDirectional(
+                                                                    -1.0, 0.0),
+                                                            child: Text(
+                                                              oriListFacilitiesRecord
+                                                                  .facilityCity,
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodyMedium
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Raleway',
+                                                                    color: const Color(
+                                                                        0xFF2F2F2F),
+                                                                    fontSize:
+                                                                        18.0,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w500,
+                                                                  ),
+                                                            ),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                      FutureBuilder<
+                                                          List<
+                                                              NotificationsRecord>>(
+                                                        future:
+                                                            queryNotificationsRecordOnce(
+                                                          singleRecord: true,
                                                         ),
-                                                  ),
-                                                ),
-                                                Align(
-                                                  alignment:
-                                                      const AlignmentDirectional(
-                                                          -1.0, 0.0),
-                                                  child: Text(
-                                                    listViewConFacilityRecord
-                                                        .conGuestName,
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Raleway',
-                                                          color:
-                                                              const Color(0xFF2F2F2F),
-                                                          fontSize: 18.0,
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                        ),
-                                                  ),
-                                                ),
-                                                Align(
-                                                  alignment:
-                                                      const AlignmentDirectional(
-                                                          -1.0, 0.0),
-                                                  child: Text(
-                                                    listViewConFacilityRecord
-                                                        .conGuestNumber,
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Raleway',
-                                                          color:
-                                                              const Color(0xFF2F2F2F),
-                                                          fontSize: 18.0,
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                        ),
-                                                  ),
-                                                ),
-                                                Align(
-                                                  alignment:
-                                                      const AlignmentDirectional(
-                                                          -1.0, 0.0),
-                                                  child: Text(
-                                                    listViewConFacilityRecord
-                                                        .conFacilityDate,
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Raleway',
-                                                          color:
-                                                              const Color(0xFF2F2F2F),
-                                                          fontSize: 18.0,
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                        ),
-                                                  ),
-                                                ),
-                                                Align(
-                                                  alignment:
-                                                      const AlignmentDirectional(
-                                                          -1.0, 0.0),
-                                                  child: Text(
-                                                    listViewConFacilityRecord
-                                                        .conFacilityCity,
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Raleway',
-                                                          color:
-                                                              const Color(0xFF2F2F2F),
-                                                          fontSize: 18.0,
-                                                          fontWeight:
-                                                              FontWeight.w500,
-                                                        ),
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                            FFButtonWidget(
-                                              onPressed: () async {
-                                                logFirebaseEvent(
-                                                    'BOOKINGS_PAGE_CANCEL_BOOKING_BTN_ON_TAP');
-                                                logFirebaseEvent(
-                                                    'Button_backend_call');
-                                                await listViewConFacilityRecord
-                                                    .reference
-                                                    .delete();
-                                                logFirebaseEvent(
-                                                    'Button_navigate_to');
+                                                        builder: (context,
+                                                            snapshot) {
+                                                          // Customize what your widget looks like when it's loading.
+                                                          if (!snapshot
+                                                              .hasData) {
+                                                            return const Center(
+                                                              child: SizedBox(
+                                                                width: 50.0,
+                                                                height: 50.0,
+                                                                child:
+                                                                    SpinKitThreeBounce(
+                                                                  color: Color(
+                                                                      0xFFEC7834),
+                                                                  size: 50.0,
+                                                                ),
+                                                              ),
+                                                            );
+                                                          }
+                                                          List<NotificationsRecord>
+                                                              buttonNotificationsRecordList =
+                                                              snapshot.data!;
+                                                          final buttonNotificationsRecord =
+                                                              buttonNotificationsRecordList
+                                                                      .isNotEmpty
+                                                                  ? buttonNotificationsRecordList
+                                                                      .first
+                                                                  : null;
+                                                          return FFButtonWidget(
+                                                            onPressed:
+                                                                () async {
+                                                              logFirebaseEvent(
+                                                                  'BOOKINGS_PAGE_CANCEL_BOOKING_BTN_ON_TAP');
+                                                              logFirebaseEvent(
+                                                                  'Button_navigate_to');
 
-                                                context.pushNamed(
-                                                  'cancellation',
-                                                  queryParameters: {
-                                                    'facility': serializeParam(
-                                                      widget.facility,
-                                                      ParamType.String,
-                                                    ),
-                                                    'city': serializeParam(
-                                                      widget.city,
-                                                      ParamType.String,
-                                                    ),
-                                                  }.withoutNulls,
-                                                  extra: <String, dynamic>{
-                                                    kTransitionInfoKey:
-                                                        const TransitionInfo(
-                                                      hasTransition: true,
-                                                      transitionType:
-                                                          PageTransitionType
-                                                              .fade,
-                                                      duration: Duration(
-                                                          milliseconds: 600),
-                                                    ),
-                                                  },
+                                                              context.goNamed(
+                                                                'cancellation',
+                                                                queryParameters:
+                                                                    {
+                                                                  'facility':
+                                                                      serializeParam(
+                                                                    widget
+                                                                        .facility,
+                                                                    ParamType
+                                                                        .String,
+                                                                  ),
+                                                                  'city':
+                                                                      serializeParam(
+                                                                    widget.city,
+                                                                    ParamType
+                                                                        .String,
+                                                                  ),
+                                                                }.withoutNulls,
+                                                                extra: <String,
+                                                                    dynamic>{
+                                                                  kTransitionInfoKey:
+                                                                      const TransitionInfo(
+                                                                    hasTransition:
+                                                                        true,
+                                                                    transitionType:
+                                                                        PageTransitionType
+                                                                            .fade,
+                                                                    duration: Duration(
+                                                                        milliseconds:
+                                                                            600),
+                                                                  ),
+                                                                },
+                                                              );
+
+                                                              logFirebaseEvent(
+                                                                  'Button_backend_call');
+                                                              await oriListFacilitiesRecord
+                                                                  .reference
+                                                                  .delete();
+                                                              logFirebaseEvent(
+                                                                  'Button_backend_call');
+                                                              await buttonNotificationsRecord!
+                                                                  .reference
+                                                                  .delete();
+                                                            },
+                                                            text: FFLocalizations
+                                                                    .of(context)
+                                                                .getText(
+                                                              '6oqi6m6o' /* Cancel Booking */,
+                                                            ),
+                                                            options:
+                                                                FFButtonOptions(
+                                                              height: 40.0,
+                                                              padding:
+                                                                  const EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          24.0,
+                                                                          0.0,
+                                                                          24.0,
+                                                                          0.0),
+                                                              iconPadding:
+                                                                  const EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          0.0,
+                                                                          0.0,
+                                                                          0.0,
+                                                                          0.0),
+                                                              color: const Color(
+                                                                  0xFFFF0005),
+                                                              textStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .titleSmall
+                                                                      .override(
+                                                                        fontFamily:
+                                                                            'Raleway',
+                                                                        color: Colors
+                                                                            .white,
+                                                                        fontWeight:
+                                                                            FontWeight.w600,
+                                                                      ),
+                                                              elevation: 3.0,
+                                                              borderSide:
+                                                                  const BorderSide(
+                                                                color: Colors
+                                                                    .transparent,
+                                                                width: 1.0,
+                                                              ),
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          8.0),
+                                                            ),
+                                                          );
+                                                        },
+                                                      ),
+                                                    ],
+                                                  ),
                                                 );
                                               },
-                                              text: FFLocalizations.of(context)
-                                                  .getText(
-                                                'aqnnxhko' /* Cancel Booking */,
-                                              ),
-                                              options: FFButtonOptions(
-                                                height: 40.0,
-                                                padding: const EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        24.0, 0.0, 24.0, 0.0),
-                                                iconPadding:
-                                                    const EdgeInsetsDirectional
-                                                        .fromSTEB(
-                                                            0.0, 0.0, 0.0, 0.0),
-                                                color: const Color(0xFFFF0005),
-                                                textStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .titleSmall
-                                                        .override(
-                                                          fontFamily: 'Raleway',
-                                                          color: Colors.white,
-                                                          fontWeight:
-                                                              FontWeight.w600,
-                                                        ),
-                                                elevation: 3.0,
-                                                borderSide: const BorderSide(
-                                                  color: Colors.transparent,
-                                                  width: 1.0,
-                                                ),
-                                                borderRadius:
-                                                    BorderRadius.circular(8.0),
-                                              ),
-                                            ),
-                                          ],
+                                            );
+                                          },
                                         ),
-                                      );
-                                    },
-                                  );
-                                },
+                                      ],
+                                    ),
+                                  ),
+                                  KeepAliveWidgetWrapper(
+                                    builder: (context) => Column(
+                                      mainAxisSize: MainAxisSize.max,
+                                      children: [
+                                        StreamBuilder<List<ConFacilityRecord>>(
+                                          stream: queryConFacilityRecord(),
+                                          builder: (context, snapshot) {
+                                            // Customize what your widget looks like when it's loading.
+                                            if (!snapshot.hasData) {
+                                              return const Center(
+                                                child: SizedBox(
+                                                  width: 50.0,
+                                                  height: 50.0,
+                                                  child: SpinKitThreeBounce(
+                                                    color: Color(0xFFEC7834),
+                                                    size: 50.0,
+                                                  ),
+                                                ),
+                                              );
+                                            }
+                                            List<ConFacilityRecord>
+                                                conListConFacilityRecordList =
+                                                snapshot.data!;
+                                            if (conListConFacilityRecordList
+                                                .isEmpty) {
+                                              return const FacilityeventWidget();
+                                            }
+                                            return ListView.builder(
+                                              padding: EdgeInsets.zero,
+                                              shrinkWrap: true,
+                                              scrollDirection: Axis.vertical,
+                                              itemCount:
+                                                  conListConFacilityRecordList
+                                                      .length,
+                                              itemBuilder:
+                                                  (context, conListIndex) {
+                                                final conListConFacilityRecord =
+                                                    conListConFacilityRecordList[
+                                                        conListIndex];
+                                                return Padding(
+                                                  padding: const EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          20.0, 0.0, 0.0, 20.0),
+                                                  child: Row(
+                                                    mainAxisSize:
+                                                        MainAxisSize.max,
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment.start,
+                                                    children: [
+                                                      Column(
+                                                        mainAxisSize:
+                                                            MainAxisSize.max,
+                                                        children: [
+                                                          Padding(
+                                                            padding:
+                                                                const EdgeInsetsDirectional
+                                                                    .fromSTEB(
+                                                                        0.0,
+                                                                        0.0,
+                                                                        0.0,
+                                                                        5.0),
+                                                            child: Text(
+                                                              conListConFacilityRecord
+                                                                  .conGuestFacility,
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodyMedium
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Raleway',
+                                                                    color: Colors
+                                                                        .black,
+                                                                    fontSize:
+                                                                        20.0,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .bold,
+                                                                  ),
+                                                            ),
+                                                          ),
+                                                          Align(
+                                                            alignment:
+                                                                const AlignmentDirectional(
+                                                                    -1.0, 0.0),
+                                                            child: Text(
+                                                              conListConFacilityRecord
+                                                                  .conGuestName,
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodyMedium
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Raleway',
+                                                                    color: const Color(
+                                                                        0xFF2F2F2F),
+                                                                    fontSize:
+                                                                        18.0,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w500,
+                                                                  ),
+                                                            ),
+                                                          ),
+                                                          Align(
+                                                            alignment:
+                                                                const AlignmentDirectional(
+                                                                    -1.0, 0.0),
+                                                            child: Text(
+                                                              conListConFacilityRecord
+                                                                  .conGuestEmail,
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodyMedium
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Raleway',
+                                                                    color: const Color(
+                                                                        0xFF2F2F2F),
+                                                                    fontSize:
+                                                                        18.0,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w500,
+                                                                  ),
+                                                            ),
+                                                          ),
+                                                          Align(
+                                                            alignment:
+                                                                const AlignmentDirectional(
+                                                                    -1.0, 0.0),
+                                                            child: Text(
+                                                              conListConFacilityRecord
+                                                                  .conGuestNumber,
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodyMedium
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Raleway',
+                                                                    color: const Color(
+                                                                        0xFF2F2F2F),
+                                                                    fontSize:
+                                                                        18.0,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w500,
+                                                                  ),
+                                                            ),
+                                                          ),
+                                                          Align(
+                                                            alignment:
+                                                                const AlignmentDirectional(
+                                                                    -1.0, 0.0),
+                                                            child: Text(
+                                                              conListConFacilityRecord
+                                                                  .conFacilityDate,
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodyMedium
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Raleway',
+                                                                    color: const Color(
+                                                                        0xFF2F2F2F),
+                                                                    fontSize:
+                                                                        18.0,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w500,
+                                                                  ),
+                                                            ),
+                                                          ),
+                                                          Align(
+                                                            alignment:
+                                                                const AlignmentDirectional(
+                                                                    -1.0, 0.0),
+                                                            child: Text(
+                                                              conListConFacilityRecord
+                                                                  .conFacilityCity,
+                                                              style: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .bodyMedium
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        'Raleway',
+                                                                    color: const Color(
+                                                                        0xFF2F2F2F),
+                                                                    fontSize:
+                                                                        18.0,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w500,
+                                                                  ),
+                                                            ),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ],
+                                                  ),
+                                                );
+                                              },
+                                            );
+                                          },
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                           ],
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

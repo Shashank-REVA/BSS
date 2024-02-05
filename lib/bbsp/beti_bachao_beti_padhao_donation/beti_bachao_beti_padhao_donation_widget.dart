@@ -13,7 +13,7 @@ class BetiBachaoBetiPadhaoDonationWidget extends StatefulWidget {
   const BetiBachaoBetiPadhaoDonationWidget({super.key});
 
   @override
-  _BetiBachaoBetiPadhaoDonationWidgetState createState() =>
+  State<BetiBachaoBetiPadhaoDonationWidget> createState() =>
       _BetiBachaoBetiPadhaoDonationWidgetState();
 }
 

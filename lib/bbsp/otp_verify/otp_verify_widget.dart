@@ -20,7 +20,7 @@ class OtpVerifyWidget extends StatefulWidget {
   final String? mobileNumber;
 
   @override
-  _OtpVerifyWidgetState createState() => _OtpVerifyWidgetState();
+  State<OtpVerifyWidget> createState() => _OtpVerifyWidgetState();
 }
 
 class _OtpVerifyWidgetState extends State<OtpVerifyWidget> {

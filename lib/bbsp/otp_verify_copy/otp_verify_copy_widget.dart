@@ -24,7 +24,7 @@ class OtpVerifyCopyWidget extends StatefulWidget {
   final String? city;
 
   @override
-  _OtpVerifyCopyWidgetState createState() => _OtpVerifyCopyWidgetState();
+  State<OtpVerifyCopyWidget> createState() => _OtpVerifyCopyWidgetState();
 }
 
 class _OtpVerifyCopyWidgetState extends State<OtpVerifyCopyWidget> {

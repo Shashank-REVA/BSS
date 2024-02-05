@@ -21,7 +21,7 @@ class EducationWidget extends StatefulWidget {
   final Color colortxt;
 
   @override
-  _EducationWidgetState createState() => _EducationWidgetState();
+  State<EducationWidget> createState() => _EducationWidgetState();
 }
 
 class _EducationWidgetState extends State<EducationWidget> {

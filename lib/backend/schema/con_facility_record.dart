@@ -40,12 +40,18 @@ class ConFacilityRecord extends FirestoreRecord {
   String get conFacilityCity => _conFacilityCity ?? '';
   bool hasConFacilityCity() => _conFacilityCity != null;
 
+  // "con_guest_email" field.
+  String? _conGuestEmail;
+  String get conGuestEmail => _conGuestEmail ?? '';
+  bool hasConGuestEmail() => _conGuestEmail != null;
+
   void _initializeFields() {
     _conGuestName = snapshotData['con_guest_name'] as String?;
     _conGuestFacility = snapshotData['con_guest_facility'] as String?;
     _conGuestNumber = snapshotData['con_guest_number'] as String?;
     _conFacilityDate = snapshotData['con_facility_date'] as String?;
     _conFacilityCity = snapshotData['con_facility_city'] as String?;
+    _conGuestEmail = snapshotData['con_guest_email'] as String?;
   }
 
   static CollectionReference get collection =>
@@ -88,6 +94,7 @@ Map<String, dynamic> createConFacilityRecordData({
   String? conGuestNumber,
   String? conFacilityDate,
   String? conFacilityCity,
+  String? conGuestEmail,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -96,6 +103,7 @@ Map<String, dynamic> createConFacilityRecordData({
       'con_guest_number': conGuestNumber,
       'con_facility_date': conFacilityDate,
       'con_facility_city': conFacilityCity,
+      'con_guest_email': conGuestEmail,
     }.withoutNulls,
   );
 
@@ -111,7 +119,8 @@ class ConFacilityRecordDocumentEquality implements Equality<ConFacilityRecord> {
         e1?.conGuestFacility == e2?.conGuestFacility &&
         e1?.conGuestNumber == e2?.conGuestNumber &&
         e1?.conFacilityDate == e2?.conFacilityDate &&
-        e1?.conFacilityCity == e2?.conFacilityCity;
+        e1?.conFacilityCity == e2?.conFacilityCity &&
+        e1?.conGuestEmail == e2?.conGuestEmail;
   }
 
   @override
@@ -120,7 +129,8 @@ class ConFacilityRecordDocumentEquality implements Equality<ConFacilityRecord> {
         e?.conGuestFacility,
         e?.conGuestNumber,
         e?.conFacilityDate,
-        e?.conFacilityCity
+        e?.conFacilityCity,
+        e?.conGuestEmail
       ]);
 
   @override

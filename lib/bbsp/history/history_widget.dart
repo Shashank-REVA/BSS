@@ -25,7 +25,7 @@ class HistoryWidget extends StatefulWidget {
   final Color colortxt;
 
   @override
-  _HistoryWidgetState createState() => _HistoryWidgetState();
+  State<HistoryWidget> createState() => _HistoryWidgetState();
 }
 
 class _HistoryWidgetState extends State<HistoryWidget>
@@ -229,34 +229,14 @@ class _HistoryWidgetState extends State<HistoryWidget>
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    10.0, 10.0, 20.0, 10.0),
+                                            padding: const EdgeInsets.all(10.0),
                                             child: FFButtonWidget(
-                                              onPressed: () async {
-                                                logFirebaseEvent(
-                                                    'HISTORY_PAGE_HOME_BTN_ON_TAP');
-                                                logFirebaseEvent(
-                                                    'Button_navigate_to');
-
-                                                context.goNamed(
-                                                  'history',
-                                                  extra: <String, dynamic>{
-                                                    kTransitionInfoKey:
-                                                        const TransitionInfo(
-                                                      hasTransition: true,
-                                                      transitionType:
-                                                          PageTransitionType
-                                                              .fade,
-                                                      duration: Duration(
-                                                          milliseconds: 600),
-                                                    ),
-                                                  },
-                                                );
+                                              onPressed: () {
+                                                print('Button pressed ...');
                                               },
                                               text: FFLocalizations.of(context)
                                                   .getText(
-                                                'j6k1t2xu' /* Home */,
+                                                'qgvb2ikt' /* Home */,
                                               ),
                                               options: FFButtonOptions(
                                                 height: 40.0,
@@ -290,9 +270,7 @@ class _HistoryWidgetState extends State<HistoryWidget>
                                             ),
                                           ),
                                           Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    10.0, 10.0, 20.0, 10.0),
+                                            padding: const EdgeInsets.all(10.0),
                                             child: FFButtonWidget(
                                               onPressed: () async {
                                                 logFirebaseEvent(
@@ -317,7 +295,7 @@ class _HistoryWidgetState extends State<HistoryWidget>
                                               },
                                               text: FFLocalizations.of(context)
                                                   .getText(
-                                                'nt61doz8' /* Cities */,
+                                                '5j141l6l' /* Cities */,
                                               ),
                                               options: FFButtonOptions(
                                                 height: 40.0,
@@ -352,9 +330,7 @@ class _HistoryWidgetState extends State<HistoryWidget>
                                             ),
                                           ),
                                           Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    10.0, 10.0, 20.0, 10.0),
+                                            padding: const EdgeInsets.all(10.0),
                                             child: FFButtonWidget(
                                               onPressed: () async {
                                                 logFirebaseEvent(
@@ -399,7 +375,7 @@ class _HistoryWidgetState extends State<HistoryWidget>
                                               },
                                               text: FFLocalizations.of(context)
                                                   .getText(
-                                                'u5o5cocj' /* Account */,
+                                                'uq7mqik0' /* Account */,
                                               ),
                                               options: FFButtonOptions(
                                                 height: 40.0,
@@ -434,9 +410,7 @@ class _HistoryWidgetState extends State<HistoryWidget>
                                             ),
                                           ),
                                           Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    10.0, 10.0, 20.0, 10.0),
+                                            padding: const EdgeInsets.all(10.0),
                                             child: FFButtonWidget(
                                               onPressed: () async {
                                                 logFirebaseEvent(
@@ -461,7 +435,7 @@ class _HistoryWidgetState extends State<HistoryWidget>
                                               },
                                               text: FFLocalizations.of(context)
                                                   .getText(
-                                                'pyxx4oyq' /* Events */,
+                                                '561blwl4' /* Events */,
                                               ),
                                               options: FFButtonOptions(
                                                 height: 40.0,
@@ -496,9 +470,7 @@ class _HistoryWidgetState extends State<HistoryWidget>
                                             ),
                                           ),
                                           Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    10.0, 10.0, 20.0, 10.0),
+                                            padding: const EdgeInsets.all(10.0),
                                             child: FFButtonWidget(
                                               onPressed: () async {
                                                 logFirebaseEvent(
@@ -523,7 +495,7 @@ class _HistoryWidgetState extends State<HistoryWidget>
                                               },
                                               text: FFLocalizations.of(context)
                                                   .getText(
-                                                'wj53wdth' /* Facilities */,
+                                                'x4k25ifv' /* Facilities */,
                                               ),
                                               options: FFButtonOptions(
                                                 height: 40.0,
@@ -558,9 +530,7 @@ class _HistoryWidgetState extends State<HistoryWidget>
                                             ),
                                           ),
                                           Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    10.0, 10.0, 20.0, 10.0),
+                                            padding: const EdgeInsets.all(10.0),
                                             child: FFButtonWidget(
                                               onPressed: () async {
                                                 logFirebaseEvent(
@@ -585,7 +555,7 @@ class _HistoryWidgetState extends State<HistoryWidget>
                                               },
                                               text: FFLocalizations.of(context)
                                                   .getText(
-                                                'cq0fbhj0' /* Donation */,
+                                                'dvtiz02n' /* Donation */,
                                               ),
                                               options: FFButtonOptions(
                                                 height: 40.0,

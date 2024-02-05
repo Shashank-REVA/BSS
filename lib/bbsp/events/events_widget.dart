@@ -26,7 +26,7 @@ class EventsWidget extends StatefulWidget {
   final Color colortxt;
 
   @override
-  _EventsWidgetState createState() => _EventsWidgetState();
+  State<EventsWidget> createState() => _EventsWidgetState();
 }
 
 class _EventsWidgetState extends State<EventsWidget> {
@@ -46,7 +46,7 @@ class _EventsWidgetState extends State<EventsWidget> {
       logFirebaseEvent('events_scroll_to');
       await _model.rowController?.animateTo(
         _model.rowController!.position.maxScrollExtent,
-        duration: const Duration(milliseconds: 1000),
+        duration: const Duration(milliseconds: 300),
         curve: Curves.ease,
       );
     });
@@ -322,25 +322,8 @@ class _EventsWidgetState extends State<EventsWidget> {
                                     Padding(
                                       padding: const EdgeInsets.all(10.0),
                                       child: FFButtonWidget(
-                                        onPressed: () async {
-                                          logFirebaseEvent(
-                                              'EVENTS_PAGE_EVENTS_BTN_ON_TAP');
-                                          logFirebaseEvent(
-                                              'Button_navigate_to');
-
-                                          context.pushNamed(
-                                            'events',
-                                            extra: <String, dynamic>{
-                                              kTransitionInfoKey:
-                                                  const TransitionInfo(
-                                                hasTransition: true,
-                                                transitionType:
-                                                    PageTransitionType.fade,
-                                                duration:
-                                                    Duration(milliseconds: 600),
-                                              ),
-                                            },
-                                          );
+                                        onPressed: () {
+                                          print('Button pressed ...');
                                         },
                                         text:
                                             FFLocalizations.of(context).getText(
@@ -539,7 +522,6 @@ class _EventsWidgetState extends State<EventsWidget> {
                                 Align(
                                   alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Container(
-                                    width: 400.0,
                                     decoration: const BoxDecoration(),
                                     child: SingleChildScrollView(
                                       primary: false,
@@ -598,6 +580,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                                                 }
                                                 return ListView.builder(
                                                   padding: EdgeInsets.zero,
+                                                  primary: false,
                                                   shrinkWrap: true,
                                                   scrollDirection:
                                                       Axis.vertical,
@@ -619,7 +602,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                                                                   5.0),
                                                       child: Row(
                                                         mainAxisSize:
-                                                            MainAxisSize.max,
+                                                            MainAxisSize.min,
                                                         mainAxisAlignment:
                                                             MainAxisAlignment
                                                                 .spaceBetween,
@@ -672,9 +655,12 @@ class _EventsWidgetState extends State<EventsWidget> {
                                                                             0.0,
                                                                             0.0,
                                                                             5.0),
-                                                                    child: Text(
+                                                                    child:
+                                                                        AutoSizeText(
                                                                       listViewEventsRecord
-                                                                          .eventName,
+                                                                          .eventName
+                                                                          .maybeHandleOverflow(
+                                                                              maxChars: 25),
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodyMedium
@@ -688,6 +674,8 @@ class _EventsWidgetState extends State<EventsWidget> {
                                                                             fontWeight:
                                                                                 FontWeight.w600,
                                                                           ),
+                                                                      minFontSize:
+                                                                          18.0,
                                                                     ),
                                                                   ),
                                                                   Padding(
@@ -727,7 +715,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                                                                       valueOrDefault<
                                                                           String>(
                                                                         dateTimeFormat(
-                                                                          'd/M h:mm a',
+                                                                          'MMMM,EEEE d',
                                                                           listViewEventsRecord
                                                                               .eventDateTime,
                                                                           locale:
@@ -742,11 +730,48 @@ class _EventsWidgetState extends State<EventsWidget> {
                                                                             fontFamily:
                                                                                 'Raleway',
                                                                             color:
-                                                                                FlutterFlowTheme.of(context).secondaryText,
+                                                                                const Color(0xFF404347),
                                                                             fontSize:
                                                                                 18.0,
                                                                             fontWeight:
-                                                                                FontWeight.w600,
+                                                                                FontWeight.w800,
+                                                                          ),
+                                                                      minFontSize:
+                                                                          18.0,
+                                                                    ),
+                                                                  ),
+                                                                  Padding(
+                                                                    padding: const EdgeInsetsDirectional
+                                                                        .fromSTEB(
+                                                                            0.0,
+                                                                            0.0,
+                                                                            0.0,
+                                                                            5.0),
+                                                                    child:
+                                                                        AutoSizeText(
+                                                                      valueOrDefault<
+                                                                          String>(
+                                                                        dateTimeFormat(
+                                                                          'h:mm a',
+                                                                          listViewEventsRecord
+                                                                              .eventDateTime,
+                                                                          locale:
+                                                                              FFLocalizations.of(context).languageCode,
+                                                                        ),
+                                                                        'Date Time',
+                                                                      ),
+                                                                      style: FlutterFlowTheme.of(
+                                                                              context)
+                                                                          .bodyMedium
+                                                                          .override(
+                                                                            fontFamily:
+                                                                                'Raleway',
+                                                                            color:
+                                                                                const Color(0xFF404347),
+                                                                            fontSize:
+                                                                                18.0,
+                                                                            fontWeight:
+                                                                                FontWeight.w800,
                                                                           ),
                                                                       minFontSize:
                                                                           18.0,

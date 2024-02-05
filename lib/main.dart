@@ -18,7 +18,6 @@ void main() async {
   await initFirebase();
 
   // Start initial custom actions code
-  await actions.onesignal();
   await actions.statusbarcolor();
   // End initial custom actions code
 
@@ -113,11 +112,9 @@ class _MyAppState extends State<MyApp> {
       ],
       theme: ThemeData(
         brightness: Brightness.light,
-        scrollbarTheme: const ScrollbarThemeData(),
       ),
       darkTheme: ThemeData(
         brightness: Brightness.dark,
-        scrollbarTheme: const ScrollbarThemeData(),
       ),
       themeMode: _themeMode,
       routerConfig: _router,

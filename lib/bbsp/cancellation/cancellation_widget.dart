@@ -18,7 +18,7 @@ class CancellationWidget extends StatefulWidget {
   final String? city;
 
   @override
-  _CancellationWidgetState createState() => _CancellationWidgetState();
+  State<CancellationWidget> createState() => _CancellationWidgetState();
 }
 
 class _CancellationWidgetState extends State<CancellationWidget> {
@@ -95,7 +95,7 @@ class _CancellationWidgetState extends State<CancellationWidget> {
               Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
                 child: Text(
-                  'Cancellation Confirmed for ${widget.facility} in ${widget.city}!',
+                  'Cancellation Confirmed!',
                   textAlign: TextAlign.center,
                   style: FlutterFlowTheme.of(context).displaySmall.override(
                         fontFamily: 'Raleway',
@@ -146,7 +146,7 @@ class _CancellationWidgetState extends State<CancellationWidget> {
                         kTransitionInfoKey: const TransitionInfo(
                           hasTransition: true,
                           transitionType: PageTransitionType.fade,
-                          duration: Duration(milliseconds: 900),
+                          duration: Duration(milliseconds: 600),
                         ),
                       },
                     );

@@ -13,7 +13,7 @@ class ProfileEditWidget extends StatefulWidget {
   const ProfileEditWidget({super.key});
 
   @override
-  _ProfileEditWidgetState createState() => _ProfileEditWidgetState();
+  State<ProfileEditWidget> createState() => _ProfileEditWidgetState();
 }
 
 class _ProfileEditWidgetState extends State<ProfileEditWidget> {
