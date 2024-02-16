@@ -1,18 +1,21 @@
 import '/auth/firebase_auth/auth_util.dart';
+import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
-import '/flutter_flow/flutter_flow_icon_button.dart';
+import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:provider/provider.dart';
-import 'forgotpassword_model.dart';
-export 'forgotpassword_model.dart';
+import 'goggle_login_model.dart';
+export 'goggle_login_model.dart';
 
-class ForgotpasswordWidget extends StatefulWidget {
-  const ForgotpasswordWidget({
+class GoggleLoginWidget extends StatefulWidget {
+  const GoggleLoginWidget({
     super.key,
     Color? colorbtn,
     Color? colortxt,
@@ -23,12 +26,12 @@ class ForgotpasswordWidget extends StatefulWidget {
   final Color colortxt;
 
   @override
-  State<ForgotpasswordWidget> createState() => _ForgotpasswordWidgetState();
+  State<GoggleLoginWidget> createState() => _GoggleLoginWidgetState();
 }
 
-class _ForgotpasswordWidgetState extends State<ForgotpasswordWidget>
+class _GoggleLoginWidgetState extends State<GoggleLoginWidget>
     with TickerProviderStateMixin {
-  late ForgotpasswordModel _model;
+  late GoggleLoginModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -72,12 +75,10 @@ class _ForgotpasswordWidgetState extends State<ForgotpasswordWidget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => ForgotpasswordModel());
+    _model = createModel(context, () => GoggleLoginModel());
 
     logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'forgotpassword'});
-    _model.emailAddressController ??= TextEditingController();
-    _model.emailAddressFocusNode ??= FocusNode();
+        parameters: {'screen_name': 'goggle_login'});
   }
 
   @override
@@ -158,31 +159,6 @@ class _ForgotpasswordWidgetState extends State<ForgotpasswordWidget>
                               ),
                             ),
                           ),
-                          Align(
-                            alignment: const AlignmentDirectional(-1.0, 0.0),
-                            child: Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  16.0, 50.0, 0.0, 0.0),
-                              child: FlutterFlowIconButton(
-                                borderColor: const Color(0x00FFFFFF),
-                                borderRadius: 20.0,
-                                borderWidth: 1.0,
-                                buttonSize: 40.0,
-                                fillColor: FlutterFlowTheme.of(context).info,
-                                icon: const Icon(
-                                  Icons.arrow_back_ios_sharp,
-                                  color: Colors.black,
-                                  size: 24.0,
-                                ),
-                                onPressed: () async {
-                                  logFirebaseEvent(
-                                      'FORGOTPASSWORD_arrow_back_ios_sharp_ICN_');
-                                  logFirebaseEvent('IconButton_navigate_back');
-                                  context.safePop();
-                                },
-                              ),
-                            ),
-                          ),
                         ],
                       ),
                       Align(
@@ -221,7 +197,7 @@ class _ForgotpasswordWidgetState extends State<ForgotpasswordWidget>
                                             0.0, 0.0, 0.0, 10.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
-                                            '5y1z96gf' /* Forgot Password */,
+                                            'nglsp29y' /* Set City */,
                                           ),
                                           textAlign: TextAlign.center,
                                           style: FlutterFlowTheme.of(context)
@@ -235,75 +211,112 @@ class _ForgotpasswordWidgetState extends State<ForgotpasswordWidget>
                                       ),
                                       Padding(
                                         padding: const EdgeInsetsDirectional.fromSTEB(
-                                            8.0, 10.0, 8.0, 20.0),
-                                        child: Container(
-                                          width: 348.0,
-                                          height: 52.0,
-                                          decoration: BoxDecoration(
-                                            color: Colors.white,
-                                            boxShadow: const [
-                                              BoxShadow(
-                                                blurRadius: 4.0,
-                                                color: Color(0xFF322E5C),
-                                                offset: Offset(0.0, 2.0),
-                                              )
-                                            ],
-                                            borderRadius:
-                                                BorderRadius.circular(40.0),
-                                            shape: BoxShape.rectangle,
-                                          ),
-                                          child: Align(
-                                            alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
-                                            child: Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(8.0, 0.0, 8.0, 0.0),
-                                              child: TextFormField(
-                                                controller: _model
-                                                    .emailAddressController,
-                                                focusNode: _model
-                                                    .emailAddressFocusNode,
-                                                autofocus: true,
-                                                autofillHints: const [
-                                                  AutofillHints.email
-                                                ],
-                                                obscureText: false,
-                                                decoration: InputDecoration(
-                                                  labelText: FFLocalizations.of(
-                                                          context)
-                                                      .getText(
-                                                    'aodknxvx' /* Enter your Email */,
+                                            0.0, 0.0, 0.0, 16.0),
+                                        child:
+                                            StreamBuilder<List<CitiesRecord>>(
+                                          stream: queryCitiesRecord(),
+                                          builder: (context, snapshot) {
+                                            // Customize what your widget looks like when it's loading.
+                                            if (!snapshot.hasData) {
+                                              return const Center(
+                                                child: SizedBox(
+                                                  width: 50.0,
+                                                  height: 50.0,
+                                                  child: SpinKitThreeBounce(
+                                                    color: Color(0xFFEC7834),
+                                                    size: 50.0,
                                                   ),
-                                                  labelStyle: FlutterFlowTheme
-                                                          .of(context)
-                                                      .labelLarge
-                                                      .override(
-                                                        fontFamily: 'Raleway',
-                                                      ),
-                                                  enabledBorder:
-                                                      InputBorder.none,
-                                                  focusedBorder:
-                                                      InputBorder.none,
-                                                  errorBorder: InputBorder.none,
-                                                  focusedErrorBorder:
-                                                      InputBorder.none,
-                                                  filled: true,
                                                 ),
-                                                style:
+                                              );
+                                            }
+                                            List<CitiesRecord>
+                                                containerCitiesRecordList =
+                                                snapshot.data!;
+                                            return Container(
+                                              width: 320.0,
+                                              decoration: BoxDecoration(
+                                                color: Colors.white,
+                                                boxShadow: const [
+                                                  BoxShadow(
+                                                    blurRadius: 4.0,
+                                                    color: Color(0xFF322E5C),
+                                                    offset: Offset(0.0, 2.0),
+                                                  )
+                                                ],
+                                                borderRadius:
+                                                    BorderRadius.circular(40.0),
+                                              ),
+                                              child:
+                                                  FlutterFlowDropDown<String>(
+                                                controller: _model
+                                                        .dropDownValueController ??=
+                                                    FormFieldController<String>(
+                                                        null),
+                                                options:
+                                                    containerCitiesRecordList
+                                                        .map((e) => e.name)
+                                                        .toList()
+                                                        .sortedList((e) => e),
+                                                onChanged: (val) => setState(
+                                                    () => _model.dropDownValue =
+                                                        val),
+                                                width: 300.0,
+                                                height: 50.0,
+                                                searchHintTextStyle:
                                                     FlutterFlowTheme.of(context)
-                                                        .bodyLarge
+                                                        .labelMedium
                                                         .override(
-                                                          fontFamily: 'Ubuntu',
+                                                          fontFamily: 'Raleway',
                                                           color: Colors.black,
                                                         ),
-                                                keyboardType:
-                                                    TextInputType.emailAddress,
-                                                validator: _model
-                                                    .emailAddressControllerValidator
-                                                    .asValidator(context),
+                                                searchTextStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium,
+                                                textStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily: 'Raleway',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryText,
+                                                          fontSize: 16.0,
+                                                        ),
+                                                hintText:
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                  'rjiyrjzm' /* Set your city */,
+                                                ),
+                                                searchHintText:
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                  'cra3xyok' /* Search for an city... */,
+                                                ),
+                                                icon: Icon(
+                                                  Icons
+                                                      .keyboard_arrow_down_rounded,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .secondaryText,
+                                                  size: 24.0,
+                                                ),
+                                                fillColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryText,
+                                                elevation: 2.0,
+                                                borderColor: Colors.transparent,
+                                                borderWidth: 2.0,
+                                                borderRadius: 25.0,
+                                                margin: const EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        16.0, 4.0, 16.0, 4.0),
+                                                hidesUnderline: true,
+                                                isOverButton: true,
+                                                isSearchable: true,
+                                                isMultiSelect: false,
                                               ),
-                                            ),
-                                          ),
+                                            );
+                                          },
                                         ),
                                       ),
                                       Padding(
@@ -312,29 +325,40 @@ class _ForgotpasswordWidgetState extends State<ForgotpasswordWidget>
                                         child: FFButtonWidget(
                                           onPressed: () async {
                                             logFirebaseEvent(
-                                                'FORGOTPASSWORD_SEND_RESET_LINK_BTN_ON_TA');
-                                            logFirebaseEvent('Button_auth');
-                                            if (_model.emailAddressController
-                                                .text.isEmpty) {
-                                              ScaffoldMessenger.of(context)
-                                                  .showSnackBar(
-                                                const SnackBar(
-                                                  content: Text(
-                                                    'Email required!',
-                                                  ),
+                                                'GOGGLE_LOGIN_PAGE_CONTINUE_BTN_ON_TAP');
+                                            logFirebaseEvent(
+                                                'Button_backend_call');
+
+                                            await currentUserReference!
+                                                .update(createUsersRecordData(
+                                              city: _model.dropDownValue,
+                                            ));
+                                            logFirebaseEvent(
+                                                'Button_navigate_to');
+
+                                            context.goNamed(
+                                              'allpages',
+                                              queryParameters: {
+                                                'tabpageindex': serializeParam(
+                                                  4,
+                                                  ParamType.int,
                                                 ),
-                                              );
-                                              return;
-                                            }
-                                            await authManager.resetPassword(
-                                              email: _model
-                                                  .emailAddressController.text,
-                                              context: context,
+                                              }.withoutNulls,
+                                              extra: <String, dynamic>{
+                                                kTransitionInfoKey:
+                                                    const TransitionInfo(
+                                                  hasTransition: true,
+                                                  transitionType:
+                                                      PageTransitionType.fade,
+                                                  duration: Duration(
+                                                      milliseconds: 600),
+                                                ),
+                                              },
                                             );
                                           },
                                           text: FFLocalizations.of(context)
                                               .getText(
-                                            'jw5jxqlx' /* Send Reset Link */,
+                                            '24md2spv' /* Continue */,
                                           ),
                                           options: FFButtonOptions(
                                             width: double.infinity,

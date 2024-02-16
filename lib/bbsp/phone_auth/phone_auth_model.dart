@@ -1,4 +1,5 @@
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/form_field_controller.dart';
 import 'phone_auth_widget.dart' show PhoneAuthWidget;
 import 'package:flutter/material.dart';
 
@@ -16,6 +17,9 @@ class PhoneAuthModel extends FlutterFlowModel<PhoneAuthWidget> {
   FocusNode? phoneNumberFocusNode;
   TextEditingController? phoneNumberController;
   String? Function(BuildContext, String?)? phoneNumberControllerValidator;
+  // State field(s) for DropDown widget.
+  String? dropDownValue;
+  FormFieldController<String>? dropDownValueController;
 
   /// Initialization and disposal methods.
 

@@ -73,14 +73,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? const HistoryWidget() : const MainStartpage1Widget(),
+          appStateNotifier.loggedIn ? const AllpagesWidget() : const AllpagesWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => appStateNotifier.loggedIn
-              ? const HistoryWidget()
-              : const MainStartpage1Widget(),
+          builder: (context, _) =>
+              appStateNotifier.loggedIn ? const AllpagesWidget() : const AllpagesWidget(),
         ),
         FFRoute(
           name: 'city_outline',
@@ -90,19 +89,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           },
           builder: (context, params) => CityOutlineWidget(
             citynames: params.getParam('citynames', ParamType.Document),
-          ),
-        ),
-        FFRoute(
-          name: 'main_startpage_1',
-          path: '/mainStartpage1',
-          builder: (context, params) => const MainStartpage1Widget(),
-        ),
-        FFRoute(
-          name: 'history',
-          path: '/history',
-          builder: (context, params) => HistoryWidget(
-            colorbtn: params.getParam('colorbtn', ParamType.Color),
-            colortxt: params.getParam('colortxt', ParamType.Color),
           ),
         ),
         FFRoute(
@@ -146,14 +132,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           ),
         ),
         FFRoute(
-          name: 'search',
-          path: '/search',
-          builder: (context, params) => SearchWidget(
-            colorbtn: params.getParam('colorbtn', ParamType.Color),
-            colortxt: params.getParam('colortxt', ParamType.Color),
-          ),
-        ),
-        FFRoute(
           name: 'signup',
           path: '/signup',
           builder: (context, params) => const SignupWidget(),
@@ -177,14 +155,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const ProfileEditWidget(),
         ),
         FFRoute(
-          name: 'donation',
-          path: '/donation',
-          builder: (context, params) => DonationWidget(
-            colorbtn: params.getParam('colorbtn', ParamType.Color),
-            colortxt: params.getParam('colortxt', ParamType.Color),
-          ),
-        ),
-        FFRoute(
           name: 'booking_confirm',
           path: '/bookingConfirm',
           builder: (context, params) => BookingConfirmWidget(
@@ -205,25 +175,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           path: '/otpVerify',
           builder: (context, params) => OtpVerifyWidget(
             mobileNumber: params.getParam('mobileNumber', ParamType.String),
-          ),
-        ),
-        FFRoute(
-          name: 'events',
-          path: '/events',
-          builder: (context, params) => EventsWidget(
-            colorbtn: params.getParam('colorbtn', ParamType.Color),
-            colortxt: params.getParam('colortxt', ParamType.Color),
-          ),
-        ),
-        FFRoute(
-          name: 'facilities_outline',
-          path: '/facilitiesOutline',
-          builder: (context, params) => FacilitiesOutlineWidget(
-            colorbtn: params.getParam('colorbtn', ParamType.Color),
-            colortxt: params.getParam('colortxt', ParamType.Color),
-            selectedfacility:
-                params.getParam('selectedfacility', ParamType.String),
-            city: params.getParam('city', ParamType.String),
           ),
         ),
         FFRoute(
@@ -263,9 +214,42 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           ),
         ),
         FFRoute(
-          name: 'loginCopy',
-          path: '/loginCopy',
-          builder: (context, params) => LoginCopyWidget(
+          name: 'profile_editCopy',
+          path: '/profileEditCopy',
+          builder: (context, params) => const ProfileEditCopyWidget(),
+        ),
+        FFRoute(
+          name: 'beti-bachao-beti-padhao-donation',
+          path: '/betiBachaoBetiPadhaoDonation',
+          builder: (context, params) => const BetiBachaoBetiPadhaoDonationWidget(),
+        ),
+        FFRoute(
+          name: 'goggle_login',
+          path: '/goggleLogin',
+          builder: (context, params) => GoggleLoginWidget(
+            colorbtn: params.getParam('colorbtn', ParamType.Color),
+            colortxt: params.getParam('colortxt', ParamType.Color),
+          ),
+        ),
+        FFRoute(
+          name: 'city_outline_after_login',
+          path: '/cityOutlineAfterLogin',
+          builder: (context, params) => CityOutlineAfterLoginWidget(
+            cityname: params.getParam('cityname', ParamType.String),
+          ),
+        ),
+        FFRoute(
+          name: 'allpages',
+          path: '/allpages',
+          builder: (context, params) => AllpagesWidget(
+            cityname: params.getParam('cityname', ParamType.String),
+            tabpageindex: params.getParam('tabpageindex', ParamType.int),
+          ),
+        ),
+        FFRoute(
+          name: 'loginCopyCopy',
+          path: '/loginCopyCopy',
+          builder: (context, params) => LoginCopyCopyWidget(
             colorbtn: params.getParam('colorbtn', ParamType.Color),
             colortxt: params.getParam('colortxt', ParamType.Color),
             facility: params.getParam('facility', ParamType.String),
@@ -273,41 +257,33 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           ),
         ),
         FFRoute(
-          name: 'otp_verifyCopy',
-          path: '/otpVerifyCopy',
-          builder: (context, params) => OtpVerifyCopyWidget(
+          name: 'goggle_loginCopyCopy',
+          path: '/goggleLoginCopyCopy',
+          builder: (context, params) => GoggleLoginCopyCopyWidget(
+            colorbtn: params.getParam('colorbtn', ParamType.Color),
+            colortxt: params.getParam('colortxt', ParamType.Color),
+            facility: params.getParam('facility', ParamType.String),
+            city: params.getParam('city', ParamType.String),
+          ),
+        ),
+        FFRoute(
+          name: 'otp_verifyCopyCopy',
+          path: '/otpVerifyCopyCopy',
+          builder: (context, params) => OtpVerifyCopyCopyWidget(
             mobileNumber: params.getParam('mobileNumber', ParamType.String),
             facility: params.getParam('facility', ParamType.String),
             city: params.getParam('city', ParamType.String),
           ),
         ),
         FFRoute(
-          name: 'phone_authCopy',
-          path: '/phoneAuthCopy',
-          builder: (context, params) => PhoneAuthCopyWidget(
+          name: 'phone_authCopyCopy',
+          path: '/phoneAuthCopyCopy',
+          builder: (context, params) => PhoneAuthCopyCopyWidget(
             colorbtn: params.getParam('colorbtn', ParamType.Color),
             colortxt: params.getParam('colortxt', ParamType.Color),
             facility: params.getParam('facility', ParamType.String),
             city: params.getParam('city', ParamType.String),
           ),
-        ),
-        FFRoute(
-          name: 'profile_editCopy',
-          path: '/profileEditCopy',
-          builder: (context, params) => const ProfileEditCopyWidget(),
-        ),
-        FFRoute(
-          name: 'facilities',
-          path: '/facilities',
-          builder: (context, params) => FacilitiesWidget(
-            colorbtn: params.getParam('colorbtn', ParamType.Color),
-            colortxt: params.getParam('colortxt', ParamType.Color),
-          ),
-        ),
-        FFRoute(
-          name: 'beti-bachao-beti-padhao-donation',
-          path: '/betiBachaoBetiPadhaoDonation',
-          builder: (context, params) => const BetiBachaoBetiPadhaoDonationWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -474,7 +450,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.location);
-            return '/mainStartpage1';
+            return '/allpages';
           }
           return null;
         },

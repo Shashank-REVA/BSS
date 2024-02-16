@@ -8,8 +8,6 @@ class ReliefNewModel extends FlutterFlowModel<ReliefNewWidget> {
   final unfocusNode = FocusNode();
   // State field(s) for Column widget.
   ScrollController? columnController;
-  // State field(s) for Row widget.
-  ScrollController? rowController;
   // State field(s) for main widget.
   ScrollController? main;
   // State field(s) for ListView widget.
@@ -20,7 +18,6 @@ class ReliefNewModel extends FlutterFlowModel<ReliefNewWidget> {
   @override
   void initState(BuildContext context) {
     columnController = ScrollController();
-    rowController = ScrollController();
     main = ScrollController();
     listViewController = ScrollController();
   }
@@ -29,7 +26,6 @@ class ReliefNewModel extends FlutterFlowModel<ReliefNewWidget> {
   void dispose() {
     unfocusNode.dispose();
     columnController?.dispose();
-    rowController?.dispose();
     main?.dispose();
     listViewController?.dispose();
   }

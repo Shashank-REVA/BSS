@@ -37,10 +37,6 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
 
     _model.emailController ??= TextEditingController(text: currentUserEmail);
     _model.emailFocusNode ??= FocusNode();
-
-    _model.cityController ??= TextEditingController(
-        text: valueOrDefault(currentUserDocument?.city, ''));
-    _model.cityFocusNode ??= FocusNode();
   }
 
   @override
@@ -320,76 +316,6 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
               ),
             ),
             Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(20.0, 16.0, 20.0, 12.0),
-              child: AuthUserStreamWidget(
-                builder: (context) => TextFormField(
-                  controller: _model.cityController,
-                  focusNode: _model.cityFocusNode,
-                  textCapitalization: TextCapitalization.words,
-                  obscureText: false,
-                  decoration: InputDecoration(
-                    labelText: FFLocalizations.of(context).getText(
-                      'bbq6cq16' /* Your City */,
-                    ),
-                    labelStyle:
-                        FlutterFlowTheme.of(context).labelMedium.override(
-                              fontFamily: 'Raleway',
-                              color: FlutterFlowTheme.of(context).secondaryText,
-                              fontSize: 14.0,
-                              fontWeight: FontWeight.normal,
-                            ),
-                    hintStyle:
-                        FlutterFlowTheme.of(context).labelMedium.override(
-                              fontFamily: 'Raleway',
-                              color: Colors.black,
-                              fontSize: 14.0,
-                              fontWeight: FontWeight.normal,
-                            ),
-                    enabledBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(
-                        color: Color(0xFFE0E3E7),
-                        width: 2.0,
-                      ),
-                      borderRadius: BorderRadius.circular(8.0),
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(
-                        color: Color(0xFF4B39EF),
-                        width: 2.0,
-                      ),
-                      borderRadius: BorderRadius.circular(8.0),
-                    ),
-                    errorBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(
-                        color: Color(0xFFFF5963),
-                        width: 2.0,
-                      ),
-                      borderRadius: BorderRadius.circular(8.0),
-                    ),
-                    focusedErrorBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(
-                        color: Color(0xFFFF5963),
-                        width: 2.0,
-                      ),
-                      borderRadius: BorderRadius.circular(8.0),
-                    ),
-                    filled: true,
-                    fillColor: Colors.white,
-                    contentPadding:
-                        const EdgeInsetsDirectional.fromSTEB(20.0, 24.0, 0.0, 24.0),
-                  ),
-                  style: FlutterFlowTheme.of(context).bodyMedium.override(
-                        fontFamily: 'Ubuntu',
-                        color: Colors.black,
-                        fontSize: 14.0,
-                        fontWeight: FontWeight.normal,
-                      ),
-                  validator:
-                      _model.cityControllerValidator.asValidator(context),
-                ),
-              ),
-            ),
-            Padding(
               padding: const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
               child: InkWell(
                 splashColor: Colors.transparent,
@@ -403,7 +329,6 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                   await currentUserReference!.update(createUsersRecordData(
                     email: _model.emailController.text,
                     displayName: _model.yourNameController.text,
-                    city: _model.cityController.text,
                     phoneNumber: _model.phoneController.text,
                   ));
                   logFirebaseEvent('Text_navigate_to');

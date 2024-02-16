@@ -61,7 +61,13 @@ class _OriFacilityEmptyWidgetState extends State<OriFacilityEmptyWidget> {
                   logFirebaseEvent('RichText_navigate_to');
 
                   context.pushNamed(
-                    'facilities',
+                    'allpages',
+                    queryParameters: {
+                      'tabpageindex': serializeParam(
+                        4,
+                        ParamType.int,
+                      ),
+                    }.withoutNulls,
                     extra: <String, dynamic>{
                       kTransitionInfoKey: const TransitionInfo(
                         hasTransition: true,

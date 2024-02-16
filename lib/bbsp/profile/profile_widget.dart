@@ -85,7 +85,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                       logFirebaseEvent('IconButton_navigate_to');
 
                       context.goNamed(
-                        'history',
+                        'allpages',
                         extra: <String, dynamic>{
                           kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
@@ -672,8 +672,14 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                       logFirebaseEvent('Row_navigate_to');
 
                                       context.pushNamedAuth(
-                                        'history',
+                                        'allpages',
                                         context.mounted,
+                                        queryParameters: {
+                                          'tabpageindex': serializeParam(
+                                            2,
+                                            ParamType.int,
+                                          ),
+                                        }.withoutNulls,
                                         extra: <String, dynamic>{
                                           kTransitionInfoKey: const TransitionInfo(
                                             hasTransition: true,

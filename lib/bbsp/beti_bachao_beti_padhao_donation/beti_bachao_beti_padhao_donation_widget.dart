@@ -168,19 +168,9 @@ class _BetiBachaoBetiPadhaoDonationWidgetState
                                   onPressed: () async {
                                     logFirebaseEvent(
                                         'BETI_BACHAO_BETI_PADHAO_DONATION_arrow_b');
-                                    logFirebaseEvent('IconButton_navigate_to');
-
-                                    context.pushNamed(
-                                      'donation',
-                                      extra: <String, dynamic>{
-                                        kTransitionInfoKey: const TransitionInfo(
-                                          hasTransition: true,
-                                          transitionType:
-                                              PageTransitionType.fade,
-                                          duration: Duration(milliseconds: 600),
-                                        ),
-                                      },
-                                    );
+                                    logFirebaseEvent(
+                                        'IconButton_navigate_back');
+                                    context.safePop();
                                   },
                                 ),
                               ],

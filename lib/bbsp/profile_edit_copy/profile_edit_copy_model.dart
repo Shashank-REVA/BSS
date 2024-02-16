@@ -17,10 +17,6 @@ class ProfileEditCopyModel extends FlutterFlowModel<ProfileEditCopyWidget> {
   FocusNode? emailFocusNode;
   TextEditingController? emailController;
   String? Function(BuildContext, String?)? emailControllerValidator;
-  // State field(s) for city widget.
-  FocusNode? cityFocusNode;
-  TextEditingController? cityController;
-  String? Function(BuildContext, String?)? cityControllerValidator;
 
   /// Initialization and disposal methods.
 
@@ -37,9 +33,6 @@ class ProfileEditCopyModel extends FlutterFlowModel<ProfileEditCopyWidget> {
 
     emailFocusNode?.dispose();
     emailController?.dispose();
-
-    cityFocusNode?.dispose();
-    cityController?.dispose();
   }
 
   /// Action blocks are added here.

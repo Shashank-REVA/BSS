@@ -8,11 +8,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
-import 'otp_verify_copy_model.dart';
-export 'otp_verify_copy_model.dart';
+import 'otp_verify_copy_copy_model.dart';
+export 'otp_verify_copy_copy_model.dart';
 
-class OtpVerifyCopyWidget extends StatefulWidget {
-  const OtpVerifyCopyWidget({
+class OtpVerifyCopyCopyWidget extends StatefulWidget {
+  const OtpVerifyCopyCopyWidget({
     super.key,
     required this.mobileNumber,
     this.facility,
@@ -24,25 +24,26 @@ class OtpVerifyCopyWidget extends StatefulWidget {
   final String? city;
 
   @override
-  State<OtpVerifyCopyWidget> createState() => _OtpVerifyCopyWidgetState();
+  State<OtpVerifyCopyCopyWidget> createState() =>
+      _OtpVerifyCopyCopyWidgetState();
 }
 
-class _OtpVerifyCopyWidgetState extends State<OtpVerifyCopyWidget> {
-  late OtpVerifyCopyModel _model;
+class _OtpVerifyCopyCopyWidgetState extends State<OtpVerifyCopyCopyWidget> {
+  late OtpVerifyCopyCopyModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => OtpVerifyCopyModel());
+    _model = createModel(context, () => OtpVerifyCopyCopyModel());
 
     logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'otp_verifyCopy'});
+        parameters: {'screen_name': 'otp_verifyCopyCopy'});
     // On page load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
-      logFirebaseEvent('OTP_VERIFY_COPY_otp_verifyCopy_ON_INIT_S');
-      logFirebaseEvent('otp_verifyCopy_timer');
+      logFirebaseEvent('OTP_VERIFY_COPY_COPY_otp_verifyCopyCopy_');
+      logFirebaseEvent('otp_verifyCopyCopy_timer');
       _model.timerController.onStartTimer();
     });
 
@@ -100,7 +101,7 @@ class _OtpVerifyCopyWidgetState extends State<OtpVerifyCopyWidget> {
                       children: [
                         Text(
                           FFLocalizations.of(context).getText(
-                            'mum98rs5' /* Confirm your Code */,
+                            'giph42ta' /* Confirm your Code */,
                           ),
                           style: FlutterFlowTheme.of(context)
                               .headlineSmall
@@ -173,7 +174,7 @@ class _OtpVerifyCopyWidgetState extends State<OtpVerifyCopyWidget> {
                             onChanged: (_) {},
                             onCompleted: (_) async {
                               logFirebaseEvent(
-                                  'OTP_VERIFY_COPY_PinCode_9r37pnq2_ON_PINC');
+                                  'OTP_VERIFY_COPY_COPY_PinCode_wougdm0g_ON');
                               logFirebaseEvent('PinCode_auth');
                               GoRouter.of(context).prepareAuthEvent();
                               final smsCodeVal = _model.pinCodeController!.text;
@@ -195,7 +196,7 @@ class _OtpVerifyCopyWidgetState extends State<OtpVerifyCopyWidget> {
                                 return;
                               }
 
-                              context.goNamedAuth('history', context.mounted);
+                              context.goNamedAuth('allpages', context.mounted);
                             },
                             autovalidateMode:
                                 AutovalidateMode.onUserInteraction,
@@ -227,7 +228,7 @@ class _OtpVerifyCopyWidgetState extends State<OtpVerifyCopyWidget> {
                         },
                         onEnded: () async {
                           logFirebaseEvent(
-                              'OTP_VERIFY_COPY_Timer_igwpcv1d_ON_TIMER_');
+                              'OTP_VERIFY_COPY_COPY_Timer_qnrllq5h_ON_T');
                           logFirebaseEvent('Timer_timer');
                           _model.timerController.onStartTimer();
                         },
@@ -248,7 +249,7 @@ class _OtpVerifyCopyWidgetState extends State<OtpVerifyCopyWidget> {
                           highlightColor: Colors.transparent,
                           onTap: () async {
                             logFirebaseEvent(
-                                'OTP_VERIFY_COPY_Text_sv5zoq69_ON_TAP');
+                                'OTP_VERIFY_COPY_COPY_Text_c9km6x7m_ON_TA');
                             logFirebaseEvent('Text_navigate_to');
                             if (Navigator.of(context).canPop()) {
                               context.pop();
@@ -266,7 +267,7 @@ class _OtpVerifyCopyWidgetState extends State<OtpVerifyCopyWidget> {
                           },
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              '7ohb711d' /* Wrong Number? */,
+                              'kw5987r7' /* Wrong Number? */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
@@ -293,7 +294,7 @@ class _OtpVerifyCopyWidgetState extends State<OtpVerifyCopyWidget> {
                                   0.0, 22.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'lgz1a0b4' /* Didn't recieve the code? */,
+                                  '2wuxzbts' /* Didn't recieve the code? */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -314,7 +315,7 @@ class _OtpVerifyCopyWidgetState extends State<OtpVerifyCopyWidget> {
                                 highlightColor: Colors.transparent,
                                 onTap: () async {
                                   logFirebaseEvent(
-                                      'OTP_VERIFY_COPY_PAGE_Row_n7a0i0yg_ON_TAP');
+                                      'OTP_VERIFY_COPY_COPY_Row_8yl6m8az_ON_TAP');
                                   logFirebaseEvent('Row_auth');
                                   final phoneNumberVal = widget.mobileNumber;
                                   if (phoneNumberVal == null ||
@@ -333,7 +334,7 @@ class _OtpVerifyCopyWidgetState extends State<OtpVerifyCopyWidget> {
                                     phoneNumber: phoneNumberVal,
                                     onCodeSent: (context) async {
                                       context.goNamedAuth(
-                                        'otp_verifyCopy',
+                                        'otp_verifyCopyCopy',
                                         context.mounted,
                                         queryParameters: {
                                           'mobileNumber': serializeParam(
@@ -363,11 +364,11 @@ class _OtpVerifyCopyWidgetState extends State<OtpVerifyCopyWidget> {
                                       highlightColor: Colors.transparent,
                                       onTap: () async {
                                         logFirebaseEvent(
-                                            'OTP_VERIFY_COPY_Text_veq8ai3r_ON_TAP');
+                                            'OTP_VERIFY_COPY_COPY_Text_s3zddnkx_ON_TA');
                                         logFirebaseEvent('Text_navigate_to');
 
                                         context.goNamed(
-                                          'phone_authCopy',
+                                          'phone_authCopyCopy',
                                           extra: <String, dynamic>{
                                             kTransitionInfoKey: const TransitionInfo(
                                               hasTransition: true,
@@ -381,7 +382,7 @@ class _OtpVerifyCopyWidgetState extends State<OtpVerifyCopyWidget> {
                                       },
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          '2aa9ncc1' /* Resend the code */,
+                                          'jps1kokw' /* Resend the code */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -423,7 +424,7 @@ class _OtpVerifyCopyWidgetState extends State<OtpVerifyCopyWidget> {
                           highlightColor: Colors.transparent,
                           onTap: () async {
                             logFirebaseEvent(
-                                'OTP_VERIFY_COPY_Text_lckgpckx_ON_TAP');
+                                'OTP_VERIFY_COPY_COPY_Text_tx07vlcz_ON_TA');
                             logFirebaseEvent('Text_auth');
                             GoRouter.of(context).prepareAuthEvent();
                             final smsCodeVal = _model.pinCodeController!.text;
@@ -447,16 +448,12 @@ class _OtpVerifyCopyWidgetState extends State<OtpVerifyCopyWidget> {
                             logFirebaseEvent('Text_navigate_to');
 
                             context.goNamedAuth(
-                              'facilities_booking',
+                              'allpages',
                               context.mounted,
                               queryParameters: {
-                                'facilityselected': serializeParam(
-                                  widget.facility,
-                                  ParamType.String,
-                                ),
-                                'city': serializeParam(
-                                  widget.city,
-                                  ParamType.String,
+                                'tabpageindex': serializeParam(
+                                  4,
+                                  ParamType.int,
                                 ),
                               }.withoutNulls,
                               extra: <String, dynamic>{
@@ -470,7 +467,7 @@ class _OtpVerifyCopyWidgetState extends State<OtpVerifyCopyWidget> {
                           },
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              '1b1mldyq' /* Verify & Continue */,
+                              'vqnkbidh' /* Verify & Continue */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium

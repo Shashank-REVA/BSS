@@ -1,19 +1,23 @@
 import '/auth/firebase_auth/auth_util.dart';
+import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
+import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
-import 'login_copy_model.dart';
-export 'login_copy_model.dart';
+import 'login_copy_copy_model.dart';
+export 'login_copy_copy_model.dart';
 
-class LoginCopyWidget extends StatefulWidget {
-  const LoginCopyWidget({
+class LoginCopyCopyWidget extends StatefulWidget {
+  const LoginCopyCopyWidget({
     super.key,
     Color? colorbtn,
     Color? colortxt,
@@ -28,12 +32,12 @@ class LoginCopyWidget extends StatefulWidget {
   final String? city;
 
   @override
-  State<LoginCopyWidget> createState() => _LoginCopyWidgetState();
+  State<LoginCopyCopyWidget> createState() => _LoginCopyCopyWidgetState();
 }
 
-class _LoginCopyWidgetState extends State<LoginCopyWidget>
+class _LoginCopyCopyWidgetState extends State<LoginCopyCopyWidget>
     with TickerProviderStateMixin {
-  late LoginCopyModel _model;
+  late LoginCopyCopyModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -77,9 +81,10 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => LoginCopyModel());
+    _model = createModel(context, () => LoginCopyCopyModel());
 
-    logFirebaseEvent('screen_view', parameters: {'screen_name': 'loginCopy'});
+    logFirebaseEvent('screen_view',
+        parameters: {'screen_name': 'loginCopyCopy'});
     _model.emailAddressController ??= TextEditingController();
     _model.emailAddressFocusNode ??= FocusNode();
 
@@ -165,365 +170,7 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                               ),
                             ),
                           ),
-                          Align(
-                            alignment: const AlignmentDirectional(-1.0, 0.0),
-                            child: Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  16.0, 50.0, 0.0, 0.0),
-                              child: FlutterFlowIconButton(
-                                borderColor: const Color(0x00FFFFFF),
-                                borderRadius: 20.0,
-                                borderWidth: 1.0,
-                                buttonSize: 40.0,
-                                fillColor: FlutterFlowTheme.of(context).info,
-                                icon: const Icon(
-                                  Icons.arrow_back_ios_sharp,
-                                  color: Colors.black,
-                                  size: 24.0,
-                                ),
-                                onPressed: () async {
-                                  logFirebaseEvent(
-                                      'LOGIN_COPY_arrow_back_ios_sharp_ICN_ON_T');
-                                  logFirebaseEvent('IconButton_navigate_back');
-                                  context.safePop();
-                                },
-                              ),
-                            ),
-                          ),
                         ],
-                      ),
-                      Align(
-                        alignment: const AlignmentDirectional(0.0, 0.0),
-                        child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
-                              0.0, 20.0, 0.0, 20.0),
-                          child: SingleChildScrollView(
-                            scrollDirection: Axis.horizontal,
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
-                                      10.0, 10.0, 20.0, 10.0),
-                                  child: FFButtonWidget(
-                                    onPressed: () async {
-                                      logFirebaseEvent(
-                                          'LOGIN_COPY_PAGE_HOME_BTN_ON_TAP');
-                                      logFirebaseEvent('Button_navigate_to');
-
-                                      context.goNamed(
-                                        'history',
-                                        extra: <String, dynamic>{
-                                          kTransitionInfoKey: const TransitionInfo(
-                                            hasTransition: true,
-                                            transitionType:
-                                                PageTransitionType.fade,
-                                            duration:
-                                                Duration(milliseconds: 600),
-                                          ),
-                                        },
-                                      );
-                                    },
-                                    text: FFLocalizations.of(context).getText(
-                                      'm4qj2y02' /* Home */,
-                                    ),
-                                    options: FFButtonOptions(
-                                      height: 40.0,
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          24.0, 10.0, 24.0, 10.0),
-                                      iconPadding:
-                                          const EdgeInsetsDirectional.fromSTEB(
-                                              0.0, 0.0, 0.0, 0.0),
-                                      color: FlutterFlowTheme.of(context).info,
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .override(
-                                            fontFamily: 'Raleway',
-                                            color: Colors.black,
-                                            fontSize: 18.0,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                      elevation: 5.0,
-                                      borderSide: const BorderSide(
-                                        color: Colors.transparent,
-                                        width: 1.0,
-                                      ),
-                                      borderRadius: BorderRadius.circular(20.0),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
-                                      10.0, 10.0, 20.0, 10.0),
-                                  child: FFButtonWidget(
-                                    onPressed: () async {
-                                      logFirebaseEvent(
-                                          'LOGIN_COPY_PAGE_CITIES_BTN_ON_TAP');
-                                      logFirebaseEvent('Button_navigate_to');
-
-                                      context.goNamed(
-                                        'search',
-                                        extra: <String, dynamic>{
-                                          kTransitionInfoKey: const TransitionInfo(
-                                            hasTransition: true,
-                                            transitionType:
-                                                PageTransitionType.fade,
-                                            duration:
-                                                Duration(milliseconds: 600),
-                                          ),
-                                        },
-                                      );
-                                    },
-                                    text: FFLocalizations.of(context).getText(
-                                      'dmmh9rop' /* Cities */,
-                                    ),
-                                    options: FFButtonOptions(
-                                      height: 40.0,
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          24.0, 10.0, 24.0, 10.0),
-                                      iconPadding:
-                                          const EdgeInsetsDirectional.fromSTEB(
-                                              0.0, 0.0, 0.0, 0.0),
-                                      color: FlutterFlowTheme.of(context).info,
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .override(
-                                            fontFamily: 'Raleway',
-                                            color: Colors.black,
-                                            fontSize: 18.0,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                      elevation: 5.0,
-                                      borderSide: const BorderSide(
-                                        color: Colors.transparent,
-                                        width: 1.0,
-                                      ),
-                                      borderRadius: BorderRadius.circular(20.0),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
-                                      10.0, 10.0, 20.0, 10.0),
-                                  child: FFButtonWidget(
-                                    onPressed: () async {
-                                      logFirebaseEvent(
-                                          'LOGIN_COPY_PAGE_ACCOUNT_BTN_ON_TAP');
-                                      if (loggedIn) {
-                                        logFirebaseEvent('Button_navigate_to');
-
-                                        context.goNamed(
-                                          'Profile',
-                                          extra: <String, dynamic>{
-                                            kTransitionInfoKey: const TransitionInfo(
-                                              hasTransition: true,
-                                              transitionType:
-                                                  PageTransitionType.fade,
-                                              duration:
-                                                  Duration(milliseconds: 600),
-                                            ),
-                                          },
-                                        );
-                                      } else {
-                                        logFirebaseEvent('Button_navigate_to');
-
-                                        context.goNamed(
-                                          'login',
-                                          extra: <String, dynamic>{
-                                            kTransitionInfoKey: const TransitionInfo(
-                                              hasTransition: true,
-                                              transitionType:
-                                                  PageTransitionType.fade,
-                                              duration:
-                                                  Duration(milliseconds: 600),
-                                            ),
-                                          },
-                                        );
-                                      }
-                                    },
-                                    text: FFLocalizations.of(context).getText(
-                                      'w573t83v' /* Account */,
-                                    ),
-                                    options: FFButtonOptions(
-                                      height: 40.0,
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          24.0, 10.0, 24.0, 10.0),
-                                      iconPadding:
-                                          const EdgeInsetsDirectional.fromSTEB(
-                                              0.0, 0.0, 0.0, 0.0),
-                                      color: widget.colorbtn,
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .override(
-                                            fontFamily: 'Raleway',
-                                            color: widget.colortxt,
-                                            fontSize: 18.0,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                      elevation: 5.0,
-                                      borderSide: const BorderSide(
-                                        color: Colors.transparent,
-                                        width: 1.0,
-                                      ),
-                                      borderRadius: BorderRadius.circular(20.0),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
-                                      10.0, 10.0, 20.0, 10.0),
-                                  child: FFButtonWidget(
-                                    onPressed: () async {
-                                      logFirebaseEvent(
-                                          'LOGIN_COPY_PAGE_EVENTS_BTN_ON_TAP');
-                                      logFirebaseEvent('Button_navigate_to');
-
-                                      context.pushNamed(
-                                        'events',
-                                        extra: <String, dynamic>{
-                                          kTransitionInfoKey: const TransitionInfo(
-                                            hasTransition: true,
-                                            transitionType:
-                                                PageTransitionType.fade,
-                                            duration:
-                                                Duration(milliseconds: 600),
-                                          ),
-                                        },
-                                      );
-                                    },
-                                    text: FFLocalizations.of(context).getText(
-                                      's5x9hg13' /* Events */,
-                                    ),
-                                    options: FFButtonOptions(
-                                      height: 40.0,
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          24.0, 10.0, 24.0, 10.0),
-                                      iconPadding:
-                                          const EdgeInsetsDirectional.fromSTEB(
-                                              0.0, 0.0, 0.0, 0.0),
-                                      color: FlutterFlowTheme.of(context).info,
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .override(
-                                            fontFamily: 'Raleway',
-                                            color: Colors.black,
-                                            fontSize: 18.0,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                      elevation: 5.0,
-                                      borderSide: const BorderSide(
-                                        color: Colors.transparent,
-                                        width: 1.0,
-                                      ),
-                                      borderRadius: BorderRadius.circular(20.0),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
-                                      10.0, 10.0, 20.0, 10.0),
-                                  child: FFButtonWidget(
-                                    onPressed: () async {
-                                      logFirebaseEvent(
-                                          'LOGIN_COPY_PAGE_facilities_ON_TAP');
-                                      logFirebaseEvent(
-                                          'facilities_navigate_to');
-
-                                      context.pushNamed(
-                                        'facilities',
-                                        extra: <String, dynamic>{
-                                          kTransitionInfoKey: const TransitionInfo(
-                                            hasTransition: true,
-                                            transitionType:
-                                                PageTransitionType.fade,
-                                            duration:
-                                                Duration(milliseconds: 600),
-                                          ),
-                                        },
-                                      );
-                                    },
-                                    text: FFLocalizations.of(context).getText(
-                                      '1kx7fcc8' /* Facilities */,
-                                    ),
-                                    options: FFButtonOptions(
-                                      height: 40.0,
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          24.0, 10.0, 24.0, 10.0),
-                                      iconPadding:
-                                          const EdgeInsetsDirectional.fromSTEB(
-                                              0.0, 0.0, 0.0, 0.0),
-                                      color: FlutterFlowTheme.of(context).info,
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .override(
-                                            fontFamily: 'Raleway',
-                                            color: Colors.black,
-                                            fontSize: 18.0,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                      elevation: 5.0,
-                                      borderSide: const BorderSide(
-                                        color: Colors.transparent,
-                                        width: 1.0,
-                                      ),
-                                      borderRadius: BorderRadius.circular(20.0),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
-                                      10.0, 10.0, 20.0, 10.0),
-                                  child: FFButtonWidget(
-                                    onPressed: () async {
-                                      logFirebaseEvent(
-                                          'LOGIN_COPY_PAGE_DONATION_BTN_ON_TAP');
-                                      logFirebaseEvent('Button_navigate_to');
-
-                                      context.goNamed(
-                                        'donation',
-                                        extra: <String, dynamic>{
-                                          kTransitionInfoKey: const TransitionInfo(
-                                            hasTransition: true,
-                                            transitionType:
-                                                PageTransitionType.fade,
-                                            duration:
-                                                Duration(milliseconds: 600),
-                                          ),
-                                        },
-                                      );
-                                    },
-                                    text: FFLocalizations.of(context).getText(
-                                      'cn8suxny' /* Donation */,
-                                    ),
-                                    options: FFButtonOptions(
-                                      height: 40.0,
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          24.0, 10.0, 24.0, 10.0),
-                                      iconPadding:
-                                          const EdgeInsetsDirectional.fromSTEB(
-                                              0.0, 0.0, 0.0, 0.0),
-                                      color: FlutterFlowTheme.of(context).info,
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .override(
-                                            fontFamily: 'Raleway',
-                                            color: Colors.black,
-                                            fontSize: 18.0,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                      elevation: 5.0,
-                                      borderSide: const BorderSide(
-                                        color: Colors.transparent,
-                                        width: 1.0,
-                                      ),
-                                      borderRadius: BorderRadius.circular(20.0),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
                       ),
                       Align(
                         alignment: const AlignmentDirectional(0.0, 0.0),
@@ -561,7 +208,7 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                             0.0, 0.0, 0.0, 10.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
-                                            'zz2hioe4' /* Login */,
+                                            '3iq5i4gv' /* Login */,
                                           ),
                                           textAlign: TextAlign.center,
                                           style: FlutterFlowTheme.of(context)
@@ -604,7 +251,7 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                                 labelText:
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                  '24wn7ynq' /* Email */,
+                                                  'gof9mnyb' /* Email */,
                                                 ),
                                                 labelStyle:
                                                     FlutterFlowTheme.of(context)
@@ -667,7 +314,7 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                                 labelText:
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                  'smljgp2w' /* Password */,
+                                                  '6b5fxc5g' /* Password */,
                                                 ),
                                                 labelStyle:
                                                     FlutterFlowTheme.of(context)
@@ -720,10 +367,120 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                       Padding(
                                         padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 16.0),
+                                        child:
+                                            StreamBuilder<List<CitiesRecord>>(
+                                          stream: queryCitiesRecord(),
+                                          builder: (context, snapshot) {
+                                            // Customize what your widget looks like when it's loading.
+                                            if (!snapshot.hasData) {
+                                              return const Center(
+                                                child: SizedBox(
+                                                  width: 50.0,
+                                                  height: 50.0,
+                                                  child: SpinKitThreeBounce(
+                                                    color: Color(0xFFEC7834),
+                                                    size: 50.0,
+                                                  ),
+                                                ),
+                                              );
+                                            }
+                                            List<CitiesRecord>
+                                                containerCitiesRecordList =
+                                                snapshot.data!;
+                                            return Container(
+                                              width: 320.0,
+                                              decoration: BoxDecoration(
+                                                color: Colors.white,
+                                                boxShadow: const [
+                                                  BoxShadow(
+                                                    blurRadius: 4.0,
+                                                    color: Color(0xFF322E5C),
+                                                    offset: Offset(0.0, 2.0),
+                                                  )
+                                                ],
+                                                borderRadius:
+                                                    BorderRadius.circular(40.0),
+                                              ),
+                                              child:
+                                                  FlutterFlowDropDown<String>(
+                                                controller: _model
+                                                        .dropDownValueController ??=
+                                                    FormFieldController<String>(
+                                                        null),
+                                                options:
+                                                    containerCitiesRecordList
+                                                        .map((e) => e.name)
+                                                        .toList()
+                                                        .sortedList((e) => e),
+                                                onChanged: (val) => setState(
+                                                    () => _model.dropDownValue =
+                                                        val),
+                                                width: 300.0,
+                                                height: 50.0,
+                                                searchHintTextStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelMedium
+                                                        .override(
+                                                          fontFamily: 'Raleway',
+                                                          color: Colors.black,
+                                                        ),
+                                                searchTextStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium,
+                                                textStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily: 'Raleway',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .secondaryText,
+                                                          fontSize: 16.0,
+                                                        ),
+                                                hintText:
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                  'w1jdcbj4' /* Set your city */,
+                                                ),
+                                                searchHintText:
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                  '8er1fekg' /* Search for an city... */,
+                                                ),
+                                                icon: Icon(
+                                                  Icons
+                                                      .keyboard_arrow_down_rounded,
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .secondaryText,
+                                                  size: 24.0,
+                                                ),
+                                                fillColor:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryText,
+                                                elevation: 2.0,
+                                                borderColor: Colors.transparent,
+                                                borderWidth: 2.0,
+                                                borderRadius: 25.0,
+                                                margin: const EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        16.0, 4.0, 16.0, 4.0),
+                                                hidesUnderline: true,
+                                                isOverButton: true,
+                                                isSearchable: true,
+                                                isMultiSelect: false,
+                                              ),
+                                            );
+                                          },
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 0.0, 0.0, 16.0),
                                         child: FFButtonWidget(
                                           onPressed: () async {
                                             logFirebaseEvent(
-                                                'LOGIN_COPY_PAGE_LOG_IN_BTN_ON_TAP');
+                                                'LOGIN_COPY_COPY_PAGE_LOG_IN_BTN_ON_TAP');
                                             logFirebaseEvent('Button_auth');
                                             GoRouter.of(context)
                                                 .prepareAuthEvent();
@@ -740,20 +497,22 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                             }
 
                                             logFirebaseEvent(
+                                                'Button_backend_call');
+
+                                            await currentUserReference!
+                                                .update(createUsersRecordData(
+                                              city: _model.dropDownValue,
+                                            ));
+                                            logFirebaseEvent(
                                                 'Button_navigate_to');
 
                                             context.goNamedAuth(
-                                              'facilities_booking',
+                                              'allpages',
                                               context.mounted,
                                               queryParameters: {
-                                                'facilityselected':
-                                                    serializeParam(
-                                                  widget.facility,
-                                                  ParamType.String,
-                                                ),
-                                                'city': serializeParam(
-                                                  widget.city,
-                                                  ParamType.String,
+                                                'tabpageindex': serializeParam(
+                                                  4,
+                                                  ParamType.int,
                                                 ),
                                               }.withoutNulls,
                                               extra: <String, dynamic>{
@@ -770,7 +529,7 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                           },
                                           text: FFLocalizations.of(context)
                                               .getText(
-                                            'jujujl95' /* Log In */,
+                                            'dad5n4q1' /* Log In */,
                                           ),
                                           options: FFButtonOptions(
                                             width: double.infinity,
@@ -781,8 +540,7 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                             iconPadding:
                                                 const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 0.0),
-                                            color: FlutterFlowTheme.of(context)
-                                                .primary,
+                                            color: const Color(0xFF322E5C),
                                             textStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .titleSmall
@@ -807,7 +565,7 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                         child: FFButtonWidget(
                                           onPressed: () async {
                                             logFirebaseEvent(
-                                                'LOGIN_COPY_PAGE_SIGN_UP_BTN_ON_TAP');
+                                                'LOGIN_COPY_COPY_PAGE_SIGN_UP_BTN_ON_TAP');
                                             logFirebaseEvent(
                                                 'Button_navigate_to');
 
@@ -827,7 +585,7 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                           },
                                           text: FFLocalizations.of(context)
                                               .getText(
-                                            '667o179j' /* Sign Up */,
+                                            'vf9yroc2' /* Sign Up */,
                                           ),
                                           options: FFButtonOptions(
                                             width: double.infinity,
@@ -863,7 +621,7 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                             0.0, 0.0, 0.0, 10.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
-                                            '2g2teuy3' /* or Sign In with */,
+                                            'quqgenfv' /* or Sign In with */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
@@ -894,7 +652,7 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                               ),
                                               onPressed: () async {
                                                 logFirebaseEvent(
-                                                    'LOGIN_COPY_PAGE_google_ICN_ON_TAP');
+                                                    'LOGIN_COPY_COPY_PAGE_google_ICN_ON_TAP');
                                                 logFirebaseEvent(
                                                     'IconButton_auth');
                                                 GoRouter.of(context)
@@ -908,19 +666,8 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                                     'IconButton_navigate_to');
 
                                                 context.goNamedAuth(
-                                                  'facilities_booking',
+                                                  'goggle_loginCopyCopy',
                                                   context.mounted,
-                                                  queryParameters: {
-                                                    'facilityselected':
-                                                        serializeParam(
-                                                      widget.facility,
-                                                      ParamType.String,
-                                                    ),
-                                                    'city': serializeParam(
-                                                      widget.city,
-                                                      ParamType.String,
-                                                    ),
-                                                  }.withoutNulls,
                                                   extra: <String, dynamic>{
                                                     kTransitionInfoKey:
                                                         const TransitionInfo(
@@ -951,7 +698,7 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                               ),
                                               onPressed: () async {
                                                 logFirebaseEvent(
-                                                    'LOGIN_COPY_PAGE_phone_ICN_ON_TAP');
+                                                    'LOGIN_COPY_COPY_PAGE_phone_ICN_ON_TAP');
                                                 logFirebaseEvent(
                                                     'IconButton_navigate_to');
                                                 if (Navigator.of(context)
@@ -959,17 +706,7 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                                   context.pop();
                                                 }
                                                 context.pushNamed(
-                                                  'phone_authCopy',
-                                                  queryParameters: {
-                                                    'facility': serializeParam(
-                                                      widget.facility,
-                                                      ParamType.String,
-                                                    ),
-                                                    'city': serializeParam(
-                                                      widget.city,
-                                                      ParamType.String,
-                                                    ),
-                                                  }.withoutNulls,
+                                                  'phone_authCopyCopy',
                                                   extra: <String, dynamic>{
                                                     kTransitionInfoKey:
                                                         const TransitionInfo(
@@ -997,7 +734,7 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                           highlightColor: Colors.transparent,
                                           onTap: () async {
                                             logFirebaseEvent(
-                                                'LOGIN_COPY_PAGE_Text_ms2y2j85_ON_TAP');
+                                                'LOGIN_COPY_COPY_Text_uo9u4mkp_ON_TAP');
                                             logFirebaseEvent(
                                                 'Text_navigate_to');
 
@@ -1017,7 +754,7 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                           },
                                           child: Text(
                                             FFLocalizations.of(context).getText(
-                                              'wgob0f92' /* Forgot password? */,
+                                              'hy1dm1kn' /* Forgot password? */,
                                             ),
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium

@@ -783,12 +783,16 @@ class _SignupWidgetState extends State<SignupWidget>
 
                                           logFirebaseEvent(
                                               'Button_navigate_to');
-                                          if (Navigator.of(context).canPop()) {
-                                            context.pop();
-                                          }
-                                          context.pushNamedAuth(
-                                            'history',
+
+                                          context.goNamedAuth(
+                                            'allpages',
                                             context.mounted,
+                                            queryParameters: {
+                                              'tabpageindex': serializeParam(
+                                                4,
+                                                ParamType.int,
+                                              ),
+                                            }.withoutNulls,
                                             extra: <String, dynamic>{
                                               kTransitionInfoKey:
                                                   const TransitionInfo(

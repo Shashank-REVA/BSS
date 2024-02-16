@@ -1,8 +1,9 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'phone_auth_copy_widget.dart' show PhoneAuthCopyWidget;
+import '/flutter_flow/form_field_controller.dart';
+import 'phone_auth_copy_copy_widget.dart' show PhoneAuthCopyCopyWidget;
 import 'package:flutter/material.dart';
 
-class PhoneAuthCopyModel extends FlutterFlowModel<PhoneAuthCopyWidget> {
+class PhoneAuthCopyCopyModel extends FlutterFlowModel<PhoneAuthCopyCopyWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
@@ -16,6 +17,9 @@ class PhoneAuthCopyModel extends FlutterFlowModel<PhoneAuthCopyWidget> {
   FocusNode? phoneNumberFocusNode;
   TextEditingController? phoneNumberController;
   String? Function(BuildContext, String?)? phoneNumberControllerValidator;
+  // State field(s) for DropDown widget.
+  String? dropDownValue;
+  FormFieldController<String>? dropDownValueController;
 
   /// Initialization and disposal methods.
 

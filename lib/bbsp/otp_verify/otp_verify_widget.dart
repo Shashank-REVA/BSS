@@ -190,7 +190,7 @@ class _OtpVerifyWidgetState extends State<OtpVerifyWidget> {
                                 return;
                               }
 
-                              context.goNamedAuth('history', context.mounted);
+                              context.goNamedAuth('allpages', context.mounted);
                             },
                             autovalidateMode:
                                 AutovalidateMode.onUserInteraction,
@@ -444,8 +444,14 @@ class _OtpVerifyWidgetState extends State<OtpVerifyWidget> {
                             logFirebaseEvent('Text_navigate_to');
 
                             context.goNamedAuth(
-                              'profile_editCopy',
+                              'allpages',
                               context.mounted,
+                              queryParameters: {
+                                'tabpageindex': serializeParam(
+                                  4,
+                                  ParamType.int,
+                                ),
+                              }.withoutNulls,
                               extra: <String, dynamic>{
                                 kTransitionInfoKey: const TransitionInfo(
                                   hasTransition: true,

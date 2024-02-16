@@ -1,8 +1,9 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'main_startpage1_widget.dart' show MainStartpage1Widget;
+import 'city_outline_after_login_widget.dart' show CityOutlineAfterLoginWidget;
 import 'package:flutter/material.dart';
 
-class MainStartpage1Model extends FlutterFlowModel<MainStartpage1Widget> {
+class CityOutlineAfterLoginModel
+    extends FlutterFlowModel<CityOutlineAfterLoginWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();

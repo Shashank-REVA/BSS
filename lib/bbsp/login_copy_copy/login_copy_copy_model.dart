@@ -1,8 +1,9 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'login_copy_widget.dart' show LoginCopyWidget;
+import '/flutter_flow/form_field_controller.dart';
+import 'login_copy_copy_widget.dart' show LoginCopyCopyWidget;
 import 'package:flutter/material.dart';
 
-class LoginCopyModel extends FlutterFlowModel<LoginCopyWidget> {
+class LoginCopyCopyModel extends FlutterFlowModel<LoginCopyCopyWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
@@ -15,6 +16,9 @@ class LoginCopyModel extends FlutterFlowModel<LoginCopyWidget> {
   TextEditingController? passwordController;
   late bool passwordVisibility;
   String? Function(BuildContext, String?)? passwordControllerValidator;
+  // State field(s) for DropDown widget.
+  String? dropDownValue;
+  FormFieldController<String>? dropDownValueController;
 
   /// Initialization and disposal methods.
 

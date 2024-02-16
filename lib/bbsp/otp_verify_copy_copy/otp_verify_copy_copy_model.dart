@@ -1,10 +1,10 @@
 import '/flutter_flow/flutter_flow_timer.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'otp_verify_copy_widget.dart' show OtpVerifyCopyWidget;
+import 'otp_verify_copy_copy_widget.dart' show OtpVerifyCopyCopyWidget;
 import 'package:stop_watch_timer/stop_watch_timer.dart';
 import 'package:flutter/material.dart';
 
-class OtpVerifyCopyModel extends FlutterFlowModel<OtpVerifyCopyWidget> {
+class OtpVerifyCopyCopyModel extends FlutterFlowModel<OtpVerifyCopyCopyWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();

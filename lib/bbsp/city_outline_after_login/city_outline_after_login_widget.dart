@@ -1,4 +1,3 @@
-import '/auth/base_auth_user_provider.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
@@ -12,24 +11,25 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'city_outline_model.dart';
-export 'city_outline_model.dart';
+import 'city_outline_after_login_model.dart';
+export 'city_outline_after_login_model.dart';
 
-class CityOutlineWidget extends StatefulWidget {
-  const CityOutlineWidget({
+class CityOutlineAfterLoginWidget extends StatefulWidget {
+  const CityOutlineAfterLoginWidget({
     super.key,
-    this.citynames,
+    this.cityname,
   });
 
-  final CitiesRecord? citynames;
+  final String? cityname;
 
   @override
-  State<CityOutlineWidget> createState() => _CityOutlineWidgetState();
+  State<CityOutlineAfterLoginWidget> createState() =>
+      _CityOutlineAfterLoginWidgetState();
 }
 
-class _CityOutlineWidgetState extends State<CityOutlineWidget>
-    with TickerProviderStateMixin {
-  late CityOutlineModel _model;
+class _CityOutlineAfterLoginWidgetState
+    extends State<CityOutlineAfterLoginWidget> with TickerProviderStateMixin {
+  late CityOutlineAfterLoginModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -175,46 +175,6 @@ class _CityOutlineWidgetState extends State<CityOutlineWidget>
     'textOnPageLoadAnimation6': AnimationInfo(
       trigger: AnimationTrigger.onPageLoad,
       effects: [
-        VisibilityEffect(duration: 250.ms),
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 250.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 250.ms,
-          duration: 600.ms,
-          begin: const Offset(-20.0, 0.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'buttonOnPageLoadAnimation2': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        VisibilityEffect(duration: 350.ms),
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 350.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 350.ms,
-          duration: 600.ms,
-          begin: const Offset(0.0, 30.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'textOnPageLoadAnimation7': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
         VisibilityEffect(duration: 450.ms),
         FadeEffect(
           curve: Curves.easeInOut,
@@ -232,7 +192,7 @@ class _CityOutlineWidgetState extends State<CityOutlineWidget>
         ),
       ],
     ),
-    'buttonOnPageLoadAnimation3': AnimationInfo(
+    'buttonOnPageLoadAnimation2': AnimationInfo(
       trigger: AnimationTrigger.onPageLoad,
       effects: [
         VisibilityEffect(duration: 550.ms),
@@ -257,10 +217,10 @@ class _CityOutlineWidgetState extends State<CityOutlineWidget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => CityOutlineModel());
+    _model = createModel(context, () => CityOutlineAfterLoginModel());
 
     logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'city_outline'});
+        parameters: {'screen_name': 'city_outline_after_login'});
   }
 
   @override
@@ -283,8 +243,14 @@ class _CityOutlineWidgetState extends State<CityOutlineWidget>
 
     context.watch<FFAppState>();
 
-    return StreamBuilder<CitiesRecord>(
-      stream: CitiesRecord.getDocument(widget.citynames!.reference),
+    return StreamBuilder<List<CitiesRecord>>(
+      stream: queryCitiesRecord(
+        queryBuilder: (citiesRecord) => citiesRecord.where(
+          'name',
+          isEqualTo: widget.cityname,
+        ),
+        singleRecord: true,
+      ),
       builder: (context, snapshot) {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
@@ -302,7 +268,12 @@ class _CityOutlineWidgetState extends State<CityOutlineWidget>
             ),
           );
         }
-        final cityOutlineCitiesRecord = snapshot.data!;
+        List<CitiesRecord> cityOutlineAfterLoginCitiesRecordList =
+            snapshot.data!;
+        final cityOutlineAfterLoginCitiesRecord =
+            cityOutlineAfterLoginCitiesRecordList.isNotEmpty
+                ? cityOutlineAfterLoginCitiesRecordList.first
+                : null;
         return GestureDetector(
           onTap: () => _model.unfocusNode.canRequestFocus
               ? FocusScope.of(context).requestFocus(_model.unfocusNode)
@@ -328,7 +299,7 @@ class _CityOutlineWidgetState extends State<CityOutlineWidget>
                             image: DecorationImage(
                               fit: BoxFit.cover,
                               image: Image.network(
-                                cityOutlineCitiesRecord.image,
+                                cityOutlineAfterLoginCitiesRecord!.image,
                               ).image,
                             ),
                             boxShadow: const [
@@ -369,10 +340,28 @@ class _CityOutlineWidgetState extends State<CityOutlineWidget>
                                       ),
                                       onPressed: () async {
                                         logFirebaseEvent(
-                                            'CITY_OUTLINE_arrow_back_ios_rounded_ICN_');
+                                            'CITY_OUTLINE_AFTER_LOGIN_arrow_back_ios_');
                                         logFirebaseEvent(
-                                            'IconButton_navigate_back');
-                                        context.safePop();
+                                            'IconButton_navigate_to');
+
+                                        context.pushNamed(
+                                          'allpages',
+                                          queryParameters: {
+                                            'tabpageindex': serializeParam(
+                                              0,
+                                              ParamType.int,
+                                            ),
+                                          }.withoutNulls,
+                                          extra: <String, dynamic>{
+                                            kTransitionInfoKey: const TransitionInfo(
+                                              hasTransition: true,
+                                              transitionType:
+                                                  PageTransitionType.fade,
+                                              duration:
+                                                  Duration(milliseconds: 600),
+                                            ),
+                                          },
+                                        );
                                       },
                                     ),
                                   ],
@@ -386,7 +375,7 @@ class _CityOutlineWidgetState extends State<CityOutlineWidget>
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 20.0, 0.0, 0.0),
                           child: Text(
-                            cityOutlineCitiesRecord.name,
+                            cityOutlineAfterLoginCitiesRecord.name,
                             style: FlutterFlowTheme.of(context)
                                 .headlineLarge
                                 .override(
@@ -402,7 +391,7 @@ class _CityOutlineWidgetState extends State<CityOutlineWidget>
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 5.0, 16.0, 16.0),
                           child: Text(
-                            cityOutlineCitiesRecord.state,
+                            cityOutlineAfterLoginCitiesRecord.state,
                             style: FlutterFlowTheme.of(context)
                                 .titleMedium
                                 .override(
@@ -418,7 +407,7 @@ class _CityOutlineWidgetState extends State<CityOutlineWidget>
                               16.0, 12.0, 16.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              'ejpm7wos' /* In-Charge */,
+                              'sse7a5o6' /* In-Charge */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .titleLarge
@@ -446,7 +435,7 @@ class _CityOutlineWidgetState extends State<CityOutlineWidget>
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 5.0, 0.0, 16.0),
                               child: Text(
-                                cityOutlineCitiesRecord.about,
+                                cityOutlineAfterLoginCitiesRecord.about,
                                 style: FlutterFlowTheme.of(context)
                                     .titleMedium
                                     .override(
@@ -463,7 +452,7 @@ class _CityOutlineWidgetState extends State<CityOutlineWidget>
                               16.0, 5.0, 16.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              'fsphd8wy' /* Phone Number */,
+                              'cirk6i02' /* Phone Number */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .titleLarge
@@ -481,15 +470,16 @@ class _CityOutlineWidgetState extends State<CityOutlineWidget>
                           child: FFButtonWidget(
                             onPressed: () async {
                               logFirebaseEvent(
-                                  'CITY_OUTLINE_SELECT_A_FACILITY_BTN_ON_TA');
+                                  'CITY_OUTLINE_AFTER_LOGIN_SELECT_A_FACILI');
                               logFirebaseEvent('Button_call_number');
                               await launchUrl(Uri(
                                 scheme: 'tel',
-                                path:
-                                    cityOutlineCitiesRecord.phoneNum.toString(),
+                                path: cityOutlineAfterLoginCitiesRecord.phoneNum
+                                    .toString(),
                               ));
                             },
-                            text: cityOutlineCitiesRecord.phoneNum.toString(),
+                            text: cityOutlineAfterLoginCitiesRecord.phoneNum
+                                .toString(),
                             icon: const Icon(
                               Icons.phone,
                               size: 15.0,
@@ -524,7 +514,7 @@ class _CityOutlineWidgetState extends State<CityOutlineWidget>
                               16.0, 5.0, 16.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              'nppg4q1f' /* Facilities */,
+                              'qp4wequn' /* Location */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .titleLarge
@@ -542,83 +532,13 @@ class _CityOutlineWidgetState extends State<CityOutlineWidget>
                           child: FFButtonWidget(
                             onPressed: () async {
                               logFirebaseEvent(
-                                  'CITY_OUTLINE_SELECT_A_FACILITY_BTN_ON_TA');
-                              if (!loggedIn) {
-                                logFirebaseEvent('Button_navigate_to');
-
-                                context.goNamed(
-                                  'loginCopyCopy',
-                                  extra: <String, dynamic>{
-                                    kTransitionInfoKey: const TransitionInfo(
-                                      hasTransition: true,
-                                      transitionType: PageTransitionType.fade,
-                                      duration: Duration(milliseconds: 600),
-                                    ),
-                                  },
-                                );
-                              }
-                            },
-                            text: FFLocalizations.of(context).getText(
-                              'd7hupkgn' /* Select a Facility */,
-                            ),
-                            icon: const Icon(
-                              Icons.spa,
-                              size: 15.0,
-                            ),
-                            options: FFButtonOptions(
-                              height: 40.0,
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  24.0, 0.0, 24.0, 0.0),
-                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 0.0),
-                              color: const Color(0xFF322E5C),
-                              textStyle: FlutterFlowTheme.of(context)
-                                  .titleSmall
-                                  .override(
-                                    fontFamily: 'Raleway',
-                                    color: Colors.white,
-                                    fontSize: 18.0,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                              elevation: 3.0,
-                              borderSide: const BorderSide(
-                                color: Colors.transparent,
-                                width: 1.0,
-                              ),
-                              borderRadius: BorderRadius.circular(15.0),
-                            ),
-                          ).animateOnPageLoad(
-                              animationsMap['buttonOnPageLoadAnimation2']!),
-                        ),
-                        Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
-                              16.0, 5.0, 16.0, 0.0),
-                          child: Text(
-                            FFLocalizations.of(context).getText(
-                              'bhooscqe' /* Location */,
-                            ),
-                            style: FlutterFlowTheme.of(context)
-                                .titleLarge
-                                .override(
-                                  fontFamily: 'SuperTall',
-                                  color: const Color(0xFFEC7834),
-                                  useGoogleFonts: false,
-                                ),
-                          ).animateOnPageLoad(
-                              animationsMap['textOnPageLoadAnimation7']!),
-                        ),
-                        Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
-                              16.0, 12.0, 16.0, 16.0),
-                          child: FFButtonWidget(
-                            onPressed: () async {
-                              logFirebaseEvent(
-                                  'CITY_OUTLINE_CLICK_HERE_TO_START_NAVIGAT');
+                                  'CITY_OUTLINE_AFTER_LOGIN_CLICK_HERE_TO_S');
                               logFirebaseEvent('Button_launch_u_r_l');
-                              await launchURL(cityOutlineCitiesRecord.location);
+                              await launchURL(
+                                  cityOutlineAfterLoginCitiesRecord.location);
                             },
                             text: FFLocalizations.of(context).getText(
-                              'xqtrq3f6' /*  Click Here to start Navigatio... */,
+                              'teticz37' /*  Click Here to start Navigatio... */,
                             ),
                             icon: const FaIcon(
                               FontAwesomeIcons.locationArrow,
@@ -646,7 +566,7 @@ class _CityOutlineWidgetState extends State<CityOutlineWidget>
                               borderRadius: BorderRadius.circular(15.0),
                             ),
                           ).animateOnPageLoad(
-                              animationsMap['buttonOnPageLoadAnimation3']!),
+                              animationsMap['buttonOnPageLoadAnimation2']!),
                         ),
                       ],
                     ),

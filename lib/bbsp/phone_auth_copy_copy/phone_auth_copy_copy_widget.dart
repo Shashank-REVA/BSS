@@ -1,21 +1,24 @@
 import '/auth/firebase_auth/auth_util.dart';
+import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_autocomplete_options_list.dart';
+import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
+import '/flutter_flow/form_field_controller.dart';
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:provider/provider.dart';
-import 'phone_auth_copy_model.dart';
-export 'phone_auth_copy_model.dart';
+import 'phone_auth_copy_copy_model.dart';
+export 'phone_auth_copy_copy_model.dart';
 
-class PhoneAuthCopyWidget extends StatefulWidget {
-  const PhoneAuthCopyWidget({
+class PhoneAuthCopyCopyWidget extends StatefulWidget {
+  const PhoneAuthCopyCopyWidget({
     super.key,
     Color? colorbtn,
     Color? colortxt,
@@ -30,12 +33,13 @@ class PhoneAuthCopyWidget extends StatefulWidget {
   final String? city;
 
   @override
-  State<PhoneAuthCopyWidget> createState() => _PhoneAuthCopyWidgetState();
+  State<PhoneAuthCopyCopyWidget> createState() =>
+      _PhoneAuthCopyCopyWidgetState();
 }
 
-class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
+class _PhoneAuthCopyCopyWidgetState extends State<PhoneAuthCopyCopyWidget>
     with TickerProviderStateMixin {
-  late PhoneAuthCopyModel _model;
+  late PhoneAuthCopyCopyModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -79,10 +83,10 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => PhoneAuthCopyModel());
+    _model = createModel(context, () => PhoneAuthCopyCopyModel());
 
     logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'phone_authCopy'});
+        parameters: {'screen_name': 'phone_authCopyCopy'});
     _model.countrynameController ??= TextEditingController();
 
     _model.phoneNumberController ??= TextEditingController();
@@ -93,7 +97,7 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {
           _model.countrynameController?.text =
               FFLocalizations.of(context).getText(
-            'azw2ipnm' /* India */,
+            'wom7hzcz' /* India */,
           );
         }));
   }
@@ -193,7 +197,7 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                 ),
                                 onPressed: () async {
                                   logFirebaseEvent(
-                                      'PHONE_AUTH_COPY_arrow_back_ios_sharp_ICN');
+                                      'PHONE_AUTH_COPY_COPY_arrow_back_ios_shar');
                                   logFirebaseEvent('IconButton_navigate_back');
                                   context.safePop();
                                 },
@@ -201,339 +205,6 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                             ),
                           ),
                         ],
-                      ),
-                      Align(
-                        alignment: const AlignmentDirectional(0.0, 0.0),
-                        child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
-                              0.0, 20.0, 0.0, 20.0),
-                          child: SingleChildScrollView(
-                            scrollDirection: Axis.horizontal,
-                            child: Row(
-                              mainAxisSize: MainAxisSize.max,
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
-                                      10.0, 10.0, 20.0, 10.0),
-                                  child: FFButtonWidget(
-                                    onPressed: () async {
-                                      logFirebaseEvent(
-                                          'PHONE_AUTH_COPY_PAGE_HOME_BTN_ON_TAP');
-                                      logFirebaseEvent('Button_navigate_to');
-
-                                      context.goNamed(
-                                        'history',
-                                        extra: <String, dynamic>{
-                                          kTransitionInfoKey: const TransitionInfo(
-                                            hasTransition: true,
-                                            transitionType:
-                                                PageTransitionType.fade,
-                                            duration:
-                                                Duration(milliseconds: 600),
-                                          ),
-                                        },
-                                      );
-                                    },
-                                    text: FFLocalizations.of(context).getText(
-                                      'wxe3rbiy' /* Home */,
-                                    ),
-                                    options: FFButtonOptions(
-                                      height: 40.0,
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          24.0, 10.0, 24.0, 10.0),
-                                      iconPadding:
-                                          const EdgeInsetsDirectional.fromSTEB(
-                                              0.0, 0.0, 0.0, 0.0),
-                                      color: FlutterFlowTheme.of(context).info,
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .override(
-                                            fontFamily: 'Raleway',
-                                            color: Colors.black,
-                                            fontSize: 18.0,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                      elevation: 5.0,
-                                      borderSide: const BorderSide(
-                                        color: Colors.transparent,
-                                        width: 1.0,
-                                      ),
-                                      borderRadius: BorderRadius.circular(20.0),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
-                                      10.0, 10.0, 20.0, 10.0),
-                                  child: FFButtonWidget(
-                                    onPressed: () async {
-                                      logFirebaseEvent(
-                                          'PHONE_AUTH_COPY_PAGE_CITIES_BTN_ON_TAP');
-                                      logFirebaseEvent('Button_navigate_to');
-
-                                      context.goNamed(
-                                        'search',
-                                        extra: <String, dynamic>{
-                                          kTransitionInfoKey: const TransitionInfo(
-                                            hasTransition: true,
-                                            transitionType:
-                                                PageTransitionType.fade,
-                                            duration:
-                                                Duration(milliseconds: 600),
-                                          ),
-                                        },
-                                      );
-                                    },
-                                    text: FFLocalizations.of(context).getText(
-                                      'kwff38ov' /* Cities */,
-                                    ),
-                                    options: FFButtonOptions(
-                                      height: 40.0,
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          24.0, 10.0, 24.0, 10.0),
-                                      iconPadding:
-                                          const EdgeInsetsDirectional.fromSTEB(
-                                              0.0, 0.0, 0.0, 0.0),
-                                      color: FlutterFlowTheme.of(context).info,
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .override(
-                                            fontFamily: 'Raleway',
-                                            color: Colors.black,
-                                            fontSize: 18.0,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                      elevation: 5.0,
-                                      borderSide: const BorderSide(
-                                        color: Colors.transparent,
-                                        width: 1.0,
-                                      ),
-                                      borderRadius: BorderRadius.circular(20.0),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
-                                      10.0, 10.0, 20.0, 10.0),
-                                  child: FFButtonWidget(
-                                    onPressed: () async {
-                                      logFirebaseEvent(
-                                          'PHONE_AUTH_COPY_PAGE_ACCOUNT_BTN_ON_TAP');
-                                      if (loggedIn) {
-                                        logFirebaseEvent('Button_navigate_to');
-
-                                        context.goNamed(
-                                          'Profile',
-                                          extra: <String, dynamic>{
-                                            kTransitionInfoKey: const TransitionInfo(
-                                              hasTransition: true,
-                                              transitionType:
-                                                  PageTransitionType.fade,
-                                              duration:
-                                                  Duration(milliseconds: 600),
-                                            ),
-                                          },
-                                        );
-                                      } else {
-                                        logFirebaseEvent('Button_navigate_to');
-
-                                        context.goNamed(
-                                          'login',
-                                          extra: <String, dynamic>{
-                                            kTransitionInfoKey: const TransitionInfo(
-                                              hasTransition: true,
-                                              transitionType:
-                                                  PageTransitionType.fade,
-                                              duration:
-                                                  Duration(milliseconds: 600),
-                                            ),
-                                          },
-                                        );
-                                      }
-                                    },
-                                    text: FFLocalizations.of(context).getText(
-                                      'qeoh0ws8' /* Account */,
-                                    ),
-                                    options: FFButtonOptions(
-                                      height: 40.0,
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          24.0, 10.0, 24.0, 10.0),
-                                      iconPadding:
-                                          const EdgeInsetsDirectional.fromSTEB(
-                                              0.0, 0.0, 0.0, 0.0),
-                                      color: widget.colorbtn,
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .override(
-                                            fontFamily: 'Raleway',
-                                            color: widget.colortxt,
-                                            fontSize: 18.0,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                      elevation: 5.0,
-                                      borderSide: const BorderSide(
-                                        color: Colors.transparent,
-                                        width: 1.0,
-                                      ),
-                                      borderRadius: BorderRadius.circular(20.0),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
-                                      10.0, 10.0, 20.0, 10.0),
-                                  child: FFButtonWidget(
-                                    onPressed: () async {
-                                      logFirebaseEvent(
-                                          'PHONE_AUTH_COPY_PAGE_EVENTS_BTN_ON_TAP');
-                                      logFirebaseEvent('Button_navigate_to');
-
-                                      context.pushNamed(
-                                        'events',
-                                        extra: <String, dynamic>{
-                                          kTransitionInfoKey: const TransitionInfo(
-                                            hasTransition: true,
-                                            transitionType:
-                                                PageTransitionType.fade,
-                                            duration:
-                                                Duration(milliseconds: 600),
-                                          ),
-                                        },
-                                      );
-                                    },
-                                    text: FFLocalizations.of(context).getText(
-                                      'br005xvw' /* Events */,
-                                    ),
-                                    options: FFButtonOptions(
-                                      height: 40.0,
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          24.0, 10.0, 24.0, 10.0),
-                                      iconPadding:
-                                          const EdgeInsetsDirectional.fromSTEB(
-                                              0.0, 0.0, 0.0, 0.0),
-                                      color: FlutterFlowTheme.of(context).info,
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .override(
-                                            fontFamily: 'Raleway',
-                                            color: Colors.black,
-                                            fontSize: 18.0,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                      elevation: 5.0,
-                                      borderSide: const BorderSide(
-                                        color: Colors.transparent,
-                                        width: 1.0,
-                                      ),
-                                      borderRadius: BorderRadius.circular(20.0),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
-                                      10.0, 10.0, 20.0, 10.0),
-                                  child: FFButtonWidget(
-                                    onPressed: () async {
-                                      logFirebaseEvent(
-                                          'PHONE_AUTH_COPY_PAGE_facilities_ON_TAP');
-                                      logFirebaseEvent(
-                                          'facilities_navigate_to');
-
-                                      context.pushNamed(
-                                        'facilities',
-                                        extra: <String, dynamic>{
-                                          kTransitionInfoKey: const TransitionInfo(
-                                            hasTransition: true,
-                                            transitionType:
-                                                PageTransitionType.fade,
-                                            duration:
-                                                Duration(milliseconds: 600),
-                                          ),
-                                        },
-                                      );
-                                    },
-                                    text: FFLocalizations.of(context).getText(
-                                      'uniwfpmh' /* Facilities */,
-                                    ),
-                                    options: FFButtonOptions(
-                                      height: 40.0,
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          24.0, 10.0, 24.0, 10.0),
-                                      iconPadding:
-                                          const EdgeInsetsDirectional.fromSTEB(
-                                              0.0, 0.0, 0.0, 0.0),
-                                      color: FlutterFlowTheme.of(context).info,
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .override(
-                                            fontFamily: 'Raleway',
-                                            color: Colors.black,
-                                            fontSize: 18.0,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                      elevation: 5.0,
-                                      borderSide: const BorderSide(
-                                        color: Colors.transparent,
-                                        width: 1.0,
-                                      ),
-                                      borderRadius: BorderRadius.circular(20.0),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
-                                      10.0, 10.0, 20.0, 10.0),
-                                  child: FFButtonWidget(
-                                    onPressed: () async {
-                                      logFirebaseEvent(
-                                          'PHONE_AUTH_COPY_PAGE_DONATION_BTN_ON_TAP');
-                                      logFirebaseEvent('Button_navigate_to');
-
-                                      context.goNamed(
-                                        'donation',
-                                        extra: <String, dynamic>{
-                                          kTransitionInfoKey: const TransitionInfo(
-                                            hasTransition: true,
-                                            transitionType:
-                                                PageTransitionType.fade,
-                                            duration:
-                                                Duration(milliseconds: 600),
-                                          ),
-                                        },
-                                      );
-                                    },
-                                    text: FFLocalizations.of(context).getText(
-                                      'lh06k62p' /* Donation */,
-                                    ),
-                                    options: FFButtonOptions(
-                                      height: 40.0,
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          24.0, 10.0, 24.0, 10.0),
-                                      iconPadding:
-                                          const EdgeInsetsDirectional.fromSTEB(
-                                              0.0, 0.0, 0.0, 0.0),
-                                      color: FlutterFlowTheme.of(context).info,
-                                      textStyle: FlutterFlowTheme.of(context)
-                                          .titleSmall
-                                          .override(
-                                            fontFamily: 'Raleway',
-                                            color: Colors.black,
-                                            fontSize: 18.0,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                      elevation: 5.0,
-                                      borderSide: const BorderSide(
-                                        color: Colors.transparent,
-                                        width: 1.0,
-                                      ),
-                                      borderRadius: BorderRadius.circular(20.0),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
                       ),
                       Align(
                         alignment: const AlignmentDirectional(0.0, 0.0),
@@ -580,7 +251,7 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                           ),
                                           onPressed: () async {
                                             logFirebaseEvent(
-                                                'PHONE_AUTH_COPY_arrow_back_rounded_ICN_O');
+                                                'PHONE_AUTH_COPY_COPY_arrow_back_rounded_');
                                             logFirebaseEvent(
                                                 'IconButton_navigate_back');
                                             context.safePop();
@@ -590,7 +261,7 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                       Expanded(
                                         child: Text(
                                           FFLocalizations.of(context).getText(
-                                            '9cjcfv29' /* Phone Sign In */,
+                                            '9fq8rfy2' /* Phone Sign In */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .headlineMedium
@@ -629,6 +300,13 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .info,
+                                              boxShadow: const [
+                                                BoxShadow(
+                                                  blurRadius: 4.0,
+                                                  color: Color(0x33000000),
+                                                  offset: Offset(0.0, 2.0),
+                                                )
+                                              ],
                                               borderRadius:
                                                   BorderRadius.circular(20.0),
                                             ),
@@ -719,7 +397,7 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                                                       text: FFLocalizations.of(
                                                                               context)
                                                                           .getText(
-                                                                'azw2ipnm' /* India */,
+                                                                'wom7hzcz' /* India */,
                                                               )),
                                                               optionsBuilder:
                                                                   (textEditingValue) {
@@ -814,7 +492,7 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                                                     labelText: FFLocalizations.of(
                                                                             context)
                                                                         .getText(
-                                                                      'm0xfbpw9' /* Your Country... */,
+                                                                      'glf6f36v' /* Your Country... */,
                                                                     ),
                                                                     labelStyle: FlutterFlowTheme.of(
                                                                             context)
@@ -961,6 +639,13 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
                                                 .info,
+                                            boxShadow: const [
+                                              BoxShadow(
+                                                blurRadius: 4.0,
+                                                color: Color(0x33000000),
+                                                offset: Offset(0.0, 2.0),
+                                              )
+                                            ],
                                             borderRadius:
                                                 BorderRadius.circular(20.0),
                                           ),
@@ -1031,7 +716,7 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                                               FFLocalizations.of(
                                                                       context)
                                                                   .getText(
-                                                            '8aqljzs5' /* Your Phone Number... */,
+                                                            'irgz4l9a' /* Your Phone Number... */,
                                                           ),
                                                           labelStyle:
                                                               FlutterFlowTheme.of(
@@ -1166,6 +851,106 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                 ),
                                 Padding(
                                   padding: const EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 16.0, 0.0, 16.0),
+                                  child: StreamBuilder<List<CitiesRecord>>(
+                                    stream: queryCitiesRecord(),
+                                    builder: (context, snapshot) {
+                                      // Customize what your widget looks like when it's loading.
+                                      if (!snapshot.hasData) {
+                                        return const Center(
+                                          child: SizedBox(
+                                            width: 50.0,
+                                            height: 50.0,
+                                            child: SpinKitThreeBounce(
+                                              color: Color(0xFFEC7834),
+                                              size: 50.0,
+                                            ),
+                                          ),
+                                        );
+                                      }
+                                      List<CitiesRecord>
+                                          containerCitiesRecordList =
+                                          snapshot.data!;
+                                      return Container(
+                                        width: 300.0,
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          boxShadow: const [
+                                            BoxShadow(
+                                              blurRadius: 4.0,
+                                              color: Color(0xFF322E5C),
+                                              offset: Offset(0.0, 2.0),
+                                            )
+                                          ],
+                                          borderRadius:
+                                              BorderRadius.circular(40.0),
+                                        ),
+                                        child: FlutterFlowDropDown<String>(
+                                          controller: _model
+                                                  .dropDownValueController ??=
+                                              FormFieldController<String>(null),
+                                          options: containerCitiesRecordList
+                                              .map((e) => e.name)
+                                              .toList()
+                                              .sortedList((e) => e),
+                                          onChanged: (val) => setState(
+                                              () => _model.dropDownValue = val),
+                                          width: 300.0,
+                                          height: 50.0,
+                                          searchHintTextStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .labelMedium
+                                                  .override(
+                                                    fontFamily: 'Raleway',
+                                                    color: Colors.black,
+                                                  ),
+                                          searchTextStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodyMedium,
+                                          textStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodyMedium
+                                                  .override(
+                                                    fontFamily: 'Raleway',
+                                                    color: Colors.black,
+                                                    fontSize: 16.0,
+                                                  ),
+                                          hintText: FFLocalizations.of(context)
+                                              .getText(
+                                            'v1mfi2ka' /* Set your city */,
+                                          ),
+                                          searchHintText:
+                                              FFLocalizations.of(context)
+                                                  .getText(
+                                            'vht9rvx1' /* Search for an city... */,
+                                          ),
+                                          icon: Icon(
+                                            Icons.keyboard_arrow_down_rounded,
+                                            color: FlutterFlowTheme.of(context)
+                                                .secondaryText,
+                                            size: 24.0,
+                                          ),
+                                          fillColor:
+                                              FlutterFlowTheme.of(context)
+                                                  .primaryText,
+                                          elevation: 2.0,
+                                          borderColor: Colors.transparent,
+                                          borderWidth: 2.0,
+                                          borderRadius: 25.0,
+                                          margin:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  16.0, 4.0, 16.0, 4.0),
+                                          hidesUnderline: true,
+                                          isOverButton: true,
+                                          isSearchable: true,
+                                          isMultiSelect: false,
+                                        ),
+                                      );
+                                    },
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       20.0, 18.0, 20.0, 32.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -1178,7 +963,7 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                         highlightColor: Colors.transparent,
                                         onTap: () async {
                                           logFirebaseEvent(
-                                              'PHONE_AUTH_COPY_Text_2vf8gsc4_ON_TAP');
+                                              'PHONE_AUTH_COPY_COPY_Text_18jrmcco_ON_TA');
                                           logFirebaseEvent('Text_auth');
                                           final phoneNumberVal =
                                               '${functions.getDialCode(_model.countrynameController.text)}${_model.phoneNumberController.text}';
@@ -1198,7 +983,7 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                             phoneNumber: phoneNumberVal,
                                             onCodeSent: (context) async {
                                               context.goNamedAuth(
-                                                'otp_verifyCopy',
+                                                'otp_verifyCopyCopy',
                                                 context.mounted,
                                                 queryParameters: {
                                                   'mobileNumber':
@@ -1219,10 +1004,17 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                               );
                                             },
                                           );
+
+                                          logFirebaseEvent('Text_backend_call');
+
+                                          await currentUserReference!
+                                              .update(createUsersRecordData(
+                                            city: _model.dropDownValue,
+                                          ));
                                         },
                                         child: Text(
                                           FFLocalizations.of(context).getText(
-                                            'c4mdvwu3' /* Get Code */,
+                                            '7cjmbr46' /* Get Code */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
