@@ -35,3 +35,5 @@ export '/bbsp/otp_verify_copy_copy/otp_verify_copy_copy_widget.dart'
     show OtpVerifyCopyCopyWidget;
 export '/bbsp/phone_auth_copy_copy/phone_auth_copy_copy_widget.dart'
     show PhoneAuthCopyCopyWidget;
+export '/bbsp/facilitiy_room_booking/facilitiy_room_booking_widget.dart'
+    show FacilitiyRoomBookingWidget;

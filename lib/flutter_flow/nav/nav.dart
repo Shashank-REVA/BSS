@@ -284,6 +284,17 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             facility: params.getParam('facility', ParamType.String),
             city: params.getParam('city', ParamType.String),
           ),
+        ),
+        FFRoute(
+          name: 'facilitiy_room_booking',
+          path: '/facilitiyRoomBooking',
+          builder: (context, params) => FacilitiyRoomBookingWidget(
+            colorbtn: params.getParam('colorbtn', ParamType.Color),
+            colortxt: params.getParam('colortxt', ParamType.Color),
+            facilityselected:
+                params.getParam('facilityselected', ParamType.String),
+            city: params.getParam('city', ParamType.String),
+          ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -455,6 +466,7 @@ class FFRoute {
           return null;
         },
         pageBuilder: (context, state) {
+          fixStatusBarOniOS16AndBelow(context);
           final ffParams = FFParameters(state, asyncParams);
           final page = ffParams.hasFutures
               ? FutureBuilder(

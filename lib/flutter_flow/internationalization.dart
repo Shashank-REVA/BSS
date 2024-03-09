@@ -1049,21 +1049,21 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en':
           'Kumbha Mela derives its name from the immortal – Pot of Nectar- described in ancient Vedic scriptures known as the Puranas Kumbha in Sanskrit languages means “pot or pitcher’. Mela means ‘festival’. The Kumbh Mela is the largest pilgrimage gathering in the worlds attended by millions of people from across the globe. The pilgrimage occurs four times every twelve years, once at each four locations in the country',
       'bn':
-          'কুম্ভ মেলার নামটি অমর - অমৃতের পাত্র থেকে এসেছে - যা সংস্কৃত ভাষায় পুরাণ কুম্ভ নামে পরিচিত প্রাচীন বৈদিক শাস্ত্রে বর্ণিত হয়েছে যার অর্থ "পাত্র বা কলস"। মেলা মানে ‘উৎসব’। কুম্ভমেলা হল বিশ্বের বৃহত্তম তীর্থযাত্রী সমাবেশ যেখানে সারা বিশ্ব থেকে লক্ষ লক্ষ লোক অংশগ্রহণ করে। তীর্থযাত্রা প্রতি বারো বছরে চারবার হয়, দেশের প্রতিটি চারটি স্থানে একবার',
+          'কুম্ভ মেলার নামটি অমর - অমৃতের পাত্র থেকে এসেছে - যা সংস্কৃত ভাষায় পুরাণ কুম্ভ নামে পরিচিত প্রাচীন বৈদিক শাস্ত্রে বর্ণিত হয়েছে যার অর্থ \"পাত্র বা কলস\"। মেলা মানে ‘উৎসব’। কুম্ভমেলা হল বিশ্বের বৃহত্তম তীর্থযাত্রী সমাবেশ যেখানে সারা বিশ্ব থেকে লক্ষ লক্ষ লোক অংশগ্রহণ করে। তীর্থযাত্রা প্রতি বারো বছরে চারবার হয়, দেশের প্রতিটি চারটি স্থানে একবার',
       'gu':
-          'કુંભ મેળાનું નામ અમર - અમૃતના પોટ પરથી પડ્યું છે - પ્રાચીન વૈદિક ગ્રંથોમાં વર્ણવેલ છે જેને સંસ્કૃત ભાષાઓમાં પુરાણ કુંભ તરીકે ઓળખવામાં આવે છે જેનો અર્થ થાય છે "પોટ અથવા ઘડા". મેળાનો અર્થ થાય છે ‘તહેવાર’. કુંભ મેળો એ વિશ્વનો સૌથી મોટો તીર્થસ્થાન છે જેમાં વિશ્વભરમાંથી લાખો લોકો હાજરી આપે છે. તીર્થયાત્રા દર બાર વર્ષે ચાર વખત, દેશમાં દરેક ચાર સ્થળોએ એકવાર થાય છે',
+          'કુંભ મેળાનું નામ અમર - અમૃતના પોટ પરથી પડ્યું છે - પ્રાચીન વૈદિક ગ્રંથોમાં વર્ણવેલ છે જેને સંસ્કૃત ભાષાઓમાં પુરાણ કુંભ તરીકે ઓળખવામાં આવે છે જેનો અર્થ થાય છે \"પોટ અથવા ઘડા\". મેળાનો અર્થ થાય છે ‘તહેવાર’. કુંભ મેળો એ વિશ્વનો સૌથી મોટો તીર્થસ્થાન છે જેમાં વિશ્વભરમાંથી લાખો લોકો હાજરી આપે છે. તીર્થયાત્રા દર બાર વર્ષે ચાર વખત, દેશમાં દરેક ચાર સ્થળોએ એકવાર થાય છે',
       'hi':
-          'कुंभ मेले का नाम अमर - अमृत के बर्तन से लिया गया है - जिसका वर्णन प्राचीन वैदिक ग्रंथों में किया गया है, जिसे पुराणों के नाम से जाना जाता है। संस्कृत भाषा में कुंभ का अर्थ है "बर्तन या घड़ा"। मेला का अर्थ है \'त्योहार\'। कुंभ मेला दुनिया का सबसे बड़ा तीर्थस्थल है, जिसमें दुनिया भर से लाखों लोग शामिल होते हैं। तीर्थयात्रा हर बारह साल में चार बार होती है, देश के प्रत्येक चार स्थानों पर एक बार',
+          'कुंभ मेले का नाम अमर - अमृत के बर्तन से लिया गया है - जिसका वर्णन प्राचीन वैदिक ग्रंथों में किया गया है, जिसे पुराणों के नाम से जाना जाता है। संस्कृत भाषा में कुंभ का अर्थ है \"बर्तन या घड़ा\"। मेला का अर्थ है \'त्योहार\'। कुंभ मेला दुनिया का सबसे बड़ा तीर्थस्थल है, जिसमें दुनिया भर से लाखों लोग शामिल होते हैं। तीर्थयात्रा हर बारह साल में चार बार होती है, देश के प्रत्येक चार स्थानों पर एक बार',
       'kn':
-          'ಕುಂಭ ಮೇಳವು ತನ್ನ ಹೆಸರನ್ನು ಅಮರ - ಮಕರಂದದ ಮಡಕೆಯಿಂದ ಪಡೆದುಕೊಂಡಿದೆ- ಸಂಸ್ಕೃತ ಭಾಷೆಗಳಲ್ಲಿ ಪುರಾಣಗಳು ಕುಂಭ ಎಂದು ಕರೆಯಲ್ಪಡುವ ಪ್ರಾಚೀನ ವೈದಿಕ ಗ್ರಂಥಗಳಲ್ಲಿ ವಿವರಿಸಲಾಗಿದೆ "ಮಡಕೆ ಅಥವಾ ಪಿಚರ್". ಮೇಳ ಎಂದರೆ ‘ಹಬ್ಬ’. ಕುಂಭಮೇಳವು ಪ್ರಪಂಚದಾದ್ಯಂತದ ಲಕ್ಷಾಂತರ ಜನರು ಭಾಗವಹಿಸುವ ವಿಶ್ವದ ಅತಿದೊಡ್ಡ ತೀರ್ಥಯಾತ್ರೆಯಾಗಿದೆ. ತೀರ್ಥಯಾತ್ರೆಯು ಹನ್ನೆರಡು ವರ್ಷಗಳಿಗೊಮ್ಮೆ ನಾಲ್ಕು ಬಾರಿ ಸಂಭವಿಸುತ್ತದೆ, ಒಮ್ಮೆ ದೇಶದ ಪ್ರತಿ ನಾಲ್ಕು ಸ್ಥಳಗಳಲ್ಲಿ',
+          'ಕುಂಭ ಮೇಳವು ತನ್ನ ಹೆಸರನ್ನು ಅಮರ - ಮಕರಂದದ ಮಡಕೆಯಿಂದ ಪಡೆದುಕೊಂಡಿದೆ- ಸಂಸ್ಕೃತ ಭಾಷೆಗಳಲ್ಲಿ ಪುರಾಣಗಳು ಕುಂಭ ಎಂದು ಕರೆಯಲ್ಪಡುವ ಪ್ರಾಚೀನ ವೈದಿಕ ಗ್ರಂಥಗಳಲ್ಲಿ ವಿವರಿಸಲಾಗಿದೆ \"ಮಡಕೆ ಅಥವಾ ಪಿಚರ್\". ಮೇಳ ಎಂದರೆ ‘ಹಬ್ಬ’. ಕುಂಭಮೇಳವು ಪ್ರಪಂಚದಾದ್ಯಂತದ ಲಕ್ಷಾಂತರ ಜನರು ಭಾಗವಹಿಸುವ ವಿಶ್ವದ ಅತಿದೊಡ್ಡ ತೀರ್ಥಯಾತ್ರೆಯಾಗಿದೆ. ತೀರ್ಥಯಾತ್ರೆಯು ಹನ್ನೆರಡು ವರ್ಷಗಳಿಗೊಮ್ಮೆ ನಾಲ್ಕು ಬಾರಿ ಸಂಭವಿಸುತ್ತದೆ, ಒಮ್ಮೆ ದೇಶದ ಪ್ರತಿ ನಾಲ್ಕು ಸ್ಥಳಗಳಲ್ಲಿ',
       'ml':
           'സംസ്കൃത ഭാഷകളിൽ പുരാണങ്ങൾ കുംഭം എന്നറിയപ്പെടുന്ന പുരാതന വേദഗ്രന്ഥങ്ങളിൽ വിവരിച്ചിരിക്കുന്ന അനശ്വരമായ - അമൃതിന്റെ കലത്തിൽ നിന്നാണ് കുംഭമേളയ്ക്ക് ഈ പേര് ലഭിച്ചത്. മേള എന്നാൽ ‘ഉത്സവം’ എന്നാണ്. ലോകമെമ്പാടുമുള്ള ദശലക്ഷക്കണക്കിന് ആളുകൾ പങ്കെടുക്കുന്ന ലോകത്തിലെ ഏറ്റവും വലിയ തീർത്ഥാടന സമ്മേളനമാണ് കുംഭമേള. ഓരോ പന്ത്രണ്ട് വർഷത്തിലും നാല് തവണ, രാജ്യത്തെ ഓരോ നാല് സ്ഥലങ്ങളിലും ഒരിക്കൽ തീർത്ഥാടനം നടക്കുന്നു',
       'mr':
-          'कुंभमेळ्याचे नाव अमर - अमृताचे भांडे - संस्कृत भाषेत पुराण कुंभ म्हणून ओळखल्या जाणार्‍या प्राचीन वैदिक धर्मग्रंथांमध्ये वर्णन केलेले आहे ज्याचा अर्थ "भांडे किंवा घागर" आहे. मेळा म्हणजे \'उत्सव\'. कुंभमेळा हा जगातील सर्वात मोठा तीर्थयात्रा मेळावा आहे ज्यात जगभरातून लाखो लोक उपस्थित असतात. तीर्थयात्रा दर बारा वर्षांनी चार वेळा, देशात प्रत्येक चार ठिकाणी एकदा होते',
+          'कुंभमेळ्याचे नाव अमर - अमृताचे भांडे - संस्कृत भाषेत पुराण कुंभ म्हणून ओळखल्या जाणार्‍या प्राचीन वैदिक धर्मग्रंथांमध्ये वर्णन केलेले आहे ज्याचा अर्थ \"भांडे किंवा घागर\" आहे. मेळा म्हणजे \'उत्सव\'. कुंभमेळा हा जगातील सर्वात मोठा तीर्थयात्रा मेळावा आहे ज्यात जगभरातून लाखो लोक उपस्थित असतात. तीर्थयात्रा दर बारा वर्षांनी चार वेळा, देशात प्रत्येक चार ठिकाणी एकदा होते',
       'ta':
-          'கும்பமேளா அதன் பெயரை அழியாத - அமிர்தத்தின் பானை- சமஸ்கிருத மொழிகளில் புராணங்கள் கும்பம் என்று அழைக்கப்படும் பண்டைய வேத நூல்களில் விவரிக்கப்பட்டுள்ள "பானை அல்லது குடம்" என்பதிலிருந்து பெறப்பட்டது. மேளா என்றால் ‘பண்டிகை’ என்று பொருள். கும்பமேளா என்பது உலகம் முழுவதிலுமிருந்து மில்லியன் கணக்கான மக்கள் கலந்து கொள்ளும் உலகின் மிகப்பெரிய யாத்திரைக் கூட்டமாகும். ஒவ்வொரு பன்னிரண்டு வருடங்களுக்கும் நான்கு முறை, நாட்டின் ஒவ்வொரு நான்கு இடங்களுக்கும் ஒரு முறை யாத்திரை நிகழ்கிறது',
+          'கும்பமேளா அதன் பெயரை அழியாத - அமிர்தத்தின் பானை- சமஸ்கிருத மொழிகளில் புராணங்கள் கும்பம் என்று அழைக்கப்படும் பண்டைய வேத நூல்களில் விவரிக்கப்பட்டுள்ள \"பானை அல்லது குடம்\" என்பதிலிருந்து பெறப்பட்டது. மேளா என்றால் ‘பண்டிகை’ என்று பொருள். கும்பமேளா என்பது உலகம் முழுவதிலுமிருந்து மில்லியன் கணக்கான மக்கள் கலந்து கொள்ளும் உலகின் மிகப்பெரிய யாத்திரைக் கூட்டமாகும். ஒவ்வொரு பன்னிரண்டு வருடங்களுக்கும் நான்கு முறை, நாட்டின் ஒவ்வொரு நான்கு இடங்களுக்கும் ஒரு முறை யாத்திரை நிகழ்கிறது',
       'te':
-          'కుంభ మేళా దాని పేరు అమరత్వం నుండి వచ్చింది - పాట్ ఆఫ్ నెక్టార్- సంస్కృత భాషలలో పురాణాల కుంభ అని పిలువబడే పురాతన వేద గ్రంథాలలో వర్ణించబడింది "కుండ లేదా కాడ". మేళా అంటే \'పండుగ\'. కుంభమేళా అనేది ప్రపంచవ్యాప్తంగా మిలియన్ల మంది ప్రజలు హాజరయ్యే ప్రపంచంలోనే అతిపెద్ద తీర్థయాత్ర. దేశంలోని ప్రతి నాలుగు ప్రదేశాలకు ఒకసారి, ప్రతి పన్నెండు సంవత్సరాలకు నాలుగు సార్లు ఈ తీర్థయాత్ర జరుగుతుంది',
+          'కుంభ మేళా దాని పేరు అమరత్వం నుండి వచ్చింది - పాట్ ఆఫ్ నెక్టార్- సంస్కృత భాషలలో పురాణాల కుంభ అని పిలువబడే పురాతన వేద గ్రంథాలలో వర్ణించబడింది \"కుండ లేదా కాడ\". మేళా అంటే \'పండుగ\'. కుంభమేళా అనేది ప్రపంచవ్యాప్తంగా మిలియన్ల మంది ప్రజలు హాజరయ్యే ప్రపంచంలోనే అతిపెద్ద తీర్థయాత్ర. దేశంలోని ప్రతి నాలుగు ప్రదేశాలకు ఒకసారి, ప్రతి పన్నెండు సంవత్సరాలకు నాలుగు సార్లు ఈ తీర్థయాత్ర జరుగుతుంది',
     },
     'pnhccfvc': {
       'en': 'Home',
@@ -2235,7 +2235,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // allpages
   {
-    'aqn3mwc0': {
+    'wvee3zbz': {
       'en': 'Home',
       'bn': '',
       'gu': '',
@@ -2246,7 +2246,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '0get6jbg': {
+    'khnivf4v': {
       'en': 'The Sangha',
       'bn': 'সংঘ',
       'gu': 'સંઘ',
@@ -2257,7 +2257,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'சங்கம்',
       'te': 'సంఘము',
     },
-    'n3w45cqm': {
+    'bst4mg5a': {
       'en': 'The History of the Organization',
       'bn': 'সংগঠনের ইতিহাস',
       'gu': 'સંસ્થાનો ઇતિહાસ',
@@ -2268,7 +2268,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'அமைப்பின் வரலாறு',
       'te': 'సంస్థ యొక్క చరిత్ర',
     },
-    'zvh91bja': {
+    'sa16uwmh': {
       'en':
           'The Sangha was established by the Prophet of the Age, Swami Pranavananda in 1917 to fulfil his mission. He was a great Yogi, an Acharya, a philosopher-thinker, a reformer and one of the very few men of the world who can renounce, and he did, everything, for mankind’s sake. He was born in a village, Bajitpur in Madaripur district in Bengal in the year 1896. From his childhood his behaviour was different than that of other boys of his age. He was a born leader, strong and healthy and keen to help anyone in distress. He was the last person to tolerate any injustice done by anyone in society. He would not accept anything without verifying and testing the truth in it.\n\nThis organization is headquartered in Kolkata and has about fifty branches and associates throughout India and around the world. It is running a big Hospital (150 bed) including 28 bed ICU/HDU, at Joka, Kolkata, with all diagnostic facilities of M.R.I., C.T. Scan, Digital X-ray, U.S.G., Eco-cardio, Endoscopy, Advanced, Automated Pathological Lab, Micro Surgery, Nephrology & Dialysis etc. Apart from this Cancer Hospital (Rourkela), large number of polyclinic & Hospitals at different centers is also function.\n\nIn recognition of its services to the nation, the Govt. of India has exempted the Sangha U/S-10(23)(c) of the IT. Act, F.C.R.A. Registration and its donors US 80G of IT Act. and United Nations has accredited the Sangha with ECOSOC Status,since-2008.',
       'bn':
@@ -2288,7 +2288,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'te':
           'సంఘాన్ని యుగ ప్రవక్త స్వామి ప్రణవానంద తన లక్ష్యాన్ని నెరవేర్చడానికి 1917లో స్థాపించారు. అతను ఒక గొప్ప యోగి, ఒక ఆచార్య, ఒక తత్వవేత్త-ఆలోచనాపరుడు, సంస్కర్త మరియు ప్రపంచంలోని అతి కొద్దిమంది వ్యక్తులలో ఒకడు మరియు త్యజించగలడు మరియు అతను మానవజాతి కొరకు, ప్రతిదీ చేసాడు. అతను 1896 సంవత్సరంలో బెంగాల్‌లోని మదరిపూర్ జిల్లాలోని బజిత్‌పూర్ అనే గ్రామంలో జన్మించాడు. అతని చిన్నతనం నుండి అతని ప్రవర్తన అతని వయస్సులోని ఇతర అబ్బాయిల కంటే భిన్నంగా ఉండేది. అతను పుట్టిన నాయకుడు, బలంగా మరియు ఆరోగ్యంగా ఉన్నాడు మరియు కష్టాల్లో ఉన్న ఎవరికైనా సహాయం చేయడానికి ఆసక్తి కలిగి ఉన్నాడు. సమాజంలో ఎవరికి అన్యాయం జరిగినా సహించే చివరి వ్యక్తి ఆయన. అందులోని సత్యాన్ని ధృవీకరించకుండా మరియు పరీక్షించకుండా అతను దేనినీ అంగీకరించడు.\n\nఈ సంస్థ ప్రధాన కార్యాలయం కోల్‌కతాలో ఉంది మరియు భారతదేశం అంతటా మరియు ప్రపంచవ్యాప్తంగా దాదాపు యాభై శాఖలు మరియు అసోసియేట్‌లను కలిగి ఉంది. ఇది కోల్‌కతాలోని జోకాలో 28 పడకల ICU/HDUతో సహా పెద్ద హాస్పిటల్ (150 పడకలు)ను నిర్వహిస్తోంది, M.R.I., C.T యొక్క అన్ని రోగనిర్ధారణ సౌకర్యాలతో ఇది నడుస్తోంది. స్కాన్, డిజిటల్ ఎక్స్-రే, U.S.G., ఎకో-కార్డియో, ఎండోస్కోపీ, అడ్వాన్స్‌డ్, ఆటోమేటెడ్ పాథలాజికల్ ల్యాబ్, మైక్రో సర్జరీ, నెఫ్రాలజీ & డయాలసిస్ మొదలైనవి. ఇదే కాకుండా క్యాన్సర్ హాస్పిటల్ (రూర్కెలా), వివిధ కేంద్రాలలో పెద్ద సంఖ్యలో పాలీక్లినిక్ & హాస్పిటల్స్ కూడా పనిచేస్తాయి. .\n\nదేశానికి చేసిన సేవలకు గుర్తింపుగా ప్రభుత్వం. భారతదేశం IT యొక్క సంఘ U/S-10(23)(c)కి మినహాయింపు ఇచ్చింది. చట్టం, F.C.R.A. నమోదు మరియు దాని దాతలు US 80G IT చట్టం. మరియు ఐక్యరాజ్యసమితి 2008 నుండి సంఘానికి ECOSOC హోదాతో గుర్తింపు పొందింది.',
     },
-    '3mps5lha': {
+    'a59jx891': {
       'en': 'Sangha at a Glance',
       'bn': 'এক নজরে সংঘ',
       'gu': 'એક નજરમાં સંઘ',
@@ -2299,7 +2299,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'ஒரு பார்வையில் சங்கா',
       'te': 'ఒక చూపులో సంఘ',
     },
-    'evt5ndlj': {
+    'bp3aps7k': {
       'en': 'Founder',
       'bn': 'প্রতিষ্ঠাতা',
       'gu': 'સ્થાપક',
@@ -2310,7 +2310,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'நிறுவனர்',
       'te': 'వ్యవస్థాపకుడు',
     },
-    'hq9w5au7': {
+    'mr84djr1': {
       'en': 'Yugacharya Shrimat Swami\nPranavanandaji Maharaj',
       'bn': 'যুগাচার্য শ্রীমৎ স্বামী প্রণবানন্দজী মহারাজ',
       'gu': 'યુગાચાર્ય શ્રીમત સ્વામી પ્રણવાનંદજી મહારાજ',
@@ -2321,7 +2321,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'யுகாச்சார்யா ஸ்ரீமத் சுவாமி பிரணவானந்தஜி மகராஜ்',
       'te': 'యుగాచార్య శ్రీమత్ స్వామి ప్రణవానందజీ మహరాజ్',
     },
-    '1rdhscnk': {
+    'wjsv9hcg': {
       'en': 'Birth Place',
       'bn': 'জন্মস্থান',
       'gu': 'જન્મસ્થળ',
@@ -2332,7 +2332,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'பிறந்த இடம்',
       'te': 'పుట్టిన ప్రదేశం',
     },
-    'rn2jiqeo': {
+    'mc8rvaaf': {
       'en':
           '29th January, 1896, on Maghi Purnima Tithi \nat evening . At Bajitpur village of Madaripur \nDistrict, Bangladesh',
       'bn':
@@ -2352,7 +2352,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'te':
           '29 జనవరి, 1896, మాఘి పూర్ణిమ తిథి\nసాయంత్రం వేళ . మదరిపూర్ జిల్లా బజిత్‌పూర్ గ్రామంలో,\nబంగ్లాదేశ్',
     },
-    'mx9107yu': {
+    'aq544jzj': {
       'en': 'Parent\'sName',
       'bn': 'পিতামাতার নাম',
       'gu': 'માતાપિતાનું નામ',
@@ -2363,7 +2363,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'பெற்றோரின் பெயர்',
       'te': 'తల్లిదండ్రుల పేర్లు',
     },
-    'jyle8mke': {
+    '57hgaxvm': {
       'en':
           'Father: Shri Vishnucharan Das Bhuinya, \nMother: Shrimati Sharadadevi',
       'bn': 'পিতাঃ শ্রী বিষ্ণুচরণ দাস ভূঁইয়া,\nমাতা: শ্রীমতি শারদাদেবী',
@@ -2375,7 +2375,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'தந்தை: ஸ்ரீ விஷ்ணுசரண் தாஸ் பூயின்யா,\nதாய்: ஸ்ரீமதி சாரதாதேவி',
       'te': 'తండ్రి: శ్రీ విష్ణుచరణ్ దాస్ భూన్య,\nతల్లి: శ్రీమతి శారదాదేవి',
     },
-    '8mrzezdt': {
+    'vt1socds': {
       'en': 'Diksha',
       'bn': 'দীক্ষা',
       'gu': 'દીક્ષા',
@@ -2386,7 +2386,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'திக்ஷா',
       'te': 'దీక్ష',
     },
-    'pxnj6hmn': {
+    'mf3zqz3r': {
       'en':
           'Vijaya Ekadashi, 1913 at Gorakhpur by Mahayogi\nBaba Gambhirnathji, Gorakhpur',
       'bn':
@@ -2406,7 +2406,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'te':
           'విజయ ఏకాదశి, 1913లో గోరఖ్‌పూర్‌లో మహాయోగి\nబాబా గంభీర్నాథ్జీ, గోరఖ్పూర్',
     },
-    'p3uz2ur8': {
+    'h0a9bh71': {
       'en': 'Siddhilabh',
       'bn': 'সিদ্ধিলাভ',
       'gu': 'સિદ્ધિલાભ',
@@ -2417,7 +2417,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'சித்திலாப்',
       'te': 'సిద్ధిలాభ్',
     },
-    '9j2gyas9': {
+    'ya33ouq6': {
       'en': 'Maghi Purnima Tithi, 1916 at Bajitpur Siddhapeeth',
       'bn': 'মাঘী পূর্ণিমা তিথি, 1916 বাজিতপুর সিদ্ধপীঠে',
       'gu': 'માઘી પૂર્ણિમા તિથિ, બાજીતપુર સિદ્ધપીઠ ખાતે 1916',
@@ -2428,7 +2428,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'மகி பூர்ணிமா திதி, 1916 பஜித்பூர் சித்தபீத்தில்',
       'te': 'మాఘి పూర్ణిమ తిథి, 1916 బజిత్‌పూర్ సిద్ధపీఠంలో',
     },
-    'une4us9w': {
+    '43ydgu1z': {
       'en': 'Sangha Foundation',
       'bn': 'সংঘ ফাউন্ডেশন',
       'gu': 'સંઘ ફાઉન્ડેશન',
@@ -2439,7 +2439,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'சங்க அறக்கட்டளை',
       'te': 'సంఘ ఫౌండేషన్',
     },
-    'e4hqyj3e': {
+    'oc8dloc4': {
       'en': 'Sangha founded on Maghi Purnima,\n1917 at Bajitpur Siddhapeeth',
       'bn': 'মাঘী পূর্ণিমায় সংঘ প্রতিষ্ঠিত হয়,\n1917 বাজিতপুর সিদ্ধপীঠে',
       'gu': 'માઘી પૂર્ણિમાના રોજ સંઘની સ્થાપના\n1917 બાજીતપુર સિદ્ધપીઠ ખાતે',
@@ -2454,7 +2454,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'te':
           'మాఘి పూర్ణిమ నాడు స్థాపించబడిన సంఘము,\n1917లో బజిత్‌పూర్ సిద్ధపీఠంలో',
     },
-    'b1fqe5rt': {
+    'jlgoncjz': {
       'en': 'Sangha Vani by Acharya Srimat Swami Pranavananda ji Maharaj',
       'bn': 'আমাদের কার্যক্রম',
       'gu': 'અમારી પ્રવૃત્તિઓ',
@@ -2465,7 +2465,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'எங்கள் செயல்பாடுகள்',
       'te': 'మా యాక్టివిటీస్',
     },
-    'krl085k8': {
+    'uht26ugg': {
       'en': 'What is the Goal of Life?',
       'bn': '',
       'gu': '',
@@ -2476,7 +2476,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'f8iun5dv': {
+    'ah8uum36': {
       'en': 'Self Realization, Universal Emancipation',
       'bn': '',
       'gu': '',
@@ -2487,7 +2487,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'q9x8g4qg': {
+    'szwq86zx': {
       'en': 'What is Religion?',
       'bn': '',
       'gu': '',
@@ -2498,7 +2498,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '7q9z61kk': {
+    '1rvulovp': {
       'en':
           'Self-sacrifice, Self-abnegation, Self-Discipline, Adherence to truth and Countenance',
       'bn': '',
@@ -2510,7 +2510,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'eox73xuy': {
+    'pwr411ek': {
       'en': 'What is Real Death?',
       'bn': '',
       'gu': '',
@@ -2521,7 +2521,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'ep4yf618': {
+    'hsgdfsll': {
       'en': 'Forgetfulness of the “Self”',
       'bn': '',
       'gu': '',
@@ -2532,7 +2532,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'r5txak3o': {
+    '032u04c6': {
       'en': 'What is Real Life?',
       'bn': '',
       'gu': '',
@@ -2543,7 +2543,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'hpdjmjht': {
+    '23yamr3j': {
       'en': 'Self-possession, Self-remembrance and Self-consciousness',
       'bn': '',
       'gu': '',
@@ -2554,7 +2554,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '1wxpjmx9': {
+    'stynvv6k': {
       'en': 'What are Real Virtues ?',
       'bn': '',
       'gu': '',
@@ -2565,7 +2565,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'x991l6l0': {
+    'g0itl7ju': {
       'en': 'Heroism, Virility, Manliness and Aspiration for emancipation',
       'bn': '',
       'gu': '',
@@ -2576,7 +2576,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'fq8o5cso': {
+    'uro57bzm': {
       'en': 'What is Real Sins?',
       'bn': '',
       'gu': '',
@@ -2587,7 +2587,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '5gf0cnhh': {
+    'v4ojoky7': {
       'en': 'Weakness, Fear (Defeatism), Cowardice, Meanness and Selfishness',
       'bn': '',
       'gu': '',
@@ -2598,7 +2598,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'vbcx0y2v': {
+    '0ciri8tu': {
       'en': 'What are Real Sources of Strength?',
       'bn': '',
       'gu': '',
@@ -2609,7 +2609,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '24xhxxyj': {
+    'omwfxrwe': {
       'en': 'Patience, Fortitude and Endurance',
       'bn': '',
       'gu': '',
@@ -2620,7 +2620,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'gqsh2oue': {
+    'jkuiz662': {
       'en': 'What are Real Assets ?',
       'bn': '',
       'gu': '',
@@ -2631,7 +2631,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'd5aysdxy': {
+    'lai7hd5o': {
       'en': 'Self-confidence, Self-reliance and Self-respect',
       'bn': '',
       'gu': '',
@@ -2642,7 +2642,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'yvbk7ypx': {
+    '5b50wwho': {
       'en': 'Who are Real Enemies?',
       'bn': '',
       'gu': '',
@@ -2653,7 +2653,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'b3rv744u': {
+    '54wsxb38': {
       'en':
           'Indolence, Slumber, Procrastination, Inertia, Lustful senses and Passions',
       'bn': '',
@@ -2665,7 +2665,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'usfv35j1': {
+    'r9nmo433': {
       'en': 'Who are Real Friends?',
       'bn': '',
       'gu': '',
@@ -2676,7 +2676,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'usgdqb5v': {
+    'f2fci27v': {
       'en': 'Energy, Enthusiasm and Perseverance',
       'bn': '',
       'gu': '',
@@ -2687,7 +2687,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'h94cjvch': {
+    'mazgwfu6': {
       'en': 'Our Activites',
       'bn': 'আমাদের কার্যক্রম',
       'gu': 'અમારી પ્રવૃત્તિઓ',
@@ -2698,7 +2698,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'எங்கள் செயல்பாடுகள்',
       'te': 'మా యాక్టివిటీస్',
     },
-    'zrjz11rl': {
+    'ro8ws1um': {
       'en': 'Relief Work',
       'bn': 'ত্রাণ কাজ',
       'gu': 'રાહત કાર્ય',
@@ -2709,7 +2709,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'நிவாரணப் பணிகள்',
       'te': 'రిలీఫ్ వర్క్',
     },
-    '7m4shude': {
+    'r48fj010': {
       'en': 'Read More',
       'bn': 'আরও পড়ুন',
       'gu': 'વધુ વાંચો',
@@ -2720,7 +2720,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'மேலும் படிக்க',
       'te': 'ఇంకా చదవండి',
     },
-    'p7zw5fh6': {
+    '6e0yjl89': {
       'en': 'Healthcare Services',
       'bn': 'স্বাস্থ্য সেবা পরিষদ',
       'gu': 'હેલ્થકેર સેવાઓ',
@@ -2731,7 +2731,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'சுகாதார சேவைகள்',
       'te': 'ఆరోగ్య సంరక్షణ సేవలు',
     },
-    'vodr5dqm': {
+    'fs44qt6b': {
       'en': 'Read More',
       'bn': 'আরও পড়ুন',
       'gu': 'વધુ વાંચો',
@@ -2742,7 +2742,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'மேலும் படிக்க',
       'te': 'ఇంకా చదవండి',
     },
-    'rq1x6gr4': {
+    'ejhobz5u': {
       'en': 'Education Program',
       'bn': 'শিক্ষা কার্যক্রম',
       'gu': 'શિક્ષણ કાર્યક્રમ',
@@ -2753,7 +2753,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கல்வித் திட்டம்',
       'te': 'విద్యా కార్యక్రమం',
     },
-    '41kx2agt': {
+    'cc6bicka': {
       'en': 'Read More',
       'bn': 'আরও পড়ুন',
       'gu': 'વધુ વાંચો',
@@ -2764,7 +2764,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'மேலும் படிக்க',
       'te': 'ఇంకా చదవండి',
     },
-    'bun4wq78': {
+    'deu3ytx1': {
       'en': 'Rural Development & Tribal Welfare',
       'bn': 'উপজাতি কল্যাণ',
       'gu': 'આદિજાતિ કલ્યાણ',
@@ -2775,7 +2775,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'பழங்குடியினர் நலன்',
       'te': 'గిరిజన సంక్షేమం',
     },
-    '5v14ahrt': {
+    'x8iai6s2': {
       'en': 'Read More',
       'bn': 'আরও পড়ুন',
       'gu': 'વધુ વાંચો',
@@ -2786,7 +2786,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'மேலும் படிக்க',
       'te': 'ఇంకా చదవండి',
     },
-    'novakjny': {
+    'nnr1aump': {
       'en': 'Spiritual Harmony',
       'bn': 'আধ্যাত্মিক সম্প্রীতি',
       'gu': 'આધ્યાત્મિક સંવાદિતા',
@@ -2797,7 +2797,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'ஆன்மீக நல்லிணக்கம்',
       'te': 'ఆధ్యాత్మిక సామరస్యం',
     },
-    'zerre6ne': {
+    'urlgsl55': {
       'en': 'Read More',
       'bn': 'আরও পড়ুন',
       'gu': 'વધુ વાંચો',
@@ -2808,7 +2808,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'மேலும் படிக்க',
       'te': 'ఇంకా చదవండి',
     },
-    'fola6s8d': {
+    '6jewh4y9': {
       'en': 'City',
       'bn': '',
       'gu': '',
@@ -2819,7 +2819,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'gh0iv0dg': {
+    'h26wz1xm': {
       'en': 'Cities',
       'bn': 'আধ্যাত্মিক সম্প্রীতি',
       'gu': 'આધ્યાત્મિક સંવાદિતા',
@@ -2830,7 +2830,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'ஆன்மீக நல்லிணக்கம்',
       'te': 'ఆధ్యాత్మిక సామరస్యం',
     },
-    't52gu5yc': {
+    'wxyfgfp3': {
       'en': 'Search for city...',
       'bn': 'শহরের জন্য অনুসন্ধান করুন...',
       'gu': 'શહેર માટે શોધો...',
@@ -2841,7 +2841,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'நகரத்தைத் தேடு...',
       'te': 'నగరం కోసం శోధించండి...',
     },
-    't1c24dh0': {
+    '13zi1p5b': {
       'en': 'Account',
       'bn': '',
       'gu': '',
@@ -2852,7 +2852,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'v8ozdzpd': {
+    '8rvo0bb9': {
       'en': 'Create Account',
       'bn': 'প্রবেশ করুন',
       'gu': 'પ્રવેશ કરો',
@@ -2863,7 +2863,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'உள்நுழைய',
       'te': 'ప్రవేశించండి',
     },
-    'ngwmp87n': {
+    'ai6u4j1w': {
       'en': 'Login',
       'bn': 'প্রবেশ করুন',
       'gu': 'પ્રવેશ કરો',
@@ -2874,7 +2874,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'உள்நுழைய',
       'te': 'ప్రవేశించండి',
     },
-    '507cfabm': {
+    'starqym1': {
       'en': 'Email',
       'bn': 'ইমেইল',
       'gu': 'ઈમેલ',
@@ -2885,7 +2885,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'மின்னஞ்சல்',
       'te': 'ఇమెయిల్',
     },
-    'baj2ff4v': {
+    'szwrp3g2': {
       'en': 'Password',
       'bn': 'পাসওয়ার্ড',
       'gu': 'પાસવર્ડ',
@@ -2896,7 +2896,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கடவுச்சொல்',
       'te': 'పాస్వర్డ్',
     },
-    'u3k7abry': {
+    'ynk8zkfv': {
       'en': 'Option 1',
       'bn': '',
       'gu': '',
@@ -2907,7 +2907,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'mip32wu5': {
+    '2kywhgln': {
       'en': 'Set your city',
       'bn': '',
       'gu': '',
@@ -2918,7 +2918,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'h3yao7ao': {
+    'dhwijtpt': {
       'en': 'Search for an city...',
       'bn': '',
       'gu': '',
@@ -2929,7 +2929,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'f8eulu2i': {
+    'grrasqq6': {
       'en': 'Log In',
       'bn': 'প্রবেশ করুন',
       'gu': 'પ્રવેશ કરો',
@@ -2940,7 +2940,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'உள்நுழைய',
       'te': 'ప్రవేశించండి',
     },
-    'b4ptzlgf': {
+    '2zt168lm': {
       'en': 'Sign Up',
       'bn': 'নিবন্ধন করুন',
       'gu': 'સાઇન અપ કરો',
@@ -2951,7 +2951,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'பதிவு செய்யவும்',
       'te': 'చేరడం',
     },
-    'qnhj4qx0': {
+    'myxnihh2': {
       'en': 'or Sign In with',
       'bn': 'অথবা এর সাথে সাইন ইন করুন',
       'gu': 'અથવા સાથે સાઇન ઇન કરો',
@@ -2962,7 +2962,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'அல்லது உடன் உள்நுழையவும்',
       'te': 'లేదా దీనితో సైన్ ఇన్ చేయండి',
     },
-    'biytshqo': {
+    'l9mwn2h0': {
       'en': 'Forgot password?',
       'bn': 'অথবা এর সাথে সাইন ইন করুন',
       'gu': 'અથવા સાથે સાઇન ઇન કરો',
@@ -2973,7 +2973,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'அல்லது உடன் உள்நுழையவும்',
       'te': 'లేదా దీనితో సైన్ ఇన్ చేయండి',
     },
-    'hsdolwdi': {
+    '4zo9c3sr': {
       'en': 'Want to Login',
       'bn': 'এবার শুরু করা যাক',
       'gu': 'શરૂ કરો',
@@ -2984,7 +2984,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'தொடங்குங்கள்',
       'te': 'ప్రారంభించడానికి',
     },
-    'ary0r9ko': {
+    '6wy5ssry': {
       'en': 'Get Started',
       'bn': 'এবার শুরু করা যাক',
       'gu': 'શરૂ કરો',
@@ -2995,7 +2995,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'தொடங்குங்கள்',
       'te': 'ప్రారంభించడానికి',
     },
-    '0u1ti02v': {
+    'l4ex5k16': {
       'en': 'Name',
       'bn': 'নাম',
       'gu': 'નામ',
@@ -3006,7 +3006,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'பெயர்',
       'te': 'పేరు',
     },
-    'to7e94wg': {
+    'dc7ll7v1': {
       'en': 'Email',
       'bn': 'ইমেইল',
       'gu': 'ઈમેલ',
@@ -3017,7 +3017,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'மின்னஞ்சல்',
       'te': 'ఇమెయిల్',
     },
-    'lhcjk3tu': {
+    'at6p2yma': {
       'en': 'Phone Number',
       'bn': 'ফোন নম্বর',
       'gu': 'ફોન નંબર',
@@ -3028,7 +3028,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'தொலைபேசி எண்',
       'te': 'ఫోను నంబరు',
     },
-    '288eklqr': {
+    'xlqk8jeq': {
       'en': 'Password',
       'bn': 'পাসওয়ার্ড',
       'gu': 'પાસવર્ડ',
@@ -3039,7 +3039,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கடவுச்சொல்',
       'te': 'పాస్వర్డ్',
     },
-    'kv5qifmr': {
+    'ypc7vbwt': {
       'en': 'Confirm Password',
       'bn': 'পাসওয়ার্ড নিশ্চিত করুন',
       'gu': 'પાસવર્ડની પુષ્ટિ કરો',
@@ -3050,7 +3050,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கடவுச்சொல்லை உறுதிப்படுத்தவும்',
       'te': 'పాస్‌వర్డ్‌ని నిర్ధారించండి',
     },
-    'uz58bjof': {
+    'wzboe3dx': {
       'en': 'Create Account',
       'bn': 'হিসাব তৈরি কর',
       'gu': 'ખાતું બનાવો',
@@ -3061,7 +3061,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'உங்கள் கணக்கை துவங்குங்கள்',
       'te': 'ఖాతాను సృష్టించండి',
     },
-    'ecf44zdo': {
+    'cutjd3i6': {
       'en': 'Events',
       'bn': '',
       'gu': '',
@@ -3072,7 +3072,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '3c6mp28o': {
+    'l3v2hiph': {
       'en': 'Events',
       'bn': 'স্বাস্থ্য সেবা পরিষদ',
       'gu': 'હેલ્થકેર સેવાઓ',
@@ -3083,7 +3083,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'சுகாதார சேவைகள்',
       'te': 'ఆరోగ్య సంరక్షణ సేవలు',
     },
-    '3nz6d9s4': {
+    'i5x03tl9': {
       'en': 'Upcoming Events',
       'bn': '',
       'gu': '',
@@ -3094,7 +3094,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'uywtrx16': {
+    'gc7htymv': {
       'en': 'Facilities',
       'bn': '',
       'gu': '',
@@ -3105,7 +3105,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '54usrbcf': {
+    'h184io1e': {
       'en': 'Facilities',
       'bn': 'স্বাস্থ্য সেবা পরিষদ',
       'gu': 'હેલ્થકેર સેવાઓ',
@@ -3116,7 +3116,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'சுகாதார சேவைகள்',
       'te': 'ఆరోగ్య సంరక్షణ సేవలు',
     },
-    'hn4537cf': {
+    'csf3hh60': {
       'en': 'Function Hall Booking',
       'bn': '',
       'gu': '',
@@ -3127,7 +3127,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'y6090ji2': {
+    '951xg9yq': {
       'en': 'Puja Booking',
       'bn': '',
       'gu': '',
@@ -3138,7 +3138,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'qibvlfrn': {
+    'ah8h8dcl': {
       'en': 'Guest PickUp & Drop',
       'bn': '',
       'gu': '',
@@ -3149,7 +3149,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '84fpgj3q': {
+    'ssmrpq5q': {
       'en': 'Guest Room Booking',
       'bn': '',
       'gu': '',
@@ -3160,7 +3160,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'jycqit7c': {
+    'yhvrru1z': {
       'en': 'Annadan Seva',
       'bn': '',
       'gu': '',
@@ -3171,7 +3171,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'p9vfy4xc': {
+    'j88x2ys2': {
       'en': 'Yoga',
       'bn': '',
       'gu': '',
@@ -3182,7 +3182,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '3g7fqzdh': {
+    'q1y8hy0i': {
       'en': 'Free Distributions of Saress, Cloths & Blankets to the Needy',
       'bn': '',
       'gu': '',
@@ -3193,7 +3193,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'u2f9z8p1': {
+    'e31r5vdh': {
       'en': 'Death Rituals',
       'bn': '',
       'gu': '',
@@ -3204,7 +3204,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '2376cujg': {
+    'hnj410y2': {
       'en': 'Please select...',
       'bn': '',
       'gu': '',
@@ -3215,7 +3215,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'r3r3tgwc': {
+    'kyyuoecl': {
       'en': 'Search for an item...',
       'bn': '',
       'gu': '',
@@ -3226,7 +3226,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'vejpynww': {
+    'aqgomqsd': {
       'en':
           'Bharat Sevashram Sangha Branches provides TWO HALLS for performing various programmes like Marraige Party, Birthday Party, Shashtipoorthi, Naming Cermony, Sreemantha Karya, Engagement Cermony, Seminar, Conference, Discourses(Pravachan), etc.',
       'bn': '',
@@ -3238,9 +3238,9 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '908qw8ms': {
+    'r27jndhn': {
       'en':
-          'Bharat Sevashram Sangha provides Accomodation Facilities in their "Guest House" to the needy persons who wants to come to any of the major cities for travel as a tourist, for Medical Treatments, Interview, Official Work etc., from different parts of the country. We provide different categories of Rooms on Nominal Donation Basis.',
+          'Bharat Sevashram Sangha provides Accomodation Facilities in their \"Guest House\" to the needy persons who wants to come to any of the major cities for travel as a tourist, for Medical Treatments, Interview, Official Work etc., from different parts of the country. We provide different categories of Rooms on Nominal Donation Basis.',
       'bn': '',
       'gu': '',
       'hi': '',
@@ -3250,9 +3250,9 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'q8mfx5j6': {
+    '37spsqi9': {
       'en':
-          'Free "ANNADAN SEVA" to feed the poor and hungry is considered as one of the most Sacred Seva to humanity. Bharat Sevashram Sangha Branches will be doing this seva for 365 days for more than 150 People. We intend to increase the number of people depending upon the sponsers.',
+          'Free \"ANNADAN SEVA\" to feed the poor and hungry is considered as one of the most Sacred Seva to humanity. Bharat Sevashram Sangha Branches will be doing this seva for 365 days for more than 150 People. We intend to increase the number of people depending upon the sponsers.',
       'bn': '',
       'gu': '',
       'hi': '',
@@ -3262,7 +3262,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'm6447lsr': {
+    '12s7h0u8': {
       'en': 'Sponsorship:',
       'bn': '',
       'gu': '',
@@ -3273,7 +3273,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'rjt8dkck': {
+    'myy8linl': {
       'en': 'For 50 Persons Seva: Rs. 1500/-',
       'bn': '',
       'gu': '',
@@ -3284,7 +3284,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'nbce67gc': {
+    'i8a4c9f9': {
       'en': 'For 100 Persons Seva: Rs. 3000/-',
       'bn': '',
       'gu': '',
@@ -3295,7 +3295,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'wzl2ihd9': {
+    'mtr7h99w': {
       'en': 'For 200 Persons Seva: Rs. 5000/-',
       'bn': '',
       'gu': '',
@@ -3306,7 +3306,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '647mje8w': {
+    '12bseg0k': {
       'en': 'For 300 Persons Seva: Rs. 7000/-',
       'bn': '',
       'gu': '',
@@ -3317,7 +3317,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'nbj5lxg2': {
+    'u3yjmnsr': {
       'en':
           'Minimum Donation accepted is Rs.500/-\nMaximum Donation No Limit\nPlease join us to help the poor & needy',
       'bn': '',
@@ -3329,7 +3329,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '9fpxpda8': {
+    'vy3k0dje': {
       'en': 'Days: Monday to Friday',
       'bn': '',
       'gu': '',
@@ -3340,7 +3340,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'baovnthn': {
+    'flqmdwl1': {
       'en': 'Timings:',
       'bn': '',
       'gu': '',
@@ -3351,7 +3351,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'nc3h7wzb': {
+    'ccavsiai': {
       'en': '5:30a.m to 6:30a.m',
       'bn': '',
       'gu': '',
@@ -3362,7 +3362,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'gbur0tzp': {
+    '0ms32h50': {
       'en': '8:30a.m to 9:30a.m',
       'bn': '',
       'gu': '',
@@ -3373,7 +3373,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'gvmpk0lq': {
+    '8aao49il': {
       'en': '5:00p.m to 6:00p.m',
       'bn': '',
       'gu': '',
@@ -3384,7 +3384,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'srg278cj': {
+    'js5xldgc': {
       'en': '10:00a.m to 11:00a.m',
       'bn': '',
       'gu': '',
@@ -3395,7 +3395,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'zx124mgv': {
+    'j8by2pab': {
       'en': 'Age group 6 to 16 years',
       'bn': '',
       'gu': '',
@@ -3406,7 +3406,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'lqsglpc2': {
+    'af9i5czz': {
       'en': 'Children Yoga Class: 4:45p.m to 5:45p.m',
       'bn': '',
       'gu': '',
@@ -3417,7 +3417,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'u8rl3fcq': {
+    'pk3gfu9y': {
       'en':
           'Bharat Sevashram Sangha has been distributing Sarees, Cloths & Blanketsto the needy & poor on important occassions.',
       'bn': '',
@@ -3429,7 +3429,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'cdlp8835': {
+    'dfyy0ey1': {
       'en':
           'Bharat Sevashram Sangha provides Facilities for conducting Death Rituals like 4th Day, 13th Day, 1st Year, 2nd Year, Tithi Cermony etc., regularly',
       'bn': '',
@@ -3441,7 +3441,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'slzh29wv': {
+    'vkh0j0mg': {
       'en': 'Pandit/Pujari Brahmin is Also Available',
       'bn': '',
       'gu': '',
@@ -3452,7 +3452,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'furlfbis': {
+    'ex8p8c1m': {
       'en': 'Book for Function Hall',
       'bn': '',
       'gu': '',
@@ -3463,7 +3463,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '7ojqvy38': {
+    'pmd8hdll': {
       'en': 'Book for Puja',
       'bn': '',
       'gu': '',
@@ -3474,7 +3474,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '0zcvucwp': {
+    'w2lmyhjz': {
       'en': 'Book for Guest PickUp & Drop',
       'bn': '',
       'gu': '',
@@ -3485,7 +3485,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'ywcgss8m': {
+    '2uwd6y36': {
       'en': 'Book for Guest Room Booking',
       'bn': '',
       'gu': '',
@@ -3496,7 +3496,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '5cgmvz1f': {
+    's5bn6468': {
       'en': 'Book for Annadan Seva',
       'bn': '',
       'gu': '',
@@ -3507,7 +3507,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'zyqyn5pp': {
+    'hl9o3ahc': {
       'en': 'Book for Death Rituals',
       'bn': '',
       'gu': '',
@@ -3518,7 +3518,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'cajjzdhg': {
+    '0exdtoiu': {
       'en': 'Donation',
       'bn': '',
       'gu': '',
@@ -3529,7 +3529,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'p443ew03': {
+    'co5b2vpc': {
       'en': 'Donation',
       'bn': 'শিক্ষা কার্যক্রম',
       'gu': 'શિક્ષણ કાર્યક્રમ',
@@ -3540,7 +3540,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கல்வித் திட்டம்',
       'te': 'విద్యా కార్యక్రమం',
     },
-    'p5fc7m4u': {
+    'd37brcwt': {
       'en': 'Relief Fund',
       'bn': '',
       'gu': '',
@@ -3551,7 +3551,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'gpe9v7vs': {
+    'bmxusucw': {
       'en': 'Name of Account',
       'bn': '',
       'gu': '',
@@ -3562,7 +3562,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'abv0g4mo': {
+    'l3nojuao': {
       'en': 'Account No',
       'bn': '',
       'gu': '',
@@ -3573,7 +3573,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'mooc2kv9': {
+    'ial77ujx': {
       'en': 'Bank Name',
       'bn': '',
       'gu': '',
@@ -3584,7 +3584,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'orv8fok4': {
+    'ypyyvtwr': {
       'en': 'Branch Name',
       'bn': '',
       'gu': '',
@@ -3595,7 +3595,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'v12v5mfc': {
+    'pcx0do3e': {
       'en': 'IFSC Code',
       'bn': '',
       'gu': '',
@@ -3606,7 +3606,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'oy5rrxo7': {
+    '8ruzxq84': {
       'en': 'Account Type',
       'bn': '',
       'gu': '',
@@ -3617,7 +3617,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'qva3y1jp': {
+    'fv9rzdla': {
       'en': 'Bharat Sevashram Sangha',
       'bn': '',
       'gu': '',
@@ -3628,7 +3628,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'xdaxrb0f': {
+    'e1lal55x': {
       'en': '50200046842185',
       'bn': '',
       'gu': '',
@@ -3639,7 +3639,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'q8k8kg0p': {
+    'trmhibsj': {
       'en': 'HDFC Bank',
       'bn': '',
       'gu': '',
@@ -3650,7 +3650,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'spprmdkw': {
+    'px1vwlzg': {
       'en': 'Ballygunge',
       'bn': '',
       'gu': '',
@@ -3661,7 +3661,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    's5hdb7ru': {
+    'g2qpdqr4': {
       'en': 'HDFC0000516',
       'bn': '',
       'gu': '',
@@ -3672,7 +3672,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'mextjz19': {
+    'piwnppui': {
       'en': 'Current Account',
       'bn': '',
       'gu': '',
@@ -3683,7 +3683,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '06sy0tnc': {
+    'cfdtqnxl': {
       'en':
           'Please send your information regarding donation to us through mail at bssho.relief@gmail.com for getting Money Receipt and 80G Exemption Certificate.',
       'bn': '',
@@ -3695,7 +3695,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'ds3n05ca': {
+    'vybay1sp': {
       'en':
           '80G Certificate (10BE) will be issued with a minimum donation of Rs. 1000.00 as per Donor’s Pan',
       'bn': '',
@@ -3707,7 +3707,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'oqdlm28g': {
+    'uoh9nv3t': {
       'en': 'Donor Details',
       'bn': '',
       'gu': '',
@@ -3718,7 +3718,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'v5rfls02': {
+    '5n29ako2': {
       'en': 'Donor PAN (If required 80G Certificate)',
       'bn': '',
       'gu': '',
@@ -3729,7 +3729,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'yy1j2n0e': {
+    '1akopo4g': {
       'en': 'Name of Donor',
       'bn': '',
       'gu': '',
@@ -3740,7 +3740,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'm79550no': {
+    'qzw2n2p4': {
       'en': 'Address with Pin Code',
       'bn': '',
       'gu': '',
@@ -3751,7 +3751,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'dxcb5ly5': {
+    'aok2oekw': {
       'en': 'Mobile Number',
       'bn': '',
       'gu': '',
@@ -3762,7 +3762,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'zzco891s': {
+    '1x9n9iws': {
       'en': 'Mail ID',
       'bn': '',
       'gu': '',
@@ -3773,7 +3773,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'o9xgyaes': {
+    '2onpsys4': {
       'en': 'Transaction Ref. No. or Screen Shot to be attached ',
       'bn': '',
       'gu': '',
@@ -3784,7 +3784,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'xovgb7fs': {
+    'i9ly5aa2': {
       'en': 'with this form.',
       'bn': '',
       'gu': '',
@@ -3795,7 +3795,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '0uyi8pdo': {
+    '431twjry': {
       'en':
           'You will be acknowledged after getting your information within 3 working days through above mentioned mailing address.',
       'bn': '',
@@ -3807,7 +3807,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '9qf127jf': {
+    'ok81d07h': {
       'en': 'Poor Student Scholarship Fund',
       'bn': '',
       'gu': '',
@@ -3818,7 +3818,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'haxouodh': {
+    'okawf565': {
       'en': 'Name of Account',
       'bn': '',
       'gu': '',
@@ -3829,7 +3829,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'eep312il': {
+    'gn5x47x7': {
       'en': 'Account No',
       'bn': '',
       'gu': '',
@@ -3840,7 +3840,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'fk0e9vhy': {
+    'b0h6hz0e': {
       'en': 'Bank Name',
       'bn': '',
       'gu': '',
@@ -3851,7 +3851,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'go7216yi': {
+    'aqncqfh8': {
       'en': 'Branch Name',
       'bn': '',
       'gu': '',
@@ -3862,7 +3862,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'oqqkfowi': {
+    'nb0ip4vw': {
       'en': 'IFSC Code',
       'bn': '',
       'gu': '',
@@ -3873,7 +3873,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'eeyd2wdm': {
+    'j5ktjp0a': {
       'en': 'Account Type',
       'bn': '',
       'gu': '',
@@ -3884,7 +3884,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'fwstzkrt': {
+    '6j2stwmp': {
       'en': 'Bharat Sevashram Sangha',
       'bn': '',
       'gu': '',
@@ -3895,7 +3895,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '3ih0pl9n': {
+    'xhs713og': {
       'en': '50200045023260',
       'bn': '',
       'gu': '',
@@ -3906,7 +3906,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'icvv8jno': {
+    'tmva25h0': {
       'en': 'HDFC Bank',
       'bn': '',
       'gu': '',
@@ -3917,7 +3917,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'doy0iwk8': {
+    'y9lnbotv': {
       'en': 'Ballygunge',
       'bn': '',
       'gu': '',
@@ -3928,7 +3928,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'z4yn9xn1': {
+    'oua15ee2': {
       'en': 'HDFC0000516',
       'bn': '',
       'gu': '',
@@ -3939,7 +3939,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'al44ren1': {
+    'ik5p5pho': {
       'en': 'Current Account',
       'bn': '',
       'gu': '',
@@ -3950,7 +3950,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '5cssiwzu': {
+    '5b22hq2k': {
       'en':
           'Please send your information regarding donation to us through mail at bssho.relief@gmail.com for getting Money Receipt and 80G Exemption Certificate.',
       'bn': '',
@@ -3962,7 +3962,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'f2uyhnqi': {
+    'odmbm6h6': {
       'en':
           '80G Certificate (10BE) will be issued with a minimum donation of Rs. 1000.00 as per Donor’s Pan',
       'bn': '',
@@ -3974,7 +3974,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'cqw202ji': {
+    'fektmcm3': {
       'en': 'Donor Details',
       'bn': '',
       'gu': '',
@@ -3985,7 +3985,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '0gcgzj3p': {
+    'm0j52y1b': {
       'en': 'Donor PAN (If required 80G Certificate)',
       'bn': '',
       'gu': '',
@@ -3996,7 +3996,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'e1oj0pq7': {
+    '7cty7e0a': {
       'en': 'Name of Donor',
       'bn': '',
       'gu': '',
@@ -4007,7 +4007,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'gqb4b9wf': {
+    'hy793z02': {
       'en': 'Address with Pin Code',
       'bn': '',
       'gu': '',
@@ -4018,7 +4018,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'dn43au0h': {
+    'cgmerl92': {
       'en': 'Mobile Number',
       'bn': '',
       'gu': '',
@@ -4029,7 +4029,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '7hkvtrnw': {
+    'mfcdj9a8': {
       'en': 'Mail ID',
       'bn': '',
       'gu': '',
@@ -4040,7 +4040,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '5c07r2qv': {
+    'ls567kcv': {
       'en': 'Transaction Ref. No. or Screen Shot to be attached ',
       'bn': '',
       'gu': '',
@@ -4051,7 +4051,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'p4aelfir': {
+    'e5k6w89a': {
       'en': 'with this form.',
       'bn': '',
       'gu': '',
@@ -4062,7 +4062,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'u4ze8hyi': {
+    'faltu29u': {
       'en':
           'You will be acknowledged after getting your information within 3 working days through above mentioned mailing address.',
       'bn': '',
@@ -4074,7 +4074,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'nmhnzr7b': {
+    'm6j80ptz': {
       'en':
           'Donate through Cheque/NEFT/RTGS in the following Current Account. (Relief Fund)',
       'bn': '',
@@ -4086,7 +4086,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'w80pl6y5': {
+    'ynyy39g2': {
       'en': 'Name of Account',
       'bn': '',
       'gu': '',
@@ -4097,7 +4097,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'ay470hay': {
+    'v9qc7mae': {
       'en': 'Account No',
       'bn': '',
       'gu': '',
@@ -4108,7 +4108,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'gq0xszov': {
+    'eua51r9g': {
       'en': 'Bank Name',
       'bn': '',
       'gu': '',
@@ -4119,7 +4119,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'ci1ujrze': {
+    '21r4k5al': {
       'en': 'Branch Name',
       'bn': '',
       'gu': '',
@@ -4130,7 +4130,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '71j3986i': {
+    '48jbekyz': {
       'en': 'IFSC Code',
       'bn': '',
       'gu': '',
@@ -4141,7 +4141,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '8tguh2aw': {
+    'ptyi15mg': {
       'en': 'Bharat Sevashram Sangha',
       'bn': '',
       'gu': '',
@@ -4152,7 +4152,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'h1fgzsam': {
+    'u1j7hp1u': {
       'en': '35567461560',
       'bn': '',
       'gu': '',
@@ -4163,7 +4163,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'apjpfpg3': {
+    'gb1kpnqn': {
       'en': 'State Bank of India',
       'bn': '',
       'gu': '',
@@ -4174,7 +4174,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'qcour9xi': {
+    'sjb1hg6c': {
       'en': 'Ballygunge',
       'bn': '',
       'gu': '',
@@ -4185,7 +4185,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'oamik033': {
+    '1aq4zwzx': {
       'en': 'SBIN0000018',
       'bn': '',
       'gu': '',
@@ -4196,7 +4196,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'cjm0vurm': {
+    'f1q4qb3j': {
       'en':
           'Please send your information regarding donation to us through mail at ',
       'bn': '',
@@ -4208,7 +4208,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '25j18hhd': {
+    '3hr65asf': {
       'en': 'bharatsevashram@gmail.com ',
       'bn': '',
       'gu': '',
@@ -4219,7 +4219,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'er2luiyg': {
+    'o5t3tug0': {
       'en':
           '80G Certificate (10BE) will be issued with a minimum donation of Rs. 1000.00 as per Donor’s Pan',
       'bn': '',
@@ -4231,7 +4231,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'mljbzwj1': {
+    'ycf6d8is': {
       'en':
           'Foreign Donors Only\nBharat Sevashram Sangha Foreign Account Details',
       'bn': '',
@@ -4243,7 +4243,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'fkc29qga': {
+    'ruqomq39': {
       'en': 'Name of Account',
       'bn': '',
       'gu': '',
@@ -4254,7 +4254,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '3jn16bi5': {
+    'msyo5p0g': {
       'en': 'Account No',
       'bn': '',
       'gu': '',
@@ -4265,7 +4265,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '4smm3mzc': {
+    '9l1w71sf': {
       'en': 'Bank Name',
       'bn': '',
       'gu': '',
@@ -4276,7 +4276,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'nmi223wl': {
+    'zub5iwu4': {
       'en': 'Branch Name',
       'bn': '',
       'gu': '',
@@ -4287,7 +4287,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'cmo9g232': {
+    'yuj8fxcy': {
       'en': 'Swift Code',
       'bn': '',
       'gu': '',
@@ -4298,7 +4298,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'swola3ad': {
+    'b021z1zs': {
       'en': 'IFSC Code',
       'bn': '',
       'gu': '',
@@ -4309,7 +4309,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'rxa2f61q': {
+    'l65y1hvm': {
       'en': 'Bharat Sevashram Sangha',
       'bn': '',
       'gu': '',
@@ -4320,7 +4320,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'rkfa9bdg': {
+    '59ujf3dc': {
       'en': '40186153285',
       'bn': '',
       'gu': '',
@@ -4331,7 +4331,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'qx0ujtzs': {
+    '8rcyjg8r': {
       'en': 'State Bank of India',
       'bn': '',
       'gu': '',
@@ -4342,7 +4342,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'lwm261d1': {
+    '1a6cm33d': {
       'en': 'New Delhi Main Branch',
       'bn': '',
       'gu': '',
@@ -4353,7 +4353,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '4xnb5k5x': {
+    'q0olbd0v': {
       'en': 'SBININBB104',
       'bn': '',
       'gu': '',
@@ -4364,7 +4364,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    's9pti0gr': {
+    'q1b7lhwl': {
       'en': 'SBIN0000691',
       'bn': '',
       'gu': '',
@@ -4375,7 +4375,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '9geax2bf': {
+    '7bgm84l5': {
       'en': 'Bank Address',
       'bn': '',
       'gu': '',
@@ -4386,7 +4386,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'du2q0wrm': {
+    '2k3u9bpq': {
       'en':
           '11, Sansad Marg New Delhi – 110001\nContact: Swami Biswatmananda, General Secretary\nMobile No.: +91-9477201865',
       'bn': '',
@@ -4398,7 +4398,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'jdb8la71': {
+    'oeu6pzeq': {
       'en': 'Please make your donation through Swift Code only.',
       'bn': '',
       'gu': '',
@@ -4409,7 +4409,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'khn7b0e5': {
+    'mezjw4k7': {
       'en': 'After making your donation please send us email with',
       'bn': '',
       'gu': '',
@@ -4420,7 +4420,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'yi8x3xcc': {
+    'dtqojhf0': {
       'en': 'sender details(Name, Postal address with zip code) at',
       'bn': '',
       'gu': '',
@@ -4431,7 +4431,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'u4btxi4i': {
+    'mo3ovblw': {
       'en': 'bharatsevashram@gmail.com',
       'bn': '',
       'gu': '',
@@ -4442,7 +4442,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'n9dmzifa': {
+    'ydhuo2xb': {
       'en': 'We will acknowledge by money receipt through mail.',
       'bn': '',
       'gu': '',
@@ -4453,7 +4453,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'u3daqwr7': {
+    'huknzrn1': {
       'en': 'If you have any problem to donate ',
       'bn': '',
       'gu': '',
@@ -4464,7 +4464,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '1yvkw9n9': {
+    'wjp6jv6t': {
       'en': 'please correspond with this email',
       'bn': '',
       'gu': '',
@@ -4475,7 +4475,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '5rhal3db': {
+    '9qd64nnj': {
       'en': 'bharatsevashram@gmail.com',
       'bn': '',
       'gu': '',
@@ -4486,7 +4486,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '1s23n8fz': {
+    'zgghjsm1': {
       'en': 'Beti Bachao- Beti Padhao',
       'bn': '',
       'gu': '',
@@ -4497,7 +4497,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '2qy35ebq': {
+    'uoyaay0f': {
       'en':
           'This is a monthly Scholarship for under privileged Girl children stduying in different Karnataka Govt. Schools upto 10th Standars and for overall development based on their aptitude and financial conditions of their family.',
       'bn': '',
@@ -4509,7 +4509,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    't5j69k2s': {
+    '4l6911pi': {
       'en': 'Donation for one girl child is Rs.6000/- \nfor one year',
       'bn': '',
       'gu': '',
@@ -4520,7 +4520,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'axxnxpwf': {
+    'wuy6ve5q': {
       'en': 'Donate here for Beti Bacho-Beti Padhao',
       'bn': '',
       'gu': '',
@@ -4918,6 +4918,174 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'te': 'హోమ్',
     },
   },
+  // facilitiy_room_booking
+  {
+    '1uioowvp': {
+      'en': 'Facilities',
+      'bn': 'স্বাস্থ্য সেবা পরিষদ',
+      'gu': 'હેલ્થકેર સેવાઓ',
+      'hi': 'स्वास्थ्य देखभाल सेवाएँ',
+      'kn': 'ಆರೋಗ್ಯ ಸೇವೆಗಳು',
+      'ml': 'ആരോഗ്യ സേവനങ്ങൾ',
+      'mr': 'आरोग्य सेवा',
+      'ta': 'சுகாதார சேவைகள்',
+      'te': 'ఆరోగ్య సంరక్షణ సేవలు',
+    },
+    '8fbykhgm': {
+      'en': 'Available Rooms',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'itzygb09': {
+      'en': 'Available',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '2n359a9a': {
+      'en': 'Booking ',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '8jw8ju0o': {
+      'en': 'For Me',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'hom3mpcp': {
+      'en': 'For Others',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '9e8int0z': {
+      'en': 'Phone Number',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'nwekb0p6': {
+      'en': 'Set Date',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '4i5nggx4': {
+      'en': 'Confirm Booking',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '62hiqhpc': {
+      'en': 'Guest Name',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '4jcae6pf': {
+      'en': 'Guest Email',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'qoh4ksop': {
+      'en': 'Guest Phone Number',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '6m0mw91z': {
+      'en': 'Set Date',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '1q9nwop4': {
+      'en': 'Confirm Booking',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'ko6vmq54': {
+      'en': 'Home',
+      'bn': 'বাড়ি',
+      'gu': 'ઘર',
+      'hi': 'घर',
+      'kn': 'ಮನೆ',
+      'ml': 'വീട്',
+      'mr': 'मुख्यपृष्ठ',
+      'ta': 'வீடு',
+      'te': 'హోమ్',
+    },
+  },
   // updatepic
   {
     'w3w43r9r': {
@@ -4957,7 +5125,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // empty
   {
     'eo34bd9r': {
-      'en': 'Sorry, there no events available right now',
+      'en': 'Sorry, there no events available right now.',
       'bn': '',
       'gu': '',
       'hi': '',
@@ -5021,6 +5189,31 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'szdwi671': {
       'en': 'Facilites',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+  },
+  // empty_rooms
+  {
+    'yu9shyb6': {
+      'en': 'Sorry, there no rooms available right now.',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '3r1kct2h': {
+      'en': 'Check back again',
       'bn': '',
       'gu': '',
       'hi': '',

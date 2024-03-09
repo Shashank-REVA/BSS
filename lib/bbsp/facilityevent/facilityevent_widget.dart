@@ -1,7 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'facilityevent_model.dart';
 export 'facilityevent_model.dart';
@@ -37,8 +36,6 @@ class _FacilityeventWidgetState extends State<FacilityeventWidget> {
 
   @override
   Widget build(BuildContext context) {
-    context.watch<FFAppState>();
-
     return Align(
       alignment: const AlignmentDirectional(0.0, 1.0),
       child: Container(
@@ -73,7 +70,7 @@ class _FacilityeventWidgetState extends State<FacilityeventWidget> {
                           .join('&')));
                 },
                 child: RichText(
-                  textScaleFactor: MediaQuery.of(context).textScaleFactor,
+                  textScaler: MediaQuery.of(context).textScaler,
                   text: TextSpan(
                     children: [
                       TextSpan(

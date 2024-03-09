@@ -5,11 +5,9 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'city_outline_after_login_model.dart';
 export 'city_outline_after_login_model.dart';
@@ -232,17 +230,6 @@ class _CityOutlineAfterLoginWidgetState
 
   @override
   Widget build(BuildContext context) {
-    if (isiOS) {
-      SystemChrome.setSystemUIOverlayStyle(
-        SystemUiOverlayStyle(
-          statusBarBrightness: Theme.of(context).brightness,
-          systemStatusBarContrastEnforced: true,
-        ),
-      );
-    }
-
-    context.watch<FFAppState>();
-
     return StreamBuilder<List<CitiesRecord>>(
       stream: queryCitiesRecord(
         queryBuilder: (citiesRecord) => citiesRecord.where(
@@ -474,7 +461,8 @@ class _CityOutlineAfterLoginWidgetState
                               logFirebaseEvent('Button_call_number');
                               await launchUrl(Uri(
                                 scheme: 'tel',
-                                path: cityOutlineAfterLoginCitiesRecord.phoneNum
+                                path: cityOutlineAfterLoginCitiesRecord
+                                    .phoneNum
                                     .toString(),
                               ));
                             },

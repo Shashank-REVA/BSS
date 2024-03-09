@@ -1,18 +1,18 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'empty_model.dart';
-export 'empty_model.dart';
+import 'empty_rooms_model.dart';
+export 'empty_rooms_model.dart';
 
-class EmptyWidget extends StatefulWidget {
-  const EmptyWidget({super.key});
+class EmptyRoomsWidget extends StatefulWidget {
+  const EmptyRoomsWidget({super.key});
 
   @override
-  State<EmptyWidget> createState() => _EmptyWidgetState();
+  State<EmptyRoomsWidget> createState() => _EmptyRoomsWidgetState();
 }
 
-class _EmptyWidgetState extends State<EmptyWidget> {
-  late EmptyModel _model;
+class _EmptyRoomsWidgetState extends State<EmptyRoomsWidget> {
+  late EmptyRoomsModel _model;
 
   @override
   void setState(VoidCallback callback) {
@@ -23,7 +23,7 @@ class _EmptyWidgetState extends State<EmptyWidget> {
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => EmptyModel());
+    _model = createModel(context, () => EmptyRoomsModel());
   }
 
   @override
@@ -48,7 +48,7 @@ class _EmptyWidgetState extends State<EmptyWidget> {
           children: [
             Text(
               FFLocalizations.of(context).getText(
-                'eo34bd9r' /* Sorry, there no events availab... */,
+                'yu9shyb6' /* Sorry, there no rooms availabl... */,
               ),
               style: FlutterFlowTheme.of(context).bodyMedium.override(
                     fontFamily: 'Raleway',
@@ -59,7 +59,7 @@ class _EmptyWidgetState extends State<EmptyWidget> {
             ),
             Text(
               FFLocalizations.of(context).getText(
-                '00m83x0x' /* Check back again */,
+                '3r1kct2h' /* Check back again */,
               ),
               style: FlutterFlowTheme.of(context).bodyMedium.override(
                     fontFamily: 'Raleway',

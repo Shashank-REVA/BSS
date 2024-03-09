@@ -9,8 +9,6 @@ import '/flutter_flow/form_field_controller.dart';
 import 'package:sticky_headers/sticky_headers.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:provider/provider.dart';
 import 'facilities_booking_model.dart';
 export 'facilities_booking_model.dart';
 
@@ -20,7 +18,7 @@ class FacilitiesBookingWidget extends StatefulWidget {
     Color? colorbtn,
     Color? colortxt,
     String? facilityselected,
-    required this.city,
+    this.city,
   })  : colorbtn = colorbtn ?? const Color(0xFF322E5C),
         colortxt = colortxt ?? Colors.white,
         facilityselected = facilityselected ?? 'Facility';
@@ -69,17 +67,6 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
 
   @override
   Widget build(BuildContext context) {
-    if (isiOS) {
-      SystemChrome.setSystemUIOverlayStyle(
-        SystemUiOverlayStyle(
-          statusBarBrightness: Theme.of(context).brightness,
-          systemStatusBarContrastEnforced: true,
-        ),
-      );
-    }
-
-    context.watch<FFAppState>();
-
     return GestureDetector(
       onTap: () => _model.unfocusNode.canRequestFocus
           ? FocusScope.of(context).requestFocus(_model.unfocusNode)
@@ -129,6 +116,12 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
 
                                 context.goNamed(
                                   'allpages',
+                                  queryParameters: {
+                                    'tabpageindex': serializeParam(
+                                      4,
+                                      ParamType.int,
+                                    ),
+                                  }.withoutNulls,
                                   extra: <String, dynamic>{
                                     kTransitionInfoKey: const TransitionInfo(
                                       hasTransition: true,
@@ -187,19 +180,41 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
                             Padding(
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   7.0, 0.0, 0.0, 5.0),
-                              child: Text(
-                                valueOrDefault<String>(
-                                  widget.city,
-                                  'City',
+                              child: AuthUserStreamWidget(
+                                builder: (context) => Text(
+                                  valueOrDefault(currentUserDocument?.city, ''),
+                                  style: FlutterFlowTheme.of(context)
+                                      .headlineLarge
+                                      .override(
+                                        fontFamily: 'SuperTall',
+                                        color: const Color(0xFF2F2F2F),
+                                        fontSize: 18.0,
+                                        useGoogleFonts: false,
+                                      ),
                                 ),
-                                style: FlutterFlowTheme.of(context)
-                                    .headlineLarge
-                                    .override(
-                                      fontFamily: 'SuperTall',
-                                      color: const Color(0xFF2F2F2F),
-                                      fontSize: 18.0,
-                                      useGoogleFonts: false,
-                                    ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Row(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Align(
+                              alignment: const AlignmentDirectional(-1.0, 0.0),
+                              child: Padding(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                    7.0, 10.0, 0.0, 15.0),
+                                child: Text(
+                                  widget.facilityselected,
+                                  style: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .override(
+                                        fontFamily: 'Raleway',
+                                        color: Colors.black,
+                                        fontSize: 18.0,
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                ),
                               ),
                             ),
                           ],
@@ -213,24 +228,6 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
-                          Align(
-                            alignment: const AlignmentDirectional(-1.0, 0.0),
-                            child: Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 10.0, 0.0, 15.0),
-                              child: Text(
-                                widget.facilityselected,
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      fontFamily: 'Raleway',
-                                      color: Colors.black,
-                                      fontSize: 18.0,
-                                      fontWeight: FontWeight.w600,
-                                    ),
-                              ),
-                            ),
-                          ),
                           Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
@@ -479,7 +476,8 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
                                           locale: FFLocalizations.of(context)
                                               .languageCode,
                                         ),
-                                        facilityCity: widget.city,
+                                        facilityCity: valueOrDefault(
+                                            currentUserDocument?.city, ''),
                                         guestEmail: currentUserEmail,
                                       ));
                                   logFirebaseEvent('Button_backend_call');
@@ -497,7 +495,8 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
                                           currentUserEmail,
                                           'No Email',
                                         ),
-                                        city: widget.city,
+                                        city: valueOrDefault(
+                                            currentUserDocument?.city, ''),
                                       ));
                                   logFirebaseEvent('Button_navigate_to');
 
@@ -867,7 +866,8 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
                                           locale: FFLocalizations.of(context)
                                               .languageCode,
                                         ),
-                                        facilityCity: widget.city,
+                                        facilityCity: valueOrDefault(
+                                            currentUserDocument?.city, ''),
                                         guestEmail: valueOrDefault<String>(
                                           _model.textController3.text,
                                           'No Email',
@@ -888,7 +888,8 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
                                           _model.textController3.text,
                                           'No Email',
                                         ),
-                                        city: widget.city,
+                                        city: valueOrDefault(
+                                            currentUserDocument?.city, ''),
                                       ));
                                   logFirebaseEvent('Button_navigate_to');
 

@@ -1,9 +1,8 @@
+import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:provider/provider.dart';
 import 'booking_confirm_model.dart';
 export 'booking_confirm_model.dart';
 
@@ -44,17 +43,6 @@ class _BookingConfirmWidgetState extends State<BookingConfirmWidget> {
 
   @override
   Widget build(BuildContext context) {
-    if (isiOS) {
-      SystemChrome.setSystemUIOverlayStyle(
-        SystemUiOverlayStyle(
-          statusBarBrightness: Theme.of(context).brightness,
-          systemStatusBarContrastEnforced: true,
-        ),
-      );
-    }
-
-    context.watch<FFAppState>();
-
     return Scaffold(
       key: scaffoldKey,
       backgroundColor: Colors.white,
@@ -94,15 +82,17 @@ class _BookingConfirmWidgetState extends State<BookingConfirmWidget> {
               ),
               Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
-                child: Text(
-                  'Booking Confirmed for ${widget.facility} in ${widget.city}!',
-                  textAlign: TextAlign.center,
-                  style: FlutterFlowTheme.of(context).displaySmall.override(
-                        fontFamily: 'Raleway',
-                        color: const Color(0xFF322E5C),
-                        fontSize: 36.0,
-                        fontWeight: FontWeight.w600,
-                      ),
+                child: AuthUserStreamWidget(
+                  builder: (context) => Text(
+                    'Booking Confirmed for ${widget.facility} in ${valueOrDefault(currentUserDocument?.city, '')}!',
+                    textAlign: TextAlign.center,
+                    style: FlutterFlowTheme.of(context).displaySmall.override(
+                          fontFamily: 'Raleway',
+                          color: const Color(0xFF322E5C),
+                          fontSize: 36.0,
+                          fontWeight: FontWeight.w600,
+                        ),
+                  ),
                 ),
               ),
               Align(
@@ -138,7 +128,7 @@ class _BookingConfirmWidgetState extends State<BookingConfirmWidget> {
                           ParamType.String,
                         ),
                         'city': serializeParam(
-                          widget.city,
+                          valueOrDefault(currentUserDocument?.city, ''),
                           ParamType.String,
                         ),
                       }.withoutNulls,

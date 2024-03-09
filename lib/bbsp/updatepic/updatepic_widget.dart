@@ -8,7 +8,6 @@ import '/flutter_flow/upload_data.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:provider/provider.dart';
 import 'updatepic_model.dart';
 export 'updatepic_model.dart';
 
@@ -43,8 +42,6 @@ class _UpdatepicWidgetState extends State<UpdatepicWidget> {
 
   @override
   Widget build(BuildContext context) {
-    context.watch<FFAppState>();
-
     return Align(
       alignment: const AlignmentDirectional(0.0, 1.0),
       child: Padding(

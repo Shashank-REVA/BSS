@@ -1,7 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'ori_facility_empty_model.dart';
 export 'ori_facility_empty_model.dart';
 
@@ -36,8 +35,6 @@ class _OriFacilityEmptyWidgetState extends State<OriFacilityEmptyWidget> {
 
   @override
   Widget build(BuildContext context) {
-    context.watch<FFAppState>();
-
     return Align(
       alignment: const AlignmentDirectional(0.0, 1.0),
       child: Container(
@@ -78,7 +75,7 @@ class _OriFacilityEmptyWidgetState extends State<OriFacilityEmptyWidget> {
                   );
                 },
                 child: RichText(
-                  textScaleFactor: MediaQuery.of(context).textScaleFactor,
+                  textScaler: MediaQuery.of(context).textScaler,
                   text: TextSpan(
                     children: [
                       TextSpan(

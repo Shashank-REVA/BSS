@@ -1,3 +1,4 @@
+import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/bbsp/facilityevent/facilityevent_widget.dart';
 import '/bbsp/ori_facility_empty/ori_facility_empty_widget.dart';
@@ -8,9 +9,7 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:sticky_headers/sticky_headers.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:provider/provider.dart';
 import 'bookings_model.dart';
 export 'bookings_model.dart';
 
@@ -58,17 +57,6 @@ class _BookingsWidgetState extends State<BookingsWidget>
 
   @override
   Widget build(BuildContext context) {
-    if (isiOS) {
-      SystemChrome.setSystemUIOverlayStyle(
-        SystemUiOverlayStyle(
-          statusBarBrightness: Theme.of(context).brightness,
-          systemStatusBarContrastEnforced: true,
-        ),
-      );
-    }
-
-    context.watch<FFAppState>();
-
     return GestureDetector(
       onTap: () => _model.unfocusNode.canRequestFocus
           ? FocusScope.of(context).requestFocus(_model.unfocusNode)
@@ -109,7 +97,7 @@ class _BookingsWidgetState extends State<BookingsWidget>
                                     alignment: const AlignmentDirectional(-1.0, 0.0),
                                     child: Padding(
                                       padding: const EdgeInsetsDirectional.fromSTEB(
-                                          16.0, 0.0, 0.0, 0.0),
+                                          16.0, 47.0, 0.0, 0.0),
                                       child: FlutterFlowIconButton(
                                         borderColor: const Color(0x00FFFFFF),
                                         borderRadius: 20.0,
@@ -431,23 +419,30 @@ class _BookingsWidgetState extends State<BookingsWidget>
                                                             alignment:
                                                                 const AlignmentDirectional(
                                                                     -1.0, 0.0),
-                                                            child: Text(
-                                                              oriListFacilitiesRecord
-                                                                  .facilityCity,
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .bodyMedium
-                                                                  .override(
-                                                                    fontFamily:
-                                                                        'Raleway',
-                                                                    color: const Color(
-                                                                        0xFF2F2F2F),
-                                                                    fontSize:
-                                                                        18.0,
-                                                                    fontWeight:
-                                                                        FontWeight
-                                                                            .w500,
-                                                                  ),
+                                                            child:
+                                                                AuthUserStreamWidget(
+                                                              builder:
+                                                                  (context) =>
+                                                                      Text(
+                                                                valueOrDefault(
+                                                                    currentUserDocument
+                                                                        ?.city,
+                                                                    ''),
+                                                                style: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .bodyMedium
+                                                                    .override(
+                                                                      fontFamily:
+                                                                          'Raleway',
+                                                                      color: const Color(
+                                                                          0xFF2F2F2F),
+                                                                      fontSize:
+                                                                          18.0,
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w500,
+                                                                    ),
+                                                              ),
                                                             ),
                                                           ),
                                                         ],
@@ -507,7 +502,10 @@ class _BookingsWidgetState extends State<BookingsWidget>
                                                                   ),
                                                                   'city':
                                                                       serializeParam(
-                                                                    widget.city,
+                                                                    valueOrDefault(
+                                                                        currentUserDocument
+                                                                            ?.city,
+                                                                        ''),
                                                                     ParamType
                                                                         .String,
                                                                   ),
