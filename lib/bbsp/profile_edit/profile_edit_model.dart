@@ -1,4 +1,5 @@
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/form_field_controller.dart';
 import 'profile_edit_widget.dart' show ProfileEditWidget;
 import 'package:flutter/material.dart';
 
@@ -14,9 +15,16 @@ class ProfileEditModel extends FlutterFlowModel<ProfileEditWidget> {
   TextEditingController? phoneController;
   String? Function(BuildContext, String?)? phoneControllerValidator;
   // State field(s) for email widget.
-  FocusNode? emailFocusNode;
-  TextEditingController? emailController;
-  String? Function(BuildContext, String?)? emailControllerValidator;
+  FocusNode? emailFocusNode1;
+  TextEditingController? emailController1;
+  String? Function(BuildContext, String?)? emailController1Validator;
+  // State field(s) for email widget.
+  FocusNode? emailFocusNode2;
+  TextEditingController? emailController2;
+  String? Function(BuildContext, String?)? emailController2Validator;
+  // State field(s) for DropDown widget.
+  String? dropDownValue;
+  FormFieldController<String>? dropDownValueController;
 
   /// Initialization and disposal methods.
 
@@ -31,8 +39,11 @@ class ProfileEditModel extends FlutterFlowModel<ProfileEditWidget> {
     phoneFocusNode?.dispose();
     phoneController?.dispose();
 
-    emailFocusNode?.dispose();
-    emailController?.dispose();
+    emailFocusNode1?.dispose();
+    emailController1?.dispose();
+
+    emailFocusNode2?.dispose();
+    emailController2?.dispose();
   }
 
   /// Action blocks are added here.

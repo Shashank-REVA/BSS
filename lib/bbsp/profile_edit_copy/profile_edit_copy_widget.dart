@@ -128,28 +128,28 @@ class _ProfileEditCopyWidgetState extends State<ProfileEditCopyWidget> {
                         color: Color(0xFFE0E3E7),
                         width: 2.0,
                       ),
-                      borderRadius: BorderRadius.circular(8.0),
+                      borderRadius: BorderRadius.circular(25.0),
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderSide: const BorderSide(
                         color: Color(0xFF4B39EF),
                         width: 2.0,
                       ),
-                      borderRadius: BorderRadius.circular(8.0),
+                      borderRadius: BorderRadius.circular(25.0),
                     ),
                     errorBorder: OutlineInputBorder(
                       borderSide: const BorderSide(
                         color: Color(0xFFFF5963),
                         width: 2.0,
                       ),
-                      borderRadius: BorderRadius.circular(8.0),
+                      borderRadius: BorderRadius.circular(25.0),
                     ),
                     focusedErrorBorder: OutlineInputBorder(
                       borderSide: const BorderSide(
                         color: Color(0xFFFF5963),
                         width: 2.0,
                       ),
-                      borderRadius: BorderRadius.circular(8.0),
+                      borderRadius: BorderRadius.circular(25.0),
                     ),
                     filled: true,
                     fillColor: Colors.white,
@@ -198,28 +198,28 @@ class _ProfileEditCopyWidgetState extends State<ProfileEditCopyWidget> {
                         color: Color(0xFFE0E3E7),
                         width: 2.0,
                       ),
-                      borderRadius: BorderRadius.circular(8.0),
+                      borderRadius: BorderRadius.circular(25.0),
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderSide: const BorderSide(
                         color: Color(0xFF4B39EF),
                         width: 2.0,
                       ),
-                      borderRadius: BorderRadius.circular(8.0),
+                      borderRadius: BorderRadius.circular(25.0),
                     ),
                     errorBorder: OutlineInputBorder(
                       borderSide: const BorderSide(
                         color: Color(0xFFFF5963),
                         width: 2.0,
                       ),
-                      borderRadius: BorderRadius.circular(8.0),
+                      borderRadius: BorderRadius.circular(25.0),
                     ),
                     focusedErrorBorder: OutlineInputBorder(
                       borderSide: const BorderSide(
                         color: Color(0xFFFF5963),
                         width: 2.0,
                       ),
-                      borderRadius: BorderRadius.circular(8.0),
+                      borderRadius: BorderRadius.circular(25.0),
                     ),
                     filled: true,
                     fillColor: Colors.white,
@@ -265,28 +265,28 @@ class _ProfileEditCopyWidgetState extends State<ProfileEditCopyWidget> {
                       color: Color(0xFFE0E3E7),
                       width: 2.0,
                     ),
-                    borderRadius: BorderRadius.circular(8.0),
+                    borderRadius: BorderRadius.circular(25.0),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderSide: const BorderSide(
                       color: Color(0xFF4B39EF),
                       width: 2.0,
                     ),
-                    borderRadius: BorderRadius.circular(8.0),
+                    borderRadius: BorderRadius.circular(25.0),
                   ),
                   errorBorder: OutlineInputBorder(
                     borderSide: const BorderSide(
                       color: Color(0xFFFF5963),
                       width: 2.0,
                     ),
-                    borderRadius: BorderRadius.circular(8.0),
+                    borderRadius: BorderRadius.circular(25.0),
                   ),
                   focusedErrorBorder: OutlineInputBorder(
                     borderSide: const BorderSide(
                       color: Color(0xFFFF5963),
                       width: 2.0,
                     ),
-                    borderRadius: BorderRadius.circular(8.0),
+                    borderRadius: BorderRadius.circular(25.0),
                   ),
                   filled: true,
                   fillColor: Colors.white,

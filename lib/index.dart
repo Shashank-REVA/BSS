@@ -37,3 +37,14 @@ export '/bbsp/phone_auth_copy_copy/phone_auth_copy_copy_widget.dart'
     show PhoneAuthCopyCopyWidget;
 export '/bbsp/facilitiy_room_booking/facilitiy_room_booking_widget.dart'
     show FacilitiyRoomBookingWidget;
+export '/bbsp/beti_bachao_beti_padhao_info/beti_bachao_beti_padhao_info_widget.dart'
+    show BetiBachaoBetiPadhaoInfoWidget;
+export '/bbsp/beti_bachao_beti_padhao_no_donation/beti_bachao_beti_padhao_no_donation_widget.dart'
+    show BetiBachaoBetiPadhaoNoDonationWidget;
+export '/bbsp/membership/membership_widget.dart' show MembershipWidget;
+export '/bbsp/membership_payment/membership_payment_widget.dart'
+    show MembershipPaymentWidget;
+export '/bbsp/payment/payment_widget.dart' show PaymentWidget;
+export '/bbsp/membership_final/membership_final_widget.dart'
+    show MembershipFinalWidget;
+export '/bbsp/membership_no/membership_no_widget.dart' show MembershipNoWidget;

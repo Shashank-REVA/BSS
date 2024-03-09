@@ -12,6 +12,7 @@ import 'schema/facilities_record.dart';
 import 'schema/con_facility_record.dart';
 import 'schema/notifications_record.dart';
 import 'schema/rooms_record.dart';
+import 'schema/membership_record.dart';
 
 export 'dart:async' show StreamSubscription;
 export 'package:cloud_firestore/cloud_firestore.dart';
@@ -26,6 +27,7 @@ export 'schema/facilities_record.dart';
 export 'schema/con_facility_record.dart';
 export 'schema/notifications_record.dart';
 export 'schema/rooms_record.dart';
+export 'schema/membership_record.dart';
 
 /// Functions to query UsersRecords (as a Stream and as a Future).
 Future<int> queryUsersRecordCount({
@@ -281,6 +283,43 @@ Future<List<RoomsRecord>> queryRoomsRecordOnce({
     queryCollectionOnce(
       RoomsRecord.collection,
       RoomsRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query MembershipRecords (as a Stream and as a Future).
+Future<int> queryMembershipRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      MembershipRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<MembershipRecord>> queryMembershipRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      MembershipRecord.collection,
+      MembershipRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<MembershipRecord>> queryMembershipRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      MembershipRecord.collection,
+      MembershipRecord.fromSnapshot,
       queryBuilder: queryBuilder,
       limit: limit,
       singleRecord: singleRecord,

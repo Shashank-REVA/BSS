@@ -73,13 +73,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? const AllpagesWidget() : const AllpagesWidget(),
+          appStateNotifier.loggedIn ? const AllpagesWidget() : const LoginWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? const AllpagesWidget() : const AllpagesWidget(),
+              appStateNotifier.loggedIn ? const AllpagesWidget() : const LoginWidget(),
         ),
         FFRoute(
           name: 'city_outline',
@@ -295,6 +295,53 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                 params.getParam('facilityselected', ParamType.String),
             city: params.getParam('city', ParamType.String),
           ),
+        ),
+        FFRoute(
+          name: 'beti-bachao-beti-padhao-info',
+          path: '/betiBachaoBetiPadhaoInfo',
+          builder: (context, params) => const BetiBachaoBetiPadhaoInfoWidget(),
+        ),
+        FFRoute(
+          name: 'beti-bachao-beti-padhao-no_donation',
+          path: '/betiBachaoBetiPadhaoNoDonation',
+          builder: (context, params) => const BetiBachaoBetiPadhaoNoDonationWidget(),
+        ),
+        FFRoute(
+          name: 'membership',
+          path: '/membership',
+          builder: (context, params) => MembershipWidget(
+            colorbtn: params.getParam('colorbtn', ParamType.Color),
+            colortxt: params.getParam('colortxt', ParamType.Color),
+          ),
+        ),
+        FFRoute(
+          name: 'membership_payment',
+          path: '/membershipPayment',
+          builder: (context, params) => MembershipPaymentWidget(
+            colorbtn: params.getParam('colorbtn', ParamType.Color),
+            colortxt: params.getParam('colortxt', ParamType.Color),
+          ),
+        ),
+        FFRoute(
+          name: 'payment',
+          path: '/payment',
+          builder: (context, params) => const PaymentWidget(),
+        ),
+        FFRoute(
+          name: 'membership_final',
+          path: '/membershipFinal',
+          builder: (context, params) => MembershipFinalWidget(
+            colorbtn: params.getParam('colorbtn', ParamType.Color),
+            colortxt: params.getParam('colortxt', ParamType.Color),
+          ),
+        ),
+        FFRoute(
+          name: 'membership_no',
+          path: '/membershipNo',
+          builder: (context, params) => MembershipNoWidget(
+            colorbtn: params.getParam('colorbtn', ParamType.Color),
+            colortxt: params.getParam('colortxt', ParamType.Color),
+          ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -461,7 +508,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.location);
-            return '/allpages';
+            return '/login';
           }
           return null;
         },

@@ -4,21 +4,19 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'beti_bachao_beti_padhao_donation_model.dart';
-export 'beti_bachao_beti_padhao_donation_model.dart';
+import 'payment_model.dart';
+export 'payment_model.dart';
 
-class BetiBachaoBetiPadhaoDonationWidget extends StatefulWidget {
-  const BetiBachaoBetiPadhaoDonationWidget({super.key});
+class PaymentWidget extends StatefulWidget {
+  const PaymentWidget({super.key});
 
   @override
-  State<BetiBachaoBetiPadhaoDonationWidget> createState() =>
-      _BetiBachaoBetiPadhaoDonationWidgetState();
+  State<PaymentWidget> createState() => _PaymentWidgetState();
 }
 
-class _BetiBachaoBetiPadhaoDonationWidgetState
-    extends State<BetiBachaoBetiPadhaoDonationWidget>
+class _PaymentWidgetState extends State<PaymentWidget>
     with TickerProviderStateMixin {
-  late BetiBachaoBetiPadhaoDonationModel _model;
+  late PaymentModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -62,35 +60,14 @@ class _BetiBachaoBetiPadhaoDonationWidgetState
         ),
       ],
     ),
-    'textOnPageLoadAnimation3': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        VisibilityEffect(duration: 50.ms),
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 50.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 50.ms,
-          duration: 600.ms,
-          begin: const Offset(-20.0, 0.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
   };
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => BetiBachaoBetiPadhaoDonationModel());
+    _model = createModel(context, () => PaymentModel());
 
-    logFirebaseEvent('screen_view',
-        parameters: {'screen_name': 'beti-bachao-beti-padhao-donation'});
+    logFirebaseEvent('screen_view', parameters: {'screen_name': 'payment'});
   }
 
   @override
@@ -154,11 +131,11 @@ class _BetiBachaoBetiPadhaoDonationWidgetState
                                   ),
                                   onPressed: () async {
                                     logFirebaseEvent(
-                                        'BETI_BACHAO_BETI_PADHAO_DONATION_arrow_b');
+                                        'PAYMENT_arrow_back_ios_rounded_ICN_ON_TA');
                                     logFirebaseEvent('IconButton_navigate_to');
 
                                     context.pushNamed(
-                                      'beti-bachao-beti-padhao-info',
+                                      'membership_payment',
                                       extra: <String, dynamic>{
                                         kTransitionInfoKey: const TransitionInfo(
                                           hasTransition: true,
@@ -181,7 +158,7 @@ class _BetiBachaoBetiPadhaoDonationWidgetState
                           const EdgeInsetsDirectional.fromSTEB(16.0, 20.0, 0.0, 0.0),
                       child: Text(
                         FFLocalizations.of(context).getText(
-                          '6sm74kyt' /* Donation */,
+                          '7sd2uf0p' /* Payment */,
                         ),
                         style:
                             FlutterFlowTheme.of(context).headlineLarge.override(
@@ -198,23 +175,7 @@ class _BetiBachaoBetiPadhaoDonationWidgetState
                           const EdgeInsetsDirectional.fromSTEB(16.0, 5.0, 16.0, 16.0),
                       child: Text(
                         FFLocalizations.of(context).getText(
-                          'k9pt1183' /* Beti Bachao-Beti Padhao */,
-                        ),
-                        style:
-                            FlutterFlowTheme.of(context).titleMedium.override(
-                                  fontFamily: 'SuperTall',
-                                  color: Colors.black,
-                                  useGoogleFonts: false,
-                                ),
-                      ).animateOnPageLoad(
-                          animationsMap['textOnPageLoadAnimation2']!),
-                    ),
-                    Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(16.0, 5.0, 16.0, 16.0),
-                      child: Text(
-                        FFLocalizations.of(context).getText(
-                          'k9w51ovj' /* Scan the below QR Code for the... */,
+                          'k5lunuqa' /* Scan the below QR Code for the... */,
                         ),
                         style:
                             FlutterFlowTheme.of(context).titleMedium.override(
@@ -222,7 +183,7 @@ class _BetiBachaoBetiPadhaoDonationWidgetState
                                   color: Colors.black,
                                 ),
                       ).animateOnPageLoad(
-                          animationsMap['textOnPageLoadAnimation3']!),
+                          animationsMap['textOnPageLoadAnimation2']!),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(10.0),
