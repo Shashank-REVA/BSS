@@ -73,13 +73,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? const AllpagesWidget() : const LoginWidget(),
+          appStateNotifier.loggedIn ? const AllpagesWidget() : const AllpagesWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? const AllpagesWidget() : const LoginWidget(),
+              appStateNotifier.loggedIn ? const AllpagesWidget() : const AllpagesWidget(),
         ),
         FFRoute(
           name: 'city_outline',
@@ -508,7 +508,7 @@ class FFRoute {
 
           if (requireAuth && !appStateNotifier.loggedIn) {
             appStateNotifier.setRedirectLocationIfUnset(state.location);
-            return '/login';
+            return '/allpages';
           }
           return null;
         },

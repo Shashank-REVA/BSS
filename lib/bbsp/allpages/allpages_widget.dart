@@ -6507,8 +6507,9 @@ Prana... */
                                 children: [
                                   Padding(
                                     padding: const EdgeInsetsDirectional.fromSTEB(
-                                        7.0, 0.0, 0.0, 0.0),
+                                        7.0, 0.0, 0.0, 100.0),
                                     child: SingleChildScrollView(
+                                      primary: false,
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -7080,349 +7081,361 @@ Prana... */
                                                 ),
                                               ),
                                             ),
-                                          Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 0.0, 0.0, 5.0),
-                                            child: Row(
-                                              mainAxisSize: MainAxisSize.max,
-                                              children: [
-                                                Align(
-                                                  alignment:
-                                                      const AlignmentDirectional(
-                                                          -1.0, 0.0),
-                                                  child: Padding(
+                                          if (_model.facValue == 'Annadan Seva')
+                                            Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(0.0, 0.0, 0.0, 5.0),
+                                              child: Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                children: [
+                                                  Align(
+                                                    alignment:
+                                                        const AlignmentDirectional(
+                                                            -1.0, 0.0),
+                                                    child: Padding(
+                                                      padding:
+                                                          const EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  5.0,
+                                                                  10.0,
+                                                                  0.0,
+                                                                  0.0),
+                                                      child: SelectionArea(
+                                                          child: Text(
+                                                        FFLocalizations.of(
+                                                                context)
+                                                            .getText(
+                                                          'lg315ghk' /* Account Details */,
+                                                        ),
+                                                        style: FlutterFlowTheme
+                                                                .of(context)
+                                                            .bodyMedium
+                                                            .override(
+                                                              fontFamily:
+                                                                  'Raleway',
+                                                              color: const Color(
+                                                                  0xFF2F2F2F),
+                                                              fontSize: 20.0,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .bold,
+                                                            ),
+                                                      )),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          if (_model.facValue == 'Annadan Seva')
+                                            Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      5.0, 10.0, 0.0, 10.0),
+                                              child: Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                children: [
+                                                  const Padding(
                                                     padding:
-                                                        const EdgeInsetsDirectional
-                                                            .fromSTEB(5.0, 10.0,
-                                                                0.0, 0.0),
-                                                    child: SelectionArea(
-                                                        child: Text(
-                                                      FFLocalizations.of(
-                                                              context)
-                                                          .getText(
-                                                        'lg315ghk' /* Account Details */,
-                                                      ),
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .bodyMedium
-                                                          .override(
-                                                            fontFamily:
-                                                                'Raleway',
-                                                            color: const Color(
-                                                                0xFF2F2F2F),
-                                                            fontSize: 20.0,
-                                                            fontWeight:
-                                                                FontWeight.bold,
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(0.0, 0.0,
+                                                                5.0, 0.0),
+                                                    child: FaIcon(
+                                                      FontAwesomeIcons.bullseye,
+                                                      color: Color(0xFF322E5C),
+                                                      size: 22.0,
+                                                    ),
+                                                  ),
+                                                  RichText(
+                                                    textScaler:
+                                                        MediaQuery.of(context)
+                                                            .textScaler,
+                                                    text: TextSpan(
+                                                      children: [
+                                                        TextSpan(
+                                                          text: FFLocalizations
+                                                                  .of(context)
+                                                              .getText(
+                                                            'yp6q69hg' /* Online transfer can be made to... */,
                                                           ),
-                                                    )),
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Raleway',
+                                                                color: const Color(
+                                                                    0xFF2F2F2F),
+                                                                fontSize: 18.0,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                              ),
+                                                        ),
+                                                        TextSpan(
+                                                          text: FFLocalizations
+                                                                  .of(context)
+                                                              .getText(
+                                                            '85ptcpef' /* Andhra Bank */,
+                                                          ),
+                                                          style: GoogleFonts
+                                                              .getFont(
+                                                            'Raleway',
+                                                            color: const Color(
+                                                                0xFF322E5C),
+                                                            fontWeight:
+                                                                FontWeight.w800,
+                                                          ),
+                                                        )
+                                                      ],
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Raleway',
+                                                                fontSize: 18.0,
+                                                              ),
+                                                    ),
+                                                    textAlign: TextAlign.start,
                                                   ),
-                                                ),
-                                              ],
+                                                ],
+                                              ),
                                             ),
-                                          ),
-                                          Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    5.0, 10.0, 0.0, 10.0),
-                                            child: Row(
-                                              mainAxisSize: MainAxisSize.max,
-                                              children: [
-                                                const Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 0.0, 5.0, 0.0),
-                                                  child: FaIcon(
-                                                    FontAwesomeIcons.bullseye,
-                                                    color: Color(0xFF322E5C),
-                                                    size: 22.0,
+                                          if (_model.facValue == 'Annadan Seva')
+                                            Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      5.0, 0.0, 0.0, 10.0),
+                                              child: Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                children: [
+                                                  const Padding(
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(0.0, 0.0,
+                                                                5.0, 0.0),
+                                                    child: FaIcon(
+                                                      FontAwesomeIcons.bullseye,
+                                                      color: Color(0xFF322E5C),
+                                                      size: 22.0,
+                                                    ),
                                                   ),
-                                                ),
-                                                RichText(
-                                                  textScaler:
-                                                      MediaQuery.of(context)
-                                                          .textScaler,
-                                                  text: TextSpan(
-                                                    children: [
-                                                      TextSpan(
-                                                        text:
-                                                            FFLocalizations.of(
-                                                                    context)
-                                                                .getText(
-                                                          'yp6q69hg' /* Online transfer can be made to... */,
-                                                        ),
-                                                        style: FlutterFlowTheme
-                                                                .of(context)
-                                                            .bodyMedium
-                                                            .override(
-                                                              fontFamily:
-                                                                  'Raleway',
-                                                              color: const Color(
-                                                                  0xFF2F2F2F),
-                                                              fontSize: 18.0,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .bold,
-                                                            ),
-                                                      ),
-                                                      TextSpan(
-                                                        text:
-                                                            FFLocalizations.of(
-                                                                    context)
-                                                                .getText(
-                                                          '85ptcpef' /* Andhra Bank */,
-                                                        ),
-                                                        style:
-                                                            GoogleFonts.getFont(
-                                                          'Raleway',
-                                                          color:
-                                                              const Color(0xFF322E5C),
-                                                          fontWeight:
-                                                              FontWeight.w800,
-                                                        ),
-                                                      )
-                                                    ],
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Raleway',
-                                                          fontSize: 18.0,
-                                                        ),
-                                                  ),
-                                                  textAlign: TextAlign.start,
-                                                ),
-                                              ],
-                                            ),
-                                          ),
-                                          Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    5.0, 0.0, 0.0, 10.0),
-                                            child: Row(
-                                              mainAxisSize: MainAxisSize.max,
-                                              children: [
-                                                const Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 0.0, 5.0, 0.0),
-                                                  child: FaIcon(
-                                                    FontAwesomeIcons.bullseye,
-                                                    color: Color(0xFF322E5C),
-                                                    size: 22.0,
-                                                  ),
-                                                ),
-                                                RichText(
-                                                  textScaler:
-                                                      MediaQuery.of(context)
-                                                          .textScaler,
-                                                  text: TextSpan(
-                                                    children: [
-                                                      TextSpan(
-                                                        text:
-                                                            FFLocalizations.of(
-                                                                    context)
-                                                                .getText(
-                                                          'wxvdlsd6' /* Branch
+                                                  RichText(
+                                                    textScaler:
+                                                        MediaQuery.of(context)
+                                                            .textScaler,
+                                                    text: TextSpan(
+                                                      children: [
+                                                        TextSpan(
+                                                          text: FFLocalizations
+                                                                  .of(context)
+                                                              .getText(
+                                                            'wxvdlsd6' /* Branch
  */
-                                                          ,
+                                                            ,
+                                                          ),
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Raleway',
+                                                                color: const Color(
+                                                                    0xFF2F2F2F),
+                                                                fontSize: 18.0,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                              ),
                                                         ),
-                                                        style: FlutterFlowTheme
-                                                                .of(context)
-                                                            .bodyMedium
-                                                            .override(
-                                                              fontFamily:
-                                                                  'Raleway',
-                                                              color: const Color(
-                                                                  0xFF2F2F2F),
-                                                              fontSize: 18.0,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .bold,
-                                                            ),
-                                                      ),
-                                                      TextSpan(
-                                                        text:
-                                                            FFLocalizations.of(
-                                                                    context)
-                                                                .getText(
-                                                          'nq5rf1nx' /* Jakkur, Bengaluru-560064 */,
-                                                        ),
-                                                        style:
-                                                            GoogleFonts.getFont(
-                                                          'Raleway',
-                                                          color:
-                                                              const Color(0xFF322E5C),
-                                                          fontWeight:
-                                                              FontWeight.w800,
-                                                        ),
-                                                      )
-                                                    ],
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Raleway',
-                                                          fontSize: 18.0,
-                                                        ),
+                                                        TextSpan(
+                                                          text: FFLocalizations
+                                                                  .of(context)
+                                                              .getText(
+                                                            'nq5rf1nx' /* Jakkur, Bengaluru-560064 */,
+                                                          ),
+                                                          style: GoogleFonts
+                                                              .getFont(
+                                                            'Raleway',
+                                                            color: const Color(
+                                                                0xFF322E5C),
+                                                            fontWeight:
+                                                                FontWeight.w800,
+                                                          ),
+                                                        )
+                                                      ],
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Raleway',
+                                                                fontSize: 18.0,
+                                                              ),
+                                                    ),
+                                                    textAlign: TextAlign.start,
                                                   ),
-                                                  textAlign: TextAlign.start,
-                                                ),
-                                              ],
+                                                ],
+                                              ),
                                             ),
-                                          ),
-                                          Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    5.0, 0.0, 0.0, 10.0),
-                                            child: Row(
-                                              mainAxisSize: MainAxisSize.max,
-                                              children: [
-                                                const Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 0.0, 5.0, 0.0),
-                                                  child: FaIcon(
-                                                    FontAwesomeIcons.bullseye,
-                                                    color: Color(0xFF322E5C),
-                                                    size: 22.0,
+                                          if (_model.facValue == 'Annadan Seva')
+                                            Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      5.0, 0.0, 0.0, 10.0),
+                                              child: Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                children: [
+                                                  const Padding(
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(0.0, 0.0,
+                                                                5.0, 0.0),
+                                                    child: FaIcon(
+                                                      FontAwesomeIcons.bullseye,
+                                                      color: Color(0xFF322E5C),
+                                                      size: 22.0,
+                                                    ),
                                                   ),
-                                                ),
-                                                RichText(
-                                                  textScaler:
-                                                      MediaQuery.of(context)
-                                                          .textScaler,
-                                                  text: TextSpan(
-                                                    children: [
-                                                      TextSpan(
-                                                        text:
-                                                            FFLocalizations.of(
-                                                                    context)
-                                                                .getText(
-                                                          'ta27su5i' /* A/C No
+                                                  RichText(
+                                                    textScaler:
+                                                        MediaQuery.of(context)
+                                                            .textScaler,
+                                                    text: TextSpan(
+                                                      children: [
+                                                        TextSpan(
+                                                          text: FFLocalizations
+                                                                  .of(context)
+                                                              .getText(
+                                                            'ta27su5i' /* A/C No
  */
-                                                          ,
+                                                            ,
+                                                          ),
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Raleway',
+                                                                color: const Color(
+                                                                    0xFF2F2F2F),
+                                                                fontSize: 18.0,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                              ),
                                                         ),
-                                                        style: FlutterFlowTheme
-                                                                .of(context)
-                                                            .bodyMedium
-                                                            .override(
-                                                              fontFamily:
-                                                                  'Raleway',
-                                                              color: const Color(
-                                                                  0xFF2F2F2F),
-                                                              fontSize: 18.0,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .bold,
-                                                            ),
-                                                      ),
-                                                      TextSpan(
-                                                        text:
-                                                            FFLocalizations.of(
-                                                                    context)
-                                                                .getText(
-                                                          'xaj12sop' /* 292811100000159 */,
-                                                        ),
-                                                        style:
-                                                            GoogleFonts.getFont(
-                                                          'Raleway',
-                                                          color:
-                                                              const Color(0xFF322E5C),
-                                                          fontWeight:
-                                                              FontWeight.w800,
-                                                        ),
-                                                      )
-                                                    ],
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Raleway',
-                                                          fontSize: 18.0,
-                                                        ),
+                                                        TextSpan(
+                                                          text: FFLocalizations
+                                                                  .of(context)
+                                                              .getText(
+                                                            'xaj12sop' /* 292811100000159 */,
+                                                          ),
+                                                          style: GoogleFonts
+                                                              .getFont(
+                                                            'Raleway',
+                                                            color: const Color(
+                                                                0xFF322E5C),
+                                                            fontWeight:
+                                                                FontWeight.w800,
+                                                          ),
+                                                        )
+                                                      ],
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Raleway',
+                                                                fontSize: 18.0,
+                                                              ),
+                                                    ),
+                                                    textAlign: TextAlign.start,
                                                   ),
-                                                  textAlign: TextAlign.start,
-                                                ),
-                                              ],
+                                                ],
+                                              ),
                                             ),
-                                          ),
-                                          Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    5.0, 0.0, 0.0, 10.0),
-                                            child: Row(
-                                              mainAxisSize: MainAxisSize.max,
-                                              children: [
-                                                const Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 0.0, 5.0, 0.0),
-                                                  child: FaIcon(
-                                                    FontAwesomeIcons.bullseye,
-                                                    color: Color(0xFF322E5C),
-                                                    size: 22.0,
+                                          if (_model.facValue == 'Annadan Seva')
+                                            Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      5.0, 0.0, 0.0, 10.0),
+                                              child: Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                children: [
+                                                  const Padding(
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .fromSTEB(0.0, 0.0,
+                                                                5.0, 0.0),
+                                                    child: FaIcon(
+                                                      FontAwesomeIcons.bullseye,
+                                                      color: Color(0xFF322E5C),
+                                                      size: 22.0,
+                                                    ),
                                                   ),
-                                                ),
-                                                RichText(
-                                                  textScaler:
-                                                      MediaQuery.of(context)
-                                                          .textScaler,
-                                                  text: TextSpan(
-                                                    children: [
-                                                      TextSpan(
-                                                        text:
-                                                            FFLocalizations.of(
-                                                                    context)
-                                                                .getText(
-                                                          'kf9e6r0q' /* IFSC Code
+                                                  RichText(
+                                                    textScaler:
+                                                        MediaQuery.of(context)
+                                                            .textScaler,
+                                                    text: TextSpan(
+                                                      children: [
+                                                        TextSpan(
+                                                          text: FFLocalizations
+                                                                  .of(context)
+                                                              .getText(
+                                                            'kf9e6r0q' /* IFSC Code
  */
-                                                          ,
+                                                            ,
+                                                          ),
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Raleway',
+                                                                color: const Color(
+                                                                    0xFF2F2F2F),
+                                                                fontSize: 18.0,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                              ),
                                                         ),
-                                                        style: FlutterFlowTheme
-                                                                .of(context)
-                                                            .bodyMedium
-                                                            .override(
-                                                              fontFamily:
-                                                                  'Raleway',
-                                                              color: const Color(
-                                                                  0xFF2F2F2F),
-                                                              fontSize: 18.0,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .bold,
-                                                            ),
-                                                      ),
-                                                      TextSpan(
-                                                        text:
-                                                            FFLocalizations.of(
-                                                                    context)
-                                                                .getText(
-                                                          'fw8zru7e' /* ANDB0002928 */,
-                                                        ),
-                                                        style:
-                                                            GoogleFonts.getFont(
-                                                          'Raleway',
-                                                          color:
-                                                              const Color(0xFF322E5C),
-                                                          fontWeight:
-                                                              FontWeight.w800,
-                                                        ),
-                                                      )
-                                                    ],
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Raleway',
-                                                          fontSize: 18.0,
-                                                        ),
+                                                        TextSpan(
+                                                          text: FFLocalizations
+                                                                  .of(context)
+                                                              .getText(
+                                                            'fw8zru7e' /* ANDB0002928 */,
+                                                          ),
+                                                          style: GoogleFonts
+                                                              .getFont(
+                                                            'Raleway',
+                                                            color: const Color(
+                                                                0xFF322E5C),
+                                                            fontWeight:
+                                                                FontWeight.w800,
+                                                          ),
+                                                        )
+                                                      ],
+                                                      style:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .bodyMedium
+                                                              .override(
+                                                                fontFamily:
+                                                                    'Raleway',
+                                                                fontSize: 18.0,
+                                                              ),
+                                                    ),
+                                                    textAlign: TextAlign.start,
                                                   ),
-                                                  textAlign: TextAlign.start,
-                                                ),
-                                              ],
+                                                ],
+                                              ),
                                             ),
-                                          ),
                                           if (_model.facValue == 'Yoga')
                                             Align(
                                               alignment: const AlignmentDirectional(

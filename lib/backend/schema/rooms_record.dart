@@ -21,26 +21,26 @@ class RoomsRecord extends FirestoreRecord {
   String get roomType => _roomType ?? '';
   bool hasRoomType() => _roomType != null;
 
-  // "price" field.
-  double? _price;
-  double get price => _price ?? 0.0;
-  bool hasPrice() => _price != null;
-
   // "city" field.
   String? _city;
   String get city => _city ?? '';
   bool hasCity() => _city != null;
 
   // "no" field.
-  double? _no;
-  double get no => _no ?? 0.0;
+  int? _no;
+  int get no => _no ?? 0;
   bool hasNo() => _no != null;
+
+  // "price" field.
+  int? _price;
+  int get price => _price ?? 0;
+  bool hasPrice() => _price != null;
 
   void _initializeFields() {
     _roomType = snapshotData['room_type'] as String?;
-    _price = castToType<double>(snapshotData['price']);
     _city = snapshotData['city'] as String?;
-    _no = castToType<double>(snapshotData['no']);
+    _no = castToType<int>(snapshotData['no']);
+    _price = castToType<int>(snapshotData['price']);
   }
 
   static CollectionReference get collection =>
@@ -78,16 +78,16 @@ class RoomsRecord extends FirestoreRecord {
 
 Map<String, dynamic> createRoomsRecordData({
   String? roomType,
-  double? price,
   String? city,
-  double? no,
+  int? no,
+  int? price,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
       'room_type': roomType,
-      'price': price,
       'city': city,
       'no': no,
+      'price': price,
     }.withoutNulls,
   );
 
@@ -100,14 +100,14 @@ class RoomsRecordDocumentEquality implements Equality<RoomsRecord> {
   @override
   bool equals(RoomsRecord? e1, RoomsRecord? e2) {
     return e1?.roomType == e2?.roomType &&
-        e1?.price == e2?.price &&
         e1?.city == e2?.city &&
-        e1?.no == e2?.no;
+        e1?.no == e2?.no &&
+        e1?.price == e2?.price;
   }
 
   @override
   int hash(RoomsRecord? e) =>
-      const ListEquality().hash([e?.roomType, e?.price, e?.city, e?.no]);
+      const ListEquality().hash([e?.roomType, e?.city, e?.no, e?.price]);
 
   @override
   bool isValidKey(Object? o) => o is RoomsRecord;

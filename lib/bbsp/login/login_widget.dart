@@ -266,6 +266,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                         .labelLarge
                                                         .override(
                                                           fontFamily: 'Raleway',
+                                                          color: Colors.black,
                                                         ),
                                                 enabledBorder: InputBorder.none,
                                                 focusedBorder: InputBorder.none,
@@ -330,6 +331,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                         .labelLarge
                                                         .override(
                                                           fontFamily: 'Raleway',
+                                                          color: Colors.black,
                                                         ),
                                                 enabledBorder: InputBorder.none,
                                                 focusedBorder: InputBorder.none,
@@ -441,9 +443,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                                         .bodyMedium
                                                         .override(
                                                           fontFamily: 'Raleway',
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .secondaryText,
+                                                          color: Colors.black,
                                                           fontSize: 16.0,
                                                         ),
                                                 hintText:
@@ -564,7 +564,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                               width: 1.0,
                                             ),
                                             borderRadius:
-                                                BorderRadius.circular(12.0),
+                                                BorderRadius.circular(25.0),
                                           ),
                                         ),
                                       ),
@@ -621,7 +621,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                               width: 1.0,
                                             ),
                                             borderRadius:
-                                                BorderRadius.circular(12.0),
+                                                BorderRadius.circular(25.0),
                                           ),
                                         ),
                                       ),
