@@ -1,14 +1,11 @@
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
-import 'goggle_login_copy_copy_widget.dart' show GoggleLoginCopyCopyWidget;
+import 'set_city_widget.dart' show SetCityWidget;
 import 'package:flutter/material.dart';
 
-class GoggleLoginCopyCopyModel
-    extends FlutterFlowModel<GoggleLoginCopyCopyWidget> {
-  ///  State fields for stateful widgets in this page.
+class SetCityModel extends FlutterFlowModel<SetCityWidget> {
+  ///  State fields for stateful widgets in this component.
 
-  final unfocusNode = FocusNode();
-  final formKey = GlobalKey<FormState>();
   // State field(s) for DropDown widget.
   String? dropDownValue;
   FormFieldController<String>? dropDownValueController;
@@ -19,9 +16,7 @@ class GoggleLoginCopyCopyModel
   void initState(BuildContext context) {}
 
   @override
-  void dispose() {
-    unfocusNode.dispose();
-  }
+  void dispose() {}
 
   /// Action blocks are added here.
 

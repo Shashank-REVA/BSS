@@ -27,9 +27,6 @@ class AllpagesModel extends FlutterFlowModel<AllpagesWidget> {
   TextEditingController? passwordController1;
   late bool passwordVisibility1;
   String? Function(BuildContext, String?)? passwordController1Validator;
-  // State field(s) for DropDown widget.
-  String? dropDownValue;
-  FormFieldController<String>? dropDownValueController;
   bool isDataUploading = false;
   FFUploadedFile uploadedLocalFile =
       FFUploadedFile(bytes: Uint8List.fromList([]));

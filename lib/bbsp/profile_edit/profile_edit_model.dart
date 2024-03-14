@@ -1,5 +1,4 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/form_field_controller.dart';
 import 'profile_edit_widget.dart' show ProfileEditWidget;
 import 'package:flutter/material.dart';
 
@@ -22,9 +21,6 @@ class ProfileEditModel extends FlutterFlowModel<ProfileEditWidget> {
   FocusNode? emailFocusNode2;
   TextEditingController? emailController2;
   String? Function(BuildContext, String?)? emailController2Validator;
-  // State field(s) for DropDown widget.
-  String? dropDownValue;
-  FormFieldController<String>? dropDownValueController;
 
   /// Initialization and disposal methods.
 

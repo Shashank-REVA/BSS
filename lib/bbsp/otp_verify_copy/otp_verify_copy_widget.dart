@@ -1,4 +1,5 @@
 import '/auth/firebase_auth/auth_util.dart';
+import '/bbsp/set_city/set_city_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_timer.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -6,11 +7,11 @@ import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:stop_watch_timer/stop_watch_timer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'otp_verify_model.dart';
-export 'otp_verify_model.dart';
+import 'otp_verify_copy_model.dart';
+export 'otp_verify_copy_model.dart';
 
-class OtpVerifyWidget extends StatefulWidget {
-  const OtpVerifyWidget({
+class OtpVerifyCopyWidget extends StatefulWidget {
+  const OtpVerifyCopyWidget({
     super.key,
     required this.mobileNumber,
   });
@@ -18,24 +19,25 @@ class OtpVerifyWidget extends StatefulWidget {
   final String? mobileNumber;
 
   @override
-  State<OtpVerifyWidget> createState() => _OtpVerifyWidgetState();
+  State<OtpVerifyCopyWidget> createState() => _OtpVerifyCopyWidgetState();
 }
 
-class _OtpVerifyWidgetState extends State<OtpVerifyWidget> {
-  late OtpVerifyModel _model;
+class _OtpVerifyCopyWidgetState extends State<OtpVerifyCopyWidget> {
+  late OtpVerifyCopyModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => OtpVerifyModel());
+    _model = createModel(context, () => OtpVerifyCopyModel());
 
-    logFirebaseEvent('screen_view', parameters: {'screen_name': 'otp_verify'});
+    logFirebaseEvent('screen_view',
+        parameters: {'screen_name': 'otp_verifyCopy'});
     // On page load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
-      logFirebaseEvent('OTP_VERIFY_PAGE_otp_verify_ON_INIT_STATE');
-      logFirebaseEvent('otp_verify_timer');
+      logFirebaseEvent('OTP_VERIFY_COPY_otp_verifyCopy_ON_INIT_S');
+      logFirebaseEvent('otp_verifyCopy_timer');
       _model.timerController.onStartTimer();
     });
 
@@ -82,7 +84,7 @@ class _OtpVerifyWidgetState extends State<OtpVerifyWidget> {
                       children: [
                         Text(
                           FFLocalizations.of(context).getText(
-                            'tgsktkgi' /* Confirm your Code */,
+                            '62myfhjd' /* Confirm your Code */,
                           ),
                           style: FlutterFlowTheme.of(context)
                               .headlineSmall
@@ -155,7 +157,7 @@ class _OtpVerifyWidgetState extends State<OtpVerifyWidget> {
                             onChanged: (_) {},
                             onCompleted: (_) async {
                               logFirebaseEvent(
-                                  'OTP_VERIFY_PinCode_ec7hnkxk_ON_PINCODE_C');
+                                  'OTP_VERIFY_COPY_PinCode_loa4nf26_ON_PINC');
                               logFirebaseEvent('PinCode_auth');
                               GoRouter.of(context).prepareAuthEvent();
                               final smsCodeVal = _model.pinCodeController!.text;
@@ -209,7 +211,7 @@ class _OtpVerifyWidgetState extends State<OtpVerifyWidget> {
                         },
                         onEnded: () async {
                           logFirebaseEvent(
-                              'OTP_VERIFY_Timer_o80694ub_ON_TIMER_END');
+                              'OTP_VERIFY_COPY_Timer_idcjaz1u_ON_TIMER_');
                           logFirebaseEvent('Timer_timer');
                           _model.timerController.onStartTimer();
                         },
@@ -230,7 +232,7 @@ class _OtpVerifyWidgetState extends State<OtpVerifyWidget> {
                           highlightColor: Colors.transparent,
                           onTap: () async {
                             logFirebaseEvent(
-                                'OTP_VERIFY_PAGE_Text_2x6pa5ng_ON_TAP');
+                                'OTP_VERIFY_COPY_Text_5dgjmjgv_ON_TAP');
                             logFirebaseEvent('Text_navigate_to');
                             if (Navigator.of(context).canPop()) {
                               context.pop();
@@ -248,7 +250,7 @@ class _OtpVerifyWidgetState extends State<OtpVerifyWidget> {
                           },
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              '2tbv9h6q' /* Wrong Number? */,
+                              '0x9yuv0g' /* Wrong Number? */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
@@ -275,7 +277,7 @@ class _OtpVerifyWidgetState extends State<OtpVerifyWidget> {
                                   0.0, 22.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  '9iiv6kgd' /* Didn't recieve the code? */,
+                                  'tsqhd38z' /* Didn't recieve the code? */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -296,7 +298,7 @@ class _OtpVerifyWidgetState extends State<OtpVerifyWidget> {
                                 highlightColor: Colors.transparent,
                                 onTap: () async {
                                   logFirebaseEvent(
-                                      'OTP_VERIFY_PAGE_Row_5i1wf2ff_ON_TAP');
+                                      'OTP_VERIFY_COPY_PAGE_Row_vnas73ct_ON_TAP');
                                   logFirebaseEvent('Row_auth');
                                   final phoneNumberVal = widget.mobileNumber;
                                   if (phoneNumberVal == null ||
@@ -315,7 +317,7 @@ class _OtpVerifyWidgetState extends State<OtpVerifyWidget> {
                                     phoneNumber: phoneNumberVal,
                                     onCodeSent: (context) async {
                                       context.goNamedAuth(
-                                        'otp_verify',
+                                        'otp_verifyCopy',
                                         context.mounted,
                                         queryParameters: {
                                           'mobileNumber': serializeParam(
@@ -345,7 +347,7 @@ class _OtpVerifyWidgetState extends State<OtpVerifyWidget> {
                                       highlightColor: Colors.transparent,
                                       onTap: () async {
                                         logFirebaseEvent(
-                                            'OTP_VERIFY_PAGE_Text_p5qtmick_ON_TAP');
+                                            'OTP_VERIFY_COPY_Text_4y4soixv_ON_TAP');
                                         logFirebaseEvent('Text_navigate_to');
                                         if (Navigator.of(context).canPop()) {
                                           context.pop();
@@ -365,7 +367,7 @@ class _OtpVerifyWidgetState extends State<OtpVerifyWidget> {
                                       },
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          'dh6f2vb6' /* Resend the code */,
+                                          's4lg7nv8' /* Resend the code */,
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
@@ -407,7 +409,7 @@ class _OtpVerifyWidgetState extends State<OtpVerifyWidget> {
                           highlightColor: Colors.transparent,
                           onTap: () async {
                             logFirebaseEvent(
-                                'OTP_VERIFY_PAGE_Text_9t33oq83_ON_TAP');
+                                'OTP_VERIFY_COPY_Text_95tglo4q_ON_TAP');
                             logFirebaseEvent('Text_auth');
                             GoRouter.of(context).prepareAuthEvent();
                             final smsCodeVal = _model.pinCodeController!.text;
@@ -428,46 +430,63 @@ class _OtpVerifyWidgetState extends State<OtpVerifyWidget> {
                               return;
                             }
 
-                            if (valueOrDefault(currentUserDocument?.city, '') !=
+                            if (valueOrDefault(currentUserDocument?.city, '') ==
                                     '') {
-                              logFirebaseEvent('Text_navigate_to');
-
-                              context.goNamedAuth(
-                                'allpages',
-                                context.mounted,
-                                queryParameters: {
-                                  'tabpageindex': serializeParam(
-                                    4,
-                                    ParamType.int,
-                                  ),
-                                }.withoutNulls,
-                                extra: <String, dynamic>{
-                                  kTransitionInfoKey: const TransitionInfo(
-                                    hasTransition: true,
-                                    transitionType: PageTransitionType.fade,
-                                    duration: Duration(milliseconds: 600),
-                                  ),
+                              logFirebaseEvent('Text_bottom_sheet');
+                              await showModalBottomSheet(
+                                isScrollControlled: true,
+                                backgroundColor: Colors.white,
+                                enableDrag: false,
+                                context: context,
+                                builder: (context) {
+                                  return GestureDetector(
+                                    onTap: () => _model
+                                            .unfocusNode.canRequestFocus
+                                        ? FocusScope.of(context)
+                                            .requestFocus(_model.unfocusNode)
+                                        : FocusScope.of(context).unfocus(),
+                                    child: Padding(
+                                      padding: MediaQuery.viewInsetsOf(context),
+                                      child: const SetCityWidget(),
+                                    ),
+                                  );
                                 },
-                              );
+                              ).then((value) => safeSetState(() {}));
                             } else {
-                              logFirebaseEvent('Text_navigate_to');
+                              if (currentUserDisplayName != '') {
+                                logFirebaseEvent('Text_navigate_to');
 
-                              context.goNamedAuth(
-                                'goggle_login',
-                                context.mounted,
-                                extra: <String, dynamic>{
-                                  kTransitionInfoKey: const TransitionInfo(
-                                    hasTransition: true,
-                                    transitionType: PageTransitionType.fade,
-                                    duration: Duration(milliseconds: 600),
-                                  ),
-                                },
-                              );
+                                context.goNamedAuth(
+                                  'Profile',
+                                  context.mounted,
+                                  extra: <String, dynamic>{
+                                    kTransitionInfoKey: const TransitionInfo(
+                                      hasTransition: true,
+                                      transitionType: PageTransitionType.fade,
+                                      duration: Duration(milliseconds: 600),
+                                    ),
+                                  },
+                                );
+                              } else {
+                                logFirebaseEvent('Text_navigate_to');
+
+                                context.goNamedAuth(
+                                  'profile_editCopy',
+                                  context.mounted,
+                                  extra: <String, dynamic>{
+                                    kTransitionInfoKey: const TransitionInfo(
+                                      hasTransition: true,
+                                      transitionType: PageTransitionType.fade,
+                                      duration: Duration(milliseconds: 600),
+                                    ),
+                                  },
+                                );
+                              }
                             }
                           },
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              'zprxbww1' /* Verify & Continue */,
+                              'tklqlvna' /* Verify & Continue */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium

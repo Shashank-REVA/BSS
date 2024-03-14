@@ -8,11 +8,11 @@ import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'phone_auth_model.dart';
-export 'phone_auth_model.dart';
+import 'phone_auth_copy_model.dart';
+export 'phone_auth_copy_model.dart';
 
-class PhoneAuthWidget extends StatefulWidget {
-  const PhoneAuthWidget({
+class PhoneAuthCopyWidget extends StatefulWidget {
+  const PhoneAuthCopyWidget({
     super.key,
     Color? colorbtn,
     Color? colortxt,
@@ -23,12 +23,12 @@ class PhoneAuthWidget extends StatefulWidget {
   final Color colortxt;
 
   @override
-  State<PhoneAuthWidget> createState() => _PhoneAuthWidgetState();
+  State<PhoneAuthCopyWidget> createState() => _PhoneAuthCopyWidgetState();
 }
 
-class _PhoneAuthWidgetState extends State<PhoneAuthWidget>
+class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
     with TickerProviderStateMixin {
-  late PhoneAuthModel _model;
+  late PhoneAuthCopyModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -72,9 +72,10 @@ class _PhoneAuthWidgetState extends State<PhoneAuthWidget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => PhoneAuthModel());
+    _model = createModel(context, () => PhoneAuthCopyModel());
 
-    logFirebaseEvent('screen_view', parameters: {'screen_name': 'phone_auth'});
+    logFirebaseEvent('screen_view',
+        parameters: {'screen_name': 'phone_authCopy'});
     _model.countrynameController ??= TextEditingController();
 
     _model.phoneNumberController ??= TextEditingController();
@@ -85,7 +86,7 @@ class _PhoneAuthWidgetState extends State<PhoneAuthWidget>
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {
           _model.countrynameController?.text =
               FFLocalizations.of(context).getText(
-            't9xj6d55' /* India */,
+            'gixpx1gs' /* India */,
           );
         }));
   }
@@ -174,7 +175,7 @@ class _PhoneAuthWidgetState extends State<PhoneAuthWidget>
                                 ),
                                 onPressed: () async {
                                   logFirebaseEvent(
-                                      'PHONE_AUTH_arrow_back_ios_sharp_ICN_ON_T');
+                                      'PHONE_AUTH_COPY_arrow_back_ios_sharp_ICN');
                                   logFirebaseEvent('IconButton_navigate_back');
                                   context.safePop();
                                 },
@@ -228,7 +229,7 @@ class _PhoneAuthWidgetState extends State<PhoneAuthWidget>
                                           ),
                                           onPressed: () async {
                                             logFirebaseEvent(
-                                                'PHONE_AUTH_arrow_back_rounded_ICN_ON_TAP');
+                                                'PHONE_AUTH_COPY_arrow_back_rounded_ICN_O');
                                             logFirebaseEvent(
                                                 'IconButton_navigate_back');
                                             context.safePop();
@@ -238,7 +239,7 @@ class _PhoneAuthWidgetState extends State<PhoneAuthWidget>
                                       Expanded(
                                         child: Text(
                                           FFLocalizations.of(context).getText(
-                                            'x9ustub4' /* Phone Sign In */,
+                                            'klc5buhy' /* Phone Sign In */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .headlineMedium
@@ -367,7 +368,7 @@ class _PhoneAuthWidgetState extends State<PhoneAuthWidget>
                                                                       text: FFLocalizations.of(
                                                                               context)
                                                                           .getText(
-                                                                't9xj6d55' /* India */,
+                                                                'gixpx1gs' /* India */,
                                                               )),
                                                               optionsBuilder:
                                                                   (textEditingValue) {
@@ -462,7 +463,7 @@ class _PhoneAuthWidgetState extends State<PhoneAuthWidget>
                                                                     labelText: FFLocalizations.of(
                                                                             context)
                                                                         .getText(
-                                                                      '190mvj2v' /* Your Country... */,
+                                                                      '2pkecusi' /* Your Country... */,
                                                                     ),
                                                                     labelStyle: FlutterFlowTheme.of(
                                                                             context)
@@ -698,7 +699,7 @@ class _PhoneAuthWidgetState extends State<PhoneAuthWidget>
                                                                     FFLocalizations.of(
                                                                             context)
                                                                         .getText(
-                                                                  'cswoxc2n' /* Your Phone Number... */,
+                                                                  'wsdttsyd' /* Your Phone Number... */,
                                                                 ),
                                                                 labelStyle: FlutterFlowTheme.of(
                                                                         context)
@@ -848,7 +849,7 @@ class _PhoneAuthWidgetState extends State<PhoneAuthWidget>
                                                   Colors.transparent,
                                               onTap: () async {
                                                 logFirebaseEvent(
-                                                    'PHONE_AUTH_PAGE_Text_kkbw9xhe_ON_TAP');
+                                                    'PHONE_AUTH_COPY_Text_7zbxvdk6_ON_TAP');
                                                 logFirebaseEvent(
                                                     'Text_show_snack_bar');
                                                 ScaffoldMessenger.of(context)
@@ -906,7 +907,7 @@ class _PhoneAuthWidgetState extends State<PhoneAuthWidget>
                                                   phoneNumber: phoneNumberVal,
                                                   onCodeSent: (context) async {
                                                     context.goNamedAuth(
-                                                      'otp_verify',
+                                                      'otp_verifyCopy',
                                                       context.mounted,
                                                       queryParameters: {
                                                         'mobileNumber':
@@ -923,7 +924,7 @@ class _PhoneAuthWidgetState extends State<PhoneAuthWidget>
                                               child: Text(
                                                 FFLocalizations.of(context)
                                                     .getText(
-                                                  'cf1s8obg' /* Get Code */,
+                                                  'puspn8fm' /* Get Code */,
                                                 ),
                                                 style: FlutterFlowTheme.of(
                                                         context)

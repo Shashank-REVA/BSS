@@ -1,12 +1,10 @@
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
-import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'profile_edit_model.dart';
 export 'profile_edit_model.dart';
 
@@ -86,21 +84,18 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
             ),
             Align(
               alignment: const AlignmentDirectional(0.0, 0.0),
-              child: Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
-                child: Text(
-                  FFLocalizations.of(context).getText(
-                    'dc53igt5' /* Update your Profile */,
-                  ),
-                  textAlign: TextAlign.start,
-                  style: FlutterFlowTheme.of(context).headlineMedium.override(
-                        fontFamily: 'SuperTall',
-                        color: const Color(0xFF14181B),
-                        fontSize: 22.0,
-                        fontWeight: FontWeight.normal,
-                        useGoogleFonts: false,
-                      ),
+              child: Text(
+                FFLocalizations.of(context).getText(
+                  'dc53igt5' /* Update your Profile */,
                 ),
+                textAlign: TextAlign.start,
+                style: FlutterFlowTheme.of(context).headlineMedium.override(
+                      fontFamily: 'SuperTall',
+                      color: const Color(0xFF14181B),
+                      fontSize: 22.0,
+                      fontWeight: FontWeight.normal,
+                      useGoogleFonts: false,
+                    ),
               ),
             ),
             Padding(
@@ -376,73 +371,6 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
               ),
             ),
             Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 12.0),
-              child: StreamBuilder<List<CitiesRecord>>(
-                stream: queryCitiesRecord(),
-                builder: (context, snapshot) {
-                  // Customize what your widget looks like when it's loading.
-                  if (!snapshot.hasData) {
-                    return const Center(
-                      child: SizedBox(
-                        width: 50.0,
-                        height: 50.0,
-                        child: SpinKitThreeBounce(
-                          color: Color(0xFFEC7834),
-                          size: 50.0,
-                        ),
-                      ),
-                    );
-                  }
-                  List<CitiesRecord> dropDownCitiesRecordList = snapshot.data!;
-                  return FlutterFlowDropDown<String>(
-                    controller: _model.dropDownValueController ??=
-                        FormFieldController<String>(null),
-                    options: dropDownCitiesRecordList
-                        .map((e) => e.name)
-                        .toList()
-                        .sortedList((e) => e),
-                    onChanged: (val) =>
-                        setState(() => _model.dropDownValue = val),
-                    width: 353.0,
-                    height: 56.0,
-                    searchHintTextStyle:
-                        FlutterFlowTheme.of(context).labelMedium.override(
-                              fontFamily: 'Raleway',
-                              color: const Color(0xFF322E5C),
-                            ),
-                    searchTextStyle: FlutterFlowTheme.of(context).bodyMedium,
-                    textStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Raleway',
-                          color: Colors.black,
-                          fontWeight: FontWeight.w500,
-                        ),
-                    hintText: FFLocalizations.of(context).getText(
-                      '1q5mcy7n' /* Change your city */,
-                    ),
-                    searchHintText: FFLocalizations.of(context).getText(
-                      'rejpirq5' /* Search for an item... */,
-                    ),
-                    icon: Icon(
-                      Icons.keyboard_arrow_down_rounded,
-                      color: FlutterFlowTheme.of(context).secondaryText,
-                      size: 24.0,
-                    ),
-                    fillColor: Colors.white,
-                    elevation: 2.0,
-                    borderColor: const Color(0xFFE0E3E7),
-                    borderWidth: 2.0,
-                    borderRadius: 25.0,
-                    margin:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 4.0, 16.0, 4.0),
-                    hidesUnderline: true,
-                    isOverButton: true,
-                    isSearchable: true,
-                    isMultiSelect: false,
-                  );
-                },
-              ),
-            ),
-            Padding(
               padding: const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
               child: InkWell(
                 splashColor: Colors.transparent,
@@ -457,7 +385,6 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                     email: _model.emailController1.text,
                     displayName: _model.yourNameController.text,
                     phoneNumber: _model.phoneController.text,
-                    city: _model.dropDownValue,
                   ));
                   logFirebaseEvent('Text_navigate_to');
 
@@ -482,6 +409,66 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                         fontSize: 18.0,
                         useGoogleFonts: false,
                       ),
+                ),
+              ),
+            ),
+            Align(
+              alignment: const AlignmentDirectional(0.0, 1.0),
+              child: Padding(
+                padding: const EdgeInsetsDirectional.fromSTEB(5.0, 24.0, 5.0, 0.0),
+                child: Text(
+                  FFLocalizations.of(context).getText(
+                    'pf6tnaov' /* You cannot chnage your city. I... */,
+                  ),
+                  textAlign: TextAlign.center,
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Raleway',
+                        color: const Color(0xFF2F2F2F),
+                        fontSize: 16.0,
+                        fontWeight: FontWeight.w600,
+                      ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 3.0, 0.0, 0.0),
+              child: InkWell(
+                splashColor: Colors.transparent,
+                focusColor: Colors.transparent,
+                hoverColor: Colors.transparent,
+                highlightColor: Colors.transparent,
+                onTap: () async {
+                  logFirebaseEvent('PROFILE_EDIT_RichText_ygsu08au_ON_TAP');
+                  logFirebaseEvent('RichText_send_email');
+                  await launchUrl(Uri(
+                      scheme: 'mailto',
+                      path: 'shashanksunny2003@gmail.com',
+                      query: {
+                        'subject': 'Regarding the change of city',
+                      }
+                          .entries
+                          .map((MapEntry<String, String> e) =>
+                              '${Uri.encodeComponent(e.key)}=${Uri.encodeComponent(e.value)}')
+                          .join('&')));
+                },
+                child: RichText(
+                  textScaler: MediaQuery.of(context).textScaler,
+                  text: TextSpan(
+                    children: [
+                      TextSpan(
+                        text: FFLocalizations.of(context).getText(
+                          'zw89lazc' /* bharatsevashram@gmail.com */,
+                        ),
+                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                              fontFamily: 'Raleway',
+                              color: const Color(0xFF322E5C),
+                              fontSize: 18.0,
+                              fontWeight: FontWeight.bold,
+                            ),
+                      )
+                    ],
+                    style: FlutterFlowTheme.of(context).bodyMedium,
+                  ),
                 ),
               ),
             ),

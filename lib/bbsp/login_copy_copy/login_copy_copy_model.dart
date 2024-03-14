@@ -1,5 +1,4 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/form_field_controller.dart';
 import 'login_copy_copy_widget.dart' show LoginCopyCopyWidget;
 import 'package:flutter/material.dart';
 
@@ -16,9 +15,6 @@ class LoginCopyCopyModel extends FlutterFlowModel<LoginCopyCopyWidget> {
   TextEditingController? passwordController;
   late bool passwordVisibility;
   String? Function(BuildContext, String?)? passwordControllerValidator;
-  // State field(s) for DropDown widget.
-  String? dropDownValue;
-  FormFieldController<String>? dropDownValueController;
 
   /// Initialization and disposal methods.
 

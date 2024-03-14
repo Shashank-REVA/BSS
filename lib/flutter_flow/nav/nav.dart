@@ -342,6 +342,21 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             colorbtn: params.getParam('colorbtn', ParamType.Color),
             colortxt: params.getParam('colortxt', ParamType.Color),
           ),
+        ),
+        FFRoute(
+          name: 'phone_authCopy',
+          path: '/phoneAuthCopy',
+          builder: (context, params) => PhoneAuthCopyWidget(
+            colorbtn: params.getParam('colorbtn', ParamType.Color),
+            colortxt: params.getParam('colortxt', ParamType.Color),
+          ),
+        ),
+        FFRoute(
+          name: 'otp_verifyCopy',
+          path: '/otpVerifyCopy',
+          builder: (context, params) => OtpVerifyCopyWidget(
+            mobileNumber: params.getParam('mobileNumber', ParamType.String),
+          ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

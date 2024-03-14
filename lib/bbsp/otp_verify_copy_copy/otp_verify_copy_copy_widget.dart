@@ -432,25 +432,42 @@ class _OtpVerifyCopyCopyWidgetState extends State<OtpVerifyCopyCopyWidget> {
                               return;
                             }
 
-                            logFirebaseEvent('Text_navigate_to');
+                            if (valueOrDefault(currentUserDocument?.city, '') !=
+                                    '') {
+                              logFirebaseEvent('Text_navigate_to');
 
-                            context.goNamedAuth(
-                              'allpages',
-                              context.mounted,
-                              queryParameters: {
-                                'tabpageindex': serializeParam(
-                                  4,
-                                  ParamType.int,
-                                ),
-                              }.withoutNulls,
-                              extra: <String, dynamic>{
-                                kTransitionInfoKey: const TransitionInfo(
-                                  hasTransition: true,
-                                  transitionType: PageTransitionType.fade,
-                                  duration: Duration(milliseconds: 600),
-                                ),
-                              },
-                            );
+                              context.goNamedAuth(
+                                'allpages',
+                                context.mounted,
+                                queryParameters: {
+                                  'tabpageindex': serializeParam(
+                                    4,
+                                    ParamType.int,
+                                  ),
+                                }.withoutNulls,
+                                extra: <String, dynamic>{
+                                  kTransitionInfoKey: const TransitionInfo(
+                                    hasTransition: true,
+                                    transitionType: PageTransitionType.fade,
+                                    duration: Duration(milliseconds: 600),
+                                  ),
+                                },
+                              );
+                            } else {
+                              logFirebaseEvent('Text_navigate_to');
+
+                              context.goNamedAuth(
+                                'goggle_loginCopyCopy',
+                                context.mounted,
+                                extra: <String, dynamic>{
+                                  kTransitionInfoKey: const TransitionInfo(
+                                    hasTransition: true,
+                                    transitionType: PageTransitionType.fade,
+                                    duration: Duration(milliseconds: 600),
+                                  ),
+                                },
+                              );
+                            }
                           },
                           child: Text(
                             FFLocalizations.of(context).getText(

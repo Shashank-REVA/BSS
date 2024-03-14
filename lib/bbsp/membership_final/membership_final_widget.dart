@@ -2,6 +2,7 @@ import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'membership_final_model.dart';
@@ -193,95 +194,155 @@ class _MembershipFinalWidgetState extends State<MembershipFinalWidget> {
                                       : null;
                               return Column(
                                 mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceAround,
                                 children: [
-                                  if (columnMembershipRecord?.type == 'Gold')
-                                    Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 10.0, 0.0, 10.0),
-                                      child: ClipRRect(
-                                        borderRadius:
-                                            BorderRadius.circular(8.0),
-                                        child: Image.asset(
-                                          'assets/images/vnimc_1.png',
-                                          width: 383.0,
-                                          height: 224.0,
-                                          fit: BoxFit.contain,
+                                  Stack(
+                                    alignment: const AlignmentDirectional(0.0, -1.0),
+                                    children: [
+                                      Align(
+                                        alignment:
+                                            const AlignmentDirectional(0.0, 0.0),
+                                        child: SingleChildScrollView(
+                                          child: Column(
+                                            mainAxisSize: MainAxisSize.max,
+                                            children: [
+                                              if (columnMembershipRecord
+                                                      ?.type ==
+                                                  'Gold')
+                                                Align(
+                                                  alignment:
+                                                      const AlignmentDirectional(
+                                                          0.0, 0.0),
+                                                  child: Padding(
+                                                    padding:
+                                                        const EdgeInsetsDirectional
+                                                            .fromSTEB(0.0, 10.0,
+                                                                0.0, 10.0),
+                                                    child: ClipRRect(
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              8.0),
+                                                      child: Image.asset(
+                                                        'assets/images/n1.png',
+                                                        width: 383.0,
+                                                        height: 224.0,
+                                                        fit: BoxFit.contain,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                              if (columnMembershipRecord
+                                                      ?.type ==
+                                                  'Silver')
+                                                Align(
+                                                  alignment:
+                                                      const AlignmentDirectional(
+                                                          0.0, 0.0),
+                                                  child: Padding(
+                                                    padding:
+                                                        const EdgeInsetsDirectional
+                                                            .fromSTEB(0.0, 10.0,
+                                                                0.0, 10.0),
+                                                    child: ClipRRect(
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              8.0),
+                                                      child: Image.asset(
+                                                        'assets/images/n2.png',
+                                                        width: 383.0,
+                                                        height: 224.0,
+                                                        fit: BoxFit.contain,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                              if (columnMembershipRecord
+                                                      ?.type ==
+                                                  'General')
+                                                Align(
+                                                  alignment:
+                                                      const AlignmentDirectional(
+                                                          0.0, 0.0),
+                                                  child: Padding(
+                                                    padding:
+                                                        const EdgeInsetsDirectional
+                                                            .fromSTEB(0.0, 10.0,
+                                                                0.0, 10.0),
+                                                    child: ClipRRect(
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              8.0),
+                                                      child: Image.asset(
+                                                        'assets/images/n3.png',
+                                                        width: 383.0,
+                                                        height: 224.0,
+                                                        fit: BoxFit.contain,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                            ],
+                                          ),
                                         ),
                                       ),
-                                    ),
-                                  if (columnMembershipRecord?.type == 'Silver')
-                                    Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 10.0, 0.0, 10.0),
-                                      child: ClipRRect(
-                                        borderRadius:
-                                            BorderRadius.circular(8.0),
-                                        child: Image.asset(
-                                          'assets/images/49svh_2.png',
-                                          width: 383.0,
-                                          height: 224.0,
-                                          fit: BoxFit.contain,
-                                        ),
-                                      ),
-                                    ),
-                                  if (columnMembershipRecord?.type == 'General')
-                                    Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 10.0, 0.0, 10.0),
-                                      child: ClipRRect(
-                                        borderRadius:
-                                            BorderRadius.circular(8.0),
-                                        child: Image.asset(
-                                          'assets/images/3a9k2_3.png',
-                                          width: 383.0,
-                                          height: 224.0,
-                                          fit: BoxFit.contain,
-                                        ),
-                                      ),
-                                    ),
-                                  Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        15.0, 0.0, 15.0, 0.0),
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Align(
-                                          alignment:
-                                              const AlignmentDirectional(-1.0, 0.0),
-                                          child: Text(
-                                            valueOrDefault<String>(
-                                              columnMembershipRecord?.name,
-                                              'Name',
+                                      Align(
+                                        alignment:
+                                            const AlignmentDirectional(0.0, 0.0),
+                                        child: Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 100.0, 0.0, 0.0),
+                                          child: Container(
+                                            width: 115.0,
+                                            height: 52.0,
+                                            decoration: const BoxDecoration(
+                                              color: Color(0xFF322E5C),
                                             ),
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily: 'Raleway',
-                                                  color: const Color(0xFF322E5C),
-                                                  fontSize: 20.0,
-                                                  fontWeight: FontWeight.w800,
+                                            alignment:
+                                                const AlignmentDirectional(0.0, 0.0),
+                                            child: Align(
+                                              alignment: const AlignmentDirectional(
+                                                  0.0, 0.0),
+                                              child: AutoSizeText(
+                                                valueOrDefault<String>(
+                                                  columnMembershipRecord?.name,
+                                                  'Name',
                                                 ),
+                                                textAlign: TextAlign.center,
+                                                maxLines: 3,
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily: 'Raleway',
+                                                          color: () {
+                                                            if (columnMembershipRecord
+                                                                    ?.type ==
+                                                                'Gold') {
+                                                              return const Color(
+                                                                  0xFFFFD700);
+                                                            } else if (columnMembershipRecord
+                                                                    ?.type ==
+                                                                'Silver') {
+                                                              return const Color(
+                                                                  0xFFC0C0C0);
+                                                            } else {
+                                                              return const Color(
+                                                                  0xFFCD7F32);
+                                                            }
+                                                          }(),
+                                                          fontSize: 20.0,
+                                                          fontWeight:
+                                                              FontWeight.w800,
+                                                        ),
+                                                minFontSize: 12.0,
+                                              ),
+                                            ),
                                           ),
                                         ),
-                                        Align(
-                                          alignment:
-                                              const AlignmentDirectional(-1.0, 0.0),
-                                          child: Text(
-                                            '${columnMembershipRecord?.type} Member',
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily: 'Raleway',
-                                                  color: const Color(0xFF322E5C),
-                                                  fontSize: 20.0,
-                                                  fontWeight: FontWeight.w800,
-                                                ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
+                                      ),
+                                    ],
                                   ),
                                 ],
                               );

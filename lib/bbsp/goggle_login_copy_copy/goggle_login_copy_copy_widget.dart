@@ -203,112 +203,140 @@ class _GoggleLoginCopyCopyWidgetState extends State<GoggleLoginCopyCopyWidget>
                                       ),
                                       Padding(
                                         padding: const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 0.0, 16.0),
-                                        child:
-                                            StreamBuilder<List<CitiesRecord>>(
-                                          stream: queryCitiesRecord(),
-                                          builder: (context, snapshot) {
-                                            // Customize what your widget looks like when it's loading.
-                                            if (!snapshot.hasData) {
-                                              return const Center(
-                                                child: SizedBox(
-                                                  width: 50.0,
-                                                  height: 50.0,
-                                                  child: SpinKitThreeBounce(
-                                                    color: Color(0xFFEC7834),
-                                                    size: 50.0,
+                                            0.0, 0.0, 0.0, 10.0),
+                                        child: Text(
+                                          FFLocalizations.of(context).getText(
+                                            '96h5ayub' /* You wont be able to change you... */,
+                                          ),
+                                          textAlign: TextAlign.center,
+                                          style: FlutterFlowTheme.of(context)
+                                              .displaySmall
+                                              .override(
+                                                fontFamily: 'Raleway',
+                                                color: const Color(0xFF2F2F2F),
+                                                fontSize: 20.0,
+                                              ),
+                                        ),
+                                      ),
+                                      Form(
+                                        key: _model.formKey,
+                                        autovalidateMode:
+                                            AutovalidateMode.disabled,
+                                        child: Padding(
+                                          padding:
+                                              const EdgeInsetsDirectional.fromSTEB(
+                                                  0.0, 0.0, 0.0, 16.0),
+                                          child:
+                                              StreamBuilder<List<CitiesRecord>>(
+                                            stream: queryCitiesRecord(),
+                                            builder: (context, snapshot) {
+                                              // Customize what your widget looks like when it's loading.
+                                              if (!snapshot.hasData) {
+                                                return const Center(
+                                                  child: SizedBox(
+                                                    width: 50.0,
+                                                    height: 50.0,
+                                                    child: SpinKitThreeBounce(
+                                                      color: Color(0xFFEC7834),
+                                                      size: 50.0,
+                                                    ),
                                                   ),
+                                                );
+                                              }
+                                              List<CitiesRecord>
+                                                  containerCitiesRecordList =
+                                                  snapshot.data!;
+                                              return Container(
+                                                width: 320.0,
+                                                decoration: BoxDecoration(
+                                                  color: Colors.white,
+                                                  boxShadow: const [
+                                                    BoxShadow(
+                                                      blurRadius: 4.0,
+                                                      color: Color(0xFF322E5C),
+                                                      offset: Offset(0.0, 2.0),
+                                                    )
+                                                  ],
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          40.0),
+                                                ),
+                                                child:
+                                                    FlutterFlowDropDown<String>(
+                                                  controller: _model
+                                                          .dropDownValueController ??=
+                                                      FormFieldController<
+                                                          String>(null),
+                                                  options:
+                                                      containerCitiesRecordList
+                                                          .map((e) => e.name)
+                                                          .toList()
+                                                          .sortedList((e) => e),
+                                                  onChanged: (val) => setState(
+                                                      () => _model
+                                                          .dropDownValue = val),
+                                                  width: 300.0,
+                                                  height: 50.0,
+                                                  searchHintTextStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Raleway',
+                                                            color: Colors.black,
+                                                          ),
+                                                  searchTextStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium,
+                                                  textStyle: FlutterFlowTheme
+                                                          .of(context)
+                                                      .bodyMedium
+                                                      .override(
+                                                        fontFamily: 'Raleway',
+                                                        color: Colors.black,
+                                                        fontSize: 16.0,
+                                                      ),
+                                                  hintText: FFLocalizations.of(
+                                                          context)
+                                                      .getText(
+                                                    '09b1qgha' /* Set your city */,
+                                                  ),
+                                                  searchHintText:
+                                                      FFLocalizations.of(
+                                                              context)
+                                                          .getText(
+                                                    'zue4qih3' /* Search for an city... */,
+                                                  ),
+                                                  icon: Icon(
+                                                    Icons
+                                                        .keyboard_arrow_down_rounded,
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .secondaryText,
+                                                    size: 24.0,
+                                                  ),
+                                                  fillColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .primaryText,
+                                                  elevation: 2.0,
+                                                  borderColor:
+                                                      Colors.transparent,
+                                                  borderWidth: 2.0,
+                                                  borderRadius: 25.0,
+                                                  margin: const EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          16.0, 4.0, 16.0, 4.0),
+                                                  hidesUnderline: true,
+                                                  isOverButton: true,
+                                                  isSearchable: true,
+                                                  isMultiSelect: false,
                                                 ),
                                               );
-                                            }
-                                            List<CitiesRecord>
-                                                containerCitiesRecordList =
-                                                snapshot.data!;
-                                            return Container(
-                                              width: 320.0,
-                                              decoration: BoxDecoration(
-                                                color: Colors.white,
-                                                boxShadow: const [
-                                                  BoxShadow(
-                                                    blurRadius: 4.0,
-                                                    color: Color(0xFF322E5C),
-                                                    offset: Offset(0.0, 2.0),
-                                                  )
-                                                ],
-                                                borderRadius:
-                                                    BorderRadius.circular(40.0),
-                                              ),
-                                              child:
-                                                  FlutterFlowDropDown<String>(
-                                                controller: _model
-                                                        .dropDownValueController ??=
-                                                    FormFieldController<String>(
-                                                        null),
-                                                options:
-                                                    containerCitiesRecordList
-                                                        .map((e) => e.name)
-                                                        .toList()
-                                                        .sortedList((e) => e),
-                                                onChanged: (val) => setState(
-                                                    () => _model.dropDownValue =
-                                                        val),
-                                                width: 300.0,
-                                                height: 50.0,
-                                                searchHintTextStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMedium
-                                                        .override(
-                                                          fontFamily: 'Raleway',
-                                                          color: Colors.black,
-                                                        ),
-                                                searchTextStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium,
-                                                textStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Raleway',
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .secondaryText,
-                                                          fontSize: 16.0,
-                                                        ),
-                                                hintText:
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                  '09b1qgha' /* Set your city */,
-                                                ),
-                                                searchHintText:
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                  'zue4qih3' /* Search for an city... */,
-                                                ),
-                                                icon: Icon(
-                                                  Icons
-                                                      .keyboard_arrow_down_rounded,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .secondaryText,
-                                                  size: 24.0,
-                                                ),
-                                                fillColor:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryText,
-                                                elevation: 2.0,
-                                                borderColor: Colors.transparent,
-                                                borderWidth: 2.0,
-                                                borderRadius: 25.0,
-                                                margin: const EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        16.0, 4.0, 16.0, 4.0),
-                                                hidesUnderline: true,
-                                                isOverButton: true,
-                                                isSearchable: true,
-                                                isMultiSelect: false,
-                                              ),
-                                            );
-                                          },
+                                            },
+                                          ),
                                         ),
                                       ),
                                       Padding(
@@ -318,6 +346,17 @@ class _GoggleLoginCopyCopyWidgetState extends State<GoggleLoginCopyCopyWidget>
                                           onPressed: () async {
                                             logFirebaseEvent(
                                                 'GOGGLE_LOGIN_COPY_COPY_CONTINUE_BTN_ON_T');
+                                            logFirebaseEvent(
+                                                'Button_validate_form');
+                                            if (_model.formKey.currentState ==
+                                                    null ||
+                                                !_model.formKey.currentState!
+                                                    .validate()) {
+                                              return;
+                                            }
+                                            if (_model.dropDownValue == null) {
+                                              return;
+                                            }
                                             logFirebaseEvent(
                                                 'Button_backend_call');
 
@@ -361,8 +400,7 @@ class _GoggleLoginCopyCopyWidgetState extends State<GoggleLoginCopyCopyWidget>
                                             iconPadding:
                                                 const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 0.0),
-                                            color: FlutterFlowTheme.of(context)
-                                                .primary,
+                                            color: const Color(0xFF322E5C),
                                             textStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .titleSmall
@@ -377,7 +415,7 @@ class _GoggleLoginCopyCopyWidgetState extends State<GoggleLoginCopyCopyWidget>
                                               width: 1.0,
                                             ),
                                             borderRadius:
-                                                BorderRadius.circular(12.0),
+                                                BorderRadius.circular(25.0),
                                           ),
                                         ),
                                       ),

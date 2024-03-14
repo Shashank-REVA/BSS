@@ -48,3 +48,7 @@ export '/bbsp/payment/payment_widget.dart' show PaymentWidget;
 export '/bbsp/membership_final/membership_final_widget.dart'
     show MembershipFinalWidget;
 export '/bbsp/membership_no/membership_no_widget.dart' show MembershipNoWidget;
+export '/bbsp/phone_auth_copy/phone_auth_copy_widget.dart'
+    show PhoneAuthCopyWidget;
+export '/bbsp/otp_verify_copy/otp_verify_copy_widget.dart'
+    show OtpVerifyCopyWidget;

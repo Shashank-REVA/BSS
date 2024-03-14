@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'phone_auth_widget.dart' show PhoneAuthWidget;
+import 'phone_auth_copy_widget.dart' show PhoneAuthCopyWidget;
 import 'package:flutter/material.dart';
 
-class PhoneAuthModel extends FlutterFlowModel<PhoneAuthWidget> {
+class PhoneAuthCopyModel extends FlutterFlowModel<PhoneAuthCopyWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
@@ -20,7 +20,7 @@ class PhoneAuthModel extends FlutterFlowModel<PhoneAuthWidget> {
   String? _phoneNumberControllerValidator(BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
       return FFLocalizations.of(context).getText(
-        '0vn4qpbr' /* Phone number is required */,
+        '2315f1he' /* Phone number is required */,
       );
     }
 
