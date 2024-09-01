@@ -26,14 +26,16 @@ class _ProfileEditCopyWidgetState extends State<ProfileEditCopyWidget> {
 
     logFirebaseEvent('screen_view',
         parameters: {'screen_name': 'profile_editCopy'});
-    _model.yourNameController ??=
+    _model.yourNameTextController ??=
         TextEditingController(text: currentUserDisplayName);
     _model.yourNameFocusNode ??= FocusNode();
 
-    _model.phoneController ??= TextEditingController(text: currentPhoneNumber);
+    _model.phoneTextController ??=
+        TextEditingController(text: currentPhoneNumber);
     _model.phoneFocusNode ??= FocusNode();
 
-    _model.emailController ??= TextEditingController(text: currentUserEmail);
+    _model.emailTextController ??=
+        TextEditingController(text: currentUserEmail);
     _model.emailFocusNode ??= FocusNode();
   }
 
@@ -91,6 +93,7 @@ class _ProfileEditCopyWidgetState extends State<ProfileEditCopyWidget> {
                         fontFamily: 'SuperTall',
                         color: const Color(0xFF14181B),
                         fontSize: 22.0,
+                        letterSpacing: 0.0,
                         fontWeight: FontWeight.normal,
                         useGoogleFonts: false,
                       ),
@@ -101,7 +104,7 @@ class _ProfileEditCopyWidgetState extends State<ProfileEditCopyWidget> {
               padding: const EdgeInsetsDirectional.fromSTEB(20.0, 16.0, 20.0, 12.0),
               child: AuthUserStreamWidget(
                 builder: (context) => TextFormField(
-                  controller: _model.yourNameController,
+                  controller: _model.yourNameTextController,
                   focusNode: _model.yourNameFocusNode,
                   textCapitalization: TextCapitalization.words,
                   obscureText: false,
@@ -114,6 +117,7 @@ class _ProfileEditCopyWidgetState extends State<ProfileEditCopyWidget> {
                               fontFamily: 'Raleway',
                               color: FlutterFlowTheme.of(context).secondaryText,
                               fontSize: 14.0,
+                              letterSpacing: 0.0,
                               fontWeight: FontWeight.normal,
                             ),
                     hintStyle:
@@ -121,6 +125,7 @@ class _ProfileEditCopyWidgetState extends State<ProfileEditCopyWidget> {
                               fontFamily: 'Raleway',
                               color: Colors.black,
                               fontSize: 14.0,
+                              letterSpacing: 0.0,
                               fontWeight: FontWeight.normal,
                             ),
                     enabledBorder: OutlineInputBorder(
@@ -160,10 +165,11 @@ class _ProfileEditCopyWidgetState extends State<ProfileEditCopyWidget> {
                         fontFamily: 'Ubuntu',
                         color: Colors.black,
                         fontSize: 14.0,
+                        letterSpacing: 0.0,
                         fontWeight: FontWeight.normal,
                       ),
-                  validator:
-                      _model.yourNameControllerValidator.asValidator(context),
+                  validator: _model.yourNameTextControllerValidator
+                      .asValidator(context),
                 ),
               ),
             ),
@@ -171,7 +177,7 @@ class _ProfileEditCopyWidgetState extends State<ProfileEditCopyWidget> {
               padding: const EdgeInsetsDirectional.fromSTEB(20.0, 16.0, 20.0, 12.0),
               child: AuthUserStreamWidget(
                 builder: (context) => TextFormField(
-                  controller: _model.phoneController,
+                  controller: _model.phoneTextController,
                   focusNode: _model.phoneFocusNode,
                   textCapitalization: TextCapitalization.words,
                   obscureText: false,
@@ -184,6 +190,7 @@ class _ProfileEditCopyWidgetState extends State<ProfileEditCopyWidget> {
                               fontFamily: 'Raleway',
                               color: FlutterFlowTheme.of(context).secondaryText,
                               fontSize: 14.0,
+                              letterSpacing: 0.0,
                               fontWeight: FontWeight.normal,
                             ),
                     hintStyle:
@@ -191,6 +198,7 @@ class _ProfileEditCopyWidgetState extends State<ProfileEditCopyWidget> {
                               fontFamily: 'Raleway',
                               color: Colors.black,
                               fontSize: 14.0,
+                              letterSpacing: 0.0,
                               fontWeight: FontWeight.normal,
                             ),
                     enabledBorder: OutlineInputBorder(
@@ -230,17 +238,18 @@ class _ProfileEditCopyWidgetState extends State<ProfileEditCopyWidget> {
                         fontFamily: 'Ubuntu',
                         color: Colors.black,
                         fontSize: 14.0,
+                        letterSpacing: 0.0,
                         fontWeight: FontWeight.normal,
                       ),
                   validator:
-                      _model.phoneControllerValidator.asValidator(context),
+                      _model.phoneTextControllerValidator.asValidator(context),
                 ),
               ),
             ),
             Padding(
               padding: const EdgeInsetsDirectional.fromSTEB(20.0, 16.0, 20.0, 12.0),
               child: TextFormField(
-                controller: _model.emailController,
+                controller: _model.emailTextController,
                 focusNode: _model.emailFocusNode,
                 textCapitalization: TextCapitalization.words,
                 obscureText: false,
@@ -252,12 +261,14 @@ class _ProfileEditCopyWidgetState extends State<ProfileEditCopyWidget> {
                         fontFamily: 'Raleway',
                         color: FlutterFlowTheme.of(context).secondaryText,
                         fontSize: 14.0,
+                        letterSpacing: 0.0,
                         fontWeight: FontWeight.normal,
                       ),
                   hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
                         fontFamily: 'Raleway',
                         color: Colors.black,
                         fontSize: 14.0,
+                        letterSpacing: 0.0,
                         fontWeight: FontWeight.normal,
                       ),
                   enabledBorder: OutlineInputBorder(
@@ -297,9 +308,11 @@ class _ProfileEditCopyWidgetState extends State<ProfileEditCopyWidget> {
                       fontFamily: 'Ubuntu',
                       color: Colors.black,
                       fontSize: 14.0,
+                      letterSpacing: 0.0,
                       fontWeight: FontWeight.normal,
                     ),
-                validator: _model.emailControllerValidator.asValidator(context),
+                validator:
+                    _model.emailTextControllerValidator.asValidator(context),
               ),
             ),
             Padding(
@@ -314,10 +327,17 @@ class _ProfileEditCopyWidgetState extends State<ProfileEditCopyWidget> {
                   logFirebaseEvent('Text_backend_call');
 
                   await currentUserReference!.update(createUsersRecordData(
-                    email: _model.emailController.text,
-                    displayName: _model.yourNameController.text,
-                    phoneNumber: _model.phoneController.text,
+                    email: _model.emailTextController.text,
+                    displayName: _model.yourNameTextController.text,
+                    phoneNumber: _model.phoneTextController.text,
                   ));
+                  logFirebaseEvent('Text_reset_form_fields');
+                  setState(() {
+                    _model.yourNameTextController?.text =
+                        currentUserDisplayName;
+                    _model.phoneTextController?.text = currentPhoneNumber;
+                    _model.emailTextController?.text = currentUserEmail;
+                  });
                   logFirebaseEvent('Text_navigate_to');
 
                   context.goNamed(
@@ -339,6 +359,7 @@ class _ProfileEditCopyWidgetState extends State<ProfileEditCopyWidget> {
                         fontFamily: 'SuperTall',
                         color: const Color(0xFF4A456B),
                         fontSize: 18.0,
+                        letterSpacing: 0.0,
                         useGoogleFonts: false,
                       ),
                 ),

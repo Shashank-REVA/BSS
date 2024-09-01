@@ -35,42 +35,7 @@ class _LoginCopyCopyWidgetState extends State<LoginCopyCopyWidget>
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
-  final animationsMap = {
-    'containerOnPageLoadAnimation': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        VisibilityEffect(duration: 1.ms),
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 300.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 300.ms,
-          begin: const Offset(0.0, 140.0),
-          end: const Offset(0.0, 0.0),
-        ),
-        ScaleEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 300.ms,
-          begin: const Offset(0.9, 0.9),
-          end: const Offset(1.0, 1.0),
-        ),
-        TiltEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 300.ms,
-          begin: const Offset(-0.349, 0),
-          end: const Offset(0, 0),
-        ),
-      ],
-    ),
-  };
+  final animationsMap = <String, AnimationInfo>{};
 
   @override
   void initState() {
@@ -79,11 +44,48 @@ class _LoginCopyCopyWidgetState extends State<LoginCopyCopyWidget>
 
     logFirebaseEvent('screen_view',
         parameters: {'screen_name': 'loginCopyCopy'});
-    _model.emailAddressController ??= TextEditingController();
+    _model.emailAddressTextController ??= TextEditingController();
     _model.emailAddressFocusNode ??= FocusNode();
 
-    _model.passwordController ??= TextEditingController();
+    _model.passwordTextController ??= TextEditingController();
     _model.passwordFocusNode ??= FocusNode();
+
+    animationsMap.addAll({
+      'containerOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          VisibilityEffect(duration: 1.ms),
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 300.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 300.0.ms,
+            begin: const Offset(0.0, 140.0),
+            end: const Offset(0.0, 0.0),
+          ),
+          ScaleEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 300.0.ms,
+            begin: const Offset(0.9, 0.9),
+            end: const Offset(1.0, 1.0),
+          ),
+          TiltEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 300.0.ms,
+            begin: const Offset(-0.349, 0),
+            end: const Offset(0, 0),
+          ),
+        ],
+      ),
+    });
   }
 
   @override
@@ -96,9 +98,7 @@ class _LoginCopyCopyWidgetState extends State<LoginCopyCopyWidget>
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => _model.unfocusNode.canRequestFocus
-          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
-          : FocusScope.of(context).unfocus(),
+      onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).info,
@@ -171,7 +171,10 @@ class _LoginCopyCopyWidgetState extends State<LoginCopyCopyWidget>
                                 BoxShadow(
                                   blurRadius: 4.0,
                                   color: Color(0x33000000),
-                                  offset: Offset(0.0, 2.0),
+                                  offset: Offset(
+                                    0.0,
+                                    2.0,
+                                  ),
                                 )
                               ],
                               borderRadius: BorderRadius.circular(12.0),
@@ -199,151 +202,202 @@ class _LoginCopyCopyWidgetState extends State<LoginCopyCopyWidget>
                                               .override(
                                                 fontFamily: 'SuperTall',
                                                 color: Colors.black,
+                                                letterSpacing: 0.0,
                                                 useGoogleFonts: false,
                                               ),
                                         ),
                                       ),
                                       Padding(
                                         padding: const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 0.0, 16.0),
-                                        child: Container(
-                                          decoration: BoxDecoration(
-                                            color: Colors.white,
-                                            boxShadow: const [
-                                              BoxShadow(
-                                                blurRadius: 4.0,
-                                                color: Color(0xFF322E5C),
-                                                offset: Offset(0.0, 2.0),
-                                              )
+                                            18.0, 0.0, 18.0, 16.0),
+                                        child: SizedBox(
+                                          width: double.infinity,
+                                          child: TextFormField(
+                                            controller: _model
+                                                .emailAddressTextController,
+                                            focusNode:
+                                                _model.emailAddressFocusNode,
+                                            autofocus: false,
+                                            autofillHints: const [
+                                              AutofillHints.email
                                             ],
-                                            borderRadius:
-                                                BorderRadius.circular(40.0),
-                                          ),
-                                          child: SizedBox(
-                                            width: double.infinity,
-                                            child: TextFormField(
-                                              controller:
-                                                  _model.emailAddressController,
-                                              focusNode:
-                                                  _model.emailAddressFocusNode,
-                                              autofillHints: const [
-                                                AutofillHints.email
-                                              ],
-                                              obscureText: false,
-                                              decoration: InputDecoration(
-                                                labelText:
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                  'gof9mnyb' /* Email */,
-                                                ),
-                                                labelStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelLarge
-                                                        .override(
-                                                          fontFamily: 'Raleway',
-                                                        ),
-                                                enabledBorder: InputBorder.none,
-                                                focusedBorder: InputBorder.none,
-                                                errorBorder: InputBorder.none,
-                                                focusedErrorBorder:
-                                                    InputBorder.none,
-                                                filled: true,
+                                            obscureText: false,
+                                            decoration: InputDecoration(
+                                              labelText:
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                'ark9cpi8' /* Email Address */,
                                               ),
-                                              style:
+                                              labelStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .bodyLarge
                                                       .override(
-                                                        fontFamily: 'Ubuntu',
+                                                        fontFamily: 'Raleway',
                                                         color: Colors.black,
+                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FontWeight.w600,
                                                       ),
-                                              keyboardType:
-                                                  TextInputType.emailAddress,
-                                              validator: _model
-                                                  .emailAddressControllerValidator
-                                                  .asValidator(context),
+                                              enabledBorder:
+                                                  UnderlineInputBorder(
+                                                borderSide: BorderSide(
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .secondaryText,
+                                                  width: 2.0,
+                                                ),
+                                                borderRadius:
+                                                    BorderRadius.circular(0.0),
+                                              ),
+                                              focusedBorder:
+                                                  UnderlineInputBorder(
+                                                borderSide: const BorderSide(
+                                                  color: Color(0xFF322E5C),
+                                                  width: 2.0,
+                                                ),
+                                                borderRadius:
+                                                    BorderRadius.circular(0.0),
+                                              ),
+                                              errorBorder: UnderlineInputBorder(
+                                                borderSide: BorderSide(
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .error,
+                                                  width: 2.0,
+                                                ),
+                                                borderRadius:
+                                                    BorderRadius.circular(0.0),
+                                              ),
+                                              focusedErrorBorder:
+                                                  UnderlineInputBorder(
+                                                borderSide: BorderSide(
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .error,
+                                                  width: 2.0,
+                                                ),
+                                                borderRadius:
+                                                    BorderRadius.circular(0.0),
+                                              ),
+                                              filled: true,
+                                              fillColor: Colors.white,
                                             ),
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyLarge
+                                                .override(
+                                                  fontFamily: 'Raleway',
+                                                  color: Colors.black,
+                                                  letterSpacing: 0.0,
+                                                ),
+                                            keyboardType:
+                                                TextInputType.emailAddress,
+                                            validator: _model
+                                                .emailAddressTextControllerValidator
+                                                .asValidator(context),
                                           ),
                                         ),
                                       ),
                                       Padding(
                                         padding: const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 0.0, 16.0),
-                                        child: Container(
-                                          decoration: BoxDecoration(
-                                            color: Colors.white,
-                                            boxShadow: const [
-                                              BoxShadow(
-                                                blurRadius: 4.0,
-                                                color: Color(0xFF322E5C),
-                                                offset: Offset(0.0, 2.0),
-                                              )
-                                            ],
-                                            borderRadius:
-                                                BorderRadius.circular(40.0),
-                                          ),
-                                          child: SizedBox(
-                                            width: double.infinity,
-                                            child: TextFormField(
-                                              controller:
-                                                  _model.passwordController,
-                                              focusNode:
-                                                  _model.passwordFocusNode,
-                                              autofillHints: const [
-                                                AutofillHints.password
-                                              ],
-                                              obscureText:
-                                                  !_model.passwordVisibility,
-                                              decoration: InputDecoration(
-                                                labelText:
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                  '6b5fxc5g' /* Password */,
-                                                ),
-                                                labelStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelLarge
-                                                        .override(
-                                                          fontFamily: 'Raleway',
-                                                        ),
-                                                enabledBorder: InputBorder.none,
-                                                focusedBorder: InputBorder.none,
-                                                errorBorder: InputBorder.none,
-                                                focusedErrorBorder:
-                                                    InputBorder.none,
-                                                filled: true,
-                                                suffixIcon: InkWell(
-                                                  onTap: () => setState(
-                                                    () => _model
-                                                            .passwordVisibility =
-                                                        !_model
-                                                            .passwordVisibility,
-                                                  ),
-                                                  focusNode: FocusNode(
-                                                      skipTraversal: true),
-                                                  child: Icon(
-                                                    _model.passwordVisibility
-                                                        ? Icons
-                                                            .visibility_outlined
-                                                        : Icons
-                                                            .visibility_off_outlined,
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .secondaryText,
-                                                    size: 24.0,
-                                                  ),
-                                                ),
+                                            18.0, 0.0, 18.0, 16.0),
+                                        child: SizedBox(
+                                          width: double.infinity,
+                                          child: TextFormField(
+                                            controller:
+                                                _model.passwordTextController,
+                                            focusNode: _model.passwordFocusNode,
+                                            autofocus: false,
+                                            obscureText:
+                                                !_model.passwordVisibility,
+                                            decoration: InputDecoration(
+                                              labelText:
+                                                  FFLocalizations.of(context)
+                                                      .getText(
+                                                'p606suil' /* Password */,
                                               ),
-                                              style:
+                                              labelStyle:
                                                   FlutterFlowTheme.of(context)
                                                       .bodyLarge
                                                       .override(
-                                                        fontFamily: 'Ubuntu',
+                                                        fontFamily: 'Raleway',
                                                         color: Colors.black,
+                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FontWeight.w600,
                                                       ),
-                                              validator: _model
-                                                  .passwordControllerValidator
-                                                  .asValidator(context),
+                                              enabledBorder:
+                                                  UnderlineInputBorder(
+                                                borderSide: BorderSide(
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .secondaryText,
+                                                  width: 2.0,
+                                                ),
+                                                borderRadius:
+                                                    BorderRadius.circular(0.0),
+                                              ),
+                                              focusedBorder:
+                                                  UnderlineInputBorder(
+                                                borderSide: const BorderSide(
+                                                  color: Color(0xFF322E5C),
+                                                  width: 2.0,
+                                                ),
+                                                borderRadius:
+                                                    BorderRadius.circular(0.0),
+                                              ),
+                                              errorBorder: UnderlineInputBorder(
+                                                borderSide: BorderSide(
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .error,
+                                                  width: 2.0,
+                                                ),
+                                                borderRadius:
+                                                    BorderRadius.circular(0.0),
+                                              ),
+                                              focusedErrorBorder:
+                                                  UnderlineInputBorder(
+                                                borderSide: BorderSide(
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .error,
+                                                  width: 2.0,
+                                                ),
+                                                borderRadius:
+                                                    BorderRadius.circular(0.0),
+                                              ),
+                                              filled: true,
+                                              fillColor: Colors.white,
+                                              suffixIcon: InkWell(
+                                                onTap: () => setState(
+                                                  () => _model
+                                                          .passwordVisibility =
+                                                      !_model
+                                                          .passwordVisibility,
+                                                ),
+                                                focusNode: FocusNode(
+                                                    skipTraversal: true),
+                                                child: Icon(
+                                                  _model.passwordVisibility
+                                                      ? Icons
+                                                          .visibility_outlined
+                                                      : Icons
+                                                          .visibility_off_outlined,
+                                                  color: const Color(0xFF757575),
+                                                  size: 22.0,
+                                                ),
+                                              ),
                                             ),
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyLarge
+                                                .override(
+                                                  fontFamily: 'Raleway',
+                                                  color: Colors.black,
+                                                  letterSpacing: 0.0,
+                                                ),
+                                            validator: _model
+                                                .passwordTextControllerValidator
+                                                .asValidator(context),
                                           ),
                                         ),
                                       ),
@@ -361,9 +415,10 @@ class _LoginCopyCopyWidgetState extends State<LoginCopyCopyWidget>
                                             final user = await authManager
                                                 .signInWithEmail(
                                               context,
+                                              _model.emailAddressTextController
+                                                  .text,
                                               _model
-                                                  .emailAddressController.text,
-                                              _model.passwordController.text,
+                                                  .passwordTextController.text,
                                             );
                                             if (user == null) {
                                               return;
@@ -427,6 +482,7 @@ class _LoginCopyCopyWidgetState extends State<LoginCopyCopyWidget>
                                                     .override(
                                                       fontFamily: 'SuperTall',
                                                       color: Colors.white,
+                                                      letterSpacing: 0.0,
                                                       useGoogleFonts: false,
                                                     ),
                                             elevation: 3.0,
@@ -484,6 +540,7 @@ class _LoginCopyCopyWidgetState extends State<LoginCopyCopyWidget>
                                                     .override(
                                                       fontFamily: 'SuperTall',
                                                       color: Colors.black,
+                                                      letterSpacing: 0.0,
                                                       useGoogleFonts: false,
                                                     ),
                                             elevation: 3.0,
@@ -508,6 +565,7 @@ class _LoginCopyCopyWidgetState extends State<LoginCopyCopyWidget>
                                               .override(
                                                 fontFamily: 'SuperTall',
                                                 color: Colors.black,
+                                                letterSpacing: 0.0,
                                                 useGoogleFonts: false,
                                               ),
                                         ),
@@ -673,6 +731,7 @@ class _LoginCopyCopyWidgetState extends State<LoginCopyCopyWidget>
                                                 .override(
                                                   fontFamily: 'SuperTall',
                                                   color: Colors.black,
+                                                  letterSpacing: 0.0,
                                                   useGoogleFonts: false,
                                                 ),
                                           ),

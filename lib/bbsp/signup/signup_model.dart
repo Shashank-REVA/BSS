@@ -6,62 +6,107 @@ class SignupModel extends FlutterFlowModel<SignupWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
-  bool isDataUploading = false;
-  FFUploadedFile uploadedLocalFile =
-      FFUploadedFile(bytes: Uint8List.fromList([]));
-  String uploadedFileUrl = '';
-
+  final formKey = GlobalKey<FormState>();
   // State field(s) for name widget.
   FocusNode? nameFocusNode;
-  TextEditingController? nameController;
-  String? Function(BuildContext, String?)? nameControllerValidator;
+  TextEditingController? nameTextController;
+  String? Function(BuildContext, String?)? nameTextControllerValidator;
+  String? _nameTextControllerValidator(BuildContext context, String? val) {
+    if (val == null || val.isEmpty) {
+      return FFLocalizations.of(context).getText(
+        '3knzdith' /* Name is required */,
+      );
+    }
+
+    return null;
+  }
+
   // State field(s) for emailAddress widget.
   FocusNode? emailAddressFocusNode;
-  TextEditingController? emailAddressController;
-  String? Function(BuildContext, String?)? emailAddressControllerValidator;
+  TextEditingController? emailAddressTextController;
+  String? Function(BuildContext, String?)? emailAddressTextControllerValidator;
+  String? _emailAddressTextControllerValidator(
+      BuildContext context, String? val) {
+    if (val == null || val.isEmpty) {
+      return FFLocalizations.of(context).getText(
+        'lzvws5mj' /* Email is required */,
+      );
+    }
+
+    return null;
+  }
+
   // State field(s) for phone_num widget.
   FocusNode? phoneNumFocusNode;
-  TextEditingController? phoneNumController;
-  String? Function(BuildContext, String?)? phoneNumControllerValidator;
+  TextEditingController? phoneNumTextController;
+  String? Function(BuildContext, String?)? phoneNumTextControllerValidator;
+  String? _phoneNumTextControllerValidator(BuildContext context, String? val) {
+    if (val == null || val.isEmpty) {
+      return FFLocalizations.of(context).getText(
+        'yklwsnq2' /* Phone number  is required */,
+      );
+    }
+
+    return null;
+  }
+
   // State field(s) for password widget.
   FocusNode? passwordFocusNode;
-  TextEditingController? passwordController;
+  TextEditingController? passwordTextController;
   late bool passwordVisibility;
-  String? Function(BuildContext, String?)? passwordControllerValidator;
+  String? Function(BuildContext, String?)? passwordTextControllerValidator;
+  String? _passwordTextControllerValidator(BuildContext context, String? val) {
+    if (val == null || val.isEmpty) {
+      return FFLocalizations.of(context).getText(
+        'evcbd4v6' /* Password is required */,
+      );
+    }
+
+    return null;
+  }
+
   // State field(s) for con_password widget.
   FocusNode? conPasswordFocusNode;
-  TextEditingController? conPasswordController;
+  TextEditingController? conPasswordTextController;
   late bool conPasswordVisibility;
-  String? Function(BuildContext, String?)? conPasswordControllerValidator;
+  String? Function(BuildContext, String?)? conPasswordTextControllerValidator;
+  String? _conPasswordTextControllerValidator(
+      BuildContext context, String? val) {
+    if (val == null || val.isEmpty) {
+      return FFLocalizations.of(context).getText(
+        '2ix120f8' /* Confirm Password is required */,
+      );
+    }
 
-  /// Initialization and disposal methods.
+    return null;
+  }
 
   @override
   void initState(BuildContext context) {
+    nameTextControllerValidator = _nameTextControllerValidator;
+    emailAddressTextControllerValidator = _emailAddressTextControllerValidator;
+    phoneNumTextControllerValidator = _phoneNumTextControllerValidator;
     passwordVisibility = false;
+    passwordTextControllerValidator = _passwordTextControllerValidator;
     conPasswordVisibility = false;
+    conPasswordTextControllerValidator = _conPasswordTextControllerValidator;
   }
 
   @override
   void dispose() {
-    unfocusNode.dispose();
     nameFocusNode?.dispose();
-    nameController?.dispose();
+    nameTextController?.dispose();
 
     emailAddressFocusNode?.dispose();
-    emailAddressController?.dispose();
+    emailAddressTextController?.dispose();
 
     phoneNumFocusNode?.dispose();
-    phoneNumController?.dispose();
+    phoneNumTextController?.dispose();
 
     passwordFocusNode?.dispose();
-    passwordController?.dispose();
+    passwordTextController?.dispose();
 
     conPasswordFocusNode?.dispose();
-    conPasswordController?.dispose();
+    conPasswordTextController?.dispose();
   }
-
-  /// Action blocks are added here.
-
-  /// Additional helper methods are added here.
 }

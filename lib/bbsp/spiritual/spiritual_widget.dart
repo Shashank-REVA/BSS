@@ -44,9 +44,7 @@ class _SpiritualWidgetState extends State<SpiritualWidget> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => _model.unfocusNode.canRequestFocus
-          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
-          : FocusScope.of(context).unfocus(),
+      onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: Colors.white,
@@ -133,6 +131,7 @@ class _SpiritualWidgetState extends State<SpiritualWidget> {
                                   .override(
                                     fontFamily: 'SuperTall',
                                     color: const Color(0xFFEC7834),
+                                    letterSpacing: 0.0,
                                     useGoogleFonts: false,
                                   ),
                             ),
@@ -164,6 +163,7 @@ class _SpiritualWidgetState extends State<SpiritualWidget> {
                                       fontFamily: 'SuperTall',
                                       color: const Color(0xFF322E5C),
                                       fontSize: 20.0,
+                                      letterSpacing: 0.0,
                                       fontWeight: FontWeight.w600,
                                       useGoogleFonts: false,
                                     ),
@@ -181,6 +181,7 @@ class _SpiritualWidgetState extends State<SpiritualWidget> {
                                     .override(
                                       fontFamily: 'Readex Pro',
                                       color: Colors.black,
+                                      letterSpacing: 0.0,
                                     ),
                               ),
                             ),
@@ -197,6 +198,7 @@ class _SpiritualWidgetState extends State<SpiritualWidget> {
                                       fontFamily: 'SuperTall',
                                       color: const Color(0xFF322E5C),
                                       fontSize: 20.0,
+                                      letterSpacing: 0.0,
                                       fontWeight: FontWeight.w600,
                                       useGoogleFonts: false,
                                     ),
@@ -214,6 +216,7 @@ class _SpiritualWidgetState extends State<SpiritualWidget> {
                                     .override(
                                       fontFamily: 'Readex Pro',
                                       color: Colors.black,
+                                      letterSpacing: 0.0,
                                     ),
                               ),
                             ),
@@ -230,6 +233,7 @@ class _SpiritualWidgetState extends State<SpiritualWidget> {
                                       fontFamily: 'SuperTall',
                                       color: const Color(0xFF322E5C),
                                       fontSize: 20.0,
+                                      letterSpacing: 0.0,
                                       fontWeight: FontWeight.w600,
                                       useGoogleFonts: false,
                                     ),
@@ -247,6 +251,7 @@ class _SpiritualWidgetState extends State<SpiritualWidget> {
                                     .override(
                                       fontFamily: 'Readex Pro',
                                       color: Colors.black,
+                                      letterSpacing: 0.0,
                                     ),
                               ),
                             ),
@@ -263,6 +268,7 @@ class _SpiritualWidgetState extends State<SpiritualWidget> {
                                       fontFamily: 'SuperTall',
                                       color: const Color(0xFF322E5C),
                                       fontSize: 20.0,
+                                      letterSpacing: 0.0,
                                       fontWeight: FontWeight.w600,
                                       useGoogleFonts: false,
                                     ),
@@ -280,6 +286,7 @@ class _SpiritualWidgetState extends State<SpiritualWidget> {
                                     .override(
                                       fontFamily: 'Readex Pro',
                                       color: Colors.black,
+                                      letterSpacing: 0.0,
                                     ),
                               ),
                             ),

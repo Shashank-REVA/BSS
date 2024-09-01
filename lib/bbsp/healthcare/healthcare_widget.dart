@@ -30,179 +30,7 @@ class _HealthcareWidgetState extends State<HealthcareWidget>
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
-  final animationsMap = {
-    'containerOnPageLoadAnimation1': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(50.0, 0.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'containerOnPageLoadAnimation2': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(50.0, 0.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'containerOnPageLoadAnimation3': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(50.0, 0.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'containerOnPageLoadAnimation4': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(50.0, 0.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'containerOnPageLoadAnimation5': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(50.0, 0.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'containerOnPageLoadAnimation6': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(50.0, 0.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'containerOnPageLoadAnimation7': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(50.0, 0.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'containerOnPageLoadAnimation8': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(50.0, 0.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-    'containerOnPageLoadAnimation9': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(50.0, 0.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-  };
+  final animationsMap = <String, AnimationInfo>{};
 
   @override
   void initState() {
@@ -210,6 +38,179 @@ class _HealthcareWidgetState extends State<HealthcareWidget>
     _model = createModel(context, () => HealthcareModel());
 
     logFirebaseEvent('screen_view', parameters: {'screen_name': 'healthcare'});
+    animationsMap.addAll({
+      'containerOnPageLoadAnimation1': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(50.0, 0.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation2': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(50.0, 0.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation3': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(50.0, 0.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation4': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(50.0, 0.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation5': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(50.0, 0.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation6': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(50.0, 0.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation7': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(50.0, 0.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation8': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(50.0, 0.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation9': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(50.0, 0.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+    });
     setupAnimations(
       animationsMap.values.where((anim) =>
           anim.trigger == AnimationTrigger.onActionTrigger ||
@@ -228,9 +229,7 @@ class _HealthcareWidgetState extends State<HealthcareWidget>
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => _model.unfocusNode.canRequestFocus
-          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
-          : FocusScope.of(context).unfocus(),
+      onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: Colors.white,
@@ -316,6 +315,7 @@ class _HealthcareWidgetState extends State<HealthcareWidget>
                                       .override(
                                         fontFamily: 'SuperTall',
                                         color: const Color(0xFFEC7834),
+                                        letterSpacing: 0.0,
                                         useGoogleFonts: false,
                                       ),
                                 ),
@@ -349,6 +349,7 @@ class _HealthcareWidgetState extends State<HealthcareWidget>
                                     .override(
                                       fontFamily: 'Readex Pro',
                                       color: Colors.black,
+                                      letterSpacing: 0.0,
                                     ),
                               ),
                             ),
@@ -378,6 +379,7 @@ class _HealthcareWidgetState extends State<HealthcareWidget>
                                       fontFamily: 'SuperTall',
                                       color: const Color(0xFF322E5C),
                                       fontSize: 20.0,
+                                      letterSpacing: 0.0,
                                       fontWeight: FontWeight.w600,
                                       useGoogleFonts: false,
                                     ),
@@ -395,6 +397,7 @@ class _HealthcareWidgetState extends State<HealthcareWidget>
                                     .override(
                                       fontFamily: 'Readex Pro',
                                       color: Colors.black,
+                                      letterSpacing: 0.0,
                                     ),
                               ),
                             ),
@@ -411,6 +414,7 @@ class _HealthcareWidgetState extends State<HealthcareWidget>
                                       fontFamily: 'SuperTall',
                                       color: const Color(0xFF322E5C),
                                       fontSize: 20.0,
+                                      letterSpacing: 0.0,
                                       fontWeight: FontWeight.w600,
                                       useGoogleFonts: false,
                                     ),
@@ -428,6 +432,7 @@ class _HealthcareWidgetState extends State<HealthcareWidget>
                                     .override(
                                       fontFamily: 'Readex Pro',
                                       color: Colors.black,
+                                      letterSpacing: 0.0,
                                     ),
                               ),
                             ),
@@ -444,6 +449,7 @@ class _HealthcareWidgetState extends State<HealthcareWidget>
                                       fontFamily: 'SuperTall',
                                       color: const Color(0xFF322E5C),
                                       fontSize: 20.0,
+                                      letterSpacing: 0.0,
                                       fontWeight: FontWeight.w600,
                                       useGoogleFonts: false,
                                     ),
@@ -461,6 +467,7 @@ class _HealthcareWidgetState extends State<HealthcareWidget>
                                     .override(
                                       fontFamily: 'Readex Pro',
                                       color: Colors.black,
+                                      letterSpacing: 0.0,
                                     ),
                               ),
                             ),
@@ -477,6 +484,7 @@ class _HealthcareWidgetState extends State<HealthcareWidget>
                                       fontFamily: 'SuperTall',
                                       color: const Color(0xFF322E5C),
                                       fontSize: 20.0,
+                                      letterSpacing: 0.0,
                                       fontWeight: FontWeight.w600,
                                       useGoogleFonts: false,
                                     ),
@@ -494,6 +502,7 @@ class _HealthcareWidgetState extends State<HealthcareWidget>
                                     .override(
                                       fontFamily: 'Readex Pro',
                                       color: Colors.black,
+                                      letterSpacing: 0.0,
                                     ),
                               ),
                             ),
@@ -510,6 +519,7 @@ class _HealthcareWidgetState extends State<HealthcareWidget>
                                       fontFamily: 'SuperTall',
                                       color: const Color(0xFF322E5C),
                                       fontSize: 20.0,
+                                      letterSpacing: 0.0,
                                       fontWeight: FontWeight.w600,
                                       useGoogleFonts: false,
                                     ),
@@ -527,6 +537,7 @@ class _HealthcareWidgetState extends State<HealthcareWidget>
                                     .override(
                                       fontFamily: 'Readex Pro',
                                       color: Colors.black,
+                                      letterSpacing: 0.0,
                                     ),
                               ),
                             ),
@@ -551,6 +562,7 @@ class _HealthcareWidgetState extends State<HealthcareWidget>
                                               fontFamily: 'SuperTall',
                                               color: const Color(0xFF322E5C),
                                               fontSize: 20.0,
+                                              letterSpacing: 0.0,
                                               fontWeight: FontWeight.w600,
                                               useGoogleFonts: false,
                                             ),
@@ -589,7 +601,10 @@ class _HealthcareWidgetState extends State<HealthcareWidget>
                                                   BoxShadow(
                                                     blurRadius: 4.0,
                                                     color: Color(0x00FFFFFF),
-                                                    offset: Offset(0.0, 2.0),
+                                                    offset: Offset(
+                                                      0.0,
+                                                      2.0,
+                                                    ),
                                                   )
                                                 ],
                                                 borderRadius:
@@ -620,7 +635,10 @@ class _HealthcareWidgetState extends State<HealthcareWidget>
                                                   BoxShadow(
                                                     blurRadius: 4.0,
                                                     color: Color(0x34090F13),
-                                                    offset: Offset(0.0, 2.0),
+                                                    offset: Offset(
+                                                      0.0,
+                                                      2.0,
+                                                    ),
                                                   )
                                                 ],
                                                 borderRadius:
@@ -651,7 +669,10 @@ class _HealthcareWidgetState extends State<HealthcareWidget>
                                                   BoxShadow(
                                                     blurRadius: 4.0,
                                                     color: Color(0x34090F13),
-                                                    offset: Offset(0.0, 2.0),
+                                                    offset: Offset(
+                                                      0.0,
+                                                      2.0,
+                                                    ),
                                                   )
                                                 ],
                                                 borderRadius:
@@ -682,7 +703,10 @@ class _HealthcareWidgetState extends State<HealthcareWidget>
                                                   BoxShadow(
                                                     blurRadius: 4.0,
                                                     color: Color(0x34090F13),
-                                                    offset: Offset(0.0, 2.0),
+                                                    offset: Offset(
+                                                      0.0,
+                                                      2.0,
+                                                    ),
                                                   )
                                                 ],
                                                 borderRadius:
@@ -713,7 +737,10 @@ class _HealthcareWidgetState extends State<HealthcareWidget>
                                                   BoxShadow(
                                                     blurRadius: 4.0,
                                                     color: Color(0x34090F13),
-                                                    offset: Offset(0.0, 2.0),
+                                                    offset: Offset(
+                                                      0.0,
+                                                      2.0,
+                                                    ),
                                                   )
                                                 ],
                                                 borderRadius:
@@ -744,7 +771,10 @@ class _HealthcareWidgetState extends State<HealthcareWidget>
                                                   BoxShadow(
                                                     blurRadius: 4.0,
                                                     color: Color(0x34090F13),
-                                                    offset: Offset(0.0, 2.0),
+                                                    offset: Offset(
+                                                      0.0,
+                                                      2.0,
+                                                    ),
                                                   )
                                                 ],
                                                 borderRadius:
@@ -775,7 +805,10 @@ class _HealthcareWidgetState extends State<HealthcareWidget>
                                                   BoxShadow(
                                                     blurRadius: 4.0,
                                                     color: Color(0x34090F13),
-                                                    offset: Offset(0.0, 2.0),
+                                                    offset: Offset(
+                                                      0.0,
+                                                      2.0,
+                                                    ),
                                                   )
                                                 ],
                                                 borderRadius:
@@ -806,7 +839,10 @@ class _HealthcareWidgetState extends State<HealthcareWidget>
                                                   BoxShadow(
                                                     blurRadius: 4.0,
                                                     color: Color(0x34090F13),
-                                                    offset: Offset(0.0, 2.0),
+                                                    offset: Offset(
+                                                      0.0,
+                                                      2.0,
+                                                    ),
                                                   )
                                                 ],
                                                 borderRadius:
@@ -837,7 +873,10 @@ class _HealthcareWidgetState extends State<HealthcareWidget>
                                                   BoxShadow(
                                                     blurRadius: 4.0,
                                                     color: Color(0x34090F13),
-                                                    offset: Offset(0.0, 2.0),
+                                                    offset: Offset(
+                                                      0.0,
+                                                      2.0,
+                                                    ),
                                                   )
                                                 ],
                                                 borderRadius:

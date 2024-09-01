@@ -1,6 +1,7 @@
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/backend/firebase_storage/storage.dart';
+import '/bbsp/qrcode/qrcode_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_radio_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -40,16 +41,16 @@ class _MembershipPaymentWidgetState extends State<MembershipPaymentWidget> {
 
     logFirebaseEvent('screen_view',
         parameters: {'screen_name': 'membership_payment'});
-    _model.addressController ??= TextEditingController();
+    _model.addressTextController ??= TextEditingController();
     _model.addressFocusNode ??= FocusNode();
 
-    _model.emailAddressController ??= TextEditingController();
+    _model.emailAddressTextController ??= TextEditingController();
     _model.emailAddressFocusNode ??= FocusNode();
 
-    _model.phonenumberController1 ??= TextEditingController();
+    _model.phonenumberTextController1 ??= TextEditingController();
     _model.phonenumberFocusNode1 ??= FocusNode();
 
-    _model.phonenumberController2 ??= TextEditingController();
+    _model.phonenumberTextController2 ??= TextEditingController();
     _model.phonenumberFocusNode2 ??= FocusNode();
   }
 
@@ -63,9 +64,7 @@ class _MembershipPaymentWidgetState extends State<MembershipPaymentWidget> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => _model.unfocusNode.canRequestFocus
-          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
-          : FocusScope.of(context).unfocus(),
+      onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).info,
@@ -172,6 +171,7 @@ class _MembershipPaymentWidgetState extends State<MembershipPaymentWidget> {
                                   fontFamily: 'SuperTall',
                                   color:
                                       FlutterFlowTheme.of(context).primaryText,
+                                  letterSpacing: 0.0,
                                   useGoogleFonts: false,
                                 ),
                           ),
@@ -211,6 +211,7 @@ class _MembershipPaymentWidgetState extends State<MembershipPaymentWidget> {
                                           fontFamily: 'Raleway',
                                           color: const Color(0xFF322E5C),
                                           fontSize: 16.0,
+                                          letterSpacing: 0.0,
                                         ),
                                     selectedTextStyle:
                                         FlutterFlowTheme.of(context)
@@ -219,6 +220,7 @@ class _MembershipPaymentWidgetState extends State<MembershipPaymentWidget> {
                                               fontFamily: 'Raleway',
                                               color: Colors.white,
                                               fontSize: 16.0,
+                                              letterSpacing: 0.0,
                                               fontWeight: FontWeight.w600,
                                             ),
                                     buttonPosition: RadioButtonPosition.left,
@@ -232,54 +234,84 @@ class _MembershipPaymentWidgetState extends State<MembershipPaymentWidget> {
                                 ],
                               ),
                             ),
-                            if ((_model.mainValue == 'Gold') &&
-                                (_model.mainValue != null &&
-                                    _model.mainValue != ''))
-                              Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 15.0, 0.0, 15.0),
-                                child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  child: Image.asset(
-                                    'assets/images/vnimc_1.png',
-                                    width: 360.0,
-                                    height: 212.0,
-                                    fit: BoxFit.cover,
+                            Stack(
+                              children: [
+                                Align(
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.max,
+                                    children: [
+                                      if ((_model.mainValue == 'Gold') &&
+                                          (_model.mainValue != null &&
+                                              _model.mainValue != ''))
+                                        Align(
+                                          alignment:
+                                              const AlignmentDirectional(0.0, 0.0),
+                                          child: Padding(
+                                            padding:
+                                                const EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 15.0, 0.0, 15.0),
+                                            child: ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(8.0),
+                                              child: Image.asset(
+                                                'assets/images/vnimc_1.png',
+                                                width: 360.0,
+                                                height: 212.0,
+                                                fit: BoxFit.cover,
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      if ((_model.mainValue == 'Silver') &&
+                                          (_model.mainValue != null &&
+                                              _model.mainValue != ''))
+                                        Align(
+                                          alignment:
+                                              const AlignmentDirectional(0.0, 0.0),
+                                          child: Padding(
+                                            padding:
+                                                const EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 15.0, 0.0, 15.0),
+                                            child: ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(8.0),
+                                              child: Image.asset(
+                                                'assets/images/49svh_2.png',
+                                                width: 360.0,
+                                                height: 212.0,
+                                                fit: BoxFit.cover,
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      if ((_model.mainValue == 'General') &&
+                                          (_model.mainValue != null &&
+                                              _model.mainValue != ''))
+                                        Align(
+                                          alignment:
+                                              const AlignmentDirectional(0.16, 0.0),
+                                          child: Padding(
+                                            padding:
+                                                const EdgeInsetsDirectional.fromSTEB(
+                                                    0.0, 15.0, 0.0, 15.0),
+                                            child: ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(8.0),
+                                              child: Image.asset(
+                                                'assets/images/3a9k2_3.png',
+                                                width: 360.0,
+                                                height: 212.0,
+                                                fit: BoxFit.cover,
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                    ],
                                   ),
                                 ),
-                              ),
-                            if ((_model.mainValue == 'Silver') &&
-                                (_model.mainValue != null &&
-                                    _model.mainValue != ''))
-                              Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 15.0, 0.0, 15.0),
-                                child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  child: Image.asset(
-                                    'assets/images/49svh_2.png',
-                                    width: 360.0,
-                                    height: 212.0,
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                              ),
-                            if ((_model.mainValue == 'General') &&
-                                (_model.mainValue != null &&
-                                    _model.mainValue != ''))
-                              Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 15.0, 0.0, 15.0),
-                                child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  child: Image.asset(
-                                    'assets/images/3a9k2_3.png',
-                                    width: 360.0,
-                                    height: 212.0,
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                              ),
+                              ],
+                            ),
                             if (_model.mainValue != null &&
                                 _model.mainValue != '')
                               Padding(
@@ -288,9 +320,12 @@ class _MembershipPaymentWidgetState extends State<MembershipPaymentWidget> {
                                 child: SizedBox(
                                   width: double.infinity,
                                   child: TextFormField(
-                                    controller: _model.addressController,
+                                    controller: _model.addressTextController,
                                     focusNode: _model.addressFocusNode,
+                                    autofocus: false,
                                     autofillHints: const [AutofillHints.email],
+                                    textCapitalization:
+                                        TextCapitalization.words,
                                     obscureText: false,
                                     decoration: InputDecoration(
                                       labelText:
@@ -302,6 +337,7 @@ class _MembershipPaymentWidgetState extends State<MembershipPaymentWidget> {
                                           .override(
                                             fontFamily: 'Raleway',
                                             color: Colors.black,
+                                            letterSpacing: 0.0,
                                             fontWeight: FontWeight.w600,
                                           ),
                                       enabledBorder: OutlineInputBorder(
@@ -347,9 +383,11 @@ class _MembershipPaymentWidgetState extends State<MembershipPaymentWidget> {
                                         .override(
                                           fontFamily: 'Raleway',
                                           color: Colors.black,
+                                          letterSpacing: 0.0,
                                         ),
                                     keyboardType: TextInputType.streetAddress,
-                                    validator: _model.addressControllerValidator
+                                    validator: _model
+                                        .addressTextControllerValidator
                                         .asValidator(context),
                                   ),
                                 ),
@@ -362,8 +400,10 @@ class _MembershipPaymentWidgetState extends State<MembershipPaymentWidget> {
                                 child: SizedBox(
                                   width: double.infinity,
                                   child: TextFormField(
-                                    controller: _model.emailAddressController,
+                                    controller:
+                                        _model.emailAddressTextController,
                                     focusNode: _model.emailAddressFocusNode,
+                                    autofocus: false,
                                     autofillHints: const [AutofillHints.email],
                                     obscureText: false,
                                     decoration: InputDecoration(
@@ -376,6 +416,7 @@ class _MembershipPaymentWidgetState extends State<MembershipPaymentWidget> {
                                           .override(
                                             fontFamily: 'Raleway',
                                             color: Colors.black,
+                                            letterSpacing: 0.0,
                                             fontWeight: FontWeight.w600,
                                           ),
                                       enabledBorder: OutlineInputBorder(
@@ -421,10 +462,11 @@ class _MembershipPaymentWidgetState extends State<MembershipPaymentWidget> {
                                         .override(
                                           fontFamily: 'Raleway',
                                           color: Colors.black,
+                                          letterSpacing: 0.0,
                                         ),
                                     keyboardType: TextInputType.emailAddress,
                                     validator: _model
-                                        .emailAddressControllerValidator
+                                        .emailAddressTextControllerValidator
                                         .asValidator(context),
                                   ),
                                 ),
@@ -437,8 +479,10 @@ class _MembershipPaymentWidgetState extends State<MembershipPaymentWidget> {
                                 child: SizedBox(
                                   width: double.infinity,
                                   child: TextFormField(
-                                    controller: _model.phonenumberController1,
+                                    controller:
+                                        _model.phonenumberTextController1,
                                     focusNode: _model.phonenumberFocusNode1,
+                                    autofocus: false,
                                     autofillHints: const [AutofillHints.email],
                                     obscureText: false,
                                     decoration: InputDecoration(
@@ -451,6 +495,7 @@ class _MembershipPaymentWidgetState extends State<MembershipPaymentWidget> {
                                           .override(
                                             fontFamily: 'Raleway',
                                             color: Colors.black,
+                                            letterSpacing: 0.0,
                                             fontWeight: FontWeight.w600,
                                           ),
                                       enabledBorder: OutlineInputBorder(
@@ -496,10 +541,11 @@ class _MembershipPaymentWidgetState extends State<MembershipPaymentWidget> {
                                         .override(
                                           fontFamily: 'Raleway',
                                           color: Colors.black,
+                                          letterSpacing: 0.0,
                                         ),
                                     keyboardType: TextInputType.number,
                                     validator: _model
-                                        .phonenumberController1Validator
+                                        .phonenumberTextController1Validator
                                         .asValidator(context),
                                   ),
                                 ),
@@ -524,6 +570,7 @@ same ... */
                                             fontFamily: 'Readex Pro',
                                             color: const Color(0xFF322E5C),
                                             fontSize: 18.0,
+                                            letterSpacing: 0.0,
                                           ),
                                     ),
                                     FlutterFlowRadioButton(
@@ -546,6 +593,7 @@ same ... */
                                             fontFamily: 'Raleway',
                                             color: const Color(0xFF322E5C),
                                             fontSize: 16.0,
+                                            letterSpacing: 0.0,
                                           ),
                                       selectedTextStyle:
                                           FlutterFlowTheme.of(context)
@@ -554,6 +602,7 @@ same ... */
                                                 fontFamily: 'Raleway',
                                                 color: Colors.black,
                                                 fontSize: 16.0,
+                                                letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
                                               ),
                                       buttonPosition: RadioButtonPosition.left,
@@ -578,8 +627,10 @@ same ... */
                                 child: SizedBox(
                                   width: double.infinity,
                                   child: TextFormField(
-                                    controller: _model.phonenumberController2,
+                                    controller:
+                                        _model.phonenumberTextController2,
                                     focusNode: _model.phonenumberFocusNode2,
+                                    autofocus: false,
                                     autofillHints: const [AutofillHints.email],
                                     obscureText: false,
                                     decoration: InputDecoration(
@@ -592,6 +643,7 @@ same ... */
                                           .override(
                                             fontFamily: 'Raleway',
                                             color: Colors.black,
+                                            letterSpacing: 0.0,
                                             fontWeight: FontWeight.w600,
                                           ),
                                       enabledBorder: OutlineInputBorder(
@@ -637,10 +689,11 @@ same ... */
                                         .override(
                                           fontFamily: 'Raleway',
                                           color: Colors.black,
+                                          letterSpacing: 0.0,
                                         ),
                                     keyboardType: TextInputType.number,
                                     validator: _model
-                                        .phonenumberController2Validator
+                                        .phonenumberTextController2Validator
                                         .asValidator(context),
                                   ),
                                 ),
@@ -662,6 +715,7 @@ same ... */
                                           fontFamily: 'Readex Pro',
                                           color: const Color(0xFF322E5C),
                                           fontSize: 18.0,
+                                          letterSpacing: 0.0,
                                         ),
                                   ),
                                 ),
@@ -677,20 +731,24 @@ same ... */
                                     onPressed: () async {
                                       logFirebaseEvent(
                                           'MEMBERSHIP_PAYMENT_SHOW_Q_R_CODE_BTN_ON_');
-                                      logFirebaseEvent('Button_navigate_to');
-
-                                      context.pushNamed(
-                                        'payment',
-                                        extra: <String, dynamic>{
-                                          kTransitionInfoKey: const TransitionInfo(
-                                            hasTransition: true,
-                                            transitionType:
-                                                PageTransitionType.fade,
-                                            duration:
-                                                Duration(milliseconds: 600),
-                                          ),
+                                      logFirebaseEvent('Button_bottom_sheet');
+                                      await showModalBottomSheet(
+                                        isScrollControlled: true,
+                                        backgroundColor: Colors.transparent,
+                                        enableDrag: false,
+                                        context: context,
+                                        builder: (context) {
+                                          return GestureDetector(
+                                            onTap: () => FocusScope.of(context)
+                                                .unfocus(),
+                                            child: Padding(
+                                              padding: MediaQuery.viewInsetsOf(
+                                                  context),
+                                              child: const QrcodeWidget(),
+                                            ),
+                                          );
                                         },
-                                      );
+                                      ).then((value) => safeSetState(() {}));
                                     },
                                     text: FFLocalizations.of(context).getText(
                                       'ncugyc1q' /* Show QR Code */,
@@ -709,6 +767,7 @@ same ... */
                                             fontFamily: 'Raleway',
                                             color: Colors.white,
                                             fontSize: 20.0,
+                                            letterSpacing: 0.0,
                                             fontWeight: FontWeight.bold,
                                           ),
                                       elevation: 3.0,
@@ -819,6 +878,7 @@ same ... */
                                                 fontFamily: 'Raleway',
                                                 color: Colors.black,
                                                 fontSize: 16.0,
+                                                letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w600,
                                               ),
                                         ),
@@ -827,9 +887,9 @@ same ... */
                                   ),
                                 ),
                               ),
-                            if ((_model.uploadedFileUrl != '') &&
-                                (_model.mainValue != null &&
-                                    _model.mainValue != ''))
+                            if ((_model.mainValue != null &&
+                                    _model.mainValue != '') &&
+                                (_model.uploadedFileUrl != ''))
                               Padding(
                                 padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 20.0),
@@ -867,6 +927,7 @@ same ... */
                                                   fontFamily: 'Readex Pro',
                                                   color: const Color(0xFF322E5C),
                                                   fontSize: 18.0,
+                                                  letterSpacing: 0.0,
                                                 ),
                                           ),
                                         ),
@@ -909,6 +970,7 @@ same ... */
                                                           context)
                                                       .error,
                                                   fontSize: 18.0,
+                                                  letterSpacing: 0.0,
                                                 ),
                                           ),
                                         ),
@@ -927,7 +989,7 @@ same ... */
                                   child: FFButtonWidget(
                                     onPressed: () async {
                                       logFirebaseEvent(
-                                          'MEMBERSHIP_PAYMENT_GET_MEMBERSHIP_BTN_ON');
+                                          'MEMBERSHIP_PAYMENT_SUBMIT_APPLICATION_BT');
                                       logFirebaseEvent('Button_validate_form');
                                       if (_model.formKey.currentState == null ||
                                           !_model.formKey.currentState!
@@ -1025,23 +1087,28 @@ same ... */
                                           .set(createMembershipRecordData(
                                             name: currentUserDisplayName,
                                             type: _model.mainValue,
-                                            permanentAddress:
-                                                _model.addressController.text,
+                                            permanentAddress: _model
+                                                .addressTextController.text,
                                             mobileNo: int.tryParse(_model
-                                                .phonenumberController1.text),
-                                            whatsappNo:
-                                                _model.radioButtonValue == 'Yes'
-                                                    ? int.tryParse(_model
-                                                        .phonenumberController1
-                                                        .text)
-                                                    : int.tryParse(_model
-                                                        .phonenumberController2
-                                                        .text),
+                                                .phonenumberTextController1
+                                                .text),
+                                            whatsappNo: _model
+                                                        .radioButtonValue ==
+                                                    'Yes'
+                                                ? int.tryParse(_model
+                                                    .phonenumberTextController1
+                                                    .text)
+                                                : int.tryParse(_model
+                                                    .phonenumberTextController2
+                                                    .text),
                                             emailId: _model
-                                                .emailAddressController.text,
+                                                .emailAddressTextController
+                                                .text,
                                             date: getCurrentTimestamp,
                                             paymentScreenshot:
                                                 _model.uploadedFileUrl,
+                                            city: valueOrDefault(
+                                                currentUserDocument?.city, ''),
                                           ));
                                       logFirebaseEvent('Button_navigate_to');
 
@@ -1059,7 +1126,7 @@ same ... */
                                       );
                                     },
                                     text: FFLocalizations.of(context).getText(
-                                      '61c4xd6j' /* Get Membership */,
+                                      '61c4xd6j' /* Submit Application */,
                                     ),
                                     options: FFButtonOptions(
                                       height: 40.0,
@@ -1075,6 +1142,7 @@ same ... */
                                             fontFamily: 'Raleway',
                                             color: Colors.white,
                                             fontSize: 20.0,
+                                            letterSpacing: 0.0,
                                             fontWeight: FontWeight.bold,
                                           ),
                                       elevation: 3.0,

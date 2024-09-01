@@ -42,9 +42,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => _model.unfocusNode.canRequestFocus
-          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
-          : FocusScope.of(context).unfocus(),
+      onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).info,
@@ -129,7 +127,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                     onTap: () async {
                       logFirebaseEvent('PROFILE_PAGE_Row_5pu7ymgt_ON_TAP');
                       logFirebaseEvent('Row_alert_dialog');
-                      showAlignedDialog(
+                      await showAlignedDialog(
                         context: context,
                         isGlobal: false,
                         avoidOverflow: true,
@@ -141,19 +139,13 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                           return Material(
                             color: Colors.transparent,
                             child: GestureDetector(
-                              onTap: () => _model.unfocusNode.canRequestFocus
-                                  ? FocusScope.of(context)
-                                      .requestFocus(_model.unfocusNode)
-                                  : FocusScope.of(context).unfocus(),
-                              child: const SizedBox(
-                                height: 380.0,
-                                width: 400.0,
-                                child: UpdatepicWidget(),
-                              ),
+                              onTap: () =>
+                                  FocusScope.of(dialogContext).unfocus(),
+                              child: const UpdatepicWidget(),
                             ),
                           );
                         },
-                      ).then((value) => setState(() {}));
+                      );
                     },
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
@@ -172,7 +164,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                               0.0, 16.0, 0.0, 12.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              '7uw5d4dm' /* Change */,
+                              '7uw5d4dm' /* Change Profile Picture */,
                             ),
                             textAlign: TextAlign.center,
                             style: FlutterFlowTheme.of(context)
@@ -181,6 +173,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                   fontFamily: 'SuperTall',
                                   color: Colors.black,
                                   fontSize: 16.0,
+                                  letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
                                   useGoogleFonts: false,
                                 ),
@@ -201,6 +194,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                           fontFamily: 'SuperTall',
                           color: const Color(0xFF322E5C),
                           fontSize: 22.0,
+                          letterSpacing: 0.0,
                           fontWeight: FontWeight.bold,
                           useGoogleFonts: false,
                         ),
@@ -213,6 +207,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                       fontFamily: 'Raleway',
                       color: Colors.black,
                       fontSize: 16.0,
+                      letterSpacing: 0.0,
                       fontWeight: FontWeight.w500,
                     ),
               ),
@@ -225,6 +220,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                           fontFamily: 'Raleway',
                           color: Colors.black,
                           fontSize: 16.0,
+                          letterSpacing: 0.0,
                           fontWeight: FontWeight.w500,
                         ),
                   ),
@@ -239,6 +235,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                           fontFamily: 'Raleway',
                           color: Colors.black,
                           fontSize: 16.0,
+                          letterSpacing: 0.0,
                           fontWeight: FontWeight.w500,
                         ),
                   ),
@@ -286,6 +283,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                     containerMembershipRecordList.isNotEmpty
                                         ? containerMembershipRecordList.first
                                         : null;
+
                                 return InkWell(
                                   splashColor: Colors.transparent,
                                   focusColor: Colors.transparent,
@@ -390,6 +388,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                           context)
                                                       .primaryText,
                                                   fontSize: 16.0,
+                                                  letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w500,
                                                 ),
                                           ),
@@ -406,6 +405,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                           context)
                                                       .primaryText,
                                                   fontSize: 15.0,
+                                                  letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w500,
                                                 ),
                                           ),
@@ -494,6 +494,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             color: FlutterFlowTheme.of(context)
                                                 .primaryText,
                                             fontSize: 16.0,
+                                            letterSpacing: 0.0,
                                             fontWeight: FontWeight.w500,
                                           ),
                                     ),
@@ -509,6 +510,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                             color: FlutterFlowTheme.of(context)
                                                 .primaryText,
                                             fontSize: 16.0,
+                                            letterSpacing: 0.0,
                                             fontWeight: FontWeight.w500,
                                           ),
                                     ),
@@ -524,64 +526,88 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
-                          Container(
-                            width: 105.0,
-                            height: 105.0,
-                            decoration: BoxDecoration(
-                              color: const Color(0xFF322E5C),
-                              borderRadius: BorderRadius.circular(40.0),
-                            ),
-                            alignment: const AlignmentDirectional(0.0, 0.0),
-                            child: Align(
+                          InkWell(
+                            splashColor: Colors.transparent,
+                            focusColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
+                            onTap: () async {
+                              logFirebaseEvent(
+                                  'PROFILE_PAGE_Container_psmeel6l_ON_TAP');
+                              logFirebaseEvent('Container_navigate_to');
+
+                              context.pushNamed(
+                                'your_donations',
+                                extra: <String, dynamic>{
+                                  kTransitionInfoKey: const TransitionInfo(
+                                    hasTransition: true,
+                                    transitionType: PageTransitionType.fade,
+                                    duration: Duration(milliseconds: 600),
+                                  ),
+                                },
+                              );
+                            },
+                            child: Container(
+                              width: 105.0,
+                              height: 105.0,
+                              decoration: BoxDecoration(
+                                color: const Color(0xFF322E5C),
+                                borderRadius: BorderRadius.circular(40.0),
+                              ),
                               alignment: const AlignmentDirectional(0.0, 0.0),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Align(
-                                    alignment: const AlignmentDirectional(0.0, 0.0),
-                                    child: Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 0.0, 0.0, 5.0),
-                                      child: Icon(
-                                        Icons.help_outline_outlined,
-                                        color: FlutterFlowTheme.of(context)
-                                            .primaryText,
-                                        size: 24.0,
+                              child: Align(
+                                alignment: const AlignmentDirectional(0.0, 0.0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Align(
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
+                                      child: Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 0.0, 0.0, 5.0),
+                                        child: FaIcon(
+                                          FontAwesomeIcons.dollarSign,
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryText,
+                                          size: 24.0,
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                  Text(
-                                    FFLocalizations.of(context).getText(
-                                      'd93kxsx0' /* Help */,
+                                    Text(
+                                      FFLocalizations.of(context).getText(
+                                        'd93kxsx0' /* Your */,
+                                      ),
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .override(
+                                            fontFamily: 'Raleway',
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryText,
+                                            fontSize: 16.0,
+                                            letterSpacing: 0.0,
+                                            fontWeight: FontWeight.w500,
+                                          ),
                                     ),
-                                    textAlign: TextAlign.center,
-                                    style: FlutterFlowTheme.of(context)
-                                        .titleSmall
-                                        .override(
-                                          fontFamily: 'Raleway',
-                                          color: FlutterFlowTheme.of(context)
-                                              .primaryText,
-                                          fontSize: 16.0,
-                                          fontWeight: FontWeight.w500,
-                                        ),
-                                  ),
-                                  Text(
-                                    FFLocalizations.of(context).getText(
-                                      'xxqcevmm' /* Center */,
+                                    Text(
+                                      FFLocalizations.of(context).getText(
+                                        'xxqcevmm' /* Donations */,
+                                      ),
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .override(
+                                            fontFamily: 'Raleway',
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryText,
+                                            fontSize: 16.0,
+                                            letterSpacing: 0.0,
+                                            fontWeight: FontWeight.w500,
+                                          ),
                                     ),
-                                    textAlign: TextAlign.center,
-                                    style: FlutterFlowTheme.of(context)
-                                        .titleSmall
-                                        .override(
-                                          fontFamily: 'Raleway',
-                                          color: FlutterFlowTheme.of(context)
-                                              .primaryText,
-                                          fontSize: 16.0,
-                                          fontWeight: FontWeight.w500,
-                                        ),
-                                  ),
-                                ],
+                                  ],
+                                ),
                               ),
                             ),
                           ),
@@ -599,7 +625,10 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                       BoxShadow(
                         blurRadius: 3.0,
                         color: Color(0x33000000),
-                        offset: Offset(0.0, -1.0),
+                        offset: Offset(
+                          0.0,
+                          -1.0,
+                        ),
                       )
                     ],
                     borderRadius: BorderRadius.circular(30.0),
@@ -629,6 +658,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                         fontFamily: 'SuperTall',
                                         color: const Color(0xFF101213),
                                         fontSize: 22.0,
+                                        letterSpacing: 0.0,
                                         fontWeight: FontWeight.bold,
                                         useGoogleFonts: false,
                                       ),
@@ -678,6 +708,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                   fontFamily: 'Raleway',
                                                   color: const Color(0xFF101213),
                                                   fontSize: 14.0,
+                                                  letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w500,
                                                 ),
                                           ),
@@ -718,6 +749,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                 fontFamily: 'Raleway',
                                                 color: const Color(0xFF101213),
                                                 fontSize: 14.0,
+                                                letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w500,
                                               ),
                                         ),
@@ -728,8 +760,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                       backgroundColor:
                                           FlutterFlowTheme.of(context).info,
                                       borderColor: Colors.black,
-                                      dropdownColor:
-                                          FlutterFlowTheme.of(context).info,
+                                      dropdownColor: Colors.white,
                                       dropdownIconColor: Colors.black,
                                       borderRadius: 25.0,
                                       textStyle: FlutterFlowTheme.of(context)
@@ -737,6 +768,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                           .override(
                                             fontFamily: 'Ubuntu',
                                             color: Colors.black,
+                                            letterSpacing: 0.0,
                                           ),
                                       hideFlags: true,
                                       flagSize: 24.0,
@@ -824,6 +856,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                     fontFamily: 'Raleway',
                                                     color: const Color(0xFF101213),
                                                     fontSize: 14.0,
+                                                    letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
                                                   ),
                                             ),
@@ -840,6 +873,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                 fontFamily: 'Raleway',
                                                 color: const Color(0xFF322E5C),
                                                 fontSize: 14.0,
+                                                letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w500,
                                               ),
                                         ),

@@ -1,3 +1,18 @@
 {
-  "indexes": []
+  "indexes": [
+    {
+      "collectionGroup": "new_priests",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "new_city",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "pri_counter",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ]
 }

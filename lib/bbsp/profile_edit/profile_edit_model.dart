@@ -7,22 +7,16 @@ class ProfileEditModel extends FlutterFlowModel<ProfileEditWidget> {
 
   // State field(s) for yourName widget.
   FocusNode? yourNameFocusNode;
-  TextEditingController? yourNameController;
-  String? Function(BuildContext, String?)? yourNameControllerValidator;
+  TextEditingController? yourNameTextController;
+  String? Function(BuildContext, String?)? yourNameTextControllerValidator;
   // State field(s) for phone widget.
   FocusNode? phoneFocusNode;
-  TextEditingController? phoneController;
-  String? Function(BuildContext, String?)? phoneControllerValidator;
+  TextEditingController? phoneTextController;
+  String? Function(BuildContext, String?)? phoneTextControllerValidator;
   // State field(s) for email widget.
-  FocusNode? emailFocusNode1;
-  TextEditingController? emailController1;
-  String? Function(BuildContext, String?)? emailController1Validator;
-  // State field(s) for email widget.
-  FocusNode? emailFocusNode2;
-  TextEditingController? emailController2;
-  String? Function(BuildContext, String?)? emailController2Validator;
-
-  /// Initialization and disposal methods.
+  FocusNode? emailFocusNode;
+  TextEditingController? emailTextController;
+  String? Function(BuildContext, String?)? emailTextControllerValidator;
 
   @override
   void initState(BuildContext context) {}
@@ -30,19 +24,12 @@ class ProfileEditModel extends FlutterFlowModel<ProfileEditWidget> {
   @override
   void dispose() {
     yourNameFocusNode?.dispose();
-    yourNameController?.dispose();
+    yourNameTextController?.dispose();
 
     phoneFocusNode?.dispose();
-    phoneController?.dispose();
+    phoneTextController?.dispose();
 
-    emailFocusNode1?.dispose();
-    emailController1?.dispose();
-
-    emailFocusNode2?.dispose();
-    emailController2?.dispose();
+    emailFocusNode?.dispose();
+    emailTextController?.dispose();
   }
-
-  /// Action blocks are added here.
-
-  /// Additional helper methods are added here.
 }

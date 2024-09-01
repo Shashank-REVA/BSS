@@ -27,27 +27,7 @@ class _BetiBachaoBetiPadhaoInfoWidgetState
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
-  final animationsMap = {
-    'textOnPageLoadAnimation': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 600.ms,
-          begin: const Offset(-10.0, 0.0),
-          end: const Offset(0.0, 0.0),
-        ),
-      ],
-    ),
-  };
+  final animationsMap = <String, AnimationInfo>{};
 
   @override
   void initState() {
@@ -56,6 +36,27 @@ class _BetiBachaoBetiPadhaoInfoWidgetState
 
     logFirebaseEvent('screen_view',
         parameters: {'screen_name': 'beti-bachao-beti-padhao-info'});
+    animationsMap.addAll({
+      'textOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(-10.0, 0.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+    });
     setupAnimations(
       animationsMap.values.where((anim) =>
           anim.trigger == AnimationTrigger.onActionTrigger ||
@@ -74,9 +75,7 @@ class _BetiBachaoBetiPadhaoInfoWidgetState
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => _model.unfocusNode.canRequestFocus
-          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
-          : FocusScope.of(context).unfocus(),
+      onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: Colors.white,
@@ -158,6 +157,7 @@ class _BetiBachaoBetiPadhaoInfoWidgetState
                   style: FlutterFlowTheme.of(context).headlineLarge.override(
                         fontFamily: 'SuperTall',
                         color: const Color(0xFFEC7834),
+                        letterSpacing: 0.0,
                         fontWeight: FontWeight.w600,
                         useGoogleFonts: false,
                       ),
@@ -176,6 +176,7 @@ class _BetiBachaoBetiPadhaoInfoWidgetState
                           fontFamily: 'Raleway',
                           color: const Color(0xFF2F2F2F),
                           fontSize: 18.0,
+                          letterSpacing: 0.0,
                           fontWeight: FontWeight.w800,
                         ),
                   ),
@@ -194,6 +195,7 @@ class _BetiBachaoBetiPadhaoInfoWidgetState
                           fontFamily: 'Raleway',
                           color: const Color(0xFF2F2F2F),
                           fontSize: 25.0,
+                          letterSpacing: 0.0,
                           fontWeight: FontWeight.w800,
                         ),
                   ),
@@ -213,6 +215,7 @@ class _BetiBachaoBetiPadhaoInfoWidgetState
                           fontFamily: 'Raleway',
                           color: const Color(0xFF2F2F2F),
                           fontSize: 16.0,
+                          letterSpacing: 0.0,
                           fontWeight: FontWeight.w600,
                         ),
                   )),
@@ -231,6 +234,7 @@ class _BetiBachaoBetiPadhaoInfoWidgetState
                           fontFamily: 'Raleway',
                           color: const Color(0xFF322E5C),
                           fontSize: 25.0,
+                          letterSpacing: 0.0,
                           fontWeight: FontWeight.w800,
                         ),
                   ),
@@ -256,6 +260,7 @@ class _BetiBachaoBetiPadhaoInfoWidgetState
                                     fontFamily: 'Raleway',
                                     color: const Color(0xFF2F2F2F),
                                     fontSize: 20.0,
+                                    letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
                                   ),
                         )),
@@ -292,6 +297,7 @@ class _BetiBachaoBetiPadhaoInfoWidgetState
                                   fontFamily: 'Raleway',
                                   color: const Color(0xFF2F2F2F),
                                   fontSize: 18.0,
+                                  letterSpacing: 0.0,
                                   fontWeight: FontWeight.bold,
                                 ),
                           ),
@@ -309,6 +315,7 @@ class _BetiBachaoBetiPadhaoInfoWidgetState
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Raleway',
                               fontSize: 20.0,
+                              letterSpacing: 0.0,
                             ),
                       ),
                       textAlign: TextAlign.start,
@@ -346,6 +353,7 @@ class _BetiBachaoBetiPadhaoInfoWidgetState
                                   fontFamily: 'Raleway',
                                   color: const Color(0xFF2F2F2F),
                                   fontSize: 18.0,
+                                  letterSpacing: 0.0,
                                   fontWeight: FontWeight.bold,
                                 ),
                           ),
@@ -363,6 +371,7 @@ class _BetiBachaoBetiPadhaoInfoWidgetState
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Raleway',
                               fontSize: 20.0,
+                              letterSpacing: 0.0,
                             ),
                       ),
                       textAlign: TextAlign.start,
@@ -400,6 +409,7 @@ class _BetiBachaoBetiPadhaoInfoWidgetState
                                   fontFamily: 'Raleway',
                                   color: const Color(0xFF2F2F2F),
                                   fontSize: 18.0,
+                                  letterSpacing: 0.0,
                                   fontWeight: FontWeight.bold,
                                 ),
                           ),
@@ -417,6 +427,7 @@ class _BetiBachaoBetiPadhaoInfoWidgetState
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Raleway',
                               fontSize: 20.0,
+                              letterSpacing: 0.0,
                             ),
                       ),
                       textAlign: TextAlign.start,
@@ -454,6 +465,7 @@ class _BetiBachaoBetiPadhaoInfoWidgetState
                                   fontFamily: 'Raleway',
                                   color: const Color(0xFF2F2F2F),
                                   fontSize: 18.0,
+                                  letterSpacing: 0.0,
                                   fontWeight: FontWeight.bold,
                                 ),
                           ),
@@ -471,6 +483,7 @@ class _BetiBachaoBetiPadhaoInfoWidgetState
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Raleway',
                               fontSize: 20.0,
+                              letterSpacing: 0.0,
                             ),
                       ),
                       textAlign: TextAlign.start,
@@ -491,6 +504,7 @@ class _BetiBachaoBetiPadhaoInfoWidgetState
                           fontFamily: 'Raleway',
                           color: const Color(0xFF2F2F2F),
                           fontSize: 20.0,
+                          letterSpacing: 0.0,
                           fontWeight: FontWeight.bold,
                         ),
                   )),
@@ -523,6 +537,7 @@ class _BetiBachaoBetiPadhaoInfoWidgetState
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Raleway',
                                     fontSize: 20.0,
+                                    letterSpacing: 0.0,
                                   ),
                         ),
                         textAlign: TextAlign.center,
@@ -545,6 +560,7 @@ class _BetiBachaoBetiPadhaoInfoWidgetState
                           fontFamily: 'Raleway',
                           color: const Color(0xFF2F2F2F),
                           fontSize: 18.0,
+                          letterSpacing: 0.0,
                           fontWeight: FontWeight.w600,
                         ),
                   )),
@@ -597,6 +613,7 @@ class _BetiBachaoBetiPadhaoInfoWidgetState
                                 .override(
                                   fontFamily: 'Raleway',
                                   fontSize: 20.0,
+                                  letterSpacing: 0.0,
                                 ),
                           ),
                           textAlign: TextAlign.center,
@@ -655,6 +672,7 @@ swami.bss... */
                                 .override(
                                   fontFamily: 'Raleway',
                                   fontSize: 20.0,
+                                  letterSpacing: 0.0,
                                 ),
                           ),
                           textAlign: TextAlign.center,
@@ -725,6 +743,7 @@ swami.bss... */
                                     .override(
                                       fontFamily: 'Raleway',
                                       fontSize: 20.0,
+                                      letterSpacing: 0.0,
                                     ),
                               ),
                               textAlign: TextAlign.center,
@@ -756,6 +775,7 @@ swami.bss... */
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Raleway',
                           fontSize: 18.0,
+                          letterSpacing: 0.0,
                         ),
                   ),
                   textAlign: TextAlign.center,
@@ -799,6 +819,7 @@ swami.bss... */
                               FlutterFlowTheme.of(context).titleSmall.override(
                                     fontFamily: 'Readex Pro',
                                     color: Colors.white,
+                                    letterSpacing: 0.0,
                                   ),
                           elevation: 3.0,
                           borderSide: const BorderSide(

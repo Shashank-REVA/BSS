@@ -32,42 +32,7 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
-  final animationsMap = {
-    'containerOnPageLoadAnimation': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        VisibilityEffect(duration: 1.ms),
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 300.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 300.ms,
-          begin: const Offset(0.0, 140.0),
-          end: const Offset(0.0, 0.0),
-        ),
-        ScaleEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 300.ms,
-          begin: const Offset(0.9, 0.9),
-          end: const Offset(1.0, 1.0),
-        ),
-        TiltEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 300.ms,
-          begin: const Offset(-0.349, 0),
-          end: const Offset(0, 0),
-        ),
-      ],
-    ),
-  };
+  final animationsMap = <String, AnimationInfo>{};
 
   @override
   void initState() {
@@ -76,15 +41,51 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
 
     logFirebaseEvent('screen_view',
         parameters: {'screen_name': 'phone_authCopy'});
-    _model.countrynameController ??= TextEditingController();
+    _model.countrynameTextController ??= TextEditingController();
 
-    _model.phoneNumberController ??= TextEditingController();
+    _model.phoneNumberTextController ??= TextEditingController();
     _model.phoneNumberFocusNode ??= FocusNode();
 
     authManager.handlePhoneAuthStateChanges(context);
+    animationsMap.addAll({
+      'containerOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          VisibilityEffect(duration: 1.ms),
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 300.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 300.0.ms,
+            begin: const Offset(0.0, 140.0),
+            end: const Offset(0.0, 0.0),
+          ),
+          ScaleEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 300.0.ms,
+            begin: const Offset(0.9, 0.9),
+            end: const Offset(1.0, 1.0),
+          ),
+          TiltEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 300.0.ms,
+            begin: const Offset(-0.349, 0),
+            end: const Offset(0, 0),
+          ),
+        ],
+      ),
+    });
 
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {
-          _model.countrynameController?.text =
+          _model.countrynameTextController?.text =
               FFLocalizations.of(context).getText(
             'gixpx1gs' /* India */,
           );
@@ -101,9 +102,7 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => _model.unfocusNode.canRequestFocus
-          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
-          : FocusScope.of(context).unfocus(),
+      onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).info,
@@ -200,7 +199,10 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                 BoxShadow(
                                   blurRadius: 4.0,
                                   color: Color(0x33000000),
-                                  offset: Offset(0.0, 2.0),
+                                  offset: Offset(
+                                    0.0,
+                                    2.0,
+                                  ),
                                 )
                               ],
                               borderRadius: BorderRadius.circular(12.0),
@@ -247,6 +249,7 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                                 fontFamily: 'SuperTall',
                                                 color: const Color(0xFF0F1113),
                                                 fontSize: 24.0,
+                                                letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w500,
                                                 useGoogleFonts: false,
                                               ),
@@ -341,7 +344,7 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                                                         String>(
                                                                   functions.getCountryFlag(
                                                                       _model
-                                                                          .countrynameController
+                                                                          .countrynameTextController
                                                                           .text),
                                                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/bharath-sevaashram-sangha-qr4n0v/assets/n0iv0yd7gx7y/in.png',
                                                                 ),
@@ -401,14 +404,20 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                                                           .countrynameKey,
                                                                   textController:
                                                                       _model
-                                                                          .countrynameController!,
+                                                                          .countrynameTextController!,
                                                                   options: options
                                                                       .toList(),
                                                                   onSelected:
                                                                       onSelected,
                                                                   textStyle: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .bodyMedium,
+                                                                      .bodyMedium
+                                                                      .override(
+                                                                        fontFamily:
+                                                                            'Readex Pro',
+                                                                        letterSpacing:
+                                                                            0.0,
+                                                                      ),
                                                                   textHighlightStyle:
                                                                       const TextStyle(),
                                                                   elevation:
@@ -443,7 +452,7 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                                                 _model.countrynameFocusNode =
                                                                     focusNode;
 
-                                                                _model.countrynameController =
+                                                                _model.countrynameTextController =
                                                                     textEditingController;
                                                                 return TextFormField(
                                                                   key: _model
@@ -475,6 +484,8 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                                                               FlutterFlowTheme.of(context).secondaryText,
                                                                           fontSize:
                                                                               16.0,
+                                                                          letterSpacing:
+                                                                              0.0,
                                                                           fontWeight:
                                                                               FontWeight.normal,
                                                                         ),
@@ -488,6 +499,8 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                                                               Colors.black,
                                                                           fontSize:
                                                                               14.0,
+                                                                          letterSpacing:
+                                                                              0.0,
                                                                           fontWeight:
                                                                               FontWeight.normal,
                                                                         ),
@@ -565,13 +578,15 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                                                             .black,
                                                                         fontSize:
                                                                             18.0,
+                                                                        letterSpacing:
+                                                                            0.0,
                                                                         fontWeight:
                                                                             FontWeight.w500,
                                                                       ),
                                                                   maxLines:
                                                                       null,
                                                                   validator: _model
-                                                                      .countrynameControllerValidator
+                                                                      .countrynameTextControllerValidator
                                                                       .asValidator(
                                                                           context),
                                                                 );
@@ -657,7 +672,7 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                                                   String>(
                                                                 functions.getDialCode(
                                                                     _model
-                                                                        .countrynameController
+                                                                        .countrynameTextController
                                                                         .text),
                                                                 '+91',
                                                               ),
@@ -671,6 +686,8 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                                                         .black,
                                                                     fontSize:
                                                                         18.0,
+                                                                    letterSpacing:
+                                                                        0.0,
                                                                   ),
                                                             ),
                                                           ),
@@ -688,7 +705,7 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                                             child:
                                                                 TextFormField(
                                                               controller: _model
-                                                                  .phoneNumberController,
+                                                                  .phoneNumberTextController,
                                                               focusNode: _model
                                                                   .phoneNumberFocusNode,
                                                               obscureText:
@@ -712,6 +729,8 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                                                           .secondaryText,
                                                                       fontSize:
                                                                           14.0,
+                                                                      letterSpacing:
+                                                                          0.0,
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .normal,
@@ -726,6 +745,8 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                                                           0xFF57636C),
                                                                       fontSize:
                                                                           14.0,
+                                                                      letterSpacing:
+                                                                          0.0,
                                                                       fontWeight:
                                                                           FontWeight
                                                                               .normal,
@@ -805,6 +826,8 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                                                         .black,
                                                                     fontSize:
                                                                         18.0,
+                                                                    letterSpacing:
+                                                                        0.0,
                                                                     fontWeight:
                                                                         FontWeight
                                                                             .w500,
@@ -818,7 +841,7 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                                                       decimal:
                                                                           true),
                                                               validator: _model
-                                                                  .phoneNumberControllerValidator
+                                                                  .phoneNumberTextControllerValidator
                                                                   .asValidator(
                                                                       context),
                                                             ),
@@ -866,6 +889,7 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                                             color: const Color(
                                                                 0xFF2F2F2F),
                                                             fontSize: 18.0,
+                                                            letterSpacing: 0.0,
                                                             fontWeight:
                                                                 FontWeight.bold,
                                                           ),
@@ -888,7 +912,7 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                                 }
                                                 logFirebaseEvent('Text_auth');
                                                 final phoneNumberVal =
-                                                    '${functions.getDialCode(_model.countrynameController.text)}${_model.phoneNumberController.text}';
+                                                    '${functions.getDialCode(_model.countrynameTextController.text)}${_model.phoneNumberTextController.text}';
                                                 if (phoneNumberVal.isEmpty ||
                                                     !phoneNumberVal
                                                         .startsWith('+')) {
@@ -912,7 +936,7 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                                       queryParameters: {
                                                         'mobileNumber':
                                                             serializeParam(
-                                                          '${functions.getDialCode(_model.countrynameController.text)}${_model.phoneNumberController.text}',
+                                                          '${functions.getDialCode(_model.countrynameTextController.text)}${_model.phoneNumberTextController.text}',
                                                           ParamType.String,
                                                         ),
                                                       }.withoutNulls,
@@ -933,6 +957,7 @@ class _PhoneAuthCopyWidgetState extends State<PhoneAuthCopyWidget>
                                                       fontFamily: 'SuperTall',
                                                       color: const Color(0xFF322E5C),
                                                       fontSize: 20.0,
+                                                      letterSpacing: 0.0,
                                                       fontWeight:
                                                           FontWeight.w600,
                                                       useGoogleFonts: false,

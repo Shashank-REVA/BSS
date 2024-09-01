@@ -30,42 +30,7 @@ class _ForgotpasswordWidgetState extends State<ForgotpasswordWidget>
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
-  final animationsMap = {
-    'containerOnPageLoadAnimation': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        VisibilityEffect(duration: 1.ms),
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 300.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 300.ms,
-          begin: const Offset(0.0, 140.0),
-          end: const Offset(0.0, 0.0),
-        ),
-        ScaleEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 300.ms,
-          begin: const Offset(0.9, 0.9),
-          end: const Offset(1.0, 1.0),
-        ),
-        TiltEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 300.ms,
-          begin: const Offset(-0.349, 0),
-          end: const Offset(0, 0),
-        ),
-      ],
-    ),
-  };
+  final animationsMap = <String, AnimationInfo>{};
 
   @override
   void initState() {
@@ -74,8 +39,45 @@ class _ForgotpasswordWidgetState extends State<ForgotpasswordWidget>
 
     logFirebaseEvent('screen_view',
         parameters: {'screen_name': 'forgotpassword'});
-    _model.emailAddressController ??= TextEditingController();
+    _model.emailAddressTextController ??= TextEditingController();
     _model.emailAddressFocusNode ??= FocusNode();
+
+    animationsMap.addAll({
+      'containerOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          VisibilityEffect(duration: 1.ms),
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 300.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 300.0.ms,
+            begin: const Offset(0.0, 140.0),
+            end: const Offset(0.0, 0.0),
+          ),
+          ScaleEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 300.0.ms,
+            begin: const Offset(0.9, 0.9),
+            end: const Offset(1.0, 1.0),
+          ),
+          TiltEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 300.0.ms,
+            begin: const Offset(-0.349, 0),
+            end: const Offset(0, 0),
+          ),
+        ],
+      ),
+    });
   }
 
   @override
@@ -88,9 +90,7 @@ class _ForgotpasswordWidgetState extends State<ForgotpasswordWidget>
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => _model.unfocusNode.canRequestFocus
-          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
-          : FocusScope.of(context).unfocus(),
+      onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).info,
@@ -188,7 +188,10 @@ class _ForgotpasswordWidgetState extends State<ForgotpasswordWidget>
                                 BoxShadow(
                                   blurRadius: 4.0,
                                   color: Color(0x33000000),
-                                  offset: Offset(0.0, 2.0),
+                                  offset: Offset(
+                                    0.0,
+                                    2.0,
+                                  ),
                                 )
                               ],
                               borderRadius: BorderRadius.circular(12.0),
@@ -216,6 +219,7 @@ class _ForgotpasswordWidgetState extends State<ForgotpasswordWidget>
                                               .override(
                                                 fontFamily: 'SuperTall',
                                                 color: Colors.black,
+                                                letterSpacing: 0.0,
                                                 useGoogleFonts: false,
                                               ),
                                         ),
@@ -232,7 +236,10 @@ class _ForgotpasswordWidgetState extends State<ForgotpasswordWidget>
                                               BoxShadow(
                                                 blurRadius: 4.0,
                                                 color: Color(0xFF322E5C),
-                                                offset: Offset(0.0, 2.0),
+                                                offset: Offset(
+                                                  0.0,
+                                                  2.0,
+                                                ),
                                               )
                                             ],
                                             borderRadius:
@@ -247,7 +254,7 @@ class _ForgotpasswordWidgetState extends State<ForgotpasswordWidget>
                                                   .fromSTEB(8.0, 0.0, 8.0, 0.0),
                                               child: TextFormField(
                                                 controller: _model
-                                                    .emailAddressController,
+                                                    .emailAddressTextController,
                                                 focusNode: _model
                                                     .emailAddressFocusNode,
                                                 autofocus: true,
@@ -266,6 +273,7 @@ class _ForgotpasswordWidgetState extends State<ForgotpasswordWidget>
                                                       .labelLarge
                                                       .override(
                                                         fontFamily: 'Raleway',
+                                                        letterSpacing: 0.0,
                                                       ),
                                                   enabledBorder:
                                                       InputBorder.none,
@@ -282,11 +290,12 @@ class _ForgotpasswordWidgetState extends State<ForgotpasswordWidget>
                                                         .override(
                                                           fontFamily: 'Ubuntu',
                                                           color: Colors.black,
+                                                          letterSpacing: 0.0,
                                                         ),
                                                 keyboardType:
                                                     TextInputType.emailAddress,
                                                 validator: _model
-                                                    .emailAddressControllerValidator
+                                                    .emailAddressTextControllerValidator
                                                     .asValidator(context),
                                               ),
                                             ),
@@ -301,8 +310,10 @@ class _ForgotpasswordWidgetState extends State<ForgotpasswordWidget>
                                             logFirebaseEvent(
                                                 'FORGOTPASSWORD_SEND_RESET_LINK_BTN_ON_TA');
                                             logFirebaseEvent('Button_auth');
-                                            if (_model.emailAddressController
-                                                .text.isEmpty) {
+                                            if (_model
+                                                .emailAddressTextController
+                                                .text
+                                                .isEmpty) {
                                               ScaffoldMessenger.of(context)
                                                   .showSnackBar(
                                                 const SnackBar(
@@ -315,7 +326,8 @@ class _ForgotpasswordWidgetState extends State<ForgotpasswordWidget>
                                             }
                                             await authManager.resetPassword(
                                               email: _model
-                                                  .emailAddressController.text,
+                                                  .emailAddressTextController
+                                                  .text,
                                               context: context,
                                             );
                                           },
@@ -332,14 +344,14 @@ class _ForgotpasswordWidgetState extends State<ForgotpasswordWidget>
                                             iconPadding:
                                                 const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 0.0),
-                                            color: FlutterFlowTheme.of(context)
-                                                .primary,
+                                            color: const Color(0xFF322E5C),
                                             textStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .titleSmall
                                                     .override(
                                                       fontFamily: 'SuperTall',
                                                       color: Colors.white,
+                                                      letterSpacing: 0.0,
                                                       useGoogleFonts: false,
                                                     ),
                                             elevation: 3.0,
@@ -348,7 +360,7 @@ class _ForgotpasswordWidgetState extends State<ForgotpasswordWidget>
                                               width: 1.0,
                                             ),
                                             borderRadius:
-                                                BorderRadius.circular(12.0),
+                                                BorderRadius.circular(25.0),
                                           ),
                                         ),
                                       ),

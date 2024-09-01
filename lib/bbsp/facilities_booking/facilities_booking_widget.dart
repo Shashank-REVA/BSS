@@ -18,6 +18,7 @@ class FacilitiesBookingWidget extends StatefulWidget {
     Color? colortxt,
     String? facilityselected,
     this.city,
+    this.extranote,
   })  : colorbtn = colorbtn ?? const Color(0xFF322E5C),
         colortxt = colortxt ?? Colors.white,
         facilityselected = facilityselected ?? 'Facility';
@@ -26,6 +27,7 @@ class FacilitiesBookingWidget extends StatefulWidget {
   final Color colortxt;
   final String facilityselected;
   final String? city;
+  final String? extranote;
 
   @override
   State<FacilitiesBookingWidget> createState() =>
@@ -49,12 +51,6 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
 
     _model.textController2 ??= TextEditingController();
     _model.textFieldFocusNode2 ??= FocusNode();
-
-    _model.textController3 ??= TextEditingController();
-    _model.textFieldFocusNode3 ??= FocusNode();
-
-    _model.textController4 ??= TextEditingController();
-    _model.textFieldFocusNode4 ??= FocusNode();
   }
 
   @override
@@ -67,9 +63,7 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => _model.unfocusNode.canRequestFocus
-          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
-          : FocusScope.of(context).unfocus(),
+      onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: Colors.white,
@@ -96,7 +90,7 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
                           alignment: const AlignmentDirectional(-1.0, 0.0),
                           child: Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
-                                16.0, 47.0, 0.0, 0.0),
+                                16.0, 0.0, 0.0, 0.0),
                             child: FlutterFlowIconButton(
                               borderColor: const Color(0x00FFFFFF),
                               borderRadius: 20.0,
@@ -167,6 +161,7 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
                                     .override(
                                       fontFamily: 'SuperTall',
                                       color: const Color(0xFFEC7834),
+                                      letterSpacing: 0.0,
                                       useGoogleFonts: false,
                                     ),
                               ),
@@ -188,6 +183,7 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
                                         fontFamily: 'SuperTall',
                                         color: const Color(0xFF2F2F2F),
                                         fontSize: 18.0,
+                                        letterSpacing: 0.0,
                                         useGoogleFonts: false,
                                       ),
                                 ),
@@ -211,6 +207,7 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
                                         fontFamily: 'Raleway',
                                         color: Colors.black,
                                         fontSize: 18.0,
+                                        letterSpacing: 0.0,
                                         fontWeight: FontWeight.w600,
                                       ),
                                 ),
@@ -245,6 +242,7 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
                                           fontFamily: 'Raleway',
                                           color: Colors.black,
                                           fontSize: 18.0,
+                                          letterSpacing: 0.0,
                                           fontWeight: FontWeight.w600,
                                         ),
                                   ),
@@ -253,10 +251,10 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
                               FlutterFlowRadioButton(
                                 options: [
                                   FFLocalizations.of(context).getText(
-                                    'p2qu4jis' /* For Me */,
+                                    'p2qu4jis' /* FOR ME */,
                                   ),
                                   FFLocalizations.of(context).getText(
-                                    'sbqqb0u1' /* For Others */,
+                                    'sbqqb0u1' /* FOR OTHERS */,
                                   )
                                 ].toList(),
                                 onChanged: (val) => setState(() {}),
@@ -264,18 +262,24 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
                                     _model.radioButtonValueController ??=
                                         FormFieldController<String>(null),
                                 optionHeight: 32.0,
-                                textStyle:
-                                    FlutterFlowTheme.of(context).labelMedium,
+                                textStyle: FlutterFlowTheme.of(context)
+                                    .labelMedium
+                                    .override(
+                                      fontFamily: 'Readex Pro',
+                                      letterSpacing: 0.0,
+                                    ),
                                 selectedTextStyle: FlutterFlowTheme.of(context)
-                                    .bodyMedium
+                                    .bodyLarge
                                     .override(
                                       fontFamily: 'Raleway',
-                                      color: Colors.black,
-                                      fontSize: 16.0,
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
+                                      letterSpacing: 0.0,
+                                      fontWeight: FontWeight.w800,
                                     ),
                                 buttonPosition: RadioButtonPosition.left,
                                 direction: Axis.vertical,
-                                radioButtonColor: const Color(0xFF4A456B),
+                                radioButtonColor: const Color(0xFF32235C),
                                 inactiveRadioButtonColor:
                                     FlutterFlowTheme.of(context).secondaryText,
                                 toggleable: false,
@@ -284,7 +288,7 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
                               ),
                             ],
                           ),
-                          if (_model.radioButtonValue == 'For Me')
+                          if (_model.radioButtonValue == 'FOR ME')
                             Align(
                               alignment: const AlignmentDirectional(-1.0, 0.0),
                               child: Padding(
@@ -299,9 +303,28 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
                                           fontFamily: 'Raleway',
                                           color: Colors.black,
                                           fontSize: 18.0,
+                                          letterSpacing: 0.0,
                                           fontWeight: FontWeight.w600,
                                         ),
                                   ),
+                                ),
+                              ),
+                            ),
+                          if (_model.radioButtonValue == 'FOR ME')
+                            Align(
+                              alignment: const AlignmentDirectional(-1.0, 0.0),
+                              child: AuthUserStreamWidget(
+                                builder: (context) => Text(
+                                  currentPhoneNumber,
+                                  style: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .override(
+                                        fontFamily: 'Raleway',
+                                        color: Colors.black,
+                                        fontSize: 18.0,
+                                        letterSpacing: 0.0,
+                                        fontWeight: FontWeight.w600,
+                                      ),
                                 ),
                               ),
                             ),
@@ -311,79 +334,7 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
-                                if (_model.radioButtonValue == 'For Me')
-                                  Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 10.0, 8.0, 10.0),
-                                    child: TextFormField(
-                                      controller: _model.textController1,
-                                      focusNode: _model.textFieldFocusNode1,
-                                      autofocus: true,
-                                      obscureText: false,
-                                      decoration: InputDecoration(
-                                        labelText:
-                                            FFLocalizations.of(context).getText(
-                                          'ztd1sqit' /* Phone Number */,
-                                        ),
-                                        labelStyle: FlutterFlowTheme.of(context)
-                                            .labelMedium
-                                            .override(
-                                              fontFamily: 'Raleway',
-                                              fontSize: 16.0,
-                                            ),
-                                        hintStyle: FlutterFlowTheme.of(context)
-                                            .labelMedium,
-                                        enabledBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
-                                            color: Color(0xFFD5DAE0),
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(25.0),
-                                        ),
-                                        focusedBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
-                                                .primary,
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(25.0),
-                                        ),
-                                        errorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
-                                                .error,
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(25.0),
-                                        ),
-                                        focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
-                                                .error,
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(25.0),
-                                        ),
-                                      ),
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Raleway',
-                                            color: Colors.black,
-                                            fontSize: 16.0,
-                                          ),
-                                      keyboardType:
-                                          const TextInputType.numberWithOptions(
-                                              decimal: true),
-                                      validator: _model.textController1Validator
-                                          .asValidator(context),
-                                    ),
-                                  ),
-                                if (_model.radioButtonValue == 'For Me')
+                                if (_model.radioButtonValue == 'FOR ME')
                                   Padding(
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 20.0, 0.0, 10.0),
@@ -413,6 +364,7 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
                                                       .override(
                                                         fontFamily: 'Outfit',
                                                         fontSize: 32.0,
+                                                        letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w600,
                                                       ),
@@ -458,6 +410,7 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
                                               fontFamily: 'Raleway',
                                               color: const Color(0xFF2F2F2F),
                                               fontSize: 16.0,
+                                              letterSpacing: 0.0,
                                               fontWeight: FontWeight.bold,
                                             ),
                                         elevation: 3.0,
@@ -474,7 +427,7 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
                                   alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Text(
                                     dateTimeFormat(
-                                      'MMMMEEEEd',
+                                      "MMMMEEEEd",
                                       _model.datePicked1,
                                       locale: FFLocalizations.of(context)
                                           .languageCode,
@@ -485,11 +438,12 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
                                           fontFamily: 'Raleway',
                                           color: Colors.black,
                                           fontSize: 18.0,
+                                          letterSpacing: 0.0,
                                           fontWeight: FontWeight.w600,
                                         ),
                                   ),
                                 ),
-                                if (_model.radioButtonValue == 'For Me')
+                                if (_model.radioButtonValue == 'FOR ME')
                                   Padding(
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 20.0, 0.0, 20.0),
@@ -497,80 +451,17 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
                                       onPressed: () async {
                                         logFirebaseEvent(
                                             'FACILITIES_BOOKING_CONFIRM_BOOKING_BTN_O');
-                                        logFirebaseEvent(
-                                            'Button_validate_form');
-                                        if (_model.formKey2.currentState ==
-                                                null ||
-                                            !_model.formKey2.currentState!
-                                                .validate()) {
-                                          return;
-                                        }
-                                        if (_model.datePicked1 == null) {
-                                          final datePicked1Date =
-                                              await showDatePicker(
-                                            context: context,
-                                            initialDate: getCurrentTimestamp,
-                                            firstDate: getCurrentTimestamp,
-                                            lastDate: DateTime(2050),
-                                            builder: (context, child) {
-                                              return wrapInMaterialDatePickerTheme(
-                                                context,
-                                                child!,
-                                                headerBackgroundColor:
-                                                    const Color(0xFF322E5C),
-                                                headerForegroundColor:
-                                                    FlutterFlowTheme.of(context)
-                                                        .info,
-                                                headerTextStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .headlineLarge
-                                                        .override(
-                                                          fontFamily: 'Raleway',
-                                                          fontSize: 32.0,
-                                                          fontWeight:
-                                                              FontWeight.w800,
-                                                        ),
-                                                pickerBackgroundColor:
-                                                    Colors.white,
-                                                pickerForegroundColor:
-                                                    const Color(0xFF2F2F2F),
-                                                selectedDateTimeBackgroundColor:
-                                                    const Color(0xFF322E5C),
-                                                selectedDateTimeForegroundColor:
-                                                    Colors.white,
-                                                actionButtonForegroundColor:
-                                                    const Color(0xFF2F2F2F),
-                                                iconSize: 24.0,
-                                              );
-                                            },
-                                          );
-
-                                          if (datePicked1Date != null) {
-                                            safeSetState(() {
-                                              _model.datePicked1 = DateTime(
-                                                datePicked1Date.year,
-                                                datePicked1Date.month,
-                                                datePicked1Date.day,
-                                              );
-                                            });
-                                          }
-                                          return;
-                                        }
                                         logFirebaseEvent('Button_backend_call');
 
                                         await FacilitiesRecord.collection
                                             .doc()
                                             .set(createFacilitiesRecordData(
                                               guestName: currentUserDisplayName,
-                                              guestNumber:
-                                                  valueOrDefault<String>(
-                                                _model.textController1.text,
-                                                'No Number',
-                                              ),
+                                              guestNumber: currentPhoneNumber,
                                               guestFacility:
                                                   widget.facilityselected,
                                               facilityDate: dateTimeFormat(
-                                                'MMMMEEEEd',
+                                                "MMMMEEEEd",
                                                 _model.datePicked1,
                                                 locale:
                                                     FFLocalizations.of(context)
@@ -580,6 +471,7 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
                                                   currentUserDocument?.city,
                                                   ''),
                                               guestEmail: currentUserEmail,
+                                              extra: widget.extranote,
                                             ));
                                         logFirebaseEvent('Button_backend_call');
 
@@ -612,7 +504,7 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
                                               ParamType.String,
                                             ),
                                             'facility': serializeParam(
-                                              widget.facilityselected,
+                                              '',
                                               ParamType.String,
                                             ),
                                           }.withoutNulls,
@@ -644,6 +536,7 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
                                               fontFamily: 'Raleway',
                                               color: Colors.white,
                                               fontSize: 20.0,
+                                              letterSpacing: 0.0,
                                               fontWeight: FontWeight.bold,
                                             ),
                                         elevation: 3.0,
@@ -659,452 +552,396 @@ class _FacilitiesBookingWidgetState extends State<FacilitiesBookingWidget> {
                               ],
                             ),
                           ),
-                          Form(
-                            key: _model.formKey1,
-                            autovalidateMode: AutovalidateMode.disabled,
-                            child: Column(
-                              mainAxisSize: MainAxisSize.max,
-                              children: [
-                                if (_model.radioButtonValue == 'For Others')
-                                  Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        8.0, 10.0, 8.0, 0.0),
-                                    child: TextFormField(
-                                      controller: _model.textController2,
-                                      focusNode: _model.textFieldFocusNode2,
-                                      obscureText: false,
-                                      decoration: InputDecoration(
-                                        labelText:
-                                            FFLocalizations.of(context).getText(
-                                          '1alsrf6r' /* Guest Name */,
-                                        ),
-                                        labelStyle: FlutterFlowTheme.of(context)
-                                            .labelMedium
-                                            .override(
-                                              fontFamily: 'Raleway',
-                                              fontSize: 16.0,
-                                            ),
-                                        hintStyle: FlutterFlowTheme.of(context)
-                                            .labelMedium,
-                                        enabledBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
-                                            color: Color(0xFFD5DAE0),
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(25.0),
-                                        ),
-                                        focusedBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
-                                                .primary,
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(25.0),
-                                        ),
-                                        errorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
-                                                .error,
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(25.0),
-                                        ),
-                                        focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
-                                                .error,
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(25.0),
-                                        ),
-                                      ),
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Raleway',
-                                            color: Colors.black,
-                                            fontSize: 16.0,
-                                          ),
-                                      validator: _model.textController2Validator
-                                          .asValidator(context),
-                                    ),
-                                  ),
-                                if (_model.radioButtonValue == 'For Others')
-                                  Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        8.0, 10.0, 8.0, 0.0),
-                                    child: TextFormField(
-                                      controller: _model.textController3,
-                                      focusNode: _model.textFieldFocusNode3,
-                                      obscureText: false,
-                                      decoration: InputDecoration(
-                                        labelText:
-                                            FFLocalizations.of(context).getText(
-                                          'qbj1d5it' /* Guest Email */,
-                                        ),
-                                        labelStyle: FlutterFlowTheme.of(context)
-                                            .labelMedium
-                                            .override(
-                                              fontFamily: 'Raleway',
-                                              fontSize: 16.0,
-                                            ),
-                                        hintStyle: FlutterFlowTheme.of(context)
-                                            .labelMedium,
-                                        enabledBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
-                                            color: Color(0xFFD5DAE0),
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(25.0),
-                                        ),
-                                        focusedBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
-                                                .primary,
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(25.0),
-                                        ),
-                                        errorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
-                                                .error,
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(25.0),
-                                        ),
-                                        focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
-                                                .error,
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(25.0),
-                                        ),
-                                      ),
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Raleway',
-                                            color: Colors.black,
-                                            fontSize: 16.0,
-                                          ),
-                                      validator: _model.textController3Validator
-                                          .asValidator(context),
-                                    ),
-                                  ),
-                                if (_model.radioButtonValue == 'For Others')
-                                  Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        8.0, 10.0, 8.0, 0.0),
-                                    child: TextFormField(
-                                      controller: _model.textController4,
-                                      focusNode: _model.textFieldFocusNode4,
-                                      obscureText: false,
-                                      decoration: InputDecoration(
-                                        labelText:
-                                            FFLocalizations.of(context).getText(
-                                          '0jcp3eti' /* Guest Phone Number */,
-                                        ),
-                                        labelStyle: FlutterFlowTheme.of(context)
-                                            .labelMedium
-                                            .override(
-                                              fontFamily: 'Raleway',
-                                              fontSize: 16.0,
-                                            ),
-                                        hintStyle: FlutterFlowTheme.of(context)
-                                            .labelMedium,
-                                        enabledBorder: OutlineInputBorder(
-                                          borderSide: const BorderSide(
-                                            color: Color(0xFFD5DAE0),
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(25.0),
-                                        ),
-                                        focusedBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
-                                                .primary,
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(25.0),
-                                        ),
-                                        errorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
-                                                .error,
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(25.0),
-                                        ),
-                                        focusedErrorBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: FlutterFlowTheme.of(context)
-                                                .error,
-                                            width: 2.0,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(25.0),
-                                        ),
-                                      ),
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodyMedium
-                                          .override(
-                                            fontFamily: 'Raleway',
-                                            color: Colors.black,
-                                            fontSize: 16.0,
-                                          ),
-                                      keyboardType:
-                                          const TextInputType.numberWithOptions(
-                                              decimal: true),
-                                      validator: _model.textController4Validator
-                                          .asValidator(context),
-                                    ),
-                                  ),
-                                if (_model.radioButtonValue == 'For Others')
-                                  Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 20.0, 0.0, 10.0),
-                                    child: FFButtonWidget(
-                                      onPressed: () async {
-                                        logFirebaseEvent(
-                                            'FACILITIES_BOOKING_date_forothers_ON_TAP');
-                                        logFirebaseEvent(
-                                            'date_forothers_date_time_picker');
-                                        final datePicked2Date =
-                                            await showDatePicker(
-                                          context: context,
-                                          initialDate: getCurrentTimestamp,
-                                          firstDate: getCurrentTimestamp,
-                                          lastDate: DateTime(2050),
-                                          builder: (context, child) {
-                                            return wrapInMaterialDatePickerTheme(
-                                              context,
-                                              child!,
-                                              headerBackgroundColor:
-                                                  const Color(0xFF322E5C),
-                                              headerForegroundColor:
-                                                  FlutterFlowTheme.of(context)
-                                                      .info,
-                                              headerTextStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .headlineLarge
-                                                      .override(
-                                                        fontFamily: 'Outfit',
-                                                        fontSize: 32.0,
-                                                        fontWeight:
-                                                            FontWeight.w600,
-                                                      ),
-                                              pickerBackgroundColor:
-                                                  Colors.white,
-                                              pickerForegroundColor:
-                                                  const Color(0xFF2F2F2F),
-                                              selectedDateTimeBackgroundColor:
-                                                  const Color(0xFF322E5C),
-                                              selectedDateTimeForegroundColor:
-                                                  Colors.white,
-                                              actionButtonForegroundColor:
-                                                  const Color(0xFF2F2F2F),
-                                              iconSize: 24.0,
-                                            );
-                                          },
-                                        );
-
-                                        if (datePicked2Date != null) {
-                                          safeSetState(() {
-                                            _model.datePicked2 = DateTime(
-                                              datePicked2Date.year,
-                                              datePicked2Date.month,
-                                              datePicked2Date.day,
-                                            );
-                                          });
-                                        }
-                                      },
-                                      text: FFLocalizations.of(context).getText(
-                                        '7cxel3s4' /* Set Date */,
-                                      ),
-                                      options: FFButtonOptions(
-                                        height: 40.0,
+                          Column(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Form(
+                                key: _model.formKey1,
+                                autovalidateMode: AutovalidateMode.disabled,
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  children: [
+                                    if (_model.radioButtonValue == 'FOR OTHERS')
+                                      Padding(
                                         padding: const EdgeInsetsDirectional.fromSTEB(
-                                            24.0, 0.0, 24.0, 0.0),
-                                        iconPadding:
-                                            const EdgeInsetsDirectional.fromSTEB(
-                                                0.0, 0.0, 0.0, 0.0),
-                                        color: Colors.white,
-                                        textStyle: FlutterFlowTheme.of(context)
-                                            .titleSmall
-                                            .override(
-                                              fontFamily: 'Raleway',
-                                              color: const Color(0xFF2F2F2F),
-                                              fontSize: 16.0,
-                                              fontWeight: FontWeight.bold,
+                                            0.0, 10.0, 8.0, 0.0),
+                                        child: TextFormField(
+                                          controller: _model.textController1,
+                                          focusNode: _model.textFieldFocusNode1,
+                                          autofocus: false,
+                                          obscureText: false,
+                                          decoration: InputDecoration(
+                                            labelText:
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                              '1alsrf6r' /* Guest Name */,
                                             ),
-                                        elevation: 3.0,
-                                        borderSide: const BorderSide(
-                                          color: Color(0xFFBCB7B7),
-                                          width: 1.0,
+                                            labelStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .labelMedium
+                                                    .override(
+                                                      fontFamily: 'Raleway',
+                                                      fontSize: 16.0,
+                                                      letterSpacing: 0.0,
+                                                    ),
+                                            hintStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .labelMedium
+                                                    .override(
+                                                      fontFamily: 'Readex Pro',
+                                                      letterSpacing: 0.0,
+                                                    ),
+                                            enabledBorder: OutlineInputBorder(
+                                              borderSide: const BorderSide(
+                                                color: Color(0xFFD5DAE0),
+                                                width: 2.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(25.0),
+                                            ),
+                                            focusedBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primary,
+                                                width: 2.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(25.0),
+                                            ),
+                                            errorBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .error,
+                                                width: 2.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(25.0),
+                                            ),
+                                            focusedErrorBorder:
+                                                OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .error,
+                                                width: 2.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(25.0),
+                                            ),
+                                          ),
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                fontFamily: 'Raleway',
+                                                color: Colors.black,
+                                                fontSize: 16.0,
+                                                letterSpacing: 0.0,
+                                              ),
+                                          validator: _model
+                                              .textController1Validator
+                                              .asValidator(context),
                                         ),
-                                        borderRadius:
-                                            BorderRadius.circular(20.0),
                                       ),
-                                    ),
-                                  ),
-                                Align(
-                                  alignment: const AlignmentDirectional(0.0, 0.0),
-                                  child: Text(
-                                    dateTimeFormat(
-                                      'MMMMEEEEd',
-                                      _model.datePicked2,
-                                      locale: FFLocalizations.of(context)
-                                          .languageCode,
-                                    ),
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Raleway',
-                                          color: Colors.black,
-                                          fontSize: 18.0,
-                                          fontWeight: FontWeight.w600,
+                                    if (_model.radioButtonValue == 'FOR OTHERS')
+                                      Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 10.0, 8.0, 0.0),
+                                        child: TextFormField(
+                                          controller: _model.textController2,
+                                          focusNode: _model.textFieldFocusNode2,
+                                          autofocus: false,
+                                          obscureText: false,
+                                          decoration: InputDecoration(
+                                            labelText:
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                              '0jcp3eti' /* Guest Phone Number */,
+                                            ),
+                                            labelStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .labelMedium
+                                                    .override(
+                                                      fontFamily: 'Raleway',
+                                                      fontSize: 16.0,
+                                                      letterSpacing: 0.0,
+                                                    ),
+                                            hintStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .labelMedium
+                                                    .override(
+                                                      fontFamily: 'Readex Pro',
+                                                      letterSpacing: 0.0,
+                                                    ),
+                                            enabledBorder: OutlineInputBorder(
+                                              borderSide: const BorderSide(
+                                                color: Color(0xFFD5DAE0),
+                                                width: 2.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(25.0),
+                                            ),
+                                            focusedBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primary,
+                                                width: 2.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(25.0),
+                                            ),
+                                            errorBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .error,
+                                                width: 2.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(25.0),
+                                            ),
+                                            focusedErrorBorder:
+                                                OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .error,
+                                                width: 2.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(25.0),
+                                            ),
+                                          ),
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                fontFamily: 'Raleway',
+                                                color: Colors.black,
+                                                fontSize: 16.0,
+                                                letterSpacing: 0.0,
+                                              ),
+                                          keyboardType: const TextInputType
+                                              .numberWithOptions(decimal: true),
+                                          validator: _model
+                                              .textController2Validator
+                                              .asValidator(context),
                                         ),
+                                      ),
+                                  ],
+                                ),
+                              ),
+                              if (_model.radioButtonValue == 'FOR OTHERS')
+                                Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 20.0, 0.0, 10.0),
+                                  child: FFButtonWidget(
+                                    onPressed: () async {
+                                      logFirebaseEvent(
+                                          'FACILITIES_BOOKING_date_forothers_ON_TAP');
+                                      logFirebaseEvent(
+                                          'date_forothers_date_time_picker');
+                                      final datePicked2Date =
+                                          await showDatePicker(
+                                        context: context,
+                                        initialDate: getCurrentTimestamp,
+                                        firstDate: getCurrentTimestamp,
+                                        lastDate: DateTime(2050),
+                                        builder: (context, child) {
+                                          return wrapInMaterialDatePickerTheme(
+                                            context,
+                                            child!,
+                                            headerBackgroundColor:
+                                                const Color(0xFF322E5C),
+                                            headerForegroundColor:
+                                                FlutterFlowTheme.of(context)
+                                                    .info,
+                                            headerTextStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .headlineLarge
+                                                    .override(
+                                                      fontFamily: 'Outfit',
+                                                      fontSize: 32.0,
+                                                      letterSpacing: 0.0,
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                    ),
+                                            pickerBackgroundColor: Colors.white,
+                                            pickerForegroundColor:
+                                                const Color(0xFF2F2F2F),
+                                            selectedDateTimeBackgroundColor:
+                                                const Color(0xFF322E5C),
+                                            selectedDateTimeForegroundColor:
+                                                Colors.white,
+                                            actionButtonForegroundColor:
+                                                const Color(0xFF2F2F2F),
+                                            iconSize: 24.0,
+                                          );
+                                        },
+                                      );
+
+                                      if (datePicked2Date != null) {
+                                        safeSetState(() {
+                                          _model.datePicked2 = DateTime(
+                                            datePicked2Date.year,
+                                            datePicked2Date.month,
+                                            datePicked2Date.day,
+                                          );
+                                        });
+                                      }
+                                    },
+                                    text: FFLocalizations.of(context).getText(
+                                      '7cxel3s4' /* Set Date */,
+                                    ),
+                                    options: FFButtonOptions(
+                                      height: 40.0,
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          24.0, 0.0, 24.0, 0.0),
+                                      iconPadding:
+                                          const EdgeInsetsDirectional.fromSTEB(
+                                              0.0, 0.0, 0.0, 0.0),
+                                      color: Colors.white,
+                                      textStyle: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .override(
+                                            fontFamily: 'Raleway',
+                                            color: const Color(0xFF2F2F2F),
+                                            fontSize: 16.0,
+                                            letterSpacing: 0.0,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                      elevation: 3.0,
+                                      borderSide: const BorderSide(
+                                        color: Color(0xFFBCB7B7),
+                                        width: 1.0,
+                                      ),
+                                      borderRadius: BorderRadius.circular(20.0),
+                                    ),
                                   ),
                                 ),
-                                if (_model.radioButtonValue == 'For Others')
-                                  Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 20.0, 0.0, 20.0),
-                                    child: FFButtonWidget(
-                                      onPressed: () async {
-                                        logFirebaseEvent(
-                                            'FACILITIES_BOOKING_CONFIRM_BOOKING_BTN_O');
-                                        logFirebaseEvent(
-                                            'Button_validate_form');
-                                        if (_model.formKey1.currentState ==
-                                                null ||
-                                            !_model.formKey1.currentState!
-                                                .validate()) {
-                                          return;
-                                        }
-                                        if (_model.datePicked2 == null) {
-                                          return;
-                                        }
-                                        logFirebaseEvent('Button_backend_call');
-
-                                        await FacilitiesRecord.collection
-                                            .doc()
-                                            .set(createFacilitiesRecordData(
-                                              guestName:
-                                                  _model.textController2.text,
-                                              guestNumber:
-                                                  valueOrDefault<String>(
-                                                _model.textController4.text,
-                                                'No Number',
-                                              ),
-                                              guestFacility:
-                                                  widget.facilityselected,
-                                              facilityDate: dateTimeFormat(
-                                                'MMMMEEEEd',
-                                                _model.datePicked2,
-                                                locale:
-                                                    FFLocalizations.of(context)
-                                                        .languageCode,
-                                              ),
-                                              facilityCity: valueOrDefault(
-                                                  currentUserDocument?.city,
-                                                  ''),
-                                              guestEmail:
-                                                  valueOrDefault<String>(
-                                                _model.textController3.text,
-                                                'No Email',
-                                              ),
-                                            ));
-                                        logFirebaseEvent('Button_backend_call');
-
-                                        await NotificationsRecord.collection
-                                            .doc()
-                                            .set(createNotificationsRecordData(
-                                              facilityName:
-                                                  widget.facilityselected,
-                                              timeAdded: getCurrentTimestamp,
-                                              guestName: valueOrDefault<String>(
-                                                _model.textController2.text,
-                                                'No Name',
-                                              ),
-                                              guestEmail:
-                                                  valueOrDefault<String>(
-                                                _model.textController3.text,
-                                                'No Email',
-                                              ),
-                                              city: valueOrDefault(
-                                                  currentUserDocument?.city,
-                                                  ''),
-                                            ));
-                                        logFirebaseEvent('Button_navigate_to');
-
-                                        context.goNamed(
-                                          'booking_confirm',
-                                          queryParameters: {
-                                            'city': serializeParam(
-                                              widget.city,
-                                              ParamType.String,
-                                            ),
-                                            'facility': serializeParam(
-                                              widget.facilityselected,
-                                              ParamType.String,
-                                            ),
-                                          }.withoutNulls,
-                                          extra: <String, dynamic>{
-                                            kTransitionInfoKey: const TransitionInfo(
-                                              hasTransition: true,
-                                              transitionType:
-                                                  PageTransitionType.fade,
-                                              duration:
-                                                  Duration(milliseconds: 600),
-                                            ),
-                                          },
-                                        );
-                                      },
-                                      text: FFLocalizations.of(context).getText(
-                                        'mpka1wvc' /* Confirm Booking */,
+                              Align(
+                                alignment: const AlignmentDirectional(0.0, 0.0),
+                                child: Text(
+                                  dateTimeFormat(
+                                    "MMMMEEEEd",
+                                    _model.datePicked2,
+                                    locale: FFLocalizations.of(context)
+                                        .languageCode,
+                                  ),
+                                  style: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .override(
+                                        fontFamily: 'Raleway',
+                                        color: Colors.black,
+                                        fontSize: 18.0,
+                                        letterSpacing: 0.0,
+                                        fontWeight: FontWeight.w600,
                                       ),
-                                      options: FFButtonOptions(
-                                        height: 40.0,
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                            24.0, 0.0, 24.0, 0.0),
-                                        iconPadding:
-                                            const EdgeInsetsDirectional.fromSTEB(
-                                                0.0, 0.0, 0.0, 0.0),
-                                        color: const Color(0xFF322E5C),
-                                        textStyle: FlutterFlowTheme.of(context)
-                                            .titleSmall
-                                            .override(
-                                              fontFamily: 'Raleway',
-                                              color: Colors.white,
-                                              fontSize: 20.0,
-                                              fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              if (_model.radioButtonValue == 'FOR OTHERS')
+                                Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 20.0, 0.0, 20.0),
+                                  child: FFButtonWidget(
+                                    onPressed: () async {
+                                      logFirebaseEvent(
+                                          'FACILITIES_BOOKING_CONFIRM_BOOKING_BTN_O');
+                                      logFirebaseEvent('Button_backend_call');
+
+                                      await FacilitiesRecord.collection
+                                          .doc()
+                                          .set(createFacilitiesRecordData(
+                                            guestName:
+                                                _model.textController1.text,
+                                            guestNumber: valueOrDefault<String>(
+                                              _model.textController2.text,
+                                              'No Number',
                                             ),
-                                        elevation: 3.0,
-                                        borderSide: const BorderSide(
-                                          color: Color(0xFFBCB7B7),
-                                          width: 1.0,
-                                        ),
-                                        borderRadius:
-                                            BorderRadius.circular(20.0),
+                                            guestFacility:
+                                                widget.facilityselected,
+                                            facilityDate: dateTimeFormat(
+                                              "MMMMEEEEd",
+                                              _model.datePicked2,
+                                              locale:
+                                                  FFLocalizations.of(context)
+                                                      .languageCode,
+                                            ),
+                                            facilityCity: valueOrDefault(
+                                                currentUserDocument?.city, ''),
+                                            extra: widget.extranote,
+                                          ));
+                                      logFirebaseEvent('Button_backend_call');
+
+                                      await NotificationsRecord.collection
+                                          .doc()
+                                          .set(createNotificationsRecordData(
+                                            facilityName:
+                                                widget.facilityselected,
+                                            timeAdded: getCurrentTimestamp,
+                                            guestName: valueOrDefault<String>(
+                                              _model.textController1.text,
+                                              'No Name',
+                                            ),
+                                            city: valueOrDefault(
+                                                currentUserDocument?.city, ''),
+                                          ));
+                                      logFirebaseEvent('Button_navigate_to');
+
+                                      context.goNamed(
+                                        'booking_confirm',
+                                        queryParameters: {
+                                          'city': serializeParam(
+                                            widget.city,
+                                            ParamType.String,
+                                          ),
+                                          'facility': serializeParam(
+                                            '',
+                                            ParamType.String,
+                                          ),
+                                        }.withoutNulls,
+                                        extra: <String, dynamic>{
+                                          kTransitionInfoKey: const TransitionInfo(
+                                            hasTransition: true,
+                                            transitionType:
+                                                PageTransitionType.fade,
+                                            duration:
+                                                Duration(milliseconds: 600),
+                                          ),
+                                        },
+                                      );
+                                    },
+                                    text: FFLocalizations.of(context).getText(
+                                      'mpka1wvc' /* Confirm Booking */,
+                                    ),
+                                    options: FFButtonOptions(
+                                      height: 40.0,
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                          24.0, 0.0, 24.0, 0.0),
+                                      iconPadding:
+                                          const EdgeInsetsDirectional.fromSTEB(
+                                              0.0, 0.0, 0.0, 0.0),
+                                      color: const Color(0xFF322E5C),
+                                      textStyle: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .override(
+                                            fontFamily: 'Raleway',
+                                            color: Colors.white,
+                                            fontSize: 20.0,
+                                            letterSpacing: 0.0,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                      elevation: 3.0,
+                                      borderSide: const BorderSide(
+                                        color: Color(0xFFBCB7B7),
+                                        width: 1.0,
                                       ),
+                                      borderRadius: BorderRadius.circular(20.0),
                                     ),
                                   ),
-                              ],
-                            ),
+                                ),
+                            ],
                           ),
                         ],
                       ),

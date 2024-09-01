@@ -52,3 +52,15 @@ export '/bbsp/phone_auth_copy/phone_auth_copy_widget.dart'
     show PhoneAuthCopyWidget;
 export '/bbsp/otp_verify_copy/otp_verify_copy_widget.dart'
     show OtpVerifyCopyWidget;
+export '/bbsp/signup_copy/signup_copy_widget.dart' show SignupCopyWidget;
+export '/bbsp/goggle_login_copy/goggle_login_copy_widget.dart'
+    show GoggleLoginCopyWidget;
+export '/bbsp/facilities_puja_final_booking/facilities_puja_final_booking_widget.dart'
+    show FacilitiesPujaFinalBookingWidget;
+export '/bbsp/facilities_puja_booking/facilities_puja_booking_widget.dart'
+    show FacilitiesPujaBookingWidget;
+export '/bbsp/puja_booking_confirm/puja_booking_confirm_widget.dart'
+    show PujaBookingConfirmWidget;
+export '/bbsp/donation/donation_widget.dart' show DonationWidget;
+export '/bbsp/your_donations/your_donations_widget.dart'
+    show YourDonationsWidget;

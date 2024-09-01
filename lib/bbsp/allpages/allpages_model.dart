@@ -14,89 +14,61 @@ class AllpagesModel extends FlutterFlowModel<AllpagesWidget> {
       tabBarController != null ? tabBarController!.index : 0;
 
   // State field(s) for TextField widget.
+  final textFieldKey = GlobalKey();
   FocusNode? textFieldFocusNode;
   TextEditingController? textController1;
+  String? textFieldSelectedOption;
   String? Function(BuildContext, String?)? textController1Validator;
   List<CitiesRecord> simpleSearchResults = [];
-  // State field(s) for emailAddress widget.
-  FocusNode? emailAddressFocusNode1;
-  TextEditingController? emailAddressController1;
-  String? Function(BuildContext, String?)? emailAddressController1Validator;
+  // State field(s) for email_address widget.
+  FocusNode? emailAddressFocusNode;
+  TextEditingController? emailAddressTextController;
+  String? Function(BuildContext, String?)? emailAddressTextControllerValidator;
   // State field(s) for password widget.
-  FocusNode? passwordFocusNode1;
-  TextEditingController? passwordController1;
-  late bool passwordVisibility1;
-  String? Function(BuildContext, String?)? passwordController1Validator;
-  bool isDataUploading = false;
-  FFUploadedFile uploadedLocalFile =
-      FFUploadedFile(bytes: Uint8List.fromList([]));
-  String uploadedFileUrl = '';
-
-  // State field(s) for name widget.
-  FocusNode? nameFocusNode;
-  TextEditingController? nameController;
-  String? Function(BuildContext, String?)? nameControllerValidator;
-  // State field(s) for emailAddress widget.
-  FocusNode? emailAddressFocusNode2;
-  TextEditingController? emailAddressController2;
-  String? Function(BuildContext, String?)? emailAddressController2Validator;
-  // State field(s) for phone_num widget.
-  FocusNode? phoneNumFocusNode;
-  TextEditingController? phoneNumController;
-  String? Function(BuildContext, String?)? phoneNumControllerValidator;
-  // State field(s) for password widget.
-  FocusNode? passwordFocusNode2;
-  TextEditingController? passwordController2;
-  late bool passwordVisibility2;
-  String? Function(BuildContext, String?)? passwordController2Validator;
-  // State field(s) for con_password widget.
-  FocusNode? conPasswordFocusNode;
-  TextEditingController? conPasswordController;
-  late bool conPasswordVisibility;
-  String? Function(BuildContext, String?)? conPasswordControllerValidator;
+  FocusNode? passwordFocusNode;
+  TextEditingController? passwordTextController;
+  late bool passwordVisibility;
+  String? Function(BuildContext, String?)? passwordTextControllerValidator;
   // State field(s) for fac widget.
   String? facValue;
   FormFieldController<String>? facValueController;
-
-  /// Initialization and disposal methods.
+  // State field(s) for pb122 widget.
+  FormFieldController<String>? pb122ValueController;
+  // State field(s) for pb12 widget.
+  FormFieldController<String>? pb12ValueController;
+  // State field(s) for exxx widget.
+  FocusNode? exxxFocusNode1;
+  TextEditingController? exxxTextController1;
+  String? Function(BuildContext, String?)? exxxTextController1Validator;
+  // State field(s) for exxx widget.
+  FocusNode? exxxFocusNode2;
+  TextEditingController? exxxTextController2;
+  String? Function(BuildContext, String?)? exxxTextController2Validator;
 
   @override
   void initState(BuildContext context) {
-    passwordVisibility1 = false;
-    passwordVisibility2 = false;
-    conPasswordVisibility = false;
+    passwordVisibility = false;
   }
 
   @override
   void dispose() {
-    unfocusNode.dispose();
     tabBarController?.dispose();
     textFieldFocusNode?.dispose();
-    textController1?.dispose();
 
-    emailAddressFocusNode1?.dispose();
-    emailAddressController1?.dispose();
+    emailAddressFocusNode?.dispose();
+    emailAddressTextController?.dispose();
 
-    passwordFocusNode1?.dispose();
-    passwordController1?.dispose();
+    passwordFocusNode?.dispose();
+    passwordTextController?.dispose();
 
-    nameFocusNode?.dispose();
-    nameController?.dispose();
+    exxxFocusNode1?.dispose();
+    exxxTextController1?.dispose();
 
-    emailAddressFocusNode2?.dispose();
-    emailAddressController2?.dispose();
-
-    phoneNumFocusNode?.dispose();
-    phoneNumController?.dispose();
-
-    passwordFocusNode2?.dispose();
-    passwordController2?.dispose();
-
-    conPasswordFocusNode?.dispose();
-    conPasswordController?.dispose();
+    exxxFocusNode2?.dispose();
+    exxxTextController2?.dispose();
   }
 
-  /// Action blocks are added here.
-
-  /// Additional helper methods are added here.
+  /// Additional helper methods.
+  String? get pb122Value => pb122ValueController?.value;
+  String? get pb12Value => pb12ValueController?.value;
 }

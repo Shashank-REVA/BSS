@@ -3,15 +3,9 @@ import 'empty_widget.dart' show EmptyWidget;
 import 'package:flutter/material.dart';
 
 class EmptyModel extends FlutterFlowModel<EmptyWidget> {
-  /// Initialization and disposal methods.
-
   @override
   void initState(BuildContext context) {}
 
   @override
   void dispose() {}
-
-  /// Action blocks are added here.
-
-  /// Additional helper methods are added here.
 }

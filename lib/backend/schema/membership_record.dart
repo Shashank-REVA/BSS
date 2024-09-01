@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:collection/collection.dart';
 
 import '/backend/schema/util/firestore_util.dart';
-import '/backend/schema/util/schema_util.dart';
 
 import 'index.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -56,6 +55,16 @@ class MembershipRecord extends FirestoreRecord {
   String get paymentScreenshot => _paymentScreenshot ?? '';
   bool hasPaymentScreenshot() => _paymentScreenshot != null;
 
+  // "city" field.
+  String? _city;
+  String get city => _city ?? '';
+  bool hasCity() => _city != null;
+
+  // "approved" field.
+  bool? _approved;
+  bool get approved => _approved ?? false;
+  bool hasApproved() => _approved != null;
+
   void _initializeFields() {
     _name = snapshotData['name'] as String?;
     _type = snapshotData['type'] as String?;
@@ -65,6 +74,8 @@ class MembershipRecord extends FirestoreRecord {
     _emailId = snapshotData['email_id'] as String?;
     _date = snapshotData['date'] as DateTime?;
     _paymentScreenshot = snapshotData['payment_screenshot'] as String?;
+    _city = snapshotData['city'] as String?;
+    _approved = snapshotData['approved'] as bool?;
   }
 
   static CollectionReference get collection =>
@@ -110,6 +121,8 @@ Map<String, dynamic> createMembershipRecordData({
   String? emailId,
   DateTime? date,
   String? paymentScreenshot,
+  String? city,
+  bool? approved,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -121,6 +134,8 @@ Map<String, dynamic> createMembershipRecordData({
       'email_id': emailId,
       'date': date,
       'payment_screenshot': paymentScreenshot,
+      'city': city,
+      'approved': approved,
     }.withoutNulls,
   );
 
@@ -139,7 +154,9 @@ class MembershipRecordDocumentEquality implements Equality<MembershipRecord> {
         e1?.whatsappNo == e2?.whatsappNo &&
         e1?.emailId == e2?.emailId &&
         e1?.date == e2?.date &&
-        e1?.paymentScreenshot == e2?.paymentScreenshot;
+        e1?.paymentScreenshot == e2?.paymentScreenshot &&
+        e1?.city == e2?.city &&
+        e1?.approved == e2?.approved;
   }
 
   @override
@@ -151,7 +168,9 @@ class MembershipRecordDocumentEquality implements Equality<MembershipRecord> {
         e?.whatsappNo,
         e?.emailId,
         e?.date,
-        e?.paymentScreenshot
+        e?.paymentScreenshot,
+        e?.city,
+        e?.approved
       ]);
 
   @override

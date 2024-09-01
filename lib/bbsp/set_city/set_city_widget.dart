@@ -66,6 +66,7 @@ class _SetCityWidgetState extends State<SetCityWidget> {
                         fontFamily: 'Raleway',
                         color: const Color(0xFF2F2F2F),
                         fontSize: 25.0,
+                        letterSpacing: 0.0,
                         fontWeight: FontWeight.bold,
                       ),
                 ),
@@ -90,6 +91,7 @@ class _SetCityWidgetState extends State<SetCityWidget> {
                     );
                   }
                   List<CitiesRecord> containerCitiesRecordList = snapshot.data!;
+
                   return Container(
                     width: 320.0,
                     decoration: BoxDecoration(
@@ -98,7 +100,10 @@ class _SetCityWidgetState extends State<SetCityWidget> {
                         BoxShadow(
                           blurRadius: 4.0,
                           color: Color(0xFF322E5C),
-                          offset: Offset(0.0, 2.0),
+                          offset: Offset(
+                            0.0,
+                            2.0,
+                          ),
                         )
                       ],
                       borderRadius: BorderRadius.circular(40.0),
@@ -109,7 +114,7 @@ class _SetCityWidgetState extends State<SetCityWidget> {
                       options: containerCitiesRecordList
                           .map((e) => e.name)
                           .toList()
-                          .sortedList((e) => e),
+                          .sortedList(keyOf: (e) => e, desc: false),
                       onChanged: (val) =>
                           setState(() => _model.dropDownValue = val),
                       width: 300.0,
@@ -118,13 +123,19 @@ class _SetCityWidgetState extends State<SetCityWidget> {
                           FlutterFlowTheme.of(context).labelMedium.override(
                                 fontFamily: 'Raleway',
                                 color: Colors.black,
+                                letterSpacing: 0.0,
                               ),
-                      searchTextStyle: FlutterFlowTheme.of(context).bodyMedium,
+                      searchTextStyle:
+                          FlutterFlowTheme.of(context).bodyMedium.override(
+                                fontFamily: 'Readex Pro',
+                                letterSpacing: 0.0,
+                              ),
                       textStyle:
                           FlutterFlowTheme.of(context).bodyMedium.override(
                                 fontFamily: 'Raleway',
                                 color: Colors.black,
                                 fontSize: 16.0,
+                                letterSpacing: 0.0,
                               ),
                       hintText: FFLocalizations.of(context).getText(
                         'uro4dz7g' /* Set your city */,
@@ -161,18 +172,33 @@ class _SetCityWidgetState extends State<SetCityWidget> {
                 await currentUserReference!.update(createUsersRecordData(
                   city: _model.dropDownValue,
                 ));
-                logFirebaseEvent('Button_navigate_to');
+                if (currentUserDisplayName == '') {
+                  logFirebaseEvent('Button_navigate_to');
 
-                context.goNamed(
-                  'Profile',
-                  extra: <String, dynamic>{
-                    kTransitionInfoKey: const TransitionInfo(
-                      hasTransition: true,
-                      transitionType: PageTransitionType.fade,
-                      duration: Duration(milliseconds: 600),
-                    ),
-                  },
-                );
+                  context.goNamed(
+                    'profile_editCopy',
+                    extra: <String, dynamic>{
+                      kTransitionInfoKey: const TransitionInfo(
+                        hasTransition: true,
+                        transitionType: PageTransitionType.fade,
+                        duration: Duration(milliseconds: 600),
+                      ),
+                    },
+                  );
+                } else {
+                  logFirebaseEvent('Button_navigate_to');
+
+                  context.goNamed(
+                    'Profile',
+                    extra: <String, dynamic>{
+                      kTransitionInfoKey: const TransitionInfo(
+                        hasTransition: true,
+                        transitionType: PageTransitionType.fade,
+                        duration: Duration(milliseconds: 600),
+                      ),
+                    },
+                  );
+                }
               },
               text: FFLocalizations.of(context).getText(
                 'snl2y9ic' /* Set City */,
@@ -186,6 +212,7 @@ class _SetCityWidgetState extends State<SetCityWidget> {
                       fontFamily: 'Raleway',
                       color: Colors.white,
                       fontSize: 20.0,
+                      letterSpacing: 0.0,
                       fontWeight: FontWeight.bold,
                     ),
                 elevation: 3.0,

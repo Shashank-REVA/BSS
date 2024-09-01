@@ -59,9 +59,7 @@ class _OtpVerifyCopyCopyWidgetState extends State<OtpVerifyCopyCopyWidget> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => _model.unfocusNode.canRequestFocus
-          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
-          : FocusScope.of(context).unfocus(),
+      onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: Colors.white,
@@ -96,6 +94,7 @@ class _OtpVerifyCopyCopyWidgetState extends State<OtpVerifyCopyCopyWidget> {
                                 fontFamily: 'Raleway',
                                 color: const Color(0xFF101213),
                                 fontSize: 24.0,
+                                letterSpacing: 0.0,
                                 fontWeight: FontWeight.w500,
                               ),
                         ),
@@ -110,6 +109,7 @@ class _OtpVerifyCopyCopyWidgetState extends State<OtpVerifyCopyCopyWidget> {
                                       fontFamily: 'Raleway',
                                       color: const Color(0xFF57636C),
                                       fontSize: 18.0,
+                                      letterSpacing: 0.0,
                                       fontWeight: FontWeight.normal,
                                     ),
                           ),
@@ -127,6 +127,7 @@ class _OtpVerifyCopyCopyWidgetState extends State<OtpVerifyCopyCopyWidget> {
                                   fontFamily: 'Outfit',
                                   color: const Color(0xFF4B39EF),
                                   fontSize: 16.0,
+                                  letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,
                                 ),
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -153,9 +154,6 @@ class _OtpVerifyCopyCopyWidgetState extends State<OtpVerifyCopyCopyWidget> {
                               activeColor: const Color(0xFF4B39EF),
                               inactiveColor: const Color(0xFFF1F4F8),
                               selectedColor: const Color(0xFF57636C),
-                              activeFillColor: const Color(0xFF4B39EF),
-                              inactiveFillColor: const Color(0xFFF1F4F8),
-                              selectedFillColor: const Color(0xFF57636C),
                             ),
                             controller: _model.pinCodeController,
                             onChanged: (_) {},
@@ -199,7 +197,7 @@ class _OtpVerifyCopyCopyWidgetState extends State<OtpVerifyCopyCopyWidget> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       FlutterFlowTimer(
-                        initialTime: _model.timerMilliseconds,
+                        initialTime: _model.timerInitialTimeMs,
                         getDisplayTime: (value) =>
                             StopWatchTimer.getDisplayTime(
                           value,
@@ -224,6 +222,7 @@ class _OtpVerifyCopyCopyWidgetState extends State<OtpVerifyCopyCopyWidget> {
                             FlutterFlowTheme.of(context).headlineSmall.override(
                                   fontFamily: 'Outfit',
                                   color: Colors.black,
+                                  letterSpacing: 0.0,
                                 ),
                       ),
                       Padding(
@@ -262,6 +261,7 @@ class _OtpVerifyCopyCopyWidgetState extends State<OtpVerifyCopyCopyWidget> {
                                   fontFamily: 'Raleway',
                                   color: FlutterFlowTheme.of(context).error,
                                   fontSize: 20.0,
+                                  letterSpacing: 0.0,
                                 ),
                           ),
                         ),
@@ -289,6 +289,7 @@ class _OtpVerifyCopyCopyWidgetState extends State<OtpVerifyCopyCopyWidget> {
                                       fontFamily: 'Raleway',
                                       color: Colors.black,
                                       fontSize: 14.0,
+                                      letterSpacing: 0.0,
                                     ),
                               ),
                             ),
@@ -379,6 +380,7 @@ class _OtpVerifyCopyCopyWidgetState extends State<OtpVerifyCopyCopyWidget> {
                                                   FlutterFlowTheme.of(context)
                                                       .primary,
                                               fontSize: 14.0,
+                                              letterSpacing: 0.0,
                                             ),
                                       ),
                                     ),
@@ -479,6 +481,7 @@ class _OtpVerifyCopyCopyWidgetState extends State<OtpVerifyCopyCopyWidget> {
                                   fontFamily: 'Raleway',
                                   color: const Color(0xFF1120E0),
                                   fontSize: 20.0,
+                                  letterSpacing: 0.0,
                                 ),
                           ),
                         ),

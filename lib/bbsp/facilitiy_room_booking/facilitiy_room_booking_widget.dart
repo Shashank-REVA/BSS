@@ -47,7 +47,7 @@ class _FacilitiyRoomBookingWidgetState
 
     logFirebaseEvent('screen_view',
         parameters: {'screen_name': 'facilitiy_room_booking'});
-    _model.textController1 ??= TextEditingController();
+    _model.textController1 ??= TextEditingController(text: currentPhoneNumber);
     _model.textFieldFocusNode1 ??= FocusNode();
 
     _model.textController2 ??= TextEditingController();
@@ -55,9 +55,6 @@ class _FacilitiyRoomBookingWidgetState
 
     _model.textController3 ??= TextEditingController();
     _model.textFieldFocusNode3 ??= FocusNode();
-
-    _model.textController4 ??= TextEditingController();
-    _model.textFieldFocusNode4 ??= FocusNode();
   }
 
   @override
@@ -70,9 +67,7 @@ class _FacilitiyRoomBookingWidgetState
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => _model.unfocusNode.canRequestFocus
-          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
-          : FocusScope.of(context).unfocus(),
+      onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: Colors.white,
@@ -99,7 +94,7 @@ class _FacilitiyRoomBookingWidgetState
                           alignment: const AlignmentDirectional(-1.0, 0.0),
                           child: Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
-                                16.0, 47.0, 0.0, 0.0),
+                                16.0, 0.0, 0.0, 0.0),
                             child: FlutterFlowIconButton(
                               borderColor: const Color(0x00FFFFFF),
                               borderRadius: 20.0,
@@ -170,6 +165,7 @@ class _FacilitiyRoomBookingWidgetState
                                     .override(
                                       fontFamily: 'SuperTall',
                                       color: const Color(0xFFEC7834),
+                                      letterSpacing: 0.0,
                                       useGoogleFonts: false,
                                     ),
                               ),
@@ -191,6 +187,7 @@ class _FacilitiyRoomBookingWidgetState
                                         fontFamily: 'SuperTall',
                                         color: const Color(0xFF2F2F2F),
                                         fontSize: 18.0,
+                                        letterSpacing: 0.0,
                                         useGoogleFonts: false,
                                       ),
                                 ),
@@ -214,6 +211,7 @@ class _FacilitiyRoomBookingWidgetState
                                         fontFamily: 'Raleway',
                                         color: Colors.black,
                                         fontSize: 18.0,
+                                        letterSpacing: 0.0,
                                         fontWeight: FontWeight.w600,
                                       ),
                                 ),
@@ -249,6 +247,7 @@ class _FacilitiyRoomBookingWidgetState
                           final rowRoomsRecord = rowRoomsRecordList.isNotEmpty
                               ? rowRoomsRecordList.first
                               : null;
+
                           return Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
@@ -268,6 +267,7 @@ class _FacilitiyRoomBookingWidgetState
                                             fontFamily: 'Raleway',
                                             color: const Color(0xFF322E5C),
                                             fontSize: 20.0,
+                                            letterSpacing: 0.0,
                                             fontWeight: FontWeight.bold,
                                           ),
                                     ),
@@ -285,191 +285,211 @@ class _FacilitiyRoomBookingWidgetState
                           child: Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
                                 7.0, 0.0, 7.0, 10.0),
-                            child: StreamBuilder<List<RoomsRecord>>(
-                              stream: queryRoomsRecord(
-                                queryBuilder: (roomsRecord) =>
-                                    roomsRecord.where(
-                                  'city',
-                                  isEqualTo: widget.city,
+                            child: AuthUserStreamWidget(
+                              builder: (context) =>
+                                  StreamBuilder<List<RoomsRecord>>(
+                                stream: queryRoomsRecord(
+                                  queryBuilder: (roomsRecord) =>
+                                      roomsRecord.where(
+                                    'city',
+                                    isEqualTo: valueOrDefault(
+                                        currentUserDocument?.city, ''),
+                                  ),
                                 ),
-                              ),
-                              builder: (context, snapshot) {
-                                // Customize what your widget looks like when it's loading.
-                                if (!snapshot.hasData) {
-                                  return const Center(
-                                    child: SizedBox(
-                                      width: 50.0,
-                                      height: 50.0,
-                                      child: SpinKitThreeBounce(
-                                        color: Color(0xFFEC7834),
-                                        size: 50.0,
-                                      ),
-                                    ),
-                                  );
-                                }
-                                List<RoomsRecord> listViewRoomsRecordList =
-                                    snapshot.data!;
-                                if (listViewRoomsRecordList.isEmpty) {
-                                  return const EmptyRoomsWidget();
-                                }
-                                return ListView.builder(
-                                  padding: EdgeInsets.zero,
-                                  shrinkWrap: true,
-                                  scrollDirection: Axis.vertical,
-                                  itemCount: listViewRoomsRecordList.length,
-                                  itemBuilder: (context, listViewIndex) {
-                                    final listViewRoomsRecord =
-                                        listViewRoomsRecordList[listViewIndex];
-                                    return Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 0.0, 0.0, 10.0),
-                                      child: Container(
-                                        decoration: BoxDecoration(
-                                          color: Colors.transparent,
-                                          borderRadius:
-                                              BorderRadius.circular(25.0),
-                                          border: Border.all(
-                                            color: const Color(0xFF322E5C),
-                                            width: 1.0,
-                                          ),
-                                        ),
-                                        alignment:
-                                            const AlignmentDirectional(0.0, 0.0),
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceBetween,
-                                          children: [
-                                            Column(
-                                              mainAxisSize: MainAxisSize.max,
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.center,
-                                              children: [
-                                                Container(
-                                                  width: 150.0,
-                                                  decoration: BoxDecoration(
-                                                    color: const Color(0xFF322E5C),
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            15.0),
-                                                    border: Border.all(
-                                                      color: const Color(0xFF322E5C),
-                                                      width: 1.0,
-                                                    ),
-                                                  ),
-                                                  child: Column(
-                                                    mainAxisSize:
-                                                        MainAxisSize.max,
-                                                    children: [
-                                                      Align(
-                                                        alignment:
-                                                            const AlignmentDirectional(
-                                                                0.0, 0.0),
-                                                        child: Text(
-                                                          listViewRoomsRecord.no
-                                                              .toString(),
-                                                          style: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .bodyMedium
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
-                                                                color: Colors
-                                                                    .white,
-                                                                fontSize: 16.0,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .w800,
-                                                              ),
-                                                        ),
-                                                      ),
-                                                      Align(
-                                                        alignment:
-                                                            const AlignmentDirectional(
-                                                                0.0, 0.0),
-                                                        child: Text(
-                                                          FFLocalizations.of(
-                                                                  context)
-                                                              .getText(
-                                                            'r6ttdafs' /* Available */,
-                                                          ),
-                                                          style: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .bodyMedium
-                                                              .override(
-                                                                fontFamily:
-                                                                    'Montserrat',
-                                                                color: Colors
-                                                                    .white,
-                                                                fontSize: 18.0,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .w800,
-                                                              ),
-                                                        ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                            Column(
-                                              mainAxisSize: MainAxisSize.min,
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.center,
-                                              children: [
-                                                Padding(
-                                                  padding: const EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          5.0, 0.0, 0.0, 0.0),
-                                                  child: Text(
-                                                    listViewRoomsRecord
-                                                        .roomType,
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Poppins',
-                                                          color: Colors.black,
-                                                          fontSize: 18.0,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                        ),
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                            Column(
-                                              mainAxisSize: MainAxisSize.min,
-                                              children: [
-                                                Padding(
-                                                  padding: const EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 0.0, 5.0, 0.0),
-                                                  child: Text(
-                                                    'Rs.${listViewRoomsRecord.price.toString()}',
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily: 'Poppins',
-                                                          color:
-                                                              const Color(0xFF322E5C),
-                                                          fontSize: 18.0,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                        ),
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                          ],
+                                builder: (context, snapshot) {
+                                  // Customize what your widget looks like when it's loading.
+                                  if (!snapshot.hasData) {
+                                    return const Center(
+                                      child: SizedBox(
+                                        width: 50.0,
+                                        height: 50.0,
+                                        child: SpinKitThreeBounce(
+                                          color: Color(0xFFEC7834),
+                                          size: 50.0,
                                         ),
                                       ),
                                     );
-                                  },
-                                );
-                              },
+                                  }
+                                  List<RoomsRecord> listViewRoomsRecordList =
+                                      snapshot.data!;
+                                  if (listViewRoomsRecordList.isEmpty) {
+                                    return const EmptyRoomsWidget();
+                                  }
+
+                                  return ListView.builder(
+                                    padding: EdgeInsets.zero,
+                                    shrinkWrap: true,
+                                    scrollDirection: Axis.vertical,
+                                    itemCount: listViewRoomsRecordList.length,
+                                    itemBuilder: (context, listViewIndex) {
+                                      final listViewRoomsRecord =
+                                          listViewRoomsRecordList[
+                                              listViewIndex];
+                                      return Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            0.0, 0.0, 0.0, 10.0),
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.transparent,
+                                            borderRadius:
+                                                BorderRadius.circular(25.0),
+                                            border: Border.all(
+                                              color: const Color(0xFF322E5C),
+                                              width: 1.0,
+                                            ),
+                                          ),
+                                          alignment:
+                                              const AlignmentDirectional(0.0, 0.0),
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Column(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: [
+                                                  Container(
+                                                    width: 150.0,
+                                                    decoration: BoxDecoration(
+                                                      color: const Color(0xFF322E5C),
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              15.0),
+                                                      border: Border.all(
+                                                        color:
+                                                            const Color(0xFF322E5C),
+                                                        width: 1.0,
+                                                      ),
+                                                    ),
+                                                    child: Column(
+                                                      mainAxisSize:
+                                                          MainAxisSize.max,
+                                                      children: [
+                                                        Align(
+                                                          alignment:
+                                                              const AlignmentDirectional(
+                                                                  0.0, 0.0),
+                                                          child: Text(
+                                                            listViewRoomsRecord
+                                                                .no
+                                                                .toString(),
+                                                            style: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .bodyMedium
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Montserrat',
+                                                                  color: Colors
+                                                                      .white,
+                                                                  fontSize:
+                                                                      16.0,
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w800,
+                                                                ),
+                                                          ),
+                                                        ),
+                                                        Align(
+                                                          alignment:
+                                                              const AlignmentDirectional(
+                                                                  0.0, 0.0),
+                                                          child: Text(
+                                                            FFLocalizations.of(
+                                                                    context)
+                                                                .getText(
+                                                              'r6ttdafs' /* Available */,
+                                                            ),
+                                                            style: FlutterFlowTheme
+                                                                    .of(context)
+                                                                .bodyMedium
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Montserrat',
+                                                                  color: Colors
+                                                                      .white,
+                                                                  fontSize:
+                                                                      18.0,
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w800,
+                                                                ),
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                              Column(
+                                                mainAxisSize: MainAxisSize.min,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: [
+                                                  Padding(
+                                                    padding:
+                                                        const EdgeInsetsDirectional
+                                                            .fromSTEB(5.0, 0.0,
+                                                                0.0, 0.0),
+                                                    child: Text(
+                                                      listViewRoomsRecord
+                                                          .roomType,
+                                                      style: FlutterFlowTheme
+                                                              .of(context)
+                                                          .bodyMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Poppins',
+                                                            color: Colors.black,
+                                                            fontSize: 18.0,
+                                                            letterSpacing: 0.0,
+                                                            fontWeight:
+                                                                FontWeight.bold,
+                                                          ),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                              Column(
+                                                mainAxisSize: MainAxisSize.min,
+                                                children: [
+                                                  Padding(
+                                                    padding:
+                                                        const EdgeInsetsDirectional
+                                                            .fromSTEB(0.0, 0.0,
+                                                                5.0, 0.0),
+                                                    child: Text(
+                                                      'Rs.${listViewRoomsRecord.price.toString()}',
+                                                      style: FlutterFlowTheme
+                                                              .of(context)
+                                                          .bodyMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Poppins',
+                                                            color: const Color(
+                                                                0xFF322E5C),
+                                                            fontSize: 18.0,
+                                                            letterSpacing: 0.0,
+                                                            fontWeight:
+                                                                FontWeight.bold,
+                                                          ),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                  );
+                                },
+                              ),
                             ),
                           ),
                         ),
@@ -509,6 +529,7 @@ class _FacilitiyRoomBookingWidgetState
                                 columnRoomsRecordList.isNotEmpty
                                     ? columnRoomsRecordList.first
                                     : null;
+
                             return SingleChildScrollView(
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -538,6 +559,7 @@ class _FacilitiyRoomBookingWidgetState
                                                         fontFamily: 'Raleway',
                                                         color: Colors.black,
                                                         fontSize: 18.0,
+                                                        letterSpacing: 0.0,
                                                         fontWeight:
                                                             FontWeight.w600,
                                                       ),
@@ -560,7 +582,11 @@ class _FacilitiyRoomBookingWidgetState
                                           optionHeight: 32.0,
                                           textStyle:
                                               FlutterFlowTheme.of(context)
-                                                  .labelMedium,
+                                                  .labelMedium
+                                                  .override(
+                                                    fontFamily: 'Readex Pro',
+                                                    letterSpacing: 0.0,
+                                                  ),
                                           selectedTextStyle:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMedium
@@ -568,6 +594,7 @@ class _FacilitiyRoomBookingWidgetState
                                                     fontFamily: 'Raleway',
                                                     color: Colors.black,
                                                     fontSize: 16.0,
+                                                    letterSpacing: 0.0,
                                                   ),
                                           buttonPosition:
                                               RadioButtonPosition.left,
@@ -600,6 +627,7 @@ class _FacilitiyRoomBookingWidgetState
                                                   fontFamily: 'Raleway',
                                                   color: Colors.black,
                                                   fontSize: 18.0,
+                                                  letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
                                                 ),
                                           ),
@@ -617,93 +645,104 @@ class _FacilitiyRoomBookingWidgetState
                                             padding:
                                                 const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 10.0, 8.0, 10.0),
-                                            child: TextFormField(
-                                              controller:
-                                                  _model.textController1,
-                                              focusNode:
-                                                  _model.textFieldFocusNode1,
-                                              autofocus: true,
-                                              obscureText: false,
-                                              decoration: InputDecoration(
-                                                labelText:
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                  '9e8int0z' /* Phone Number */,
-                                                ),
-                                                labelStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMedium
-                                                        .override(
-                                                          fontFamily: 'Raleway',
-                                                          fontSize: 16.0,
-                                                        ),
-                                                hintStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMedium
-                                                        .override(
-                                                          fontFamily: 'Raleway',
-                                                          fontSize: 16.0,
-                                                        ),
-                                                enabledBorder:
-                                                    OutlineInputBorder(
-                                                  borderSide: const BorderSide(
-                                                    color: Color(0xFFD5DAE0),
-                                                    width: 2.0,
+                                            child: AuthUserStreamWidget(
+                                              builder: (context) =>
+                                                  TextFormField(
+                                                controller:
+                                                    _model.textController1,
+                                                focusNode:
+                                                    _model.textFieldFocusNode1,
+                                                autofocus: false,
+                                                obscureText: false,
+                                                decoration: InputDecoration(
+                                                  labelText: FFLocalizations.of(
+                                                          context)
+                                                      .getText(
+                                                    '9e8int0z' /* Phone Number */,
                                                   ),
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          25.0),
-                                                ),
-                                                focusedBorder:
-                                                    OutlineInputBorder(
-                                                  borderSide: BorderSide(
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primary,
-                                                    width: 2.0,
-                                                  ),
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          25.0),
-                                                ),
-                                                errorBorder: OutlineInputBorder(
-                                                  borderSide: BorderSide(
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .error,
-                                                    width: 2.0,
-                                                  ),
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          25.0),
-                                                ),
-                                                focusedErrorBorder:
-                                                    OutlineInputBorder(
-                                                  borderSide: BorderSide(
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .error,
-                                                    width: 2.0,
-                                                  ),
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          25.0),
-                                                ),
-                                              ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
+                                                  labelStyle: FlutterFlowTheme
+                                                          .of(context)
+                                                      .labelMedium
                                                       .override(
                                                         fontFamily: 'Raleway',
-                                                        color: Colors.black,
                                                         fontSize: 16.0,
+                                                        letterSpacing: 0.0,
                                                       ),
-                                              keyboardType: const TextInputType
-                                                  .numberWithOptions(
-                                                  decimal: true),
-                                              validator: _model
-                                                  .textController1Validator
-                                                  .asValidator(context),
+                                                  hintStyle: FlutterFlowTheme
+                                                          .of(context)
+                                                      .labelMedium
+                                                      .override(
+                                                        fontFamily: 'Raleway',
+                                                        fontSize: 16.0,
+                                                        letterSpacing: 0.0,
+                                                      ),
+                                                  enabledBorder:
+                                                      OutlineInputBorder(
+                                                    borderSide: const BorderSide(
+                                                      color: Color(0xFFD5DAE0),
+                                                      width: 2.0,
+                                                    ),
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            25.0),
+                                                  ),
+                                                  focusedBorder:
+                                                      OutlineInputBorder(
+                                                    borderSide: BorderSide(
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .primary,
+                                                      width: 2.0,
+                                                    ),
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            25.0),
+                                                  ),
+                                                  errorBorder:
+                                                      OutlineInputBorder(
+                                                    borderSide: BorderSide(
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .error,
+                                                      width: 2.0,
+                                                    ),
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            25.0),
+                                                  ),
+                                                  focusedErrorBorder:
+                                                      OutlineInputBorder(
+                                                    borderSide: BorderSide(
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .error,
+                                                      width: 2.0,
+                                                    ),
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            25.0),
+                                                  ),
+                                                ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily: 'Raleway',
+                                                          color: Colors.black,
+                                                          fontSize: 16.0,
+                                                          letterSpacing: 0.0,
+                                                        ),
+                                                keyboardType:
+                                                    const TextInputType
+                                                        .numberWithOptions(
+                                                        decimal: true),
+                                                validator: _model
+                                                    .textController1Validator
+                                                    .asValidator(context),
+                                              ),
                                             ),
                                           ),
                                         if (_model.radioButtonValue == 'For Me')
@@ -743,6 +782,8 @@ class _FacilitiyRoomBookingWidgetState
                                                                 fontFamily:
                                                                     'Outfit',
                                                                 fontSize: 32.0,
+                                                                letterSpacing:
+                                                                    0.0,
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w600,
@@ -795,6 +836,7 @@ class _FacilitiyRoomBookingWidgetState
                                                           color:
                                                               const Color(0xFF2F2F2F),
                                                           fontSize: 16.0,
+                                                          letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.bold,
                                                         ),
@@ -813,7 +855,7 @@ class _FacilitiyRoomBookingWidgetState
                                               const AlignmentDirectional(0.0, 0.0),
                                           child: Text(
                                             dateTimeFormat(
-                                              'MMMMEEEEd',
+                                              "MMMMEEEEd",
                                               _model.datePicked1,
                                               locale:
                                                   FFLocalizations.of(context)
@@ -825,6 +867,7 @@ class _FacilitiyRoomBookingWidgetState
                                                   fontFamily: 'Raleway',
                                                   color: Colors.black,
                                                   fontSize: 18.0,
+                                                  letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
                                                 ),
                                           ),
@@ -877,6 +920,8 @@ class _FacilitiyRoomBookingWidgetState
                                                                       'Raleway',
                                                                   fontSize:
                                                                       32.0,
+                                                                  letterSpacing:
+                                                                      0.0,
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w800,
@@ -930,14 +975,18 @@ class _FacilitiyRoomBookingWidgetState
                                                           .facilityselected,
                                                       facilityDate:
                                                           dateTimeFormat(
-                                                        'MMMMEEEEd',
+                                                        "MMMMEEEEd",
                                                         _model.datePicked1,
                                                         locale:
                                                             FFLocalizations.of(
                                                                     context)
                                                                 .languageCode,
                                                       ),
-                                                      facilityCity: widget.city,
+                                                      facilityCity:
+                                                          valueOrDefault(
+                                                              currentUserDocument
+                                                                  ?.city,
+                                                              ''),
                                                       guestEmail:
                                                           currentUserEmail,
                                                     ));
@@ -964,8 +1013,25 @@ class _FacilitiyRoomBookingWidgetState
                                                         currentUserEmail,
                                                         'No Email',
                                                       ),
-                                                      city: widget.city,
+                                                      city: valueOrDefault(
+                                                          currentUserDocument
+                                                              ?.city,
+                                                          ''),
                                                     ));
+                                                logFirebaseEvent(
+                                                    'Button_backend_call');
+
+                                                await columnRoomsRecord!
+                                                    .reference
+                                                    .update({
+                                                  ...mapToFirestore(
+                                                    {
+                                                      'no':
+                                                          FieldValue.increment(
+                                                              -(1)),
+                                                    },
+                                                  ),
+                                                });
                                                 logFirebaseEvent(
                                                     'Button_navigate_to');
 
@@ -977,7 +1043,7 @@ class _FacilitiyRoomBookingWidgetState
                                                       ParamType.String,
                                                     ),
                                                     'facility': serializeParam(
-                                                      widget.facilityselected,
+                                                      '',
                                                       ParamType.String,
                                                     ),
                                                   }.withoutNulls,
@@ -1015,6 +1081,7 @@ class _FacilitiyRoomBookingWidgetState
                                                           fontFamily: 'Raleway',
                                                           color: Colors.white,
                                                           fontSize: 20.0,
+                                                          letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.bold,
                                                         ),
@@ -1048,6 +1115,7 @@ class _FacilitiyRoomBookingWidgetState
                                                   _model.textController2,
                                               focusNode:
                                                   _model.textFieldFocusNode2,
+                                              autofocus: false,
                                               obscureText: false,
                                               decoration: InputDecoration(
                                                 labelText:
@@ -1061,6 +1129,7 @@ class _FacilitiyRoomBookingWidgetState
                                                         .override(
                                                           fontFamily: 'Raleway',
                                                           fontSize: 16.0,
+                                                          letterSpacing: 0.0,
                                                         ),
                                                 hintStyle:
                                                     FlutterFlowTheme.of(context)
@@ -1068,6 +1137,7 @@ class _FacilitiyRoomBookingWidgetState
                                                         .override(
                                                           fontFamily: 'Raleway',
                                                           fontSize: 16.0,
+                                                          letterSpacing: 0.0,
                                                         ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
@@ -1122,6 +1192,7 @@ class _FacilitiyRoomBookingWidgetState
                                                         fontFamily: 'Raleway',
                                                         color: Colors.black,
                                                         fontSize: 16.0,
+                                                        letterSpacing: 0.0,
                                                       ),
                                               validator: _model
                                                   .textController2Validator
@@ -1139,97 +1210,7 @@ class _FacilitiyRoomBookingWidgetState
                                                   _model.textController3,
                                               focusNode:
                                                   _model.textFieldFocusNode3,
-                                              obscureText: false,
-                                              decoration: InputDecoration(
-                                                labelText:
-                                                    FFLocalizations.of(context)
-                                                        .getText(
-                                                  '4jcae6pf' /* Guest Email */,
-                                                ),
-                                                labelStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMedium
-                                                        .override(
-                                                          fontFamily: 'Raleway',
-                                                          fontSize: 16.0,
-                                                        ),
-                                                hintStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .labelMedium
-                                                        .override(
-                                                          fontFamily: 'Raleway',
-                                                          fontSize: 16.0,
-                                                        ),
-                                                enabledBorder:
-                                                    OutlineInputBorder(
-                                                  borderSide: const BorderSide(
-                                                    color: Color(0xFFD5DAE0),
-                                                    width: 2.0,
-                                                  ),
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          25.0),
-                                                ),
-                                                focusedBorder:
-                                                    OutlineInputBorder(
-                                                  borderSide: BorderSide(
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primary,
-                                                    width: 2.0,
-                                                  ),
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          25.0),
-                                                ),
-                                                errorBorder: OutlineInputBorder(
-                                                  borderSide: BorderSide(
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .error,
-                                                    width: 2.0,
-                                                  ),
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          25.0),
-                                                ),
-                                                focusedErrorBorder:
-                                                    OutlineInputBorder(
-                                                  borderSide: BorderSide(
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .error,
-                                                    width: 2.0,
-                                                  ),
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          25.0),
-                                                ),
-                                              ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily: 'Raleway',
-                                                        color: Colors.black,
-                                                        fontSize: 16.0,
-                                                      ),
-                                              validator: _model
-                                                  .textController3Validator
-                                                  .asValidator(context),
-                                            ),
-                                          ),
-                                        if (_model.radioButtonValue ==
-                                            'For Others')
-                                          Padding(
-                                            padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
-                                                    8.0, 10.0, 8.0, 0.0),
-                                            child: TextFormField(
-                                              controller:
-                                                  _model.textController4,
-                                              focusNode:
-                                                  _model.textFieldFocusNode4,
+                                              autofocus: false,
                                               obscureText: false,
                                               decoration: InputDecoration(
                                                 labelText:
@@ -1243,6 +1224,7 @@ class _FacilitiyRoomBookingWidgetState
                                                         .override(
                                                           fontFamily: 'Raleway',
                                                           fontSize: 16.0,
+                                                          letterSpacing: 0.0,
                                                         ),
                                                 hintStyle:
                                                     FlutterFlowTheme.of(context)
@@ -1250,6 +1232,7 @@ class _FacilitiyRoomBookingWidgetState
                                                         .override(
                                                           fontFamily: 'Raleway',
                                                           fontSize: 16.0,
+                                                          letterSpacing: 0.0,
                                                         ),
                                                 enabledBorder:
                                                     OutlineInputBorder(
@@ -1304,12 +1287,13 @@ class _FacilitiyRoomBookingWidgetState
                                                         fontFamily: 'Raleway',
                                                         color: Colors.black,
                                                         fontSize: 16.0,
+                                                        letterSpacing: 0.0,
                                                       ),
                                               keyboardType: const TextInputType
                                                   .numberWithOptions(
                                                   decimal: true),
                                               validator: _model
-                                                  .textController4Validator
+                                                  .textController3Validator
                                                   .asValidator(context),
                                             ),
                                           ),
@@ -1351,6 +1335,8 @@ class _FacilitiyRoomBookingWidgetState
                                                                 fontFamily:
                                                                     'Outfit',
                                                                 fontSize: 32.0,
+                                                                letterSpacing:
+                                                                    0.0,
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w600,
@@ -1403,6 +1389,7 @@ class _FacilitiyRoomBookingWidgetState
                                                           color:
                                                               const Color(0xFF2F2F2F),
                                                           fontSize: 16.0,
+                                                          letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.bold,
                                                         ),
@@ -1421,7 +1408,7 @@ class _FacilitiyRoomBookingWidgetState
                                               const AlignmentDirectional(0.0, 0.0),
                                           child: Text(
                                             dateTimeFormat(
-                                              'MMMMEEEEd',
+                                              "MMMMEEEEd",
                                               _model.datePicked2,
                                               locale:
                                                   FFLocalizations.of(context)
@@ -1433,6 +1420,7 @@ class _FacilitiyRoomBookingWidgetState
                                                   fontFamily: 'Raleway',
                                                   color: Colors.black,
                                                   fontSize: 18.0,
+                                                  letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w600,
                                                 ),
                                           ),
@@ -1486,6 +1474,8 @@ class _FacilitiyRoomBookingWidgetState
                                                                       'Raleway',
                                                                   fontSize:
                                                                       32.0,
+                                                                  letterSpacing:
+                                                                      0.0,
                                                                   fontWeight:
                                                                       FontWeight
                                                                           .w800,
@@ -1531,7 +1521,7 @@ class _FacilitiyRoomBookingWidgetState
                                                       guestNumber:
                                                           valueOrDefault<
                                                               String>(
-                                                        _model.textController4
+                                                        _model.textController3
                                                             .text,
                                                         'No Number',
                                                       ),
@@ -1539,21 +1529,18 @@ class _FacilitiyRoomBookingWidgetState
                                                           .facilityselected,
                                                       facilityDate:
                                                           dateTimeFormat(
-                                                        'MMMMEEEEd',
+                                                        "MMMMEEEEd",
                                                         _model.datePicked2,
                                                         locale:
                                                             FFLocalizations.of(
                                                                     context)
                                                                 .languageCode,
                                                       ),
-                                                      facilityCity: widget.city,
-                                                      guestEmail:
-                                                          valueOrDefault<
-                                                              String>(
-                                                        _model.textController3
-                                                            .text,
-                                                        'No Email',
-                                                      ),
+                                                      facilityCity:
+                                                          valueOrDefault(
+                                                              currentUserDocument
+                                                                  ?.city,
+                                                              ''),
                                                     ));
                                                 logFirebaseEvent(
                                                     'Button_backend_call');
@@ -1573,15 +1560,25 @@ class _FacilitiyRoomBookingWidgetState
                                                             .text,
                                                         'No Name',
                                                       ),
-                                                      guestEmail:
-                                                          valueOrDefault<
-                                                              String>(
-                                                        _model.textController3
-                                                            .text,
-                                                        'No Email',
-                                                      ),
-                                                      city: widget.city,
+                                                      city: valueOrDefault(
+                                                          currentUserDocument
+                                                              ?.city,
+                                                          ''),
                                                     ));
+                                                logFirebaseEvent(
+                                                    'Button_backend_call');
+
+                                                await columnRoomsRecord!
+                                                    .reference
+                                                    .update({
+                                                  ...mapToFirestore(
+                                                    {
+                                                      'no':
+                                                          FieldValue.increment(
+                                                              -(1)),
+                                                    },
+                                                  ),
+                                                });
                                                 logFirebaseEvent(
                                                     'Button_navigate_to');
 
@@ -1593,7 +1590,7 @@ class _FacilitiyRoomBookingWidgetState
                                                       ParamType.String,
                                                     ),
                                                     'facility': serializeParam(
-                                                      widget.facilityselected,
+                                                      '',
                                                       ParamType.String,
                                                     ),
                                                   }.withoutNulls,
@@ -1631,6 +1628,7 @@ class _FacilitiyRoomBookingWidgetState
                                                           fontFamily: 'Raleway',
                                                           color: Colors.white,
                                                           fontSize: 20.0,
+                                                          letterSpacing: 0.0,
                                                           fontWeight:
                                                               FontWeight.bold,
                                                         ),

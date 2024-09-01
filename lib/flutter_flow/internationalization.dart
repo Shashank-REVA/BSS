@@ -1079,7 +1079,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // signup
   {
-    't1u49qc0': {
+    '8yszpfh0': {
       'en': 'Get Started',
       'bn': 'এবার শুরু করা যাক',
       'gu': 'શરૂ કરો',
@@ -1090,7 +1090,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'தொடங்குங்கள்',
       'te': 'ప్రారంభించడానికి',
     },
-    'ud9oxly9': {
+    'epkl26a6': {
       'en': 'Name',
       'bn': 'নাম',
       'gu': 'નામ',
@@ -1101,7 +1101,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'பெயர்',
       'te': 'పేరు',
     },
-    '3veih8m5': {
+    '7uewumvo': {
       'en': 'Email',
       'bn': 'ইমেইল',
       'gu': 'ઈમેલ',
@@ -1112,7 +1112,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'மின்னஞ்சல்',
       'te': 'ఇమెయిల్',
     },
-    'i74e3iaa': {
+    '1eyp6irz': {
       'en': 'Phone Number',
       'bn': 'ফোন নম্বর',
       'gu': 'ફોન નંબર',
@@ -1123,7 +1123,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'தொலைபேசி எண்',
       'te': 'ఫోను నంబరు',
     },
-    '72kptm1q': {
+    'tmk0b9cl': {
       'en': 'Password',
       'bn': 'পাসওয়ার্ড',
       'gu': 'પાસવર્ડ',
@@ -1134,7 +1134,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கடவுச்சொல்',
       'te': 'పాస్వర్డ్',
     },
-    'bzewxifo': {
+    't5qmixow': {
       'en': 'Confirm Password',
       'bn': 'পাসওয়ার্ড নিশ্চিত করুন',
       'gu': 'પાસવર્ડની પુષ્ટિ કરો',
@@ -1145,7 +1145,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கடவுச்சொல்லை உறுதிப்படுத்தவும்',
       'te': 'పాస్‌వర్డ్‌ని నిర్ధారించండి',
     },
-    'fioyoxo9': {
+    'zwtz4f75': {
       'en': 'Create Account',
       'bn': 'হিসাব তৈরি কর',
       'gu': 'ખાતું બનાવો',
@@ -1155,6 +1155,116 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'mr': 'खाते तयार करा',
       'ta': 'உங்கள் கணக்கை துவங்குங்கள்',
       'te': 'ఖాతాను సృష్టించండి',
+    },
+    '3knzdith': {
+      'en': 'Name is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '1wq55u7h': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'lzvws5mj': {
+      'en': 'Email is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '854eaig8': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'yklwsnq2': {
+      'en': 'Phone number  is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'mwhvxbrt': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'evcbd4v6': {
+      'en': 'Password is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'w3nrprf6': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '2ix120f8': {
+      'en': 'Confirm Password is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'p7iwvsb7': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
     },
     's39yq1no': {
       'en': 'Home',
@@ -1171,7 +1281,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // Profile
   {
     '7uw5d4dm': {
-      'en': 'Change',
+      'en': 'Change Profile Picture',
       'bn': '',
       'gu': '',
       'hi': '',
@@ -1226,7 +1336,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'te': 'మీ విరాళాలు',
     },
     'd93kxsx0': {
-      'en': 'Help',
+      'en': 'Your',
       'bn': 'আপনার অনুদান',
       'gu': 'તમારા દાન',
       'hi': 'आपका दान',
@@ -1237,7 +1347,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'te': 'మీ విరాళాలు',
     },
     'xxqcevmm': {
-      'en': 'Center',
+      'en': 'Donations',
       'bn': 'আপনার অনুদান',
       'gu': 'તમારા દાન',
       'hi': 'आपका दान',
@@ -1327,8 +1437,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'உள்நுழைய',
       'te': 'ప్రవేశించండి',
     },
-    'e9xruqw5': {
-      'en': 'Email',
+    'edvg1d4x': {
+      'en': 'Email Address',
       'bn': 'ইমেইল',
       'gu': 'ઈમેલ',
       'hi': 'ईमेल',
@@ -1338,16 +1448,16 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'மின்னஞ்சல்',
       'te': 'ఇమెయిల్',
     },
-    'j771b6v0': {
+    'od5fy4wc': {
       'en': 'Password',
-      'bn': 'পাসওয়ার্ড',
-      'gu': 'પાસવર્ડ',
-      'hi': 'पासवर्ड',
-      'kn': 'ಗುಪ್ತಪದ',
-      'ml': 'Password',
-      'mr': 'पासवर्ड',
-      'ta': 'கடவுச்சொல்',
-      'te': 'పాస్వర్డ్',
+      'bn': 'ইমেইল',
+      'gu': 'ઈમેલ',
+      'hi': 'ईमेल',
+      'kn': 'ಇಮೇಲ್',
+      'ml': 'ഇമെയിൽ',
+      'mr': 'ईमेल',
+      'ta': 'மின்னஞ்சல்',
+      'te': 'ఇమెయిల్',
     },
     'plhyh2xs': {
       'en': 'Log In',
@@ -1442,17 +1552,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '7ttxdo9y': {
       'en': 'Your Email',
-      'bn': 'তোমার ইমেইল',
-      'gu': 'તમારા ઇમેઇલ',
-      'hi': 'आपका ईमेल',
-      'kn': 'ನಿಮ್ಮ ಇಮೇಲ್',
-      'ml': 'നിങ്ങളുടെ ഇമെയിൽ',
-      'mr': 'आपला ई - मेल',
-      'ta': 'உங்கள் மின்னஞ்சல்',
-      'te': 'మీ ఇమెయిల్',
-    },
-    'y9eh1rr0': {
-      'en': 'Your City',
       'bn': 'তোমার ইমেইল',
       'gu': 'તમારા ઇમેઇલ',
       'hi': 'आपका ईमेल',
@@ -1729,7 +1828,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'te': '',
     },
     'p2qu4jis': {
-      'en': 'For Me',
+      'en': 'FOR ME',
       'bn': '',
       'gu': '',
       'hi': '',
@@ -1740,18 +1839,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'te': '',
     },
     'sbqqb0u1': {
-      'en': 'For Others',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    'ztd1sqit': {
-      'en': 'Phone Number',
+      'en': 'FOR OTHERS',
       'bn': '',
       'gu': '',
       'hi': '',
@@ -1783,6 +1871,72 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
+    'hjbuhicj': {
+      'en': 'Field is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '9dx6m15v': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '5dbjovza': {
+      'en': 'Field is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'gwc1uswb': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'amebp2y7': {
+      'en': 'Field is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'wskugamp': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
     'bfix9ld8': {
       'en': 'Phone number is required',
       'bn': '',
@@ -1805,6 +1959,94 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
+    'f85prl1q': {
+      'en': 'Field is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'sdkeo4yb': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'wouu06vi': {
+      'en': 'Field is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'zzivkb4j': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'f4f8oh44': {
+      'en': 'Field is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '0lnxtjlh': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'ub76i4bj': {
+      'en': 'Field is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'qcm8iok2': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
     '1alsrf6r': {
       'en': 'Guest Name',
       'bn': '',
@@ -1816,8 +2058,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'qbj1d5it': {
-      'en': 'Guest Email',
+    '0jcp3eti': {
+      'en': 'Guest Phone Number',
       'bn': '',
       'gu': '',
       'hi': '',
@@ -1827,8 +2069,41 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '0jcp3eti': {
-      'en': 'Guest Phone Number',
+    'v8odaxpd': {
+      'en': 'Field is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'kis8xmys': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'x97wld1z': {
+      'en': 'Field is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '16o35ty7': {
+      'en': 'Please choose an option from the dropdown',
       'bn': '',
       'gu': '',
       'hi': '',
@@ -1851,72 +2126,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'mpka1wvc': {
       'en': 'Confirm Booking',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    'l6kkt6rh': {
-      'en': 'Name is required',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    'kis8xmys': {
-      'en': 'Please choose an option from the dropdown',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    'z700ltmy': {
-      'en': 'Email is required',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    '16o35ty7': {
-      'en': 'Please choose an option from the dropdown',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    'y37njkm5': {
-      'en': 'Phone number is required',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    '49t1wrqm': {
-      'en': 'Please choose an option from the dropdown',
       'bn': '',
       'gu': '',
       'hi': '',
@@ -2324,7 +2533,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // allpages
   {
-    'wvee3zbz': {
+    '5b0w9yuz': {
       'en': 'Home',
       'bn': '',
       'gu': '',
@@ -2335,7 +2544,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'khnivf4v': {
+    '3j5zaakg': {
       'en': 'The Sangha',
       'bn': 'সংঘ',
       'gu': 'સંઘ',
@@ -2346,7 +2555,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'சங்கம்',
       'te': 'సంఘము',
     },
-    'bst4mg5a': {
+    '1m0ekjcx': {
       'en': 'The History of the Organization',
       'bn': 'সংগঠনের ইতিহাস',
       'gu': 'સંસ્થાનો ઇતિહાસ',
@@ -2357,7 +2566,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'அமைப்பின் வரலாறு',
       'te': 'సంస్థ యొక్క చరిత్ర',
     },
-    'sa16uwmh': {
+    'hsm1bnv8': {
       'en':
           'The Sangha was established by the Prophet of the Age, Swami Pranavananda in 1917 to fulfil his mission. He was a great Yogi, an Acharya, a philosopher-thinker, a reformer and one of the very few men of the world who can renounce, and he did, everything, for mankind’s sake. He was born in a village, Bajitpur in Madaripur district in Bengal in the year 1896. From his childhood his behaviour was different than that of other boys of his age. He was a born leader, strong and healthy and keen to help anyone in distress. He was the last person to tolerate any injustice done by anyone in society. He would not accept anything without verifying and testing the truth in it.\n\nThis organization is headquartered in Kolkata and has about fifty branches and associates throughout India and around the world. It is running a big Hospital (150 bed) including 28 bed ICU/HDU, at Joka, Kolkata, with all diagnostic facilities of M.R.I., C.T. Scan, Digital X-ray, U.S.G., Eco-cardio, Endoscopy, Advanced, Automated Pathological Lab, Micro Surgery, Nephrology & Dialysis etc. Apart from this Cancer Hospital (Rourkela), large number of polyclinic & Hospitals at different centers is also function.\n\nIn recognition of its services to the nation, the Govt. of India has exempted the Sangha U/S-10(23)(c) of the IT. Act, F.C.R.A. Registration and its donors US 80G of IT Act. and United Nations has accredited the Sangha with ECOSOC Status,since-2008.',
       'bn':
@@ -2377,7 +2586,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'te':
           'సంఘాన్ని యుగ ప్రవక్త స్వామి ప్రణవానంద తన లక్ష్యాన్ని నెరవేర్చడానికి 1917లో స్థాపించారు. అతను ఒక గొప్ప యోగి, ఒక ఆచార్య, ఒక తత్వవేత్త-ఆలోచనాపరుడు, సంస్కర్త మరియు ప్రపంచంలోని అతి కొద్దిమంది వ్యక్తులలో ఒకడు మరియు త్యజించగలడు మరియు అతను మానవజాతి కొరకు, ప్రతిదీ చేసాడు. అతను 1896 సంవత్సరంలో బెంగాల్‌లోని మదరిపూర్ జిల్లాలోని బజిత్‌పూర్ అనే గ్రామంలో జన్మించాడు. అతని చిన్నతనం నుండి అతని ప్రవర్తన అతని వయస్సులోని ఇతర అబ్బాయిల కంటే భిన్నంగా ఉండేది. అతను పుట్టిన నాయకుడు, బలంగా మరియు ఆరోగ్యంగా ఉన్నాడు మరియు కష్టాల్లో ఉన్న ఎవరికైనా సహాయం చేయడానికి ఆసక్తి కలిగి ఉన్నాడు. సమాజంలో ఎవరికి అన్యాయం జరిగినా సహించే చివరి వ్యక్తి ఆయన. అందులోని సత్యాన్ని ధృవీకరించకుండా మరియు పరీక్షించకుండా అతను దేనినీ అంగీకరించడు.\n\nఈ సంస్థ ప్రధాన కార్యాలయం కోల్‌కతాలో ఉంది మరియు భారతదేశం అంతటా మరియు ప్రపంచవ్యాప్తంగా దాదాపు యాభై శాఖలు మరియు అసోసియేట్‌లను కలిగి ఉంది. ఇది కోల్‌కతాలోని జోకాలో 28 పడకల ICU/HDUతో సహా పెద్ద హాస్పిటల్ (150 పడకలు)ను నిర్వహిస్తోంది, M.R.I., C.T యొక్క అన్ని రోగనిర్ధారణ సౌకర్యాలతో ఇది నడుస్తోంది. స్కాన్, డిజిటల్ ఎక్స్-రే, U.S.G., ఎకో-కార్డియో, ఎండోస్కోపీ, అడ్వాన్స్‌డ్, ఆటోమేటెడ్ పాథలాజికల్ ల్యాబ్, మైక్రో సర్జరీ, నెఫ్రాలజీ & డయాలసిస్ మొదలైనవి. ఇదే కాకుండా క్యాన్సర్ హాస్పిటల్ (రూర్కెలా), వివిధ కేంద్రాలలో పెద్ద సంఖ్యలో పాలీక్లినిక్ & హాస్పిటల్స్ కూడా పనిచేస్తాయి. .\n\nదేశానికి చేసిన సేవలకు గుర్తింపుగా ప్రభుత్వం. భారతదేశం IT యొక్క సంఘ U/S-10(23)(c)కి మినహాయింపు ఇచ్చింది. చట్టం, F.C.R.A. నమోదు మరియు దాని దాతలు US 80G IT చట్టం. మరియు ఐక్యరాజ్యసమితి 2008 నుండి సంఘానికి ECOSOC హోదాతో గుర్తింపు పొందింది.',
     },
-    'a59jx891': {
+    '2xerr5mo': {
       'en': 'Sangha at a Glance',
       'bn': 'এক নজরে সংঘ',
       'gu': 'એક નજરમાં સંઘ',
@@ -2388,7 +2597,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'ஒரு பார்வையில் சங்கா',
       'te': 'ఒక చూపులో సంఘ',
     },
-    'bp3aps7k': {
+    '2u5fk8y0': {
       'en': 'Founder',
       'bn': 'প্রতিষ্ঠাতা',
       'gu': 'સ્થાપક',
@@ -2399,7 +2608,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'நிறுவனர்',
       'te': 'వ్యవస్థాపకుడు',
     },
-    'mr84djr1': {
+    'fx31uahd': {
       'en': 'Yugacharya Shrimat Swami\nPranavanandaji Maharaj',
       'bn': 'যুগাচার্য শ্রীমৎ স্বামী প্রণবানন্দজী মহারাজ',
       'gu': 'યુગાચાર્ય શ્રીમત સ્વામી પ્રણવાનંદજી મહારાજ',
@@ -2410,7 +2619,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'யுகாச்சார்யா ஸ்ரீமத் சுவாமி பிரணவானந்தஜி மகராஜ்',
       'te': 'యుగాచార్య శ్రీమత్ స్వామి ప్రణవానందజీ మహరాజ్',
     },
-    'wjsv9hcg': {
+    'pk536ij1': {
       'en': 'Birth Place',
       'bn': 'জন্মস্থান',
       'gu': 'જન્મસ્થળ',
@@ -2421,7 +2630,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'பிறந்த இடம்',
       'te': 'పుట్టిన ప్రదేశం',
     },
-    'mc8rvaaf': {
+    '72hoo8mf': {
       'en':
           '29th January, 1896, on Maghi Purnima Tithi \nat evening . At Bajitpur village of Madaripur \nDistrict, Bangladesh',
       'bn':
@@ -2441,7 +2650,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'te':
           '29 జనవరి, 1896, మాఘి పూర్ణిమ తిథి\nసాయంత్రం వేళ . మదరిపూర్ జిల్లా బజిత్‌పూర్ గ్రామంలో,\nబంగ్లాదేశ్',
     },
-    'aq544jzj': {
+    'bga54xt3': {
       'en': 'Parent\'sName',
       'bn': 'পিতামাতার নাম',
       'gu': 'માતાપિતાનું નામ',
@@ -2452,7 +2661,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'பெற்றோரின் பெயர்',
       'te': 'తల్లిదండ్రుల పేర్లు',
     },
-    '57hgaxvm': {
+    'nmbyjpq1': {
       'en':
           'Father: Shri Vishnucharan Das Bhuinya, \nMother: Shrimati Sharadadevi',
       'bn': 'পিতাঃ শ্রী বিষ্ণুচরণ দাস ভূঁইয়া,\nমাতা: শ্রীমতি শারদাদেবী',
@@ -2464,7 +2673,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'தந்தை: ஸ்ரீ விஷ்ணுசரண் தாஸ் பூயின்யா,\nதாய்: ஸ்ரீமதி சாரதாதேவி',
       'te': 'తండ్రి: శ్రీ విష్ణుచరణ్ దాస్ భూన్య,\nతల్లి: శ్రీమతి శారదాదేవి',
     },
-    'vt1socds': {
+    '0iy8aa00': {
       'en': 'Diksha',
       'bn': 'দীক্ষা',
       'gu': 'દીક્ષા',
@@ -2475,7 +2684,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'திக்ஷா',
       'te': 'దీక్ష',
     },
-    'mf3zqz3r': {
+    'q5s4sqv7': {
       'en':
           'Vijaya Ekadashi, 1913 at Gorakhpur by Mahayogi\nBaba Gambhirnathji, Gorakhpur',
       'bn':
@@ -2495,7 +2704,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'te':
           'విజయ ఏకాదశి, 1913లో గోరఖ్‌పూర్‌లో మహాయోగి\nబాబా గంభీర్నాథ్జీ, గోరఖ్పూర్',
     },
-    'h0a9bh71': {
+    '4auk6bad': {
       'en': 'Siddhilabh',
       'bn': 'সিদ্ধিলাভ',
       'gu': 'સિદ્ધિલાભ',
@@ -2506,7 +2715,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'சித்திலாப்',
       'te': 'సిద్ధిలాభ్',
     },
-    'ya33ouq6': {
+    'fkx9spt4': {
       'en': 'Maghi Purnima Tithi, 1916 at Bajitpur Siddhapeeth',
       'bn': 'মাঘী পূর্ণিমা তিথি, 1916 বাজিতপুর সিদ্ধপীঠে',
       'gu': 'માઘી પૂર્ણિમા તિથિ, બાજીતપુર સિદ્ધપીઠ ખાતે 1916',
@@ -2517,7 +2726,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'மகி பூர்ணிமா திதி, 1916 பஜித்பூர் சித்தபீத்தில்',
       'te': 'మాఘి పూర్ణిమ తిథి, 1916 బజిత్‌పూర్ సిద్ధపీఠంలో',
     },
-    '43ydgu1z': {
+    'mxen70jv': {
       'en': 'Sangha Foundation',
       'bn': 'সংঘ ফাউন্ডেশন',
       'gu': 'સંઘ ફાઉન્ડેશન',
@@ -2528,7 +2737,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'சங்க அறக்கட்டளை',
       'te': 'సంఘ ఫౌండేషన్',
     },
-    'oc8dloc4': {
+    '548aqiy1': {
       'en': 'Sangha founded on Maghi Purnima,\n1917 at Bajitpur Siddhapeeth',
       'bn': 'মাঘী পূর্ণিমায় সংঘ প্রতিষ্ঠিত হয়,\n1917 বাজিতপুর সিদ্ধপীঠে',
       'gu': 'માઘી પૂર્ણિમાના રોજ સંઘની સ્થાપના\n1917 બાજીતપુર સિદ્ધપીઠ ખાતે',
@@ -2543,240 +2752,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'te':
           'మాఘి పూర్ణిమ నాడు స్థాపించబడిన సంఘము,\n1917లో బజిత్‌పూర్ సిద్ధపీఠంలో',
     },
-    'jlgoncjz': {
-      'en': 'Sangha Vani by Acharya Srimat Swami Pranavananda ji Maharaj',
-      'bn': 'আমাদের কার্যক্রম',
-      'gu': 'અમારી પ્રવૃત્તિઓ',
-      'hi': 'हमारी गतिविधियाँ',
-      'kn': 'ನಮ್ಮ ಚಟುವಟಿಕೆಗಳು',
-      'ml': 'ഞങ്ങളുടെ പ്രവർത്തനങ്ങൾ',
-      'mr': 'आमचे उपक्रम',
-      'ta': 'எங்கள் செயல்பாடுகள்',
-      'te': 'మా యాక్టివిటీస్',
-    },
-    'uht26ugg': {
-      'en': 'What is the Goal of Life?',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    'ah8uum36': {
-      'en': 'Self Realization, Universal Emancipation',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    'szwq86zx': {
-      'en': 'What is Religion?',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    '1rvulovp': {
-      'en':
-          'Self-sacrifice, Self-abnegation, Self-Discipline, Adherence to truth and Countenance',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    'pwr411ek': {
-      'en': 'What is Real Death?',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    'hsgdfsll': {
-      'en': 'Forgetfulness of the “Self”',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    '032u04c6': {
-      'en': 'What is Real Life?',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    '23yamr3j': {
-      'en': 'Self-possession, Self-remembrance and Self-consciousness',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    'stynvv6k': {
-      'en': 'What are Real Virtues ?',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    'g0itl7ju': {
-      'en': 'Heroism, Virility, Manliness and Aspiration for emancipation',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    'uro57bzm': {
-      'en': 'What is Real Sins?',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    'v4ojoky7': {
-      'en': 'Weakness, Fear (Defeatism), Cowardice, Meanness and Selfishness',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    '0ciri8tu': {
-      'en': 'What are Real Sources of Strength?',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    'omwfxrwe': {
-      'en': 'Patience, Fortitude and Endurance',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    'jkuiz662': {
-      'en': 'What are Real Assets ?',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    'lai7hd5o': {
-      'en': 'Self-confidence, Self-reliance and Self-respect',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    '5b50wwho': {
-      'en': 'Who are Real Enemies?',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    '54wsxb38': {
-      'en':
-          'Indolence, Slumber, Procrastination, Inertia, Lustful senses and Passions',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    'r9nmo433': {
-      'en': 'Who are Real Friends?',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    'f2fci27v': {
-      'en': 'Energy, Enthusiasm and Perseverance',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    'mazgwfu6': {
+    '8ju69qb6': {
       'en': 'Our Activites',
       'bn': 'আমাদের কার্যক্রম',
       'gu': 'અમારી પ્રવૃત્તિઓ',
@@ -2787,7 +2763,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'எங்கள் செயல்பாடுகள்',
       'te': 'మా యాక్టివిటీస్',
     },
-    'ro8ws1um': {
+    '8skmy8af': {
       'en': 'Relief Work',
       'bn': 'ত্রাণ কাজ',
       'gu': 'રાહત કાર્ય',
@@ -2798,7 +2774,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'நிவாரணப் பணிகள்',
       'te': 'రిలీఫ్ వర్క్',
     },
-    'r48fj010': {
+    'hbukrhgu': {
       'en': 'Read More',
       'bn': 'আরও পড়ুন',
       'gu': 'વધુ વાંચો',
@@ -2809,7 +2785,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'மேலும் படிக்க',
       'te': 'ఇంకా చదవండి',
     },
-    '6e0yjl89': {
+    'xlgdpwm6': {
       'en': 'Healthcare Services',
       'bn': 'স্বাস্থ্য সেবা পরিষদ',
       'gu': 'હેલ્થકેર સેવાઓ',
@@ -2820,7 +2796,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'சுகாதார சேவைகள்',
       'te': 'ఆరోగ్య సంరక్షణ సేవలు',
     },
-    'fs44qt6b': {
+    'scn3synp': {
       'en': 'Read More',
       'bn': 'আরও পড়ুন',
       'gu': 'વધુ વાંચો',
@@ -2831,7 +2807,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'மேலும் படிக்க',
       'te': 'ఇంకా చదవండి',
     },
-    'ejhobz5u': {
+    '3rd8mm6f': {
       'en': 'Education Program',
       'bn': 'শিক্ষা কার্যক্রম',
       'gu': 'શિક્ષણ કાર્યક્રમ',
@@ -2842,7 +2818,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கல்வித் திட்டம்',
       'te': 'విద్యా కార్యక్రమం',
     },
-    'cc6bicka': {
+    'bwpc3li7': {
       'en': 'Read More',
       'bn': 'আরও পড়ুন',
       'gu': 'વધુ વાંચો',
@@ -2853,7 +2829,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'மேலும் படிக்க',
       'te': 'ఇంకా చదవండి',
     },
-    'deu3ytx1': {
+    'e37m1qw9': {
       'en': 'Rural Development & Tribal Welfare',
       'bn': 'উপজাতি কল্যাণ',
       'gu': 'આદિજાતિ કલ્યાણ',
@@ -2864,7 +2840,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'பழங்குடியினர் நலன்',
       'te': 'గిరిజన సంక్షేమం',
     },
-    'x8iai6s2': {
+    '13nhw4ce': {
       'en': 'Read More',
       'bn': 'আরও পড়ুন',
       'gu': 'વધુ વાંચો',
@@ -2875,7 +2851,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'மேலும் படிக்க',
       'te': 'ఇంకా చదవండి',
     },
-    'nnr1aump': {
+    'ta7hcmaj': {
       'en': 'Spiritual Harmony',
       'bn': 'আধ্যাত্মিক সম্প্রীতি',
       'gu': 'આધ્યાત્મિક સંવાદિતા',
@@ -2886,7 +2862,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'ஆன்மீக நல்லிணக்கம்',
       'te': 'ఆధ్యాత్మిక సామరస్యం',
     },
-    'urlgsl55': {
+    'ia9bcci5': {
       'en': 'Read More',
       'bn': 'আরও পড়ুন',
       'gu': 'વધુ વાંચો',
@@ -2897,7 +2873,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'மேலும் படிக்க',
       'te': 'ఇంకా చదవండి',
     },
-    '6jewh4y9': {
+    '8it88d0v': {
       'en': 'City',
       'bn': '',
       'gu': '',
@@ -2908,7 +2884,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'h26wz1xm': {
+    'z8bn0hnl': {
       'en': 'Cities',
       'bn': 'আধ্যাত্মিক সম্প্রীতি',
       'gu': 'આધ્યાત્મિક સંવાદિતા',
@@ -2919,7 +2895,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'ஆன்மீக நல்லிணக்கம்',
       'te': 'ఆధ్యాత్మిక సామరస్యం',
     },
-    'wxyfgfp3': {
+    'w9r6darh': {
       'en': 'Search for city...',
       'bn': 'শহরের জন্য অনুসন্ধান করুন...',
       'gu': 'શહેર માટે શોધો...',
@@ -2930,7 +2906,18 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'நகரத்தைத் தேடு...',
       'te': 'నగరం కోసం శోధించండి...',
     },
-    '13zi1p5b': {
+    'hq2oo9ru': {
+      'en': 'Option 1',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '63ogeycf': {
       'en': 'Account',
       'bn': '',
       'gu': '',
@@ -2941,18 +2928,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '8rvo0bb9': {
-      'en': 'Create Account',
-      'bn': 'প্রবেশ করুন',
-      'gu': 'પ્રવેશ કરો',
-      'hi': 'लॉग इन करें',
-      'kn': 'ಲಾಗಿನ್ ಮಾಡಿ',
-      'ml': 'ലോഗിൻ',
-      'mr': 'लॉगिन करा',
-      'ta': 'உள்நுழைய',
-      'te': 'ప్రవేశించండి',
-    },
-    'ai6u4j1w': {
+    'dbo5ng82': {
       'en': 'Login',
       'bn': 'প্রবেশ করুন',
       'gu': 'પ્રવેશ કરો',
@@ -2963,8 +2939,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'உள்நுழைய',
       'te': 'ప్రవేశించండి',
     },
-    'starqym1': {
-      'en': 'Email',
+    'racll3og': {
+      'en': 'Email Address',
       'bn': 'ইমেইল',
       'gu': 'ઈમેલ',
       'hi': 'ईमेल',
@@ -2974,18 +2950,18 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'மின்னஞ்சல்',
       'te': 'ఇమెయిల్',
     },
-    'szwrp3g2': {
+    'jxparzbl': {
       'en': 'Password',
-      'bn': 'পাসওয়ার্ড',
-      'gu': 'પાસવર્ડ',
-      'hi': 'पासवर्ड',
-      'kn': 'ಗುಪ್ತಪದ',
-      'ml': 'Password',
-      'mr': 'पासवर्ड',
-      'ta': 'கடவுச்சொல்',
-      'te': 'పాస్వర్డ్',
+      'bn': 'ইমেইল',
+      'gu': 'ઈમેલ',
+      'hi': 'ईमेल',
+      'kn': 'ಇಮೇಲ್',
+      'ml': 'ഇമെയിൽ',
+      'mr': 'ईमेल',
+      'ta': 'மின்னஞ்சல்',
+      'te': 'ఇమెయిల్',
     },
-    'grrasqq6': {
+    '5viun92w': {
       'en': 'Log In',
       'bn': 'প্রবেশ করুন',
       'gu': 'પ્રવેશ કરો',
@@ -2996,18 +2972,18 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'உள்நுழைய',
       'te': 'ప్రవేశించండి',
     },
-    '2zt168lm': {
-      'en': 'Sign Up',
-      'bn': 'নিবন্ধন করুন',
-      'gu': 'સાઇન અપ કરો',
-      'hi': 'साइन अप करें',
-      'kn': 'ಸೈನ್ ಅಪ್ ಮಾಡಿ',
-      'ml': 'സൈൻ അപ്പ് ചെയ്യുക',
-      'mr': 'साइन अप करा',
-      'ta': 'பதிவு செய்யவும்',
-      'te': 'చేరడం',
+    'v9px578n': {
+      'en': 'Signup',
+      'bn': 'প্রবেশ করুন',
+      'gu': 'પ્રવેશ કરો',
+      'hi': 'लॉग इन करें',
+      'kn': 'ಲಾಗಿನ್ ಮಾಡಿ',
+      'ml': 'ലോഗിൻ',
+      'mr': 'लॉग इन करा',
+      'ta': 'உள்நுழைய',
+      'te': 'ప్రవేశించండి',
     },
-    'myxnihh2': {
+    'lisgtt46': {
       'en': 'or Sign In with',
       'bn': 'অথবা এর সাথে সাইন ইন করুন',
       'gu': 'અથવા સાથે સાઇન ઇન કરો',
@@ -3018,7 +2994,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'அல்லது உடன் உள்நுழையவும்',
       'te': 'లేదా దీనితో సైన్ ఇన్ చేయండి',
     },
-    'l9mwn2h0': {
+    'wvc3rp5t': {
       'en': 'Forgot password?',
       'bn': 'অথবা এর সাথে সাইন ইন করুন',
       'gu': 'અથવા સાથે સાઇન ઇન કરો',
@@ -3029,128 +3005,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'அல்லது உடன் உள்நுழையவும்',
       'te': 'లేదా దీనితో సైన్ ఇన్ చేయండి',
     },
-    '4zo9c3sr': {
-      'en': 'Want to Login',
-      'bn': 'এবার শুরু করা যাক',
-      'gu': 'શરૂ કરો',
-      'hi': 'शुरू हो जाओ',
-      'kn': 'ಪ್ರಾರಂಭಿಸಿ',
-      'ml': 'തുടങ്ങി',
-      'mr': 'सुरु करूया',
-      'ta': 'தொடங்குங்கள்',
-      'te': 'ప్రారంభించడానికి',
-    },
-    '6wy5ssry': {
-      'en': 'Get Started',
-      'bn': 'এবার শুরু করা যাক',
-      'gu': 'શરૂ કરો',
-      'hi': 'शुरू हो जाओ',
-      'kn': 'ಪ್ರಾರಂಭಿಸಿ',
-      'ml': 'തുടങ്ങി',
-      'mr': 'सुरु करूया',
-      'ta': 'தொடங்குங்கள்',
-      'te': 'ప్రారంభించడానికి',
-    },
-    'l4ex5k16': {
-      'en': 'Name',
-      'bn': 'নাম',
-      'gu': 'નામ',
-      'hi': 'नाम',
-      'kn': 'ಹೆಸರು',
-      'ml': 'പേര്',
-      'mr': 'नाव',
-      'ta': 'பெயர்',
-      'te': 'పేరు',
-    },
-    'dc7ll7v1': {
-      'en': 'Email',
-      'bn': 'ইমেইল',
-      'gu': 'ઈમેલ',
-      'hi': 'ईमेल',
-      'kn': 'ಇಮೇಲ್',
-      'ml': 'ഇമെയിൽ',
-      'mr': 'ईमेल',
-      'ta': 'மின்னஞ்சல்',
-      'te': 'ఇమెయిల్',
-    },
-    'at6p2yma': {
-      'en': 'Phone Number',
-      'bn': 'ফোন নম্বর',
-      'gu': 'ફોન નંબર',
-      'hi': 'फ़ोन नंबर',
-      'kn': 'ದೂರವಾಣಿ ಸಂಖ್ಯೆ',
-      'ml': 'ഫോൺ നമ്പർ',
-      'mr': 'फोन नंबर',
-      'ta': 'தொலைபேசி எண்',
-      'te': 'ఫోను నంబరు',
-    },
-    'xlqk8jeq': {
-      'en': 'Password',
-      'bn': 'পাসওয়ার্ড',
-      'gu': 'પાસવર્ડ',
-      'hi': 'पासवर्ड',
-      'kn': 'ಗುಪ್ತಪದ',
-      'ml': 'Password',
-      'mr': 'पासवर्ड',
-      'ta': 'கடவுச்சொல்',
-      'te': 'పాస్వర్డ్',
-    },
-    'ypc7vbwt': {
-      'en': 'Confirm Password',
-      'bn': 'পাসওয়ার্ড নিশ্চিত করুন',
-      'gu': 'પાસવર્ડની પુષ્ટિ કરો',
-      'hi': 'पासवर्ड की पुष्टि कीजिये',
-      'kn': 'ಪಾಸ್ವರ್ಡ್ ದೃಢೀಕರಿಸಿ',
-      'ml': 'പാസ്വേഡ് സ്ഥിരീകരിക്കുക',
-      'mr': 'पासवर्डची पुष्टी करा',
-      'ta': 'கடவுச்சொல்லை உறுதிப்படுத்தவும்',
-      'te': 'పాస్‌వర్డ్‌ని నిర్ధారించండి',
-    },
-    'wzboe3dx': {
-      'en': 'Create Account',
-      'bn': 'হিসাব তৈরি কর',
-      'gu': 'ખાતું બનાવો',
-      'hi': 'खाता बनाएं',
-      'kn': 'ಖಾತೆ ತೆರೆ',
-      'ml': 'അക്കൗണ്ട് സൃഷ്ടിക്കുക',
-      'mr': 'खाते तयार करा',
-      'ta': 'உங்கள் கணக்கை துவங்குங்கள்',
-      'te': 'ఖాతాను సృష్టించండి',
-    },
-    'cutjd3i6': {
-      'en': 'Events',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    'l3v2hiph': {
-      'en': 'Events',
-      'bn': 'স্বাস্থ্য সেবা পরিষদ',
-      'gu': 'હેલ્થકેર સેવાઓ',
-      'hi': 'स्वास्थ्य देखभाल सेवाएँ',
-      'kn': 'ಆರೋಗ್ಯ ಸೇವೆಗಳು',
-      'ml': 'ആരോഗ്യ സേവനങ്ങൾ',
-      'mr': 'आरोग्य सेवा',
-      'ta': 'சுகாதார சேவைகள்',
-      'te': 'ఆరోగ్య సంరక్షణ సేవలు',
-    },
-    'i5x03tl9': {
-      'en': 'Upcoming Events',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    'gc7htymv': {
+    'apkip6y7': {
       'en': 'Facilities',
       'bn': '',
       'gu': '',
@@ -3161,7 +3016,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'mppv81hx': {
+    '59iz74fo': {
       'en': 'Facilities',
       'bn': 'স্বাস্থ্য সেবা পরিষদ',
       'gu': 'હેલ્થકેર સેવાઓ',
@@ -3172,7 +3027,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'சுகாதார சேவைகள்',
       'te': 'ఆరోగ్య సంరక్షణ సేవలు',
     },
-    'pefl5euy': {
+    '5rdhb1nf': {
       'en': 'Function Hall Booking',
       'bn': '',
       'gu': '',
@@ -3183,7 +3038,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'vg0ne31d': {
+    'k6dq94sk': {
       'en': 'Puja Booking',
       'bn': '',
       'gu': '',
@@ -3194,18 +3049,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '21xbvl0g': {
-      'en': 'Guest PickUp & Drop',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    'ki6jtnxu': {
+    'dm61xj05': {
       'en': 'Guest Room Booking',
       'bn': '',
       'gu': '',
@@ -3216,7 +3060,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '6yz3rmnd': {
+    '3mac6sj3': {
       'en': 'Annadan Seva',
       'bn': '',
       'gu': '',
@@ -3227,7 +3071,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'cz1cp1cm': {
+    '2rd3s7zl': {
       'en': 'Yoga',
       'bn': '',
       'gu': '',
@@ -3238,7 +3082,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'hrfs29z7': {
+    'lxgidjls': {
       'en': 'Free Distributions of Saress, Cloths & Blankets to the Needy',
       'bn': '',
       'gu': '',
@@ -3249,8 +3093,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '1arcsigh': {
-      'en': 'Death Rituals',
+    'ldnba1ds': {
+      'en': 'Guest PickUp & Drop',
       'bn': '',
       'gu': '',
       'hi': '',
@@ -3260,7 +3104,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'hhktr9wb': {
+    'bbz78xq2': {
       'en': 'Please select...',
       'bn': '',
       'gu': '',
@@ -3271,7 +3115,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'ugo4fm3d': {
+    'jp3t83hb': {
       'en': 'Search for an item...',
       'bn': '',
       'gu': '',
@@ -3282,7 +3126,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'fyjrv5xi': {
+    'bvkhrzmi': {
       'en':
           'Bharat Sevashram Sangha Branches provides TWO HALLS for performing various programmes like Marraige Party, Birthday Party, Shashtipoorthi, Naming Cermony, Sreemantha Karya, Engagement Cermony, Seminar, Conference, Discourses(Pravachan), etc.',
       'bn': '',
@@ -3294,7 +3138,205 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '5o48hibl': {
+    '6qc9nrf0': {
+      'en': 'Puja Type',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'nihipc9r': {
+      'en': 'DEATH RITUAL',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'z2v49ony': {
+      'en': 'TYPE 1',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'zo7emy2f': {
+      'en': 'TYPE 2',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'g1c8xyfp': {
+      'en': 'TYPE 3',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'snw29ltl': {
+      'en': 'Puja Location',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'sukm2gjt': {
+      'en': 'IN ASHRAM',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'qwbji3ho': {
+      'en': 'OUTSIDE ASHRAM',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'wpb3cw4j': {
+      'en': 'Resources : ',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'zcs0wquy': {
+      'en': '1. Priest',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '0exn91fm': {
+      'en': '2. Puja Hall',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '3rjsdg1a': {
+      'en': 'Time : ',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '4avbaxmo': {
+      'en': 'Approx 2hrs',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'jcmsbtl1': {
+      'en': 'Resources : ',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'bkfde7me': {
+      'en': 'Priest',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '0s9ilv2v': {
+      'en': 'Time : ',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'fkugxmlb': {
+      'en': 'Approx 4hrs (2hrs for Travel & \n2hrs for Puja)',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '58qrg0jh': {
+      'en': 'Add note for the ashram...',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'n6v3kl6g': {
       'en':
           'Bharat Sevashram Sangha provides Accomodation Facilities in their \"Guest House\" to the needy persons who wants to come to any of the major cities for travel as a tourist, for Medical Treatments, Interview, Official Work etc., from different parts of the country. We provide different categories of Rooms on Nominal Donation Basis.',
       'bn': '',
@@ -3306,7 +3348,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'v0b7yl4o': {
+    'tg931ttt': {
       'en':
           'Free \"ANNADAN SEVA\" to feed the poor and hungry is considered as one of the most Sacred Seva to humanity. Bharat Sevashram Sangha Branches will be doing this seva for 365 days for more than 150 People. We intend to increase the number of people depending upon the sponsers.',
       'bn': '',
@@ -3318,7 +3360,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'dnxva03h': {
+    '5qmrigov': {
       'en': 'Sponsorship:',
       'bn': '',
       'gu': '',
@@ -3329,7 +3371,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'ttmxaslo': {
+    '1q268ptz': {
       'en': 'For 50 Persons Seva: Rs. 1500/-',
       'bn': '',
       'gu': '',
@@ -3340,7 +3382,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'fmw2veyg': {
+    'v816m9f4': {
       'en': 'For 100 Persons Seva: Rs. 3000/-',
       'bn': '',
       'gu': '',
@@ -3351,7 +3393,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'f866ljss': {
+    '3hfr3a6q': {
       'en': 'For 200 Persons Seva: Rs. 5000/-',
       'bn': '',
       'gu': '',
@@ -3362,7 +3404,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'fwn6t40p': {
+    'u1i32yjo': {
       'en': 'For 300 Persons Seva: Rs. 7000/-',
       'bn': '',
       'gu': '',
@@ -3373,7 +3415,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'k8ldj8ot': {
+    'w74a94w1': {
       'en':
           'Minimum Donation accepted is Rs.500/-\nMaximum Donation No Limit\nPlease join us to help the poor & needy',
       'bn': '',
@@ -3385,7 +3427,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'lg315ghk': {
+    'd21ir71z': {
       'en': 'Account Details',
       'bn': '',
       'gu': '',
@@ -3396,7 +3438,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'yp6q69hg': {
+    '7nu3456g': {
       'en': 'Online transfer can be made to our bank \n',
       'bn': '',
       'gu': '',
@@ -3407,7 +3449,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '85ptcpef': {
+    '152b7t1k': {
       'en': 'Andhra Bank',
       'bn': '',
       'gu': '',
@@ -3418,7 +3460,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'wxvdlsd6': {
+    '2vgctf22': {
       'en': 'Branch\n',
       'bn': '',
       'gu': '',
@@ -3429,7 +3471,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'nq5rf1nx': {
+    '3ljrhikr': {
       'en': 'Jakkur, Bengaluru-560064',
       'bn': '',
       'gu': '',
@@ -3440,7 +3482,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'ta27su5i': {
+    'a0oky5n9': {
       'en': 'A/C No\n',
       'bn': '',
       'gu': '',
@@ -3451,7 +3493,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'xaj12sop': {
+    'p8g2wzx8': {
       'en': '292811100000159',
       'bn': '',
       'gu': '',
@@ -3462,7 +3504,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'kf9e6r0q': {
+    't95h6f7f': {
       'en': 'IFSC Code\n',
       'bn': '',
       'gu': '',
@@ -3473,7 +3515,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'fw8zru7e': {
+    '4pw07n2j': {
       'en': 'ANDB0002928',
       'bn': '',
       'gu': '',
@@ -3484,7 +3526,18 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'calpzkoy': {
+    '8j4qrop6': {
+      'en': 'Add note for the ashram...',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'eq7ozj2a': {
       'en': 'Days: Monday to Friday',
       'bn': '',
       'gu': '',
@@ -3495,7 +3548,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'x0154cnl': {
+    '1nhsagsm': {
       'en': 'Timings:',
       'bn': '',
       'gu': '',
@@ -3506,7 +3559,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '38dcdrnr': {
+    'mlulvo1i': {
       'en': '5:30a.m to 6:30a.m',
       'bn': '',
       'gu': '',
@@ -3517,7 +3570,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'a97mzzsw': {
+    'semhjb81': {
       'en': '8:30a.m to 9:30a.m',
       'bn': '',
       'gu': '',
@@ -3528,7 +3581,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '8jubpa4k': {
+    'gtjrptxw': {
       'en': '5:00p.m to 6:00p.m',
       'bn': '',
       'gu': '',
@@ -3539,7 +3592,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'od9phxvw': {
+    'fjrd0ihd': {
       'en': '10:00a.m to 11:00a.m',
       'bn': '',
       'gu': '',
@@ -3550,7 +3603,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'du2bnaya': {
+    '47xiqlpe': {
       'en': 'Age group 6 to 16 years',
       'bn': '',
       'gu': '',
@@ -3561,7 +3614,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'c4qbd2f4': {
+    'ahk0jyez': {
       'en': 'Children Yoga Class: 4:45p.m to 5:45p.m',
       'bn': '',
       'gu': '',
@@ -3572,7 +3625,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'nelckobs': {
+    '07g7nlhc': {
       'en':
           'Bharat Sevashram Sangha has been distributing Sarees, Cloths & Blanketsto the needy & poor on important occassions.',
       'bn': '',
@@ -3584,30 +3637,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'ryesy6yn': {
-      'en':
-          'Bharat Sevashram Sangha provides Facilities for conducting Death Rituals like 4th Day, 13th Day, 1st Year, 2nd Year, Tithi Cermony etc., regularly',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    'hwf82w8y': {
-      'en': 'Pandit/Pujari Brahmin is Also Available',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    '1cf5rta2': {
+    'oosdq5d4': {
       'en': 'Book for Function Hall',
       'bn': '',
       'gu': '',
@@ -3618,7 +3648,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'wrvrdll3': {
+    'tcbjx14d': {
       'en': 'Book for Puja',
       'bn': '',
       'gu': '',
@@ -3629,7 +3659,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'ka6kjr5p': {
+    'p8fi48et': {
       'en': 'Book for Guest PickUp & Drop',
       'bn': '',
       'gu': '',
@@ -3640,7 +3670,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'd40ceny5': {
+    '8og3vppq': {
       'en': 'Book for Guest Room Booking',
       'bn': '',
       'gu': '',
@@ -3651,7 +3681,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'slfs168u': {
+    'dtov7p0h': {
       'en': 'Book for Annadan Seva',
       'bn': '',
       'gu': '',
@@ -3662,18 +3692,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '89cgw0zl': {
-      'en': 'Book for Death Rituals',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    '0exdtoiu': {
+    'vskc9v2r': {
       'en': 'Donation',
       'bn': '',
       'gu': '',
@@ -3684,7 +3703,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'co5b2vpc': {
+    'ttyiy332': {
       'en': 'Donation',
       'bn': 'শিক্ষা কার্যক্রম',
       'gu': 'શિક્ષણ કાર્યક્રમ',
@@ -3695,7 +3714,18 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'கல்வித் திட்டம்',
       'te': 'విద్యా కార్యక్రమం',
     },
-    'd37brcwt': {
+    'g9cnj646': {
+      'en': 'Donate for the Ashram',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '5wo3iilg': {
       'en': 'Relief Fund',
       'bn': '',
       'gu': '',
@@ -3706,7 +3736,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'bmxusucw': {
+    'xk0cmm3x': {
       'en': 'Name of Account',
       'bn': '',
       'gu': '',
@@ -3717,7 +3747,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'l3nojuao': {
+    'gvc8s93q': {
       'en': 'Account No',
       'bn': '',
       'gu': '',
@@ -3728,7 +3758,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'ial77ujx': {
+    'i4ufcsb5': {
       'en': 'Bank Name',
       'bn': '',
       'gu': '',
@@ -3739,7 +3769,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'ypyyvtwr': {
+    'z0js6nu1': {
       'en': 'Branch Name',
       'bn': '',
       'gu': '',
@@ -3750,7 +3780,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'pcx0do3e': {
+    '2n60vwmb': {
       'en': 'IFSC Code',
       'bn': '',
       'gu': '',
@@ -3761,7 +3791,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '8ruzxq84': {
+    'ztnt12v7': {
       'en': 'Account Type',
       'bn': '',
       'gu': '',
@@ -3772,7 +3802,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'fv9rzdla': {
+    'fkba2lv9': {
       'en': 'Bharat Sevashram Sangha',
       'bn': '',
       'gu': '',
@@ -3783,7 +3813,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'e1lal55x': {
+    '3kr7gkff': {
       'en': '50200046842185',
       'bn': '',
       'gu': '',
@@ -3794,7 +3824,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'trmhibsj': {
+    'co8fl1sb': {
       'en': 'HDFC Bank',
       'bn': '',
       'gu': '',
@@ -3805,7 +3835,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'px1vwlzg': {
+    'e166ch8l': {
       'en': 'Ballygunge',
       'bn': '',
       'gu': '',
@@ -3816,7 +3846,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'g2qpdqr4': {
+    'i3f4x9nc': {
       'en': 'HDFC0000516',
       'bn': '',
       'gu': '',
@@ -3827,7 +3857,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'piwnppui': {
+    'tub7cyz5': {
       'en': 'Current Account',
       'bn': '',
       'gu': '',
@@ -3838,7 +3868,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'cfdtqnxl': {
+    'wtqmiskh': {
       'en':
           'Please send your information regarding donation to us through mail at bssho.relief@gmail.com for getting Money Receipt and 80G Exemption Certificate.',
       'bn': '',
@@ -3850,7 +3880,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'vybay1sp': {
+    'evv0m1xz': {
       'en':
           '80G Certificate (10BE) will be issued with a minimum donation of Rs. 1000.00 as per Donor’s Pan',
       'bn': '',
@@ -3862,7 +3892,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'uoh9nv3t': {
+    '4xml4fvp': {
       'en': 'Donor Details',
       'bn': '',
       'gu': '',
@@ -3873,7 +3903,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '5n29ako2': {
+    '83guq367': {
       'en': 'Donor PAN (If required 80G Certificate)',
       'bn': '',
       'gu': '',
@@ -3884,7 +3914,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '1akopo4g': {
+    'gzap7fas': {
       'en': 'Name of Donor',
       'bn': '',
       'gu': '',
@@ -3895,7 +3925,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'qzw2n2p4': {
+    '9v02x6wp': {
       'en': 'Address with Pin Code',
       'bn': '',
       'gu': '',
@@ -3906,7 +3936,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'aok2oekw': {
+    'risl9332': {
       'en': 'Mobile Number',
       'bn': '',
       'gu': '',
@@ -3917,7 +3947,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '1x9n9iws': {
+    '2qm3ehzk': {
       'en': 'Mail ID',
       'bn': '',
       'gu': '',
@@ -3928,7 +3958,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '2onpsys4': {
+    'zdvkmfk3': {
       'en': 'Transaction Ref. No. or Screen Shot to be attached ',
       'bn': '',
       'gu': '',
@@ -3939,7 +3969,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'i9ly5aa2': {
+    '4b8mw505': {
       'en': 'with this form.',
       'bn': '',
       'gu': '',
@@ -3950,7 +3980,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '431twjry': {
+    'izosq8hz': {
       'en':
           'You will be acknowledged after getting your information within 3 working days through above mentioned mailing address.',
       'bn': '',
@@ -3962,7 +3992,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'ok81d07h': {
+    '74i903bq': {
       'en': 'Poor Student Scholarship Fund',
       'bn': '',
       'gu': '',
@@ -3973,7 +4003,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'okawf565': {
+    'g1v4onn0': {
       'en': 'Name of Account',
       'bn': '',
       'gu': '',
@@ -3984,7 +4014,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'gn5x47x7': {
+    'i9gqo0nn': {
       'en': 'Account No',
       'bn': '',
       'gu': '',
@@ -3995,7 +4025,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'b0h6hz0e': {
+    '4s1d7mzd': {
       'en': 'Bank Name',
       'bn': '',
       'gu': '',
@@ -4006,7 +4036,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'aqncqfh8': {
+    'diqeywyy': {
       'en': 'Branch Name',
       'bn': '',
       'gu': '',
@@ -4017,7 +4047,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'nb0ip4vw': {
+    'fczyq3o2': {
       'en': 'IFSC Code',
       'bn': '',
       'gu': '',
@@ -4028,7 +4058,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'j5ktjp0a': {
+    'p31xu6za': {
       'en': 'Account Type',
       'bn': '',
       'gu': '',
@@ -4039,7 +4069,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '6j2stwmp': {
+    'zy5dhdxa': {
       'en': 'Bharat Sevashram Sangha',
       'bn': '',
       'gu': '',
@@ -4050,7 +4080,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'xhs713og': {
+    '9lrp3i2b': {
       'en': '50200045023260',
       'bn': '',
       'gu': '',
@@ -4061,7 +4091,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'tmva25h0': {
+    '29xd6i66': {
       'en': 'HDFC Bank',
       'bn': '',
       'gu': '',
@@ -4072,7 +4102,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'y9lnbotv': {
+    'mb5gvgqw': {
       'en': 'Ballygunge',
       'bn': '',
       'gu': '',
@@ -4083,7 +4113,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'oua15ee2': {
+    'zpaczf35': {
       'en': 'HDFC0000516',
       'bn': '',
       'gu': '',
@@ -4094,7 +4124,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'ik5p5pho': {
+    'ujl4dpdc': {
       'en': 'Current Account',
       'bn': '',
       'gu': '',
@@ -4105,7 +4135,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '5b22hq2k': {
+    'f42e70ik': {
       'en':
           'Please send your information regarding donation to us through mail at bssho.relief@gmail.com for getting Money Receipt and 80G Exemption Certificate.',
       'bn': '',
@@ -4117,7 +4147,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'odmbm6h6': {
+    'lho64ddt': {
       'en':
           '80G Certificate (10BE) will be issued with a minimum donation of Rs. 1000.00 as per Donor’s Pan',
       'bn': '',
@@ -4129,7 +4159,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'fektmcm3': {
+    'cagxvsba': {
       'en': 'Donor Details',
       'bn': '',
       'gu': '',
@@ -4140,7 +4170,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'm0j52y1b': {
+    'mracaa3e': {
       'en': 'Donor PAN (If required 80G Certificate)',
       'bn': '',
       'gu': '',
@@ -4151,7 +4181,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '7cty7e0a': {
+    'aml2ieyi': {
       'en': 'Name of Donor',
       'bn': '',
       'gu': '',
@@ -4162,7 +4192,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'hy793z02': {
+    'veh6tyyr': {
       'en': 'Address with Pin Code',
       'bn': '',
       'gu': '',
@@ -4173,7 +4203,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'cgmerl92': {
+    'tdxikpf3': {
       'en': 'Mobile Number',
       'bn': '',
       'gu': '',
@@ -4184,7 +4214,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'mfcdj9a8': {
+    'taln33iz': {
       'en': 'Mail ID',
       'bn': '',
       'gu': '',
@@ -4195,7 +4225,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'ls567kcv': {
+    'z79zgs53': {
       'en': 'Transaction Ref. No. or Screen Shot to be attached ',
       'bn': '',
       'gu': '',
@@ -4206,7 +4236,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'e5k6w89a': {
+    'mxwxyum7': {
       'en': 'with this form.',
       'bn': '',
       'gu': '',
@@ -4217,7 +4247,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'faltu29u': {
+    'u6q8gg2u': {
       'en':
           'You will be acknowledged after getting your information within 3 working days through above mentioned mailing address.',
       'bn': '',
@@ -4229,7 +4259,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'm6j80ptz': {
+    'zpaz0c6o': {
       'en':
           'Donate through Cheque/NEFT/RTGS in the following Current Account. (Relief Fund)',
       'bn': '',
@@ -4241,7 +4271,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'ynyy39g2': {
+    'erv5hmnq': {
       'en': 'Name of Account',
       'bn': '',
       'gu': '',
@@ -4252,7 +4282,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'v9qc7mae': {
+    '0diap7yy': {
       'en': 'Account No',
       'bn': '',
       'gu': '',
@@ -4263,7 +4293,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'eua51r9g': {
+    'ljcat7xu': {
       'en': 'Bank Name',
       'bn': '',
       'gu': '',
@@ -4274,7 +4304,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '21r4k5al': {
+    'yxpfxkmw': {
       'en': 'Branch Name',
       'bn': '',
       'gu': '',
@@ -4285,7 +4315,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '48jbekyz': {
+    '65q9oy94': {
       'en': 'IFSC Code',
       'bn': '',
       'gu': '',
@@ -4296,7 +4326,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'ptyi15mg': {
+    'ogckb13r': {
       'en': 'Bharat Sevashram Sangha',
       'bn': '',
       'gu': '',
@@ -4307,7 +4337,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'u1j7hp1u': {
+    'pmjo3t1y': {
       'en': '35567461560',
       'bn': '',
       'gu': '',
@@ -4318,7 +4348,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'gb1kpnqn': {
+    'p7fyjswi': {
       'en': 'State Bank of India',
       'bn': '',
       'gu': '',
@@ -4329,7 +4359,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'sjb1hg6c': {
+    'aduqv3hu': {
       'en': 'Ballygunge',
       'bn': '',
       'gu': '',
@@ -4340,7 +4370,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '1aq4zwzx': {
+    'mvilrrn6': {
       'en': 'SBIN0000018',
       'bn': '',
       'gu': '',
@@ -4351,7 +4381,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'f1q4qb3j': {
+    '44vj30yn': {
       'en':
           'Please send your information regarding donation to us through mail at ',
       'bn': '',
@@ -4363,7 +4393,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '3hr65asf': {
+    'uux8ktso': {
       'en': 'bharatsevashram@gmail.com ',
       'bn': '',
       'gu': '',
@@ -4374,7 +4404,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'o5t3tug0': {
+    '0wbml44f': {
       'en':
           '80G Certificate (10BE) will be issued with a minimum donation of Rs. 1000.00 as per Donor’s Pan',
       'bn': '',
@@ -4386,7 +4416,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'ycf6d8is': {
+    'uzhdxtgy': {
       'en':
           'Foreign Donors Only\nBharat Sevashram Sangha Foreign Account Details',
       'bn': '',
@@ -4398,7 +4428,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'ruqomq39': {
+    'aixlj0j7': {
       'en': 'Name of Account',
       'bn': '',
       'gu': '',
@@ -4409,7 +4439,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'msyo5p0g': {
+    '143dcblj': {
       'en': 'Account No',
       'bn': '',
       'gu': '',
@@ -4420,7 +4450,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '9l1w71sf': {
+    'mhw8r7ok': {
       'en': 'Bank Name',
       'bn': '',
       'gu': '',
@@ -4431,7 +4461,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'zub5iwu4': {
+    'tobsftm3': {
       'en': 'Branch Name',
       'bn': '',
       'gu': '',
@@ -4442,7 +4472,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'yuj8fxcy': {
+    '0pwf93mq': {
       'en': 'Swift Code',
       'bn': '',
       'gu': '',
@@ -4453,7 +4483,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'b021z1zs': {
+    's97eocdv': {
       'en': 'IFSC Code',
       'bn': '',
       'gu': '',
@@ -4464,7 +4494,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'l65y1hvm': {
+    'dakijhy0': {
       'en': 'Bharat Sevashram Sangha',
       'bn': '',
       'gu': '',
@@ -4475,7 +4505,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '59ujf3dc': {
+    '2uasbjzb': {
       'en': '40186153285',
       'bn': '',
       'gu': '',
@@ -4486,7 +4516,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '8rcyjg8r': {
+    'b4pm7eht': {
       'en': 'State Bank of India',
       'bn': '',
       'gu': '',
@@ -4497,7 +4527,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '1a6cm33d': {
+    'kwebzgf7': {
       'en': 'New Delhi Main Branch',
       'bn': '',
       'gu': '',
@@ -4508,7 +4538,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'q0olbd0v': {
+    'irp6zb3b': {
       'en': 'SBININBB104',
       'bn': '',
       'gu': '',
@@ -4519,7 +4549,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'q1b7lhwl': {
+    'd3o45zpe': {
       'en': 'SBIN0000691',
       'bn': '',
       'gu': '',
@@ -4530,7 +4560,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '7bgm84l5': {
+    'u5w21zh6': {
       'en': 'Bank Address',
       'bn': '',
       'gu': '',
@@ -4541,7 +4571,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '2k3u9bpq': {
+    'gvm812nk': {
       'en':
           '11, Sansad Marg New Delhi – 110001\nContact: Swami Biswatmananda, General Secretary\nMobile No.: +91-9477201865',
       'bn': '',
@@ -4553,7 +4583,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'oeu6pzeq': {
+    '911o5qfj': {
       'en': 'Please make your donation through Swift Code only.',
       'bn': '',
       'gu': '',
@@ -4564,7 +4594,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'mezjw4k7': {
+    'o4vv9837': {
       'en': 'After making your donation please send us email with',
       'bn': '',
       'gu': '',
@@ -4575,7 +4605,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'dtqojhf0': {
+    'c512hz3g': {
       'en': 'sender details(Name, Postal address with zip code) at',
       'bn': '',
       'gu': '',
@@ -4586,7 +4616,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'mo3ovblw': {
+    'fcj2xrdh': {
       'en': 'bharatsevashram@gmail.com',
       'bn': '',
       'gu': '',
@@ -4597,7 +4627,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'ydhuo2xb': {
+    'oad8wnte': {
       'en': 'We will acknowledge by money receipt through mail.',
       'bn': '',
       'gu': '',
@@ -4608,7 +4638,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'huknzrn1': {
+    'jdfzr8p6': {
       'en': 'If you have any problem to donate ',
       'bn': '',
       'gu': '',
@@ -4619,7 +4649,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'wjp6jv6t': {
+    'g2ywv2rs': {
       'en': 'please correspond with this email',
       'bn': '',
       'gu': '',
@@ -4630,7 +4660,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '9qd64nnj': {
+    '27radmso': {
       'en': 'bharatsevashram@gmail.com',
       'bn': '',
       'gu': '',
@@ -4641,7 +4671,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'zgghjsm1': {
+    'kbt1q4eu': {
       'en': 'Beti Bachao- Beti Padhao',
       'bn': '',
       'gu': '',
@@ -4652,7 +4682,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'uoyaay0f': {
+    'pmd8bydg': {
       'en':
           'This is a monthly Scholarship for under privileged Girl children stduying in different Karnataka Govt. Schools upto 10th Standars and for overall development based on their aptitude and financial conditions of their family.',
       'bn': '',
@@ -4664,7 +4694,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '4l6911pi': {
+    'tupwf38t': {
       'en': 'Donation for one girl child is Rs.6000/- \nfor one year',
       'bn': '',
       'gu': '',
@@ -4675,7 +4705,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'wuy6ve5q': {
+    'rxfduvki': {
       'en': 'Know more about Beti Bachao - Beti Padhao',
       'bn': '',
       'gu': '',
@@ -4686,7 +4716,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'pm5yc8vw': {
+    'up9bb9f4': {
       'en': 'Donate for Beti Bachao - Beti Padhao',
       'bn': '',
       'gu': '',
@@ -4722,8 +4752,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'உள்நுழைய',
       'te': 'ప్రవేశించండి',
     },
-    'gof9mnyb': {
-      'en': 'Email',
+    'ark9cpi8': {
+      'en': 'Email Address',
       'bn': 'ইমেইল',
       'gu': 'ઈમેલ',
       'hi': 'ईमेल',
@@ -4733,16 +4763,16 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': 'மின்னஞ்சல்',
       'te': 'ఇమెయిల్',
     },
-    '6b5fxc5g': {
+    'p606suil': {
       'en': 'Password',
-      'bn': 'পাসওয়ার্ড',
-      'gu': 'પાસવર્ડ',
-      'hi': 'पासवर्ड',
-      'kn': 'ಗುಪ್ತಪದ',
-      'ml': 'Password',
-      'mr': 'पासवर्ड',
-      'ta': 'கடவுச்சொல்',
-      'te': 'పాస్వర్డ్',
+      'bn': 'ইমেইল',
+      'gu': 'ઈમેલ',
+      'hi': 'ईमेल',
+      'kn': 'ಇಮೇಲ್',
+      'ml': 'ഇമെയിൽ',
+      'mr': 'ईमेल',
+      'ta': 'மின்னஞ்சல்',
+      'te': 'ఇమెయిల్',
     },
     'dad5n4q1': {
       'en': 'Log In',
@@ -4857,7 +4887,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '70otnw9r': {
+    '277wkrbu': {
       'en': 'Continue',
       'bn': 'প্রবেশ করুন',
       'gu': 'પ્રવેશ કરો',
@@ -5017,7 +5047,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'gwc1uswb': {
+    '49t1wrqm': {
       'en': 'Please choose an option from the dropdown',
       'bn': '',
       'gu': '',
@@ -5165,17 +5195,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '62hiqhpc': {
       'en': 'Guest Name',
-      'bn': '',
-      'gu': '',
-      'hi': '',
-      'kn': '',
-      'ml': '',
-      'mr': '',
-      'ta': '',
-      'te': '',
-    },
-    '4jcae6pf': {
-      'en': 'Guest Email',
       'bn': '',
       'gu': '',
       'hi': '',
@@ -6203,7 +6222,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'te': '',
     },
     '61c4xd6j': {
-      'en': 'Get Membership',
+      'en': 'Submit Application',
       'bn': '',
       'gu': '',
       'hi': '',
@@ -6224,7 +6243,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'wskugamp': {
+    'u19g5qco': {
       'en': 'Please choose an option from the dropdown',
       'bn': '',
       'gu': '',
@@ -6246,7 +6265,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'sdkeo4yb': {
+    'z570mstt': {
       'en': 'Please choose an option from the dropdown',
       'bn': '',
       'gu': '',
@@ -6268,7 +6287,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    'zzivkb4j': {
+    'p38l1gqu': {
       'en': 'Please choose an option from the dropdown',
       'bn': '',
       'gu': '',
@@ -6290,7 +6309,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ta': '',
       'te': '',
     },
-    '0lnxtjlh': {
+    'c4x6hfrv': {
       'en': 'Please choose an option from the dropdown',
       'bn': '',
       'gu': '',
@@ -6361,6 +6380,29 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'mr': 'लॉगिन करा',
       'ta': 'உள்நுழைய',
       'te': 'ప్రవేశించండి',
+    },
+    'qpgeekk6': {
+      'en':
+          'Your Application is in processing stage. Please wait for few days. If it\'s been more than a week, please contact the ashram via Email',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    's18tz8ah': {
+      'en': 'bharatsevashramsangha@gmail.com',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
     },
     'uo6am2ul': {
       'en': 'Home',
@@ -6582,21 +6624,1197 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'te': '',
     },
   },
+  // signupCopy
+  {
+    'dzqu33g9': {
+      'en': 'Get Started',
+      'bn': 'এবার শুরু করা যাক',
+      'gu': 'શરૂ કરો',
+      'hi': 'शुरू हो जाओ',
+      'kn': 'ಪ್ರಾರಂಭಿಸಿ',
+      'ml': 'തുടങ്ങി',
+      'mr': 'सुरु करूया',
+      'ta': 'தொடங்குங்கள்',
+      'te': 'ప్రారంభించడానికి',
+    },
+    'owvma7lb': {
+      'en': 'Name',
+      'bn': 'নাম',
+      'gu': 'નામ',
+      'hi': 'नाम',
+      'kn': 'ಹೆಸರು',
+      'ml': 'പേര്',
+      'mr': 'नाव',
+      'ta': 'பெயர்',
+      'te': 'పేరు',
+    },
+    'sjvge6vc': {
+      'en': 'Email',
+      'bn': 'ইমেইল',
+      'gu': 'ઈમેલ',
+      'hi': 'ईमेल',
+      'kn': 'ಇಮೇಲ್',
+      'ml': 'ഇമെയിൽ',
+      'mr': 'ईमेल',
+      'ta': 'மின்னஞ்சல்',
+      'te': 'ఇమెయిల్',
+    },
+    'sknf962f': {
+      'en': 'Phone Number',
+      'bn': 'ফোন নম্বর',
+      'gu': 'ફોન નંબર',
+      'hi': 'फ़ोन नंबर',
+      'kn': 'ದೂರವಾಣಿ ಸಂಖ್ಯೆ',
+      'ml': 'ഫോൺ നമ്പർ',
+      'mr': 'फोन नंबर',
+      'ta': 'தொலைபேசி எண்',
+      'te': 'ఫోను నంబరు',
+    },
+    'efy6hcy4': {
+      'en': 'Password',
+      'bn': 'পাসওয়ার্ড',
+      'gu': 'પાસવર્ડ',
+      'hi': 'पासवर्ड',
+      'kn': 'ಗುಪ್ತಪದ',
+      'ml': 'Password',
+      'mr': 'पासवर्ड',
+      'ta': 'கடவுச்சொல்',
+      'te': 'పాస్వర్డ్',
+    },
+    'l7gmc2bm': {
+      'en': 'Confirm Password',
+      'bn': 'পাসওয়ার্ড নিশ্চিত করুন',
+      'gu': 'પાસવર્ડની પુષ્ટિ કરો',
+      'hi': 'पासवर्ड की पुष्टि कीजिये',
+      'kn': 'ಪಾಸ್ವರ್ಡ್ ದೃಢೀಕರಿಸಿ',
+      'ml': 'പാസ്വേഡ് സ്ഥിരീകരിക്കുക',
+      'mr': 'पासवर्डची पुष्टी करा',
+      'ta': 'கடவுச்சொல்லை உறுதிப்படுத்தவும்',
+      'te': 'పాస్‌వర్డ్‌ని నిర్ధారించండి',
+    },
+    'mvv526ku': {
+      'en': 'Create Account',
+      'bn': 'হিসাব তৈরি কর',
+      'gu': 'ખાતું બનાવો',
+      'hi': 'खाता बनाएं',
+      'kn': 'ಖಾತೆ ತೆರೆ',
+      'ml': 'അക്കൗണ്ട് സൃഷ്ടിക്കുക',
+      'mr': 'खाते तयार करा',
+      'ta': 'உங்கள் கணக்கை துவங்குங்கள்',
+      'te': 'ఖాతాను సృష్టించండి',
+    },
+    'ghjx2kb6': {
+      'en': 'Name is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '6du7hndj': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'e42bmoqn': {
+      'en': 'Email is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'q8j76vik': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'eewxeu2i': {
+      'en': 'Phone number  is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'cxfm81yj': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'ot0k48c5': {
+      'en': 'Password is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'mbp0hymr': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '6v7jsc6c': {
+      'en': 'Confirm Password is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'i13s3bvo': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'w31wfjqv': {
+      'en': 'Home',
+      'bn': 'বাড়ি',
+      'gu': 'ઘર',
+      'hi': 'घर',
+      'kn': 'ಮನೆ',
+      'ml': 'വീട്',
+      'mr': 'मुख्यपृष्ठ',
+      'ta': 'வீடு',
+      'te': 'హోమ్',
+    },
+  },
+  // goggle_loginCopy
+  {
+    '8mm33xi7': {
+      'en': 'Set City',
+      'bn': 'প্রবেশ করুন',
+      'gu': 'પ્રવેશ કરો',
+      'hi': 'लॉग इन करें',
+      'kn': 'ಲಾಗಿನ್ ಮಾಡಿ',
+      'ml': 'ലോഗിൻ',
+      'mr': 'लॉगिन करा',
+      'ta': 'உள்நுழைய',
+      'te': 'ప్రవేశించండి',
+    },
+    '87e8pb67': {
+      'en': 'You wont be able to change your city later.',
+      'bn': 'প্রবেশ করুন',
+      'gu': 'પ્રવેશ કરો',
+      'hi': 'लॉग इन करें',
+      'kn': 'ಲಾಗಿನ್ ಮಾಡಿ',
+      'ml': 'ലോഗിൻ',
+      'mr': 'लॉगिन करा',
+      'ta': 'உள்நுழைய',
+      'te': 'ప్రవేశించండి',
+    },
+    'c2sw8rhe': {
+      'en': 'Option 1',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'l8v9yzov': {
+      'en': 'Set your city',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'cv77klth': {
+      'en': 'Search for an city...',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'fn7210ug': {
+      'en': 'Continue',
+      'bn': 'প্রবেশ করুন',
+      'gu': 'પ્રવેશ કરો',
+      'hi': 'लॉग इन करें',
+      'kn': 'ಲಾಗಿನ್ ಮಾಡಿ',
+      'ml': 'ലോഗിൻ',
+      'mr': 'लॉग इन करा',
+      'ta': 'உள்நுழைய',
+      'te': 'ప్రవేశించండి',
+    },
+    '0ft0it6w': {
+      'en': 'Home',
+      'bn': 'বাড়ি',
+      'gu': 'ઘર',
+      'hi': 'घर',
+      'kn': 'ಮನೆ',
+      'ml': 'വീട്',
+      'mr': 'मुख्यपृष्ठ',
+      'ta': 'வீடு',
+      'te': 'హోమ్',
+    },
+  },
+  // facilities_puja_final_booking
+  {
+    '28be0u89': {
+      'en': 'Facilities',
+      'bn': 'স্বাস্থ্য সেবা পরিষদ',
+      'gu': 'હેલ્થકેર સેવાઓ',
+      'hi': 'स्वास्थ्य देखभाल सेवाएँ',
+      'kn': 'ಆರೋಗ್ಯ ಸೇವೆಗಳು',
+      'ml': 'ആരോഗ്യ സേവനങ്ങൾ',
+      'mr': 'आरोग्य सेवा',
+      'ta': 'சுகாதார சேவைகள்',
+      'te': 'ఆరోగ్య సంరక్షణ సేవలు',
+    },
+    'p6a3fryg': {
+      'en': 'Puja Booking',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'sv3pcpxc': {
+      'en': 'Selected Location : ',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '06z2tzxi': {
+      'en': 'Speciality: ',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'q2sqpl4w': {
+      'en': 'Phone: ',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '8ueaa788': {
+      'en': 'Booking ',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'urwiw7dz': {
+      'en': 'FOR ME',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'wcpg0zhn': {
+      'en': 'FOR OTHERS',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '2pkww2u0': {
+      'en': 'Phone Number',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '25xcbaii': {
+      'en': 'Set Date',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '41qtdf4r': {
+      'en': 'Set Time',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'w7nfqy96': {
+      'en': 'Confirm Booking',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'vvzah2ge': {
+      'en': 'Phone number is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '8nozxcep': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'n0pwyypn': {
+      'en': 'Guest Name',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '5ird6iur': {
+      'en': 'Guest Phone Number',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'lh5mdn2v': {
+      'en': 'Set Date',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '3uft8y8a': {
+      'en': 'Set Time',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'g1tqm60h': {
+      'en': 'Confirm Booking',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'ts4aqspm': {
+      'en': 'Name is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '6iz6xrhv': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'hgsgje8v': {
+      'en': 'Email is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'hygv6bxv': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'eqnxzh1c': {
+      'en': 'Phone number is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'eysod5lt': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'z0n85inm': {
+      'en': 'Home',
+      'bn': 'বাড়ি',
+      'gu': 'ઘર',
+      'hi': 'घर',
+      'kn': 'ಮನೆ',
+      'ml': 'വീട്',
+      'mr': 'मुख्यपृष्ठ',
+      'ta': 'வீடு',
+      'te': 'హోమ్',
+    },
+  },
+  // facilities_puja_booking
+  {
+    '0gbh29b7': {
+      'en': 'Facilities',
+      'bn': 'স্বাস্থ্য সেবা পরিষদ',
+      'gu': 'હેલ્થકેર સેવાઓ',
+      'hi': 'स्वास्थ्य देखभाल सेवाएँ',
+      'kn': 'ಆರೋಗ್ಯ ಸೇವೆಗಳು',
+      'ml': 'ആരോഗ്യ സേവനങ്ങൾ',
+      'mr': 'आरोग्य सेवा',
+      'ta': 'சுகாதார சேவைகள்',
+      'te': 'ఆరోగ్య సంరక్షణ సేవలు',
+    },
+    '9zln1h9b': {
+      'en': 'Puja Booking',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'fasegbag': {
+      'en': 'Puja Type : ',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'c5xylb6s': {
+      'en': 'Selected Location : ',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '8nb91ihl': {
+      'en': 'Available Priests',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '07cpjfti': {
+      'en': 'Speciality: ',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'ziuqupjv': {
+      'en': 'Phone: ',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'ta64mwfd': {
+      'en': 'Book',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '331vktz2': {
+      'en': 'Home',
+      'bn': 'বাড়ি',
+      'gu': 'ઘર',
+      'hi': 'घर',
+      'kn': 'ಮನೆ',
+      'ml': 'വീട്',
+      'mr': 'मुख्यपृष्ठ',
+      'ta': 'வீடு',
+      'te': 'హోమ్',
+    },
+  },
+  // puja_booking_confirm
+  {
+    'vzdlohpi': {
+      'en': 'Your booking has been confirmed.',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'v7rnlhlg': {
+      'en': 'Okay',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'xxq9xjxg': {
+      'en': 'Home',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+  },
+  // donation
+  {
+    'lsg1rp2q': {
+      'en': 'Donation',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '6kvxlae9': {
+      'en': 'Please fill the form below for Tax Exemption for donation',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'dz7kid0n': {
+      'en': '80G Requisition Form',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '6ggd8dw4': {
+      'en': 'PAN Number',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'lmdufgy8': {
+      'en': 'Name',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '8nomjs6i': {
+      'en': 'Address',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '0mc5ysl3': {
+      'en': 'Phone Number',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'yd12b2ej': {
+      'en': 'Email',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'yu70d50x': {
+      'en': 'Amount',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'bcsn0psm': {
+      'en': '/-',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'h08960xz': {
+      'en': 'Mode of Donation',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '9z45euo6': {
+      'en': 'Transaction ID / CHQ Number',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'c6c16ihs': {
+      'en': 'Field is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'x7yjuyem': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '5xcolcib': {
+      'en': 'Field is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'm56ugjr3': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'a5h51k0y': {
+      'en': 'Field is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'hu7tej52': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'camaa9aj': {
+      'en': 'Field is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'cf6c817e': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'b9am410g': {
+      'en': 'Field is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '43buvqn7': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '6fwpp9ag': {
+      'en': 'Field is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'o863jpx3': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'pd95p9ee': {
+      'en': 'Field is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'v3g4pnrl': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'rbqa12on': {
+      'en': 'Field is required',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'duxzzkrw': {
+      'en': 'Please choose an option from the dropdown',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'm4thehwg': {
+      'en': 'Show QR Code',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '9d9nxigk': {
+      'en': 'Submit Details',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'q98q6eji': {
+      'en': 'Home',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+  },
+  // your_donations
+  {
+    '6l28cmd3': {
+      'en': 'Donation',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'v04n4p8x': {
+      'en': 'Summary of your donations',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'znlovmzg': {
+      'en': 'SL No',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '5og9j3cd': {
+      'en': 'PAN Number',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'wenmytq0': {
+      'en': 'Name',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'zlb7pxmx': {
+      'en': 'Address',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'rdgd2cvp': {
+      'en': 'Mobile Number',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'oz4gtml8': {
+      'en': 'Email ID',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'lu88z0oy': {
+      'en': 'Amount',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'k0xq1afp': {
+      'en': 'Mode of Donation',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '3zotroe7': {
+      'en': 'Transaction ID',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    '8jki44mf': {
+      'en': 'Home',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+  },
   // updatepic
   {
-    'w3w43r9r': {
-      'en': 'Select Profile Picture',
-      'bn': 'প্রোফাইল ছবি আপলোড করুন',
-      'gu': 'પ્રોફાઇલ ચિત્ર અપલોડ કરો',
-      'hi': 'प्रोफ़ाइल चित्र अपलोड करें',
-      'kn': 'ಪ್ರೊಫೈಲ್ ಚಿತ್ರವನ್ನು ಅಪ್ಲೋಡ್ ಮಾಡಿ',
-      'ml': 'പ്രൊഫൈൽ ചിത്രം അപ്‌ലോഡ് ചെയ്യുക',
-      'mr': 'प्रोफाइल चित्र अपलोड करा',
-      'ta': 'சுயவிவரப் படத்தைப் பதிவேற்றவும்',
-      'te': 'ప్రొఫైల్ చిత్రాన్ని అప్‌లోడ్ చేయండి',
-    },
-    'q9czx8vo': {
-      'en': 'Remove ',
+    '650f7vl6': {
+      'en': 'Click on the photo to change the picture...',
       'bn': '',
       'gu': '',
       'hi': '',
@@ -6616,6 +7834,17 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'mr': 'बदल जतन करा',
       'ta': 'மாற்றங்களை சேமியுங்கள்',
       'te': 'మార్పులను ఊంచు',
+    },
+    'q9czx8vo': {
+      'en': 'Remove ',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
     },
   },
   // empty
@@ -6768,6 +7997,81 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'snl2y9ic': {
       'en': 'Set City',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+  },
+  // updatepicCopy
+  {
+    'j1ggl6w9': {
+      'en': 'Click on the photo to change the picture...',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'ijgkfkdg': {
+      'en': 'Save Changes',
+      'bn': 'পরিবর্তনগুলোর সংরক্ষন',
+      'gu': 'ફેરફારો સંગ્રહ',
+      'hi': 'परिवर्तनों को सुरक्षित करें',
+      'kn': 'ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸು',
+      'ml': 'മാറ്റങ്ങൾ സൂക്ഷിക്കുക',
+      'mr': 'बदल जतन करा',
+      'ta': 'மாற்றங்களை சேமியுங்கள்',
+      'te': 'మార్పులను ఊంచు',
+    },
+    'j9p6suh6': {
+      'en': 'Remove ',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+  },
+  // empty_priests
+  {
+    '9t61qhtl': {
+      'en': 'Sorry, there no priests available right now.',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+    'o1f0isas': {
+      'en': 'Check back again',
+      'bn': '',
+      'gu': '',
+      'hi': '',
+      'kn': '',
+      'ml': '',
+      'mr': '',
+      'ta': '',
+      'te': '',
+    },
+  },
+  // empty_donations
+  {
+    'ka1xspjw': {
+      'en': 'Sorry, you haven\'t made any donations.',
       'bn': '',
       'gu': '',
       'hi': '',

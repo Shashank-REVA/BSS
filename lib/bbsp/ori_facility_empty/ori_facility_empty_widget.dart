@@ -86,6 +86,7 @@ class _OriFacilityEmptyWidgetState extends State<OriFacilityEmptyWidget> {
                               fontFamily: 'Raleway',
                               color: FlutterFlowTheme.of(context).secondaryText,
                               fontSize: 18.0,
+                              letterSpacing: 0.0,
                               fontWeight: FontWeight.bold,
                             ),
                       ),
@@ -96,12 +97,14 @@ class _OriFacilityEmptyWidgetState extends State<OriFacilityEmptyWidget> {
                         style: FlutterFlowTheme.of(context).titleLarge.override(
                               fontFamily: 'Raleway',
                               color: FlutterFlowTheme.of(context).primary,
+                              letterSpacing: 0.0,
                               fontWeight: FontWeight.w800,
                             ),
                       )
                     ],
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Raleway',
+                          letterSpacing: 0.0,
                         ),
                   ),
                   textAlign: TextAlign.center,

@@ -44,9 +44,7 @@ class _MembershipNoWidgetState extends State<MembershipNoWidget> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => _model.unfocusNode.canRequestFocus
-          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
-          : FocusScope.of(context).unfocus(),
+      onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).info,
@@ -153,6 +151,7 @@ class _MembershipNoWidgetState extends State<MembershipNoWidget> {
                                   fontFamily: 'SuperTall',
                                   color:
                                       FlutterFlowTheme.of(context).primaryText,
+                                  letterSpacing: 0.0,
                                   useGoogleFonts: false,
                                 ),
                           ),
@@ -174,6 +173,7 @@ class _MembershipNoWidgetState extends State<MembershipNoWidget> {
                                   fontFamily: 'Raleway',
                                   color: const Color(0xFF2F2F2F),
                                   fontSize: 25.0,
+                                  letterSpacing: 0.0,
                                 ),
                           ),
                         ),

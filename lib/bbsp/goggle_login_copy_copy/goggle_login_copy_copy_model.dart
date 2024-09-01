@@ -13,17 +13,9 @@ class GoggleLoginCopyCopyModel
   String? dropDownValue;
   FormFieldController<String>? dropDownValueController;
 
-  /// Initialization and disposal methods.
-
   @override
   void initState(BuildContext context) {}
 
   @override
-  void dispose() {
-    unfocusNode.dispose();
-  }
-
-  /// Action blocks are added here.
-
-  /// Additional helper methods are added here.
+  void dispose() {}
 }

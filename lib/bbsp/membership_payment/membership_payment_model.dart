@@ -12,9 +12,9 @@ class MembershipPaymentModel extends FlutterFlowModel<MembershipPaymentWidget> {
   FormFieldController<String>? mainValueController;
   // State field(s) for address widget.
   FocusNode? addressFocusNode;
-  TextEditingController? addressController;
-  String? Function(BuildContext, String?)? addressControllerValidator;
-  String? _addressControllerValidator(BuildContext context, String? val) {
+  TextEditingController? addressTextController;
+  String? Function(BuildContext, String?)? addressTextControllerValidator;
+  String? _addressTextControllerValidator(BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
       return FFLocalizations.of(context).getText(
         'nxg1h94b' /* Address is required */,
@@ -26,9 +26,10 @@ class MembershipPaymentModel extends FlutterFlowModel<MembershipPaymentWidget> {
 
   // State field(s) for emailAddress widget.
   FocusNode? emailAddressFocusNode;
-  TextEditingController? emailAddressController;
-  String? Function(BuildContext, String?)? emailAddressControllerValidator;
-  String? _emailAddressControllerValidator(BuildContext context, String? val) {
+  TextEditingController? emailAddressTextController;
+  String? Function(BuildContext, String?)? emailAddressTextControllerValidator;
+  String? _emailAddressTextControllerValidator(
+      BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
       return FFLocalizations.of(context).getText(
         '6367ksdz' /* Email is required */,
@@ -43,47 +44,41 @@ class MembershipPaymentModel extends FlutterFlowModel<MembershipPaymentWidget> {
 
   // State field(s) for phonenumber widget.
   FocusNode? phonenumberFocusNode1;
-  TextEditingController? phonenumberController1;
-  String? Function(BuildContext, String?)? phonenumberController1Validator;
+  TextEditingController? phonenumberTextController1;
+  String? Function(BuildContext, String?)? phonenumberTextController1Validator;
   // State field(s) for RadioButton widget.
   FormFieldController<String>? radioButtonValueController;
   // State field(s) for phonenumber widget.
   FocusNode? phonenumberFocusNode2;
-  TextEditingController? phonenumberController2;
-  String? Function(BuildContext, String?)? phonenumberController2Validator;
+  TextEditingController? phonenumberTextController2;
+  String? Function(BuildContext, String?)? phonenumberTextController2Validator;
   bool isDataUploading = false;
   FFUploadedFile uploadedLocalFile =
       FFUploadedFile(bytes: Uint8List.fromList([]));
   String uploadedFileUrl = '';
 
-  /// Initialization and disposal methods.
-
   @override
   void initState(BuildContext context) {
-    addressControllerValidator = _addressControllerValidator;
-    emailAddressControllerValidator = _emailAddressControllerValidator;
+    addressTextControllerValidator = _addressTextControllerValidator;
+    emailAddressTextControllerValidator = _emailAddressTextControllerValidator;
   }
 
   @override
   void dispose() {
-    unfocusNode.dispose();
     addressFocusNode?.dispose();
-    addressController?.dispose();
+    addressTextController?.dispose();
 
     emailAddressFocusNode?.dispose();
-    emailAddressController?.dispose();
+    emailAddressTextController?.dispose();
 
     phonenumberFocusNode1?.dispose();
-    phonenumberController1?.dispose();
+    phonenumberTextController1?.dispose();
 
     phonenumberFocusNode2?.dispose();
-    phonenumberController2?.dispose();
+    phonenumberTextController2?.dispose();
   }
 
-  /// Action blocks are added here.
-
-  /// Additional helper methods are added here.
-
+  /// Additional helper methods.
   String? get mainValue => mainValueController?.value;
   String? get radioButtonValue => radioButtonValueController?.value;
 }

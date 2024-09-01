@@ -13,8 +13,6 @@ class ReliefNewModel extends FlutterFlowModel<ReliefNewWidget> {
   // State field(s) for ListView widget.
   ScrollController? listViewController;
 
-  /// Initialization and disposal methods.
-
   @override
   void initState(BuildContext context) {
     columnController = ScrollController();
@@ -24,13 +22,8 @@ class ReliefNewModel extends FlutterFlowModel<ReliefNewWidget> {
 
   @override
   void dispose() {
-    unfocusNode.dispose();
     columnController?.dispose();
     main?.dispose();
     listViewController?.dispose();
   }
-
-  /// Action blocks are added here.
-
-  /// Additional helper methods are added here.
 }

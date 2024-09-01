@@ -10,14 +10,15 @@ class PhoneAuthModel extends FlutterFlowModel<PhoneAuthWidget> {
   // State field(s) for countryname widget.
   final countrynameKey = GlobalKey();
   FocusNode? countrynameFocusNode;
-  TextEditingController? countrynameController;
+  TextEditingController? countrynameTextController;
   String? countrynameSelectedOption;
-  String? Function(BuildContext, String?)? countrynameControllerValidator;
+  String? Function(BuildContext, String?)? countrynameTextControllerValidator;
   // State field(s) for phoneNumber widget.
   FocusNode? phoneNumberFocusNode;
-  TextEditingController? phoneNumberController;
-  String? Function(BuildContext, String?)? phoneNumberControllerValidator;
-  String? _phoneNumberControllerValidator(BuildContext context, String? val) {
+  TextEditingController? phoneNumberTextController;
+  String? Function(BuildContext, String?)? phoneNumberTextControllerValidator;
+  String? _phoneNumberTextControllerValidator(
+      BuildContext context, String? val) {
     if (val == null || val.isEmpty) {
       return FFLocalizations.of(context).getText(
         '0vn4qpbr' /* Phone number is required */,
@@ -27,23 +28,16 @@ class PhoneAuthModel extends FlutterFlowModel<PhoneAuthWidget> {
     return null;
   }
 
-  /// Initialization and disposal methods.
-
   @override
   void initState(BuildContext context) {
-    phoneNumberControllerValidator = _phoneNumberControllerValidator;
+    phoneNumberTextControllerValidator = _phoneNumberTextControllerValidator;
   }
 
   @override
   void dispose() {
-    unfocusNode.dispose();
     countrynameFocusNode?.dispose();
 
     phoneNumberFocusNode?.dispose();
-    phoneNumberController?.dispose();
+    phoneNumberTextController?.dispose();
   }
-
-  /// Action blocks are added here.
-
-  /// Additional helper methods are added here.
 }

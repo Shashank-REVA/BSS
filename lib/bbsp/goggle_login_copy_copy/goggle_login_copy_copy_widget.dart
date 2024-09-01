@@ -38,42 +38,7 @@ class _GoggleLoginCopyCopyWidgetState extends State<GoggleLoginCopyCopyWidget>
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
-  final animationsMap = {
-    'containerOnPageLoadAnimation': AnimationInfo(
-      trigger: AnimationTrigger.onPageLoad,
-      effects: [
-        VisibilityEffect(duration: 1.ms),
-        FadeEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 300.ms,
-          begin: 0.0,
-          end: 1.0,
-        ),
-        MoveEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 300.ms,
-          begin: const Offset(0.0, 140.0),
-          end: const Offset(0.0, 0.0),
-        ),
-        ScaleEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 300.ms,
-          begin: const Offset(0.9, 0.9),
-          end: const Offset(1.0, 1.0),
-        ),
-        TiltEffect(
-          curve: Curves.easeInOut,
-          delay: 0.ms,
-          duration: 300.ms,
-          begin: const Offset(-0.349, 0),
-          end: const Offset(0, 0),
-        ),
-      ],
-    ),
-  };
+  final animationsMap = <String, AnimationInfo>{};
 
   @override
   void initState() {
@@ -82,6 +47,42 @@ class _GoggleLoginCopyCopyWidgetState extends State<GoggleLoginCopyCopyWidget>
 
     logFirebaseEvent('screen_view',
         parameters: {'screen_name': 'goggle_loginCopyCopy'});
+    animationsMap.addAll({
+      'containerOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          VisibilityEffect(duration: 1.ms),
+          FadeEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 300.0.ms,
+            begin: 0.0,
+            end: 1.0,
+          ),
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 300.0.ms,
+            begin: const Offset(0.0, 140.0),
+            end: const Offset(0.0, 0.0),
+          ),
+          ScaleEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 300.0.ms,
+            begin: const Offset(0.9, 0.9),
+            end: const Offset(1.0, 1.0),
+          ),
+          TiltEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 300.0.ms,
+            begin: const Offset(-0.349, 0),
+            end: const Offset(0, 0),
+          ),
+        ],
+      ),
+    });
   }
 
   @override
@@ -94,9 +95,7 @@ class _GoggleLoginCopyCopyWidgetState extends State<GoggleLoginCopyCopyWidget>
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => _model.unfocusNode.canRequestFocus
-          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
-          : FocusScope.of(context).unfocus(),
+      onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).info,
@@ -169,7 +168,10 @@ class _GoggleLoginCopyCopyWidgetState extends State<GoggleLoginCopyCopyWidget>
                                 BoxShadow(
                                   blurRadius: 4.0,
                                   color: Color(0x33000000),
-                                  offset: Offset(0.0, 2.0),
+                                  offset: Offset(
+                                    0.0,
+                                    2.0,
+                                  ),
                                 )
                               ],
                               borderRadius: BorderRadius.circular(12.0),
@@ -197,6 +199,7 @@ class _GoggleLoginCopyCopyWidgetState extends State<GoggleLoginCopyCopyWidget>
                                               .override(
                                                 fontFamily: 'SuperTall',
                                                 color: Colors.black,
+                                                letterSpacing: 0.0,
                                                 useGoogleFonts: false,
                                               ),
                                         ),
@@ -215,6 +218,7 @@ class _GoggleLoginCopyCopyWidgetState extends State<GoggleLoginCopyCopyWidget>
                                                 fontFamily: 'Raleway',
                                                 color: const Color(0xFF2F2F2F),
                                                 fontSize: 20.0,
+                                                letterSpacing: 0.0,
                                               ),
                                         ),
                                       ),
@@ -246,6 +250,7 @@ class _GoggleLoginCopyCopyWidgetState extends State<GoggleLoginCopyCopyWidget>
                                               List<CitiesRecord>
                                                   containerCitiesRecordList =
                                                   snapshot.data!;
+
                                               return Container(
                                                 width: 320.0,
                                                 decoration: BoxDecoration(
@@ -254,7 +259,10 @@ class _GoggleLoginCopyCopyWidgetState extends State<GoggleLoginCopyCopyWidget>
                                                     BoxShadow(
                                                       blurRadius: 4.0,
                                                       color: Color(0xFF322E5C),
-                                                      offset: Offset(0.0, 2.0),
+                                                      offset: Offset(
+                                                        0.0,
+                                                        2.0,
+                                                      ),
                                                     )
                                                   ],
                                                   borderRadius:
@@ -271,7 +279,9 @@ class _GoggleLoginCopyCopyWidgetState extends State<GoggleLoginCopyCopyWidget>
                                                       containerCitiesRecordList
                                                           .map((e) => e.name)
                                                           .toList()
-                                                          .sortedList((e) => e),
+                                                          .sortedList(
+                                                              keyOf: (e) => e,
+                                                              desc: false),
                                                   onChanged: (val) => setState(
                                                       () => _model
                                                           .dropDownValue = val),
@@ -285,11 +295,17 @@ class _GoggleLoginCopyCopyWidgetState extends State<GoggleLoginCopyCopyWidget>
                                                             fontFamily:
                                                                 'Raleway',
                                                             color: Colors.black,
+                                                            letterSpacing: 0.0,
                                                           ),
                                                   searchTextStyle:
                                                       FlutterFlowTheme.of(
                                                               context)
-                                                          .bodyMedium,
+                                                          .bodyMedium
+                                                          .override(
+                                                            fontFamily:
+                                                                'Readex Pro',
+                                                            letterSpacing: 0.0,
+                                                          ),
                                                   textStyle: FlutterFlowTheme
                                                           .of(context)
                                                       .bodyMedium
@@ -297,6 +313,7 @@ class _GoggleLoginCopyCopyWidgetState extends State<GoggleLoginCopyCopyWidget>
                                                         fontFamily: 'Raleway',
                                                         color: Colors.black,
                                                         fontSize: 16.0,
+                                                        letterSpacing: 0.0,
                                                       ),
                                                   hintText: FFLocalizations.of(
                                                           context)
@@ -389,7 +406,7 @@ class _GoggleLoginCopyCopyWidgetState extends State<GoggleLoginCopyCopyWidget>
                                           },
                                           text: FFLocalizations.of(context)
                                               .getText(
-                                            '70otnw9r' /* Continue */,
+                                            '277wkrbu' /* Continue */,
                                           ),
                                           options: FFButtonOptions(
                                             width: double.infinity,
@@ -407,6 +424,7 @@ class _GoggleLoginCopyCopyWidgetState extends State<GoggleLoginCopyCopyWidget>
                                                     .override(
                                                       fontFamily: 'SuperTall',
                                                       color: Colors.white,
+                                                      letterSpacing: 0.0,
                                                       useGoogleFonts: false,
                                                     ),
                                             elevation: 3.0,

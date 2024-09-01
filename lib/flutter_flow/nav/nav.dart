@@ -88,47 +88,80 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             'citynames': getDoc(['cities'], CitiesRecord.fromSnapshot),
           },
           builder: (context, params) => CityOutlineWidget(
-            citynames: params.getParam('citynames', ParamType.Document),
+            citynames: params.getParam(
+              'citynames',
+              ParamType.Document,
+            ),
           ),
         ),
         FFRoute(
           name: 'relief_new',
           path: '/reliefNew',
           builder: (context, params) => ReliefNewWidget(
-            colorbtn: params.getParam('colorbtn', ParamType.Color),
-            colortxt: params.getParam('colortxt', ParamType.Color),
+            colorbtn: params.getParam(
+              'colorbtn',
+              ParamType.Color,
+            ),
+            colortxt: params.getParam(
+              'colortxt',
+              ParamType.Color,
+            ),
           ),
         ),
         FFRoute(
           name: 'healthcare',
           path: '/healthcare',
           builder: (context, params) => HealthcareWidget(
-            colorbtn: params.getParam('colorbtn', ParamType.Color),
-            colortxt: params.getParam('colortxt', ParamType.Color),
+            colorbtn: params.getParam(
+              'colorbtn',
+              ParamType.Color,
+            ),
+            colortxt: params.getParam(
+              'colortxt',
+              ParamType.Color,
+            ),
           ),
         ),
         FFRoute(
           name: 'education',
           path: '/education',
           builder: (context, params) => EducationWidget(
-            colorbtn: params.getParam('colorbtn', ParamType.Color),
-            colortxt: params.getParam('colortxt', ParamType.Color),
+            colorbtn: params.getParam(
+              'colorbtn',
+              ParamType.Color,
+            ),
+            colortxt: params.getParam(
+              'colortxt',
+              ParamType.Color,
+            ),
           ),
         ),
         FFRoute(
           name: 'tribal',
           path: '/tribal',
           builder: (context, params) => TribalWidget(
-            colorbtn: params.getParam('colorbtn', ParamType.Color),
-            colortxt: params.getParam('colortxt', ParamType.Color),
+            colorbtn: params.getParam(
+              'colorbtn',
+              ParamType.Color,
+            ),
+            colortxt: params.getParam(
+              'colortxt',
+              ParamType.Color,
+            ),
           ),
         ),
         FFRoute(
           name: 'spiritual',
           path: '/spiritual',
           builder: (context, params) => SpiritualWidget(
-            colorbtn: params.getParam('colorbtn', ParamType.Color),
-            colortxt: params.getParam('colortxt', ParamType.Color),
+            colorbtn: params.getParam(
+              'colorbtn',
+              ParamType.Color,
+            ),
+            colortxt: params.getParam(
+              'colortxt',
+              ParamType.Color,
+            ),
           ),
         ),
         FFRoute(
@@ -145,8 +178,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'login',
           path: '/login',
           builder: (context, params) => LoginWidget(
-            colorbtn: params.getParam('colorbtn', ParamType.Color),
-            colortxt: params.getParam('colortxt', ParamType.Color),
+            colorbtn: params.getParam(
+              'colorbtn',
+              ParamType.Color,
+            ),
+            colortxt: params.getParam(
+              'colortxt',
+              ParamType.Color,
+            ),
           ),
         ),
         FFRoute(
@@ -158,59 +197,110 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'booking_confirm',
           path: '/bookingConfirm',
           builder: (context, params) => BookingConfirmWidget(
-            city: params.getParam('city', ParamType.String),
-            facility: params.getParam('facility', ParamType.String),
+            city: params.getParam(
+              'city',
+              ParamType.String,
+            ),
+            facility: params.getParam(
+              'facility',
+              ParamType.String,
+            ),
           ),
         ),
         FFRoute(
           name: 'phone_auth',
           path: '/phoneAuth',
           builder: (context, params) => PhoneAuthWidget(
-            colorbtn: params.getParam('colorbtn', ParamType.Color),
-            colortxt: params.getParam('colortxt', ParamType.Color),
+            colorbtn: params.getParam(
+              'colorbtn',
+              ParamType.Color,
+            ),
+            colortxt: params.getParam(
+              'colortxt',
+              ParamType.Color,
+            ),
           ),
         ),
         FFRoute(
           name: 'otp_verify',
           path: '/otpVerify',
           builder: (context, params) => OtpVerifyWidget(
-            mobileNumber: params.getParam('mobileNumber', ParamType.String),
+            mobileNumber: params.getParam(
+              'mobileNumber',
+              ParamType.String,
+            ),
           ),
         ),
         FFRoute(
           name: 'facilities_booking',
           path: '/facilitiesBooking',
           builder: (context, params) => FacilitiesBookingWidget(
-            colorbtn: params.getParam('colorbtn', ParamType.Color),
-            colortxt: params.getParam('colortxt', ParamType.Color),
-            facilityselected:
-                params.getParam('facilityselected', ParamType.String),
-            city: params.getParam('city', ParamType.String),
+            colorbtn: params.getParam(
+              'colorbtn',
+              ParamType.Color,
+            ),
+            colortxt: params.getParam(
+              'colortxt',
+              ParamType.Color,
+            ),
+            facilityselected: params.getParam(
+              'facilityselected',
+              ParamType.String,
+            ),
+            city: params.getParam(
+              'city',
+              ParamType.String,
+            ),
+            extranote: params.getParam(
+              'extranote',
+              ParamType.String,
+            ),
           ),
         ),
         FFRoute(
           name: 'cancellation',
           path: '/cancellation',
           builder: (context, params) => CancellationWidget(
-            facility: params.getParam('facility', ParamType.String),
-            city: params.getParam('city', ParamType.String),
+            facility: params.getParam(
+              'facility',
+              ParamType.String,
+            ),
+            city: params.getParam(
+              'city',
+              ParamType.String,
+            ),
           ),
         ),
         FFRoute(
           name: 'bookings',
           path: '/bookings',
           builder: (context, params) => BookingsWidget(
-            colortxt: params.getParam('colortxt', ParamType.Color),
-            facility: params.getParam('facility', ParamType.String),
-            city: params.getParam('city', ParamType.String),
+            colortxt: params.getParam(
+              'colortxt',
+              ParamType.Color,
+            ),
+            facility: params.getParam(
+              'facility',
+              ParamType.String,
+            ),
+            city: params.getParam(
+              'city',
+              ParamType.String,
+            ),
           ),
         ),
         FFRoute(
           name: 'forgotpassword',
           path: '/forgotpassword',
           builder: (context, params) => ForgotpasswordWidget(
-            colorbtn: params.getParam('colorbtn', ParamType.Color),
-            colortxt: params.getParam('colortxt', ParamType.Color),
+            colorbtn: params.getParam(
+              'colorbtn',
+              ParamType.Color,
+            ),
+            colortxt: params.getParam(
+              'colortxt',
+              ParamType.Color,
+            ),
           ),
         ),
         FFRoute(
@@ -227,73 +317,144 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'goggle_login',
           path: '/goggleLogin',
           builder: (context, params) => GoggleLoginWidget(
-            colorbtn: params.getParam('colorbtn', ParamType.Color),
-            colortxt: params.getParam('colortxt', ParamType.Color),
+            colorbtn: params.getParam(
+              'colorbtn',
+              ParamType.Color,
+            ),
+            colortxt: params.getParam(
+              'colortxt',
+              ParamType.Color,
+            ),
           ),
         ),
         FFRoute(
           name: 'city_outline_after_login',
           path: '/cityOutlineAfterLogin',
           builder: (context, params) => CityOutlineAfterLoginWidget(
-            cityname: params.getParam('cityname', ParamType.String),
+            cityname: params.getParam(
+              'cityname',
+              ParamType.String,
+            ),
           ),
         ),
         FFRoute(
           name: 'allpages',
           path: '/allpages',
           builder: (context, params) => AllpagesWidget(
-            cityname: params.getParam('cityname', ParamType.String),
-            tabpageindex: params.getParam('tabpageindex', ParamType.int),
+            cityname: params.getParam(
+              'cityname',
+              ParamType.String,
+            ),
+            tabpageindex: params.getParam(
+              'tabpageindex',
+              ParamType.int,
+            ),
           ),
         ),
         FFRoute(
           name: 'loginCopyCopy',
           path: '/loginCopyCopy',
           builder: (context, params) => LoginCopyCopyWidget(
-            colorbtn: params.getParam('colorbtn', ParamType.Color),
-            colortxt: params.getParam('colortxt', ParamType.Color),
-            facility: params.getParam('facility', ParamType.String),
-            city: params.getParam('city', ParamType.String),
+            colorbtn: params.getParam(
+              'colorbtn',
+              ParamType.Color,
+            ),
+            colortxt: params.getParam(
+              'colortxt',
+              ParamType.Color,
+            ),
+            facility: params.getParam(
+              'facility',
+              ParamType.String,
+            ),
+            city: params.getParam(
+              'city',
+              ParamType.String,
+            ),
           ),
         ),
         FFRoute(
           name: 'goggle_loginCopyCopy',
           path: '/goggleLoginCopyCopy',
           builder: (context, params) => GoggleLoginCopyCopyWidget(
-            colorbtn: params.getParam('colorbtn', ParamType.Color),
-            colortxt: params.getParam('colortxt', ParamType.Color),
-            facility: params.getParam('facility', ParamType.String),
-            city: params.getParam('city', ParamType.String),
+            colorbtn: params.getParam(
+              'colorbtn',
+              ParamType.Color,
+            ),
+            colortxt: params.getParam(
+              'colortxt',
+              ParamType.Color,
+            ),
+            facility: params.getParam(
+              'facility',
+              ParamType.String,
+            ),
+            city: params.getParam(
+              'city',
+              ParamType.String,
+            ),
           ),
         ),
         FFRoute(
           name: 'otp_verifyCopyCopy',
           path: '/otpVerifyCopyCopy',
           builder: (context, params) => OtpVerifyCopyCopyWidget(
-            mobileNumber: params.getParam('mobileNumber', ParamType.String),
-            facility: params.getParam('facility', ParamType.String),
-            city: params.getParam('city', ParamType.String),
+            mobileNumber: params.getParam(
+              'mobileNumber',
+              ParamType.String,
+            ),
+            facility: params.getParam(
+              'facility',
+              ParamType.String,
+            ),
+            city: params.getParam(
+              'city',
+              ParamType.String,
+            ),
           ),
         ),
         FFRoute(
           name: 'phone_authCopyCopy',
           path: '/phoneAuthCopyCopy',
           builder: (context, params) => PhoneAuthCopyCopyWidget(
-            colorbtn: params.getParam('colorbtn', ParamType.Color),
-            colortxt: params.getParam('colortxt', ParamType.Color),
-            facility: params.getParam('facility', ParamType.String),
-            city: params.getParam('city', ParamType.String),
+            colorbtn: params.getParam(
+              'colorbtn',
+              ParamType.Color,
+            ),
+            colortxt: params.getParam(
+              'colortxt',
+              ParamType.Color,
+            ),
+            facility: params.getParam(
+              'facility',
+              ParamType.String,
+            ),
+            city: params.getParam(
+              'city',
+              ParamType.String,
+            ),
           ),
         ),
         FFRoute(
           name: 'facilitiy_room_booking',
           path: '/facilitiyRoomBooking',
           builder: (context, params) => FacilitiyRoomBookingWidget(
-            colorbtn: params.getParam('colorbtn', ParamType.Color),
-            colortxt: params.getParam('colortxt', ParamType.Color),
-            facilityselected:
-                params.getParam('facilityselected', ParamType.String),
-            city: params.getParam('city', ParamType.String),
+            colorbtn: params.getParam(
+              'colorbtn',
+              ParamType.Color,
+            ),
+            colortxt: params.getParam(
+              'colortxt',
+              ParamType.Color,
+            ),
+            facilityselected: params.getParam(
+              'facilityselected',
+              ParamType.String,
+            ),
+            city: params.getParam(
+              'city',
+              ParamType.String,
+            ),
           ),
         ),
         FFRoute(
@@ -310,16 +471,28 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'membership',
           path: '/membership',
           builder: (context, params) => MembershipWidget(
-            colorbtn: params.getParam('colorbtn', ParamType.Color),
-            colortxt: params.getParam('colortxt', ParamType.Color),
+            colorbtn: params.getParam(
+              'colorbtn',
+              ParamType.Color,
+            ),
+            colortxt: params.getParam(
+              'colortxt',
+              ParamType.Color,
+            ),
           ),
         ),
         FFRoute(
           name: 'membership_payment',
           path: '/membershipPayment',
           builder: (context, params) => MembershipPaymentWidget(
-            colorbtn: params.getParam('colorbtn', ParamType.Color),
-            colortxt: params.getParam('colortxt', ParamType.Color),
+            colorbtn: params.getParam(
+              'colorbtn',
+              ParamType.Color,
+            ),
+            colortxt: params.getParam(
+              'colortxt',
+              ParamType.Color,
+            ),
           ),
         ),
         FFRoute(
@@ -331,32 +504,180 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'membership_final',
           path: '/membershipFinal',
           builder: (context, params) => MembershipFinalWidget(
-            colorbtn: params.getParam('colorbtn', ParamType.Color),
-            colortxt: params.getParam('colortxt', ParamType.Color),
+            colorbtn: params.getParam(
+              'colorbtn',
+              ParamType.Color,
+            ),
+            colortxt: params.getParam(
+              'colortxt',
+              ParamType.Color,
+            ),
           ),
         ),
         FFRoute(
           name: 'membership_no',
           path: '/membershipNo',
           builder: (context, params) => MembershipNoWidget(
-            colorbtn: params.getParam('colorbtn', ParamType.Color),
-            colortxt: params.getParam('colortxt', ParamType.Color),
+            colorbtn: params.getParam(
+              'colorbtn',
+              ParamType.Color,
+            ),
+            colortxt: params.getParam(
+              'colortxt',
+              ParamType.Color,
+            ),
           ),
         ),
         FFRoute(
           name: 'phone_authCopy',
           path: '/phoneAuthCopy',
           builder: (context, params) => PhoneAuthCopyWidget(
-            colorbtn: params.getParam('colorbtn', ParamType.Color),
-            colortxt: params.getParam('colortxt', ParamType.Color),
+            colorbtn: params.getParam(
+              'colorbtn',
+              ParamType.Color,
+            ),
+            colortxt: params.getParam(
+              'colortxt',
+              ParamType.Color,
+            ),
           ),
         ),
         FFRoute(
           name: 'otp_verifyCopy',
           path: '/otpVerifyCopy',
           builder: (context, params) => OtpVerifyCopyWidget(
-            mobileNumber: params.getParam('mobileNumber', ParamType.String),
+            mobileNumber: params.getParam(
+              'mobileNumber',
+              ParamType.String,
+            ),
           ),
+        ),
+        FFRoute(
+          name: 'signupCopy',
+          path: '/signupCopy',
+          builder: (context, params) => const SignupCopyWidget(),
+        ),
+        FFRoute(
+          name: 'goggle_loginCopy',
+          path: '/goggleLoginCopy',
+          builder: (context, params) => GoggleLoginCopyWidget(
+            colorbtn: params.getParam(
+              'colorbtn',
+              ParamType.Color,
+            ),
+            colortxt: params.getParam(
+              'colortxt',
+              ParamType.Color,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: 'facilities_puja_final_booking',
+          path: '/facilitiesPujaFinalBooking',
+          builder: (context, params) => FacilitiesPujaFinalBookingWidget(
+            colorbtn: params.getParam(
+              'colorbtn',
+              ParamType.Color,
+            ),
+            colortxt: params.getParam(
+              'colortxt',
+              ParamType.Color,
+            ),
+            facilityselected: params.getParam(
+              'facilityselected',
+              ParamType.String,
+            ),
+            city: params.getParam(
+              'city',
+              ParamType.String,
+            ),
+            img: params.getParam(
+              'img',
+              ParamType.String,
+            ),
+            priname: params.getParam(
+              'priname',
+              ParamType.String,
+            ),
+            spcname: params.getParam(
+              'spcname',
+              ParamType.String,
+            ),
+            number: params.getParam(
+              'number',
+              ParamType.int,
+            ),
+            type: params.getParam(
+              'type',
+              ParamType.String,
+            ),
+            putype: params.getParam(
+              'putype',
+              ParamType.String,
+            ),
+            extranote: params.getParam(
+              'extranote',
+              ParamType.String,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: 'facilities_puja_booking',
+          path: '/facilitiesPujaBooking',
+          builder: (context, params) => FacilitiesPujaBookingWidget(
+            colorbtn: params.getParam(
+              'colorbtn',
+              ParamType.Color,
+            ),
+            colortxt: params.getParam(
+              'colortxt',
+              ParamType.Color,
+            ),
+            facilityselected: params.getParam(
+              'facilityselected',
+              ParamType.String,
+            ),
+            city: params.getParam(
+              'city',
+              ParamType.String,
+            ),
+            type: params.getParam(
+              'type',
+              ParamType.String,
+            ),
+            putype: params.getParam(
+              'putype',
+              ParamType.String,
+            ),
+            extranote: params.getParam(
+              'extranote',
+              ParamType.String,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: 'puja_booking_confirm',
+          path: '/pujaBookingConfirm',
+          builder: (context, params) => PujaBookingConfirmWidget(
+            city: params.getParam(
+              'city',
+              ParamType.String,
+            ),
+            facility: params.getParam(
+              'facility',
+              ParamType.String,
+            ),
+          ),
+        ),
+        FFRoute(
+          name: 'donation',
+          path: '/donation',
+          builder: (context, params) => const DonationWidget(),
+        ),
+        FFRoute(
+          name: 'your_donations',
+          path: '/yourDonations',
+          builder: (context, params) => const YourDonationsWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -433,7 +754,7 @@ extension _GoRouterStateExtensions on GoRouterState {
       extra != null ? extra as Map<String, dynamic> : {};
   Map<String, dynamic> get allParams => <String, dynamic>{}
     ..addAll(pathParameters)
-    ..addAll(queryParameters)
+    ..addAll(uri.queryParameters)
     ..addAll(extraMap);
   TransitionInfo get transitionInfo => extraMap.containsKey(kTransitionInfoKey)
       ? extraMap[kTransitionInfoKey] as TransitionInfo
@@ -452,7 +773,7 @@ class FFParameters {
   // present is the special extra parameter reserved for the transition info.
   bool get isEmpty =>
       state.allParams.isEmpty ||
-      (state.extraMap.length == 1 &&
+      (state.allParams.length == 1 &&
           state.extraMap.containsKey(kTransitionInfoKey));
   bool isAsyncParam(MapEntry<String, dynamic> param) =>
       asyncParams.containsKey(param.key) && param.value is String;
@@ -473,10 +794,10 @@ class FFParameters {
 
   dynamic getParam<T>(
     String paramName,
-    ParamType type, [
+    ParamType type, {
     bool isList = false,
     List<String>? collectionNamePath,
-  ]) {
+  }) {
     if (futureParamValues.containsKey(paramName)) {
       return futureParamValues[paramName];
     }
@@ -489,8 +810,12 @@ class FFParameters {
       return param;
     }
     // Return serialized value.
-    return deserializeParam<T>(param, type, isList,
-        collectionNamePath: collectionNamePath);
+    return deserializeParam<T>(
+      param,
+      type,
+      isList,
+      collectionNamePath: collectionNamePath,
+    );
   }
 }
 
@@ -522,7 +847,7 @@ class FFRoute {
           }
 
           if (requireAuth && !appStateNotifier.loggedIn) {
-            appStateNotifier.setRedirectLocationIfUnset(state.location);
+            appStateNotifier.setRedirectLocationIfUnset(state.uri.toString());
             return '/allpages';
           }
           return null;
@@ -597,7 +922,7 @@ class RootPageContext {
   static bool isInactiveRootPage(BuildContext context) {
     final rootPageContext = context.read<RootPageContext?>();
     final isRootPage = rootPageContext?.isRootPage ?? false;
-    final location = GoRouter.of(context).location;
+    final location = GoRouterState.of(context).uri.toString();
     return isRootPage &&
         location != '/' &&
         location != rootPageContext?.errorRoute;
@@ -607,4 +932,14 @@ class RootPageContext {
         value: RootPageContext(true, errorRoute),
         child: child,
       );
+}
+
+extension GoRouterLocationExtension on GoRouter {
+  String getCurrentLocation() {
+    final RouteMatch lastMatch = routerDelegate.currentConfiguration.last;
+    final RouteMatchList matchList = lastMatch is ImperativeRouteMatch
+        ? lastMatch.matches
+        : routerDelegate.currentConfiguration;
+    return matchList.uri.toString();
+  }
 }

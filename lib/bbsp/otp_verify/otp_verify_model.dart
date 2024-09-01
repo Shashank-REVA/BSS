@@ -12,6 +12,7 @@ class OtpVerifyModel extends FlutterFlowModel<OtpVerifyWidget> {
   TextEditingController? pinCodeController;
   String? Function(BuildContext, String?)? pinCodeControllerValidator;
   // State field(s) for Timer widget.
+  final timerInitialTimeMs = 60000;
   int timerMilliseconds = 60000;
   String timerValue = StopWatchTimer.getDisplayTime(
     60000,
@@ -21,8 +22,6 @@ class OtpVerifyModel extends FlutterFlowModel<OtpVerifyWidget> {
   FlutterFlowTimerController timerController =
       FlutterFlowTimerController(StopWatchTimer(mode: StopWatchMode.countDown));
 
-  /// Initialization and disposal methods.
-
   @override
   void initState(BuildContext context) {
     pinCodeController = TextEditingController();
@@ -30,12 +29,7 @@ class OtpVerifyModel extends FlutterFlowModel<OtpVerifyWidget> {
 
   @override
   void dispose() {
-    unfocusNode.dispose();
     pinCodeController?.dispose();
     timerController.dispose();
   }
-
-  /// Action blocks are added here.
-
-  /// Additional helper methods are added here.
 }

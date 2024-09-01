@@ -44,9 +44,7 @@ class _EducationWidgetState extends State<EducationWidget> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => _model.unfocusNode.canRequestFocus
-          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
-          : FocusScope.of(context).unfocus(),
+      onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: Colors.white,
@@ -133,6 +131,7 @@ class _EducationWidgetState extends State<EducationWidget> {
                                   .override(
                                     fontFamily: 'SuperTall',
                                     color: const Color(0xFFEC7834),
+                                    letterSpacing: 0.0,
                                     useGoogleFonts: false,
                                   ),
                             ),
@@ -161,6 +160,7 @@ class _EducationWidgetState extends State<EducationWidget> {
                                   .override(
                                     fontFamily: 'Readex Pro',
                                     color: Colors.black,
+                                    letterSpacing: 0.0,
                                   ),
                             ),
                             Padding(
@@ -176,6 +176,7 @@ class _EducationWidgetState extends State<EducationWidget> {
                                       fontFamily: 'SuperTall',
                                       color: const Color(0xFF322E5C),
                                       fontSize: 20.0,
+                                      letterSpacing: 0.0,
                                       fontWeight: FontWeight.w600,
                                       useGoogleFonts: false,
                                     ),
@@ -190,6 +191,7 @@ class _EducationWidgetState extends State<EducationWidget> {
                                   .override(
                                     fontFamily: 'Readex Pro',
                                     color: Colors.black,
+                                    letterSpacing: 0.0,
                                   ),
                             ),
                             Padding(
@@ -205,6 +207,7 @@ class _EducationWidgetState extends State<EducationWidget> {
                                       fontFamily: 'SuperTall',
                                       color: const Color(0xFF322E5C),
                                       fontSize: 20.0,
+                                      letterSpacing: 0.0,
                                       fontWeight: FontWeight.w600,
                                       useGoogleFonts: false,
                                     ),
@@ -219,6 +222,7 @@ class _EducationWidgetState extends State<EducationWidget> {
                                   .override(
                                     fontFamily: 'Readex Pro',
                                     color: Colors.black,
+                                    letterSpacing: 0.0,
                                   ),
                             ),
                             Padding(
@@ -234,6 +238,7 @@ class _EducationWidgetState extends State<EducationWidget> {
                                       fontFamily: 'SuperTall',
                                       color: const Color(0xFF322E5C),
                                       fontSize: 20.0,
+                                      letterSpacing: 0.0,
                                       fontWeight: FontWeight.w600,
                                       useGoogleFonts: false,
                                     ),
@@ -248,6 +253,7 @@ class _EducationWidgetState extends State<EducationWidget> {
                                   .override(
                                     fontFamily: 'Readex Pro',
                                     color: Colors.black,
+                                    letterSpacing: 0.0,
                                   ),
                             ),
                             Padding(
@@ -262,6 +268,7 @@ class _EducationWidgetState extends State<EducationWidget> {
                                     .override(
                                       fontFamily: 'SuperTall',
                                       color: const Color(0xFFEC7834),
+                                      letterSpacing: 0.0,
                                       useGoogleFonts: false,
                                     ),
                               ),
@@ -273,11 +280,11 @@ class _EducationWidgetState extends State<EducationWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'SuperTall',
+                                    fontFamily: 'Raleway',
                                     color: const Color(0xFF322E5C),
                                     fontSize: 20.0,
-                                    fontWeight: FontWeight.w600,
-                                    useGoogleFonts: false,
+                                    letterSpacing: 0.0,
+                                    fontWeight: FontWeight.w800,
                                   ),
                             ),
                             Text(
@@ -287,11 +294,11 @@ class _EducationWidgetState extends State<EducationWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'SuperTall',
+                                    fontFamily: 'Raleway',
                                     color: const Color(0xFF322E5C),
                                     fontSize: 20.0,
-                                    fontWeight: FontWeight.w600,
-                                    useGoogleFonts: false,
+                                    letterSpacing: 0.0,
+                                    fontWeight: FontWeight.w800,
                                   ),
                             ),
                             Text(
@@ -301,11 +308,11 @@ class _EducationWidgetState extends State<EducationWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'SuperTall',
+                                    fontFamily: 'Raleway',
                                     color: const Color(0xFF322E5C),
                                     fontSize: 20.0,
-                                    fontWeight: FontWeight.w600,
-                                    useGoogleFonts: false,
+                                    letterSpacing: 0.0,
+                                    fontWeight: FontWeight.w800,
                                   ),
                             ),
                             Text(
@@ -315,11 +322,11 @@ class _EducationWidgetState extends State<EducationWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'SuperTall',
+                                    fontFamily: 'Raleway',
                                     color: const Color(0xFF322E5C),
                                     fontSize: 20.0,
-                                    fontWeight: FontWeight.w600,
-                                    useGoogleFonts: false,
+                                    letterSpacing: 0.0,
+                                    fontWeight: FontWeight.w800,
                                   ),
                             ),
                             Text(
@@ -329,11 +336,11 @@ class _EducationWidgetState extends State<EducationWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'SuperTall',
+                                    fontFamily: 'Raleway',
                                     color: const Color(0xFF322E5C),
                                     fontSize: 20.0,
-                                    fontWeight: FontWeight.w600,
-                                    useGoogleFonts: false,
+                                    letterSpacing: 0.0,
+                                    fontWeight: FontWeight.w800,
                                   ),
                             ),
                           ],

@@ -27,18 +27,17 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
 
     logFirebaseEvent('screen_view',
         parameters: {'screen_name': 'profile_edit'});
-    _model.yourNameController ??=
+    _model.yourNameTextController ??=
         TextEditingController(text: currentUserDisplayName);
     _model.yourNameFocusNode ??= FocusNode();
 
-    _model.phoneController ??= TextEditingController(text: currentPhoneNumber);
+    _model.phoneTextController ??=
+        TextEditingController(text: currentPhoneNumber);
     _model.phoneFocusNode ??= FocusNode();
 
-    _model.emailController1 ??= TextEditingController(text: currentUserEmail);
-    _model.emailFocusNode1 ??= FocusNode();
-
-    _model.emailController2 ??= TextEditingController(text: currentUserEmail);
-    _model.emailFocusNode2 ??= FocusNode();
+    _model.emailTextController ??=
+        TextEditingController(text: currentUserEmail);
+    _model.emailFocusNode ??= FocusNode();
   }
 
   @override
@@ -93,6 +92,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                       fontFamily: 'SuperTall',
                       color: const Color(0xFF14181B),
                       fontSize: 22.0,
+                      letterSpacing: 0.0,
                       fontWeight: FontWeight.normal,
                       useGoogleFonts: false,
                     ),
@@ -102,7 +102,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
               padding: const EdgeInsetsDirectional.fromSTEB(20.0, 16.0, 20.0, 12.0),
               child: AuthUserStreamWidget(
                 builder: (context) => TextFormField(
-                  controller: _model.yourNameController,
+                  controller: _model.yourNameTextController,
                   focusNode: _model.yourNameFocusNode,
                   textCapitalization: TextCapitalization.words,
                   obscureText: false,
@@ -115,6 +115,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                               fontFamily: 'Raleway',
                               color: FlutterFlowTheme.of(context).secondaryText,
                               fontSize: 14.0,
+                              letterSpacing: 0.0,
                               fontWeight: FontWeight.normal,
                             ),
                     hintStyle:
@@ -122,6 +123,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                               fontFamily: 'Raleway',
                               color: Colors.black,
                               fontSize: 14.0,
+                              letterSpacing: 0.0,
                               fontWeight: FontWeight.normal,
                             ),
                     enabledBorder: OutlineInputBorder(
@@ -161,10 +163,11 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                         fontFamily: 'Ubuntu',
                         color: Colors.black,
                         fontSize: 14.0,
+                        letterSpacing: 0.0,
                         fontWeight: FontWeight.normal,
                       ),
-                  validator:
-                      _model.yourNameControllerValidator.asValidator(context),
+                  validator: _model.yourNameTextControllerValidator
+                      .asValidator(context),
                 ),
               ),
             ),
@@ -172,7 +175,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
               padding: const EdgeInsetsDirectional.fromSTEB(20.0, 16.0, 20.0, 12.0),
               child: AuthUserStreamWidget(
                 builder: (context) => TextFormField(
-                  controller: _model.phoneController,
+                  controller: _model.phoneTextController,
                   focusNode: _model.phoneFocusNode,
                   textCapitalization: TextCapitalization.words,
                   obscureText: false,
@@ -185,6 +188,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                               fontFamily: 'Raleway',
                               color: FlutterFlowTheme.of(context).secondaryText,
                               fontSize: 14.0,
+                              letterSpacing: 0.0,
                               fontWeight: FontWeight.normal,
                             ),
                     hintStyle:
@@ -192,6 +196,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                               fontFamily: 'Raleway',
                               color: Colors.black,
                               fontSize: 14.0,
+                              letterSpacing: 0.0,
                               fontWeight: FontWeight.normal,
                             ),
                     enabledBorder: OutlineInputBorder(
@@ -231,18 +236,19 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                         fontFamily: 'Ubuntu',
                         color: Colors.black,
                         fontSize: 14.0,
+                        letterSpacing: 0.0,
                         fontWeight: FontWeight.normal,
                       ),
                   validator:
-                      _model.phoneControllerValidator.asValidator(context),
+                      _model.phoneTextControllerValidator.asValidator(context),
                 ),
               ),
             ),
             Padding(
               padding: const EdgeInsetsDirectional.fromSTEB(20.0, 16.0, 20.0, 12.0),
               child: TextFormField(
-                controller: _model.emailController1,
-                focusNode: _model.emailFocusNode1,
+                controller: _model.emailTextController,
+                focusNode: _model.emailFocusNode,
                 textCapitalization: TextCapitalization.words,
                 obscureText: false,
                 decoration: InputDecoration(
@@ -253,12 +259,14 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                         fontFamily: 'Raleway',
                         color: FlutterFlowTheme.of(context).secondaryText,
                         fontSize: 14.0,
+                        letterSpacing: 0.0,
                         fontWeight: FontWeight.normal,
                       ),
                   hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
                         fontFamily: 'Raleway',
                         color: Colors.black,
                         fontSize: 14.0,
+                        letterSpacing: 0.0,
                         fontWeight: FontWeight.normal,
                       ),
                   enabledBorder: OutlineInputBorder(
@@ -298,80 +306,15 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                       fontFamily: 'Ubuntu',
                       color: Colors.black,
                       fontSize: 14.0,
+                      letterSpacing: 0.0,
                       fontWeight: FontWeight.normal,
                     ),
                 validator:
-                    _model.emailController1Validator.asValidator(context),
+                    _model.emailTextControllerValidator.asValidator(context),
               ),
             ),
             Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(20.0, 16.0, 20.0, 12.0),
-              child: TextFormField(
-                controller: _model.emailController2,
-                focusNode: _model.emailFocusNode2,
-                textCapitalization: TextCapitalization.words,
-                obscureText: false,
-                decoration: InputDecoration(
-                  labelText: FFLocalizations.of(context).getText(
-                    'y9eh1rr0' /* Your City */,
-                  ),
-                  labelStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                        fontFamily: 'Raleway',
-                        color: FlutterFlowTheme.of(context).secondaryText,
-                        fontSize: 14.0,
-                        fontWeight: FontWeight.normal,
-                      ),
-                  hintStyle: FlutterFlowTheme.of(context).labelMedium.override(
-                        fontFamily: 'Raleway',
-                        color: Colors.black,
-                        fontSize: 14.0,
-                        fontWeight: FontWeight.normal,
-                      ),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(
-                      color: Color(0xFFE0E3E7),
-                      width: 2.0,
-                    ),
-                    borderRadius: BorderRadius.circular(25.0),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(
-                      color: Color(0xFF4B39EF),
-                      width: 2.0,
-                    ),
-                    borderRadius: BorderRadius.circular(25.0),
-                  ),
-                  errorBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(
-                      color: Color(0xFFFF5963),
-                      width: 2.0,
-                    ),
-                    borderRadius: BorderRadius.circular(25.0),
-                  ),
-                  focusedErrorBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(
-                      color: Color(0xFFFF5963),
-                      width: 2.0,
-                    ),
-                    borderRadius: BorderRadius.circular(25.0),
-                  ),
-                  filled: true,
-                  fillColor: Colors.white,
-                  contentPadding:
-                      const EdgeInsetsDirectional.fromSTEB(20.0, 24.0, 0.0, 24.0),
-                ),
-                style: FlutterFlowTheme.of(context).bodyMedium.override(
-                      fontFamily: 'Ubuntu',
-                      color: Colors.black,
-                      fontSize: 14.0,
-                      fontWeight: FontWeight.normal,
-                    ),
-                validator:
-                    _model.emailController2Validator.asValidator(context),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 30.0),
               child: InkWell(
                 splashColor: Colors.transparent,
                 focusColor: Colors.transparent,
@@ -382,10 +325,17 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                   logFirebaseEvent('Text_backend_call');
 
                   await currentUserReference!.update(createUsersRecordData(
-                    email: _model.emailController1.text,
-                    displayName: _model.yourNameController.text,
-                    phoneNumber: _model.phoneController.text,
+                    email: _model.emailTextController.text,
+                    displayName: _model.yourNameTextController.text,
+                    phoneNumber: _model.phoneTextController.text,
                   ));
+                  logFirebaseEvent('Text_reset_form_fields');
+                  setState(() {
+                    _model.yourNameTextController?.text =
+                        currentUserDisplayName;
+                    _model.phoneTextController?.text = currentPhoneNumber;
+                    _model.emailTextController?.text = currentUserEmail;
+                  });
                   logFirebaseEvent('Text_navigate_to');
 
                   context.goNamed(
@@ -407,6 +357,24 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                         fontFamily: 'SuperTall',
                         color: const Color(0xFF4A456B),
                         fontSize: 18.0,
+                        letterSpacing: 0.0,
+                        useGoogleFonts: false,
+                      ),
+                ),
+              ),
+            ),
+            Align(
+              alignment: const AlignmentDirectional(0.0, 0.0),
+              child: AuthUserStreamWidget(
+                builder: (context) => Text(
+                  valueOrDefault(currentUserDocument?.city, ''),
+                  textAlign: TextAlign.start,
+                  style: FlutterFlowTheme.of(context).headlineMedium.override(
+                        fontFamily: 'SuperTall',
+                        color: const Color(0xFF14181B),
+                        fontSize: 15.0,
+                        letterSpacing: 0.0,
+                        fontWeight: FontWeight.normal,
                         useGoogleFonts: false,
                       ),
                 ),
@@ -415,7 +383,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
             Align(
               alignment: const AlignmentDirectional(0.0, 1.0),
               child: Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(5.0, 24.0, 5.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
                 child: Text(
                   FFLocalizations.of(context).getText(
                     'pf6tnaov' /* You cannot chnage your city. I... */,
@@ -425,6 +393,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                         fontFamily: 'Raleway',
                         color: const Color(0xFF2F2F2F),
                         fontSize: 16.0,
+                        letterSpacing: 0.0,
                         fontWeight: FontWeight.w600,
                       ),
                 ),
@@ -463,11 +432,15 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                               fontFamily: 'Raleway',
                               color: const Color(0xFF322E5C),
                               fontSize: 18.0,
+                              letterSpacing: 0.0,
                               fontWeight: FontWeight.bold,
                             ),
                       )
                     ],
-                    style: FlutterFlowTheme.of(context).bodyMedium,
+                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                          fontFamily: 'Readex Pro',
+                          letterSpacing: 0.0,
+                        ),
                   ),
                 ),
               ),

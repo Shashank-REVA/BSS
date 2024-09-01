@@ -3,9 +3,9 @@ import 'dart:async';
 import 'package:collection/collection.dart';
 
 import '/backend/schema/util/firestore_util.dart';
-import '/backend/schema/util/schema_util.dart';
 
 import 'index.dart';
+import '/flutter_flow/flutter_flow_util.dart';
 
 class UsersRecord extends FirestoreRecord {
   UsersRecord._(
@@ -60,6 +60,11 @@ class UsersRecord extends FirestoreRecord {
   String get phoneNumber => _phoneNumber ?? '';
   bool hasPhoneNumber() => _phoneNumber != null;
 
+  // "admin" field.
+  bool? _admin;
+  bool get admin => _admin ?? false;
+  bool hasAdmin() => _admin != null;
+
   void _initializeFields() {
     _email = snapshotData['email'] as String?;
     _displayName = snapshotData['display_name'] as String?;
@@ -70,6 +75,7 @@ class UsersRecord extends FirestoreRecord {
     _state = snapshotData['state'] as String?;
     _ut = snapshotData['ut'] as String?;
     _phoneNumber = snapshotData['phone_number'] as String?;
+    _admin = snapshotData['admin'] as bool?;
   }
 
   static CollectionReference get collection =>
@@ -115,6 +121,7 @@ Map<String, dynamic> createUsersRecordData({
   String? state,
   String? ut,
   String? phoneNumber,
+  bool? admin,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -127,6 +134,7 @@ Map<String, dynamic> createUsersRecordData({
       'state': state,
       'ut': ut,
       'phone_number': phoneNumber,
+      'admin': admin,
     }.withoutNulls,
   );
 
@@ -146,7 +154,8 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e1?.city == e2?.city &&
         e1?.state == e2?.state &&
         e1?.ut == e2?.ut &&
-        e1?.phoneNumber == e2?.phoneNumber;
+        e1?.phoneNumber == e2?.phoneNumber &&
+        e1?.admin == e2?.admin;
   }
 
   @override
@@ -159,7 +168,8 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e?.city,
         e?.state,
         e?.ut,
-        e?.phoneNumber
+        e?.phoneNumber,
+        e?.admin
       ]);
 
   @override
